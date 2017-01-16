@@ -677,11 +677,7 @@ Main site content
   vertical-align: middle;
 }
 
-.shadow_border{
-  -webkit-box-shadow: 1px 2px 10px 0px rgba(92,91,92,1);
-  -moz-box-shadow: 1px 2px 14px 0px rgba(92,91,92,1);
-  -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1);
-}
+
 
 .get_started_back{
   min-height: 120px;
@@ -704,6 +700,44 @@ Main site content
   color: #FFFFFF !important;
   font-weight: 500 !important;
   line-height: 36px;
+}
+
+/* CONTACT PAGE STYLES */
+
+.contact_div{
+  background-color:#FFFFFF;
+  margin-top: 60px;
+  -webkit-box-shadow: 1px 2px 10px 0px rgba(92,91,92,1);
+  -moz-box-shadow: 1px 2px 14px 0px rgba(92,91,92,1);
+  -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  max-width: 720px;
+  min-height: 480px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.contact_div h1{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.contact_div p{
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.contact_form{
+  margin-top: 15px;
+  min-width: 70%;
+  display: inline-block;
+}
+
+.label_left{
+  text-align: left !important;
 }
 
 /* MONITOR BACKGROUND STYLES */
