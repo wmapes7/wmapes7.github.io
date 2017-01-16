@@ -561,7 +561,7 @@ Main site content
 }
 
 
-.explored{
+.explore{
   font-weight: 600 !important;
   font-size: 15px !important;
   background-color: #FFFFFF;
@@ -572,7 +572,7 @@ Main site content
   -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important; 
 }
 
-.explored:hover{
+.explore:hover{
   -webkit-box-shadow: 1px 2px 10px 0px rgba(92,91,92,1) !important;
   -moz-box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important;
   -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important; 
