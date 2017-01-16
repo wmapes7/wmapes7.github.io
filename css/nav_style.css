@@ -561,7 +561,7 @@ Main site content
 }
 
 
-.btn_font{
+.explore{
   font-weight: 600 !important;
   font-size: 15px !important;
   background-color: #FFFFFF;
@@ -572,7 +572,7 @@ Main site content
   -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important; 
 }
 
-.btn_font:hover{
+.explore:hover{
   -webkit-box-shadow: 1px 2px 10px 0px rgba(92,91,92,1) !important;
   -moz-box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important;
   -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important; 
@@ -827,6 +827,33 @@ Main site content
 
   }
 }
+
+/* TEAMWORK STYLES */
+
+.teamwork-content {
+  min-height: 100vh;
+  /*background-image: url(../img/chat.png);*/
+  background-color: #52418f !important;
+  background-color: #9C27B0 !important;
+  background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97)) !important;
+  background: linear-gradient(to right bottom,rgba(41,8,48,.97),#00bcd4 50%,rgba(156, 39, 176, 0.6)) !important;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.1) !important;
+
+
+}
+@media only screen and (min-width: 1000px) {
+  .teamwork-content {
+    padding-top: 80px;
+    /*background-image: url(../img/purple.png); */
+    background-color: #52418f !important;
+    background-color: #9C27B0 !important;
+    background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97)) !important;
+    background: linear-gradient(to right bottom,rgba(41,8,48,.97),#00bcd4 50%,rgba(156, 39, 176, 0.6)) !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.1) !important;
+
+  }
+}
+
 
 /* FOOTER STYLES */
 
