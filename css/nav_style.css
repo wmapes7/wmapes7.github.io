@@ -624,6 +624,7 @@ Main site content
   font-size: 24px;
   font-weight: 300 !important;
   line-height: 1.2 !important;
+  padding-bottom: 15px;
 
 }
 
@@ -641,7 +642,7 @@ Main site content
 
 .benefit_headline{
   font-size: 30px;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 769px){
@@ -671,6 +672,12 @@ Main site content
 
 .mockup_pad{
   padding-bottom: 30px;"
+}
+
+@media only screen and (max-width: 769px){
+  .small_screen{
+    margin-left: 30px !important;
+  }
 }
 
 .product_icon{
@@ -794,12 +801,6 @@ Main site content
 
   }
 }
-
-/*.iphone {
-  max-height: 680px !important;
-  overflow: hidden;
-}
-
 
 
 /* INSPECT STYLES */ 
