@@ -1,182 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/nav_style.css"> <!-- Resource style -->
+		<link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css"> <!-- device mockups -->
+	   	  	
+		<title>Singlethread - Automated Text Messaging</title>
+	</head>
+	<body>
+	
+	<header class="cd-morph-dropdown">
+		<a href="index.html"><img class="hidden-md hidden-lg" src="img/s_logo_trans_blue.png" style="height:40px; width: 45px; position: absolute; left: 10%; margin-left: -10px; margin-top: 10px; "></a>
+		<a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+		
+		<nav class="main-nav">
+			<ul>
+				<li class="">
+					<a href="index.html"><img src="img/s_logo_trans_white.png" style="height: 50px; width: 55px; margin-left: -200px; vertical-align: middle;" alt="Singlethread"></a>
+				</li>
+				<li class="has-dropdown gallery" data-content="products" style="margin-left: 160px;">
+					<a href="#0">Products</a>
+				</li>
 
-<head>
+				<li class="has-dropdown links" data-content="company">
+					<a href="#0">Company</a>
+				</li>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+				<li class="has-dropdown button" data-content="contact">
+					<a href="#0">Contact</a>
+				</li>
+				<li class="" data-content="" style="padding-left: 100px;">
+					<a href="#0">Login <img src="img/right-arrow.svg" style="height: 20px; width: 12px; vertical-align: middle;">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="morph-dropdown-wrapper">
+			<div class="dropdown-list">
+				<ul>
+					<li id="products" class="dropdown gallery">
+						<a href="#0" class="label">Products</a>
+						
+						<div class="content">	
+							<ul>
+								<li>
+									<a href="text.html">
+										<em class="textcolor">TEXT</em>
+										<span>Make more money than using the phone.</span>
+									</a>
+								</li>
+								<li>
+									<a href="inspect.html">
+										<em class="inspectcolor">INSPECT</span></em>
+										<span>Vehicle inspections - fast.</span>
+									</a>
+								</li>
 
-    <title>Singlethread</title>
+								<li>
+									<a href="monitor.html">
+										<em class="monitorcolor">MONITOR</em>
+										<span>Reveal and resolve problems, automatically.</span>
+									</a>
+								</li>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+								<li>
+									<a href="coach.html">
+										<em class="coachcolor">COACH</em>
+										<span>In-house, hands-on management support</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+					<li id="company" class="dropdown links">
+						<a href="#0" class="label">Company</a>
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+						<div class="content">
+							<ul>
+								<li>
+									<h2>SINGLETHREAD</h2>
 
-    <!-- Theme CSS -->
-    <link href="css/app.css" rel="stylesheet">
+									<ul class="links-list">
+										<li><a href="#0">Leadership</a></li>
+										<li><a href="#0">Values</a></li>
+										<li><a href="#0">Partners</a></li>
+									</ul>
+								</li>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+								<li>
+									<h2>RESOURCES</h2>
 
-</head>
+									<ul class="links-list">
+										<li><a href="#0">Press</a></li>
+										<li><a href="#0">Blog</a></li>
+										<li><a href="#0">Facebook</a></li>
+										<li><a href="#0">Twitter</a></li>
+										<li><a href="#0">YouTube</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
 
-<body id="page-top">
+					<li id="contact" class="dropdown button">
+						<a href="#0" class="label">Contact</a>
+						
+						<div class="content">	
+							<ul class="links-list">
+								<li>Phone:<a href="#0">844-920-2656</a></li>
+								<li>Email:<a href="#0">support@singlethread.com</a></li>
+							</ul>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">Singlethread</a>
-            </div>
+							<a href="#0" class="btn">Get Started Today</a>
+						</div>
+					</li>
+				</ul>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="text.html">Text</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="inspect.html">Inspect</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="train.html">Training</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="partners.html">Partners</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="blog_page.html">Media</a>
-                    </li>
-                    <li>
-                        <a class="" href="" data-toggle="modal" data-target="#myModal">Contact</a>
-                    </li>
-                    <li>
-                        <a class="" href="https://www.singlethread.com/dealer">Login</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>Text + Inspect, with <u>trackable</u> results.</h1>
-                            <p>Finally, an inspection product done right - the Singlethread way. Remarkable revenue gains while increasing customer satisfaction. </p>
-                            <a class="btn btn-outline btn-xl" data-toggle="modal" data-target="#myModal">Join our Private Beta</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/iphone_content.jpg" class="img-responsive" alt="">
-                                    <!-- Button trigger modal -->
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="categories" class="caution text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <i class="fa fa-exclamation-circle fa-5x" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-8">
-                    <h3>Private beta for select dealers only.</h3>
-                    <a class="btn btn-outline btn-xl" data-toggle="modal" data-target="#myModal">Join our Private Beta</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2016 Michigan Software Design. Handcrafted in Detroit, MI. 844-920-2656.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">The Company</a>
-                </li>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Twitter</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+				<div class="bg-layer" aria-hidden="true"></div>
+			</div> <!-- dropdown-list -->
+		</div> <!-- morph-dropdown-wrapper -->
+	</header>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">See it live in 20 minutes.</h4>
-          </div>
-          <div class="modal-body">
-            844-920-2656
-            Fill out this form
-            <form>
-                
-            </form>
+	<main class="inspect-content">
+		<div class="container-fluid headline">
+			<div class="container">
+				<div class="row">
+  					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    					<img class="product_icon" src="img/wrench2.svg" width="70" height="70">
+    					<text class="product_name">INSPECT</text>
+    					<span style="float: right;">
+    						<button class="hidden-xs btn btn-primary btn-lg btn_action" style="">GET STARTED</button>
+    						<button class="hidden-xs btn btn-primary btn-lg btn_font" style="">EXPLORE</button>
+    					</span>
+						
+					<div class="row">
+      					<div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 product_tagline">
+        					<text class="">Inspect, then text, your way to customer pay success.</text>
+        					<button class="hidden-sm hidden-md hidden-lg btn btn-primary btn-lg btn_action" style="">GET STARTED</button>
+      					</div>
+					<div class="col-xs-4 col-sm-6">
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+					</div>
+    					</div>
+  					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<section class="overview">
+			<div class="container">
+				<div class="row"> <!-- MAJORT PRODUCT HEADLINE -->
+					<h1 class="product_headline">JOIN OUR PRIVATE BETA</h1>
+					<hr>
+				</div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+				<div class="row benefit_row"> <!-- Benefits Row -->
+					<div class="container text-center">
+	 					
+		 				<div class="col-sm-4 col-md-4">
+		 					<img src="img/checked.svg" width="80" height="80">
+							<h1>ACCURATE</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class=" col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>SIMPLE</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>EFFECTIVE</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+					</div>
+				</div>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+				
 
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
 
-</body>
 
+
+
+
+
+
+
+			</div>
+		</section>
+
+
+		<section class="headline get_started_back">
+			<div class="container" style="padding-bottom: 60px">
+				<div class="col-md-6 col-lg-6" style="">
+					<p class="get_started">Ready to get started?</p>
+					<p class="get_started_sub">Get started in as few as 2 business days. Sign up, integrate and go.</p>
+				</div>
+				<div class="col-md-6 col-lg-6 text-center" style="">
+					<button class="btn btn-primary btn-lg btn_action">GET STARTED</button>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container-fluid st_foot">
+				<div class="container">
+
+				    <div class="row">
+				            <div class="col-xs-3">
+				                <ul class="">
+				                    <li style="color: #FFFFFF">PRODUCTS<li>
+				                    <li class=""><a href="#" class="footer_grey">Text</a></li>
+				                    <li><a href="#">Inspect</a></li>
+				                    <li><a href="#">Monitor</a></li>
+				                    <li><a href="#">Coach</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-3">
+				                <ul class="">
+				                    <li style="color: #FFFFFF">COMPANY<li>
+				                    <li><a href="#">Leadership</a></li>
+				                    <li><a href="#">Values</a></li>
+				                    <li><a href="#">Partners</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-3">
+				                <ul class="list-unstyled">
+				                    <li style="color: #FFFFFF">RESOURCES<li>
+				                    <li><a href="#">Press</a></li>
+				                    <li><a href="#">Blog</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-3">
+				                <ul class="list-unstyled">
+				                    <li style="color: #FFFFFF">SOCIAL<li>
+				                    <li><a href="#">Youtube</a></li>
+				                    <li><a href="#">Facebook</a></li>
+				                    <li><a href="#">Twiter</a></li>
+				                </ul>
+				            </div>
+				    </div>
+				    <hr>
+				    <div class="row">
+				            <div class="col-xs-8">
+				                <ul class="list-unstyled list-inline pull-left">
+				                    <img src="img/s_logo_trans_white.png" style="height: 50px; width: 55px; vertical-align: middle;" alt="Singlethread">
+				                </ul>
+				            </div>
+				            <div class="col-xs-4">
+				                <p class="text-muted pull-right">© 2017 Michigan Software Design.</p>
+				            </div>
+				        </div>
+				</div>
+			</div><!-- footer -->
+		</section>
+	</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script>
+			if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+		</script>
+		<script src="js/modernizr-custom.js"></script>
+		<script src="js/main.js"></script> <!-- Resource jQuery -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script> <!--bootstrap js -->
+	</body>
 </html>
