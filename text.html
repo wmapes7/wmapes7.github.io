@@ -1,319 +1,383 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/nav_style.css"> <!-- Resource style -->
+		<link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css"> <!-- device mockups -->
+	   	  	
+		<title>Singlethread - Automated Text Messaging</title>
+	</head>
+	<body>
+	
+	<header class="cd-morph-dropdown">
+		<a href="index.html"><img class="hidden-md hidden-lg" src="img/s_logo_trans_blue.png" style="height:40px; width: 45px; position: absolute; left: 10%; margin-left: -10px; margin-top: 10px; "></a>
+		<a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+		
+		<nav class="main-nav">
+			<ul>
+				<li class="">
+					<a href="index.html"><img src="img/s_logo_trans_white.png" style="height: 50px; width: 55px; margin-left: -200px; vertical-align: middle;" alt="Singlethread"></a>
+				</li>
+				<li class="has-dropdown gallery" data-content="products" style="margin-left: 160px;">
+					<a href="#0">Products</a>
+				</li>
 
-<head>
+				<li class="has-dropdown links" data-content="company">
+					<a href="#0">Company</a>
+				</li>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+				<li class="has-dropdown button" data-content="contact">
+					<a href="#0">Contact</a>
+				</li>
+				<li class="" data-content="" style="padding-left: 100px;">
+					<a href="#0">Login <img src="img/right-arrow.svg" style="height: 20px; width: 12px; vertical-align: middle;">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="morph-dropdown-wrapper">
+			<div class="dropdown-list">
+				<ul>
+					<li id="products" class="dropdown gallery">
+						<a href="#0" class="label">Products</a>
+						
+						<div class="content">	
+							<ul>
+								<li>
+									<a href="text.html">
+										<em class="textcolor">TEXT</em>
+										<span>Make more money than using the phone.</span>
+									</a>
+								</li>
+								<li>
+									<a href="inspect.html">
+										<em class="inspectcolor">INSPECT</span></em>
+										<span>Vehicle inspections - fast.</span>
+									</a>
+								</li>
 
-    <title>Singlethread</title>
+								<li>
+									<a href="monitor.html">
+										<em class="monitorcolor">MONITOR</em>
+										<span>Reveal and resolve problems, automatically.</span>
+									</a>
+								</li>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+								<li>
+									<a href="coach.html">
+										<em class="coachcolor">COACH</em>
+										<span>In-house, hands-on management support</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+					<li id="company" class="dropdown links">
+						<a href="#0" class="label">Company</a>
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+						<div class="content">
+							<ul>
+								<li>
+									<h2>SINGLETHREAD</h2>
 
-    <!-- Carousel for Partners -->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
+									<ul class="links-list">
+										<li><a href="#0">Leadership</a></li>
+										<li><a href="#0">Values</a></li>
+										<li><a href="#0">Partners</a></li>
+									</ul>
+								</li>
 
-    <!-- Theme CSS -->
-    <link href="css/app.css" rel="stylesheet">
+								<li>
+									<h2>RESOURCES</h2>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+									<ul class="links-list">
+										<li><a href="#0">Press</a></li>
+										<li><a href="#0">Blog</a></li>
+										<li><a href="#0">Facebook</a></li>
+										<li><a href="#0">Twitter</a></li>
+										<li><a href="#0">YouTube</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
 
-</head>
+					<li id="contact" class="dropdown button">
+						<a href="#0" class="label">Contact</a>
+						
+						<div class="content">	
+							<ul class="links-list">
+								<li>Phone:<a href="#0">844-920-2656</a></li>
+								<li>Email:<a href="#0">support@singlethread.com</a></li>
+							</ul>
 
-<body id="text">
+							<a href="#0" class="btn">Get Started Today</a>
+						</div>
+					</li>
+				</ul>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">Singlethread</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="text.html">Text</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="inspect.html">Inspect</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="train.html">Training</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="partners.html">Partners</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="blog_page.html">Media</a>
-                    </li>
-                    <li>
-                        <a class="" href="" data-toggle="modal" data-target="#myModal">Contact</a>
-                    </li>
-                    <li>
-                        <a class="" href="https://www.singlethread.com/dealer">Login</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>It's not about texting, it's about <u>timing</u>.</h1>
-                            <p>See for yourself how we're years ahead of the competition.</p>
-                            <a class="btn btn-outline btn-xl" data-toggle="modal" data-target="#myModal">Request Free Trial</a> or <a class="page-scroll" href="#partners">Tour</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/iphone_content.jpg" class="img-responsive" alt="">
-                                    <!-- Button trigger modal -->
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Partners -->
-    <section id="partners">
-        <div class="container-fluid st_partners partner_img">            
-            <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="owl-item">
-                    <a target="_blank" href="http://www.cdkglobal.com/michigan-software-design-0"><img class="" src="img/CDK.png"></a>
-                </div>
-                <div class="owl-item">
-                    <a target="_blank" href="http://www.reyrey.com/RCIVendor/(S(x4cfp2hnfcnlwlc0vri4onfr))/solutions/rci.aspx"><img class="" src="img/reyrey.png"></a>
-                </div>
-                <div class="owl-item">
-                    <a target="_blank" href="https://us.dealertrack.com/content/dam/dealertrack/solution/dms/opentrack/DMS_Opentrack_Info_Sheet.pdf#page=2"><img class="" src="img/Dealertrack.png"></a>
-                </div>
-                <div class="owl-item">
-                    <a target="_blank" href="http://www.automate.com/partners/openmate-partners/"><img class="" src="img/automatepnglogo2.png"></a>
-                </div>
-                <div class="owl-item">
-                    <a target="_blank" href="http://www.edmunds.com"><img class="" src="img/Edmunds_grey_web.png"></a>
-                </div>
-                <div class="owl-item">
-                    <a target="_blank" href="http://www.trustcommerce.com"><img class="" src="img/trustcommerce.png"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- value prop -->
-    <section id="" class="">
-        <div class="container text-center value_prop">
-            <div class="row">
-                <h1>Just text?  Think again.  Experience the Singlethread Difference.</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p>Singlethread is the auto industry's only text messaging platform that supports, tracks, and enhances your service department. Most systems never get used.  We're not most systems.</p>
-                    <p><a class="" href="" data-toggle="modal" data-target="#myModal">See </a> for yourself. </p>
-                </div>
-                
-            </div>          
-        </div>
-    </section>
-
-    <!-- Features/Benefits -->
-    <section id="" class="features">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-4 feature-item">
-                    <div class="">
-                        <i class="icon-lock text-primary"></i>
-                    </div>
-                    <h3>Secure</h3>
-                    <p class="text-muted">Singlethread is <a href="">American Made</a>. We consider it a priveledge to earn your business and secure your data. Choose your vendors wisely.</p>
-                </div>
-                <div class="col-md-4 feature-item">
-                    <div class="">
-                        <i class="icon-user-following text-primary"></i>
-                    </div>
-                    <h3>Easy</h3>
-                    <p class="text-muted">Singlethread helps old dogs learn new tricks. Even advisors who “don’t text” will start texting today. </p>
-                </div>
-                <div class="col-md-4 feature-item">
-                    <div class="">
-                        <i class="icon-rocket text-primary"></i>
-                    </div>
-                    <h3>Text + Inspect</h3>
-                    <p class="text-muted">Drive revenue with <a href="inspect.html">Interated Vehicle Inspections </a>. 100% presentation, 100% of the time. </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 feature-item">
-                    <div class="">
-                        <i class="icon-energy text-primary"></i>
-                    </div>
-                    <h3>Automatic</h3>
-                    <p class="text-muted">Singlethread is automated to ensure that every customer is updated, every time. </p>
-                </div>
-                <div class="col-md-4 feature-item">
-                    <div class="">
-                        <i class="icon-briefcase text-primary"></i>
-                    </div>
-                    <h3>Compliant</h3>
-                    <p class="text-muted">Opt-in vs. Opt-out?  What's compliance today?  Singlethread has it built in and ensures you're not at risk.</p>
-                </div>
-                <div class="col-md-4 feature-item">
-                    <div class="">
-                        <i class="icon-graph text-primary"></i>
-                    </div>
-                    <h3>Measured</h3>
-                    <p class="text-muted">Singlethread shows you exactly where your process gaps are. <a href="train.html"> Review with our support </a> or on your own. </p>
-                </div>
-            </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="" class="testimonial">
-        <div class="container text-center">
-
-            <h1>What People Are Saying About Singlethread</h1>
-            <p class="text-muted">Take their word for it, not ours. <a href="blog_page.html">Our media section</a> has a few good things to say also. </p>
-
-            <div class="row video_pad">  
-                <div class="col-md-6">
-                    <p class="text-muted">"...The great thing is that a lot of companies have engineers building the product, but these guys have been in the industry and know what it takes.  The implementation and the rollout has been phenominal.  <a href="train.html"> APC (Singlethread) </a> has been here. </p>
-                    <p>Mike Dorsch, President Dorsch Ford</p>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lIRTEVjGQMc"></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-muted">"When people are at work, they can text, but they can't pick up the phone. It's made my job easier.  It's super simple.  It was pretty flawless, there wasn't really much to do on our end."</p>
-                    <p>Doug Ertman, Service Advisor Dorsch Ford</p>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EvjaPpp0KC8"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2016 Michigan Software Design. Handcrafted in Detroit, MI. 844-920-2656.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">The Company</a>
-                </li>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Twitter</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+				<div class="bg-layer" aria-hidden="true"></div>
+			</div> <!-- dropdown-list -->
+		</div> <!-- morph-dropdown-wrapper -->
+	</header>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">See it live in 20 minutes.</h4>
-          </div>
-          <div class="modal-body">
-            844-920-2656
-            Fill out this form
-            <form>
-                
-            </form>
+	<main class="text-content">
+		<div class="container-fluid headline">
+			<div class="container">
+				<div class="row">
+  					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    					<img class="product_icon" src="img/newchat.svg" width="70" height="70">
+    					<text class="product_name">TEXT MESSAGING</text>
+    					<span style="float: right;">
+    						<button class="hidden-xs btn btn-primary btn-lg btn_action" style="">GET STARTED</button>
+    						<button class="hidden-xs btn btn-primary btn-lg btn_font" style="">EXPLORE</button>
+    					</span>
+						
+					<div class="row">
+      					<div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 product_tagline">
+        					<text class="">The new standard in customer communicaton.</text>
+        					<button class="hidden-sm hidden-md hidden-lg btn btn-primary btn-lg btn_action" style="">GET STARTED</button>
+      					</div>
+					</div>
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="overview">
+			<div class="container">
+				<div class="row"> <!-- MAJORT PRODUCT HEADLINE -->
+					<h1 class="product_headline">MORE REVENUE THAN PHONE CALLS</h1>
+					<hr>
+				</div>
+				<div class="row mockup_pad" > <!-- Mockup & Intro Paragraph row -->
+					<div class="col-sm-4 col-md-4 col-lg-4 iphone">
+	                	<div class="device-container">
+	                    	<div class="device-mockup iphone6_plus portrait white">
+	                        	<div class="device">
+	                            	<div class="screen">
+	                                	<!-- Place mockup here -->
+	                                	<video src="img/text.mp4" preload autoplay loop width="100%" height="100%"></video>
+	                                	<!--<img src="img/text.gif" class="img-responsive" alt=""> -->
+	                                	<!-- Button trigger modal -->
+	                            	</div>
+	                            	<div class="button">
+	                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+	                            	</div>
+	                        	</div>
+	                    	</div>
+	                	</div>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h2 class="benefit_headline">SINGLETHREAD SELLS MORE WITH LESS EFFORT</h2>
+						<p class="product_desc">Singlethread is the only communication platform built on text message that is helping dealers generate more revenue just by texting.  Customers that text on Singlethread generate on average $30-$50 more, per RO, in customer pay revenue.</p>
+						<p><a href="">See the results <img src="img/right-arrow-black.svg" style="height: 20px; width: 12px; vertical-align: middle;"></a></p>
+					</div>
+				</div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+				<div class="row benefit_row"> <!-- Benefits Row -->
+					<div class="container text-center">
+	 					
+		 				<div class="col-sm-4 col-md-4">
+		 					<img src="img/checked.svg" width="80" height="80">
+							<h1>PRESENT MORE SERVICES</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class=" col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>FEWER OBJECTIONS</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>INSTANT APPROVALS</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+					</div>
+				</div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+				
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
+				<div class="row mockup_pad"> <!-- Mockup & Intro Paragraph row -->
+					<div class="col-sm-8 col-md-8 col-lg-8" style="text-align: right;">
+						<h2 class="benefit_headline" style="">MOBILE PAYMENTS WITHOUT ADDITIONAL FEES</h2>
+						<p class="product_desc" style="">You've already negotiated your merchant account fees.  You already have a batch process.  Why disrupt that just to implement mobile pay?  With Singlethread, you keep your merchant account and we integrate without any hassle.  Mobile pay made simple.</p>
+						<p>
+						<a href="">See the results <img src="img/right-arrow-black.svg" style="height: 20px; width: 12px; vertical-align: middle;"></a>
+						</p>
+						
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4 iphone">
+	                	<div class="device-container">
+	                    	<div class="device-mockup iphone6_plus portrait white">
+	                        	<div class="device">
+	                            	<div class="screen">
+	                                	<!-- Place mockup here -->
+	                                	<video src="img/text.mp4" preload autoplay loop width="100%" height="100%"></video>
+	                                	<!--<img src="img/text.gif" class="img-responsive" alt=""> -->
+	                                	<!-- Button trigger modal -->
+	                            	</div>
+	                            	<div class="button">
+	                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+	                            	</div>
+	                        	</div>
+	                    	</div>
+	                	</div>
+					</div>
 
-    <!-- Partner Carousel -->
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-       
-        $("#owl-demo").owlCarousel({
-       
-            autoPlay: 3000,
-       
-            items : 3,
-            itemsDesktop : [1199,3],
-            itemsDesktopSmall : [979,3]
-       
-        });
-       
-      });
-    </script>
+				</div>
 
-</body>
+				<div class="row benefit_row"> <!-- Benefits Row -->
+					<div class="container text-center">
+	 					
+		 				<div class="col-sm-4 col-md-4">
+		 					<img src="img/checked.svg" width="80" height="80">
+							<h1>SECURE</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class=" col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>EASILY SELF-CASHIER</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>FASTER VEHICLE PICKUP</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+					</div>
+				</div>
 
+				
+				<div class="row mockup_pad"> <!-- Mockup & Intro Paragraph row -->
+					<div class="col-sm-7 col-md-7 col-lg-7 iphone">
+	                	<div class="device-container">
+	                    	<div class="device-mockup macbook">
+	                        	<div class="device">
+	                            	<div class="screen">
+	                                	<!-- Place mockup here -->
+	                                	<video src="img/demo.mp4" preload autoplay loop width="100%" height="100%"></video>
+	                                	<!--<img src="img/text.gif" class="img-responsive" alt=""> -->
+	                                	<!-- Button trigger modal -->
+	                            	</div>
+	                            	<div class="button">
+	                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+	                            	</div>
+	                        	</div>
+	                    	</div>
+	                	</div>
+					</div>
+					<div class="col-sm-5 col-md-5 col-lg-5">
+						<h2 class="benefit_headline">CUSTOMER SATISFACTION - AUTOMATED</h2>
+						<p class="product_desc">Identifying the root cause of problems is sometimes nearly impossible.  With Singlethread, you have the tools necessary to be proactive and resolve customer complaints in real-time, well before the customer recieves an OEM survey. Customer satisfaction solved.</p>
+						<p><a href="">See the results <img src="img/right-arrow-black.svg" style="height: 20px; width: 12px; vertical-align: middle;"></a></p>
+					</div>
+				</div>
+
+				<div class="row benefit_row"> <!-- Benefits Row -->
+					<div class="container text-center">
+	 					
+		 				<div class="col-sm-4 col-md-4">
+		 					<img src="img/checked.svg" width="80" height="80">
+							<h1>CONVERSTAION TRACKING</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class=" col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>AUTOMATIC REPORTING</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<img src="img/checked.svg" width="80" height="80">
+							<h1>LONG TERM STORAGE</h1>
+							<p>Lorem ipsum dolor sit amet, dui elit massa nec vivamus, vivamus dolor. Integer fusce, vehicula litora cras in arcu ea leo, lacus malesuada mauris et in, aliquam quisque justo sociis in arcu proin. Vivamus quis suspendisse vulputate commodo vel tellus.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="headline get_started_back">
+			<div class="container" style="padding-bottom: 60px">
+				<div class="col-md-6 col-lg-6" style="">
+					<p class="get_started">Ready to get started?</p>
+					<p class="get_started_sub">Get started in as few as 2 business days. Sign up, integrate and go.</p>
+				</div>
+				<div class="col-md-6 col-lg-6 text-center" style="">
+					<button class="btn btn-primary btn-lg btn_action">GET STARTED</button>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container-fluid st_foot">
+				<div class="container">
+
+				    <div class="row">
+				            <div class="col-xs-3">
+				                <ul class="">
+				                    <li style="color: #FFFFFF">PRODUCTS<li>
+				                    <li class=""><a href="#" class="footer_grey">Text</a></li>
+				                    <li><a href="#">Inspect</a></li>
+				                    <li><a href="#">Monitor</a></li>
+				                    <li><a href="#">Coach</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-3">
+				                <ul class="">
+				                    <li style="color: #FFFFFF">COMPANY<li>
+				                    <li><a href="#">Leadership</a></li>
+				                    <li><a href="#">Values</a></li>
+				                    <li><a href="#">Partners</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-3">
+				                <ul class="list-unstyled">
+				                    <li style="color: #FFFFFF">RESOURCES<li>
+				                    <li><a href="#">Press</a></li>
+				                    <li><a href="#">Blog</a></li>
+				                </ul>
+				            </div>
+				            <div class="col-xs-3">
+				                <ul class="list-unstyled">
+				                    <li style="color: #FFFFFF">SOCIAL<li>
+				                    <li><a href="#">Youtube</a></li>
+				                    <li><a href="#">Facebook</a></li>
+				                    <li><a href="#">Twiter</a></li>
+				                </ul>
+				            </div>
+				    </div>
+				    <hr>
+				    <div class="row">
+				            <div class="col-xs-8">
+				                <ul class="list-unstyled list-inline pull-left">
+				                    <img src="img/s_logo_trans_white.png" style="height: 50px; width: 55px; vertical-align: middle;" alt="Singlethread">
+				                </ul>
+				            </div>
+				            <div class="col-xs-4">
+				                <p class="text-muted pull-right">© 2017 Michigan Software Design.</p>
+				            </div>
+				        </div>
+				</div>
+			</div><!-- footer -->
+		</section>
+	</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script>
+			if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+		</script>
+		<script src="js/modernizr-custom.js"></script>
+		<script src="js/main.js"></script> <!-- Resource jQuery -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script> <!--bootstrap js -->
+	</body>
 </html>
