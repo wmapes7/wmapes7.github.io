@@ -172,8 +172,8 @@ a:hover{
   margin-top: .8em;
   background: red;
   border-radius: 50%;
-  /*-webkit-transition: background .2s;
-  transition: background .2s; */
+  -webkit-transition: background .2s;
+  transition: background .2s;
 }
 .cd-morph-dropdown .gallery .content a:hover::before {
   background-color: #1A1A1A;
