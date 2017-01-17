@@ -163,7 +163,7 @@ a:hover{
 }
 .cd-morph-dropdown .gallery .content a::before {
   /* icon on the left */
-  content: normal;
+  content: '';
   display: inline-block;
   float: left;
   height: 54px;
@@ -181,6 +181,7 @@ a:hover{
 
 .cd-morph-dropdown .gallery .content a span, .cd-morph-dropdown .gallery .content a em {
   display: block;
+  color: #000000;
   line-height: 1.5;
 }
 .cd-morph-dropdown .gallery .content a em {
