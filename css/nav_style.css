@@ -889,4 +889,4 @@ Main site content
 }
 
 
-//*[@id="products"]/div/ul/li[1]/a/span{color:#6b7c93;}
+#products > div > ul > li:nth-child(1) > a > span {color:#6b7c93;}
