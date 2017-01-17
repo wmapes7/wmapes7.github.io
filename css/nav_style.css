@@ -161,8 +161,8 @@ a:hover{
 .cd-morph-dropdown .gallery .content a {
   display: block;
 }
-.cd-morph-dropdown .gallery .content a::before {
-  /* icon on the left */
+/*.cd-morph-dropdown .gallery .content a::before {
+  /* icon on the left 
   content: '';
   display: inline-block;
   float: left;
@@ -174,7 +174,7 @@ a:hover{
   border-radius: 50%;
   -webkit-transition: background .2s;
   transition: background .2s;
-}
+}*/
 .cd-morph-dropdown .gallery .content a:hover::before {
   background-color: #1A1A1A;
   }
