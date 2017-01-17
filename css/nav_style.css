@@ -163,7 +163,7 @@ a:hover{
 }
 .cd-morph-dropdown .gallery .content a::before {
   /* icon on the left */
-  content: 'desktop';
+  content: normal;
   display: inline-block;
   float: left;
   height: 54px;
