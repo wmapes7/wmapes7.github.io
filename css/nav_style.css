@@ -175,6 +175,9 @@ a:hover{
   -webkit-transition: background .2s;
   transition: background .2s;
 }
+.cd-morph-dropdown .gallery .content a:hover::before {
+  background-color: #1A1A1A;
+  
 .cd-morph-dropdown .gallery .content a span, .cd-morph-dropdown .gallery .content a em {
   display: block;
   line-height: 1.5;
