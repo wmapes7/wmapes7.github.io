@@ -178,7 +178,7 @@ a:hover{
 .cd-morph-dropdown .gallery .content a:hover::before {
   background-color: #1A1A1A;
   }
-  
+
 .cd-morph-dropdown .gallery .content a span, .cd-morph-dropdown .gallery .content a em {
   display: block;
   line-height: 1.5;
@@ -887,3 +887,6 @@ Main site content
 .white {
   font-color: #FFFFFF !important;
 }
+
+
+//*[@id="products"]/div/ul/li[1]/a/span{color:#6b7c93;}
