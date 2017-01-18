@@ -611,6 +611,21 @@ Main site content
   -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important; 
 }
 
+.btn_learn{
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  background-color: #0bb9d4 !important;
+  -webkit-box-shadow: 1px 2px 10px 0px rgba(92,91,92,1) !important;
+  -moz-box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important;
+  -box-shadow: 1px 2px 14px 0px rgba(92,91,92,1) !important; 
+}
+
+.btn_learn:hover{
+  background: #FFFFFF !important;
+  text-decoration: none;
+
+}
+
 /* GENERAL PRODUCT STYLING */
 
 .product_name{
@@ -862,6 +877,41 @@ Main site content
   }
 }
 
+.video_row{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.video_title{
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.video_desc{
+  padding-bottom: 15px;
+}
+
+.video_unit{
+  background-color: #eee;
+  /*max-width: 380px;*/
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 5px;
+  /*margin-left: 5px !important;*/
+  /*margin-right: 5px !important;*/
+}
+
+.bio_row{
+  margin-top: 15px;
+}
+
+.bio_container{
+  padding-bottom: 30px;
+}
+
+.training_area{
+  font-size: 24px;
+}
 
 /* FOOTER STYLES */
 
