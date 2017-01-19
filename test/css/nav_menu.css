@@ -120,7 +120,7 @@
   height: 54px;
   width: 54px;
   margin-right: 1.6em;
-  margin-top: .8em;
+  margin-top: .2em;
   background: red;
   border-radius: 50%;
   -webkit-transition: background .2s;
@@ -381,7 +381,7 @@
     font-size: 1.6rem;
     margin-left: 0;
   }
-  
+
   .cd-morph-dropdown .btn {
     padding-top: 0px;
     display: block;
