@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #DB6356;
+  color: #2196f3;
   text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ a {
   float: left;
   height: 54px;
   width: 54px;
-  margin-right: .6em;
+  margin-right: 1.6em;
   background: red;
   border-radius: 50%;
   -webkit-transition: background .2s;
@@ -154,13 +154,14 @@ a {
   line-height: 1.2;
 }
 .cd-morph-dropdown .gallery .content a em {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: .4em 0 .2em;
   color: #1A1A1A;
 }
 .cd-morph-dropdown .gallery .content a span {
-  font-size: 1.4rem;
-  color: #a6a6a6;
+  font-size: 1.6rem;
+  color: #6b7c93;
+  font-weight: 300;
 }
 .cd-morph-dropdown .gallery .content a:hover::before {
   background-color: #1A1A1A;
@@ -369,7 +370,7 @@ a {
   }
   .cd-morph-dropdown .gallery .content {
     /* you need to set a width for the .content elements because they have a position absolute */
-    width: 510px;
+    width: 620px;
     padding-bottom: .8em;
   }
   .cd-morph-dropdown .gallery .content li {
@@ -380,7 +381,7 @@ a {
   }
   .cd-morph-dropdown .links .content,
   .cd-morph-dropdown .button .content {
-    width: 390px;
+    width: 490px;
   }
   .cd-morph-dropdown .links-list a {
     font-size: 1.6rem;
@@ -395,7 +396,7 @@ a {
     text-align: center;
     color: #FFFFFF;
     line-height: 60px;
-    background: #DB6356;
+    background: #2196f3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
