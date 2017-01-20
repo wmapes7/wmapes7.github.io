@@ -104,8 +104,8 @@
   margin-bottom: .8em;
 }
 cd-morph-dropdown .content li::after {
-  /*clear: both; */
-  content: "";
+  clear: both;
+  content: "desktop";
   display: block;
 }
 .cd-morph-dropdown .gallery .content li {
