@@ -81,9 +81,10 @@ Main site content
 
 .st_headline{
   color:#FFFFFF;
-  font-weight: 300;
-  font-size: 40px;
-  padding-top: 80px;
+  font-weight: 300 !important;
+  font-size: 40px !important;
+  padding-top: 80px !important;
+  padding-bottom: 80px;
   position: relative;
   z-index: 0;
 }
@@ -193,7 +194,7 @@ Main site content
   font-size: 40px;
   padding-top: 80px;
   max-height: 480px;
-  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .product_name{
@@ -215,7 +216,7 @@ Main site content
 }
 
 .product_desc{
-  font-size: 36px;
+  font-size: 22px;
   color: #FFFFFF;
   font-weight: 300 !important;
   line-height: 1.2 !important;
@@ -231,7 +232,7 @@ Main site content
 
 .product_headline{
   text-align: center;
-  font-size: 48px !important;
+  font-size: 44px !important;
   padding-bottom: 30px;
 }
 
