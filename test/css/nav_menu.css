@@ -247,7 +247,7 @@
     width: auto;
     padding: 0;
     box-shadow: none;
-    background-color: transparent;
+    /*background-color: transparent; */
     /* Force Hardware acceleration */
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
