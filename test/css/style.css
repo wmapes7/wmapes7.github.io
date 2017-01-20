@@ -51,7 +51,6 @@ Main site content
 
 -------------------------------- */
 .cd-main-content {
-  z-index: -1;
   min-height: 100vh;
   /*background-color: #273B7A; */
   /*background-image: url(../images/midblue.png); */
