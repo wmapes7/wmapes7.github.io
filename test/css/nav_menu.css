@@ -6,7 +6,7 @@
 -------------------------------- */
 .cd-morph-dropdown {
   position: relative;
-  z-index: inherit;
+  z-index: initial;
   height: 60px;
   background-color: #FFFFFF;
 }
