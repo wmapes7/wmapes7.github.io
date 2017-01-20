@@ -292,7 +292,7 @@ Main site content
 
 
 
-.get_started_back{
+.get_started{
   min-height: 120px;
   /*background-image: url(../images/chat.png);*/
   background-color: #52418f;
@@ -300,18 +300,21 @@ Main site content
   background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
   background: linear-gradient(to right bottom,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.1);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.get_started{
+.get_started h1 {
   font-size: 36px !important;
   color: #FFFFFF !important;
   font-weight: 300 !important;
   line-height: 36px;
 }
 
-.get_started_sub{
+
+.get_started p{
   font-size: 18px !important;
   color: #FFFFFF !important;
-  font-weight: 500 !important;
+  font-weight: 100 !important;
   line-height: 36px;
 }
 
