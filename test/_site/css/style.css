@@ -80,7 +80,7 @@ Main site content
   font-size: 40px;
   padding-top: 80px;
   max-height: 600px;
-  /*overflow: hidden; */
+  overflow: hidden;
   ;
 }
 
