@@ -103,8 +103,8 @@
   color: #1A1A1A;
   margin-bottom: .8em;
 }
-.cd-morph-dropdown .content li::after {
-  clear: both;
+cd-morph-dropdown .content li::after {
+  /*clear: both; */
   content: "";
   display: block;
 }
@@ -247,7 +247,7 @@
     width: auto;
     padding: 0;
     box-shadow: none;
-    /*background-color: transparent; */
+    background-color: transparent;
     /* Force Hardware acceleration */
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
