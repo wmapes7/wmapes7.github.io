@@ -142,16 +142,16 @@
   background-color: #1A1A1A;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(1) a::before {
-  background: #f4e58a url(../img/cd-gallery-icons.svg) no-repeat 0 0;
+  background: url(../img/newchat.svg) no-repeat;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(2) a::before {
-  background: #F4AF6D url(../img/cd-gallery-icons.svg) no-repeat -54px 0;
+  background: url(../img/wrench2.svg) no-repeat;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(3) a::before {
-  background: #DB6356 url(../img/cd-gallery-icons.svg) no-repeat -108px 0;
+  background: url(../img/newlaptop.svg) no-repeat;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(4) a::before {
-  background: #8D4645 url(../img/cd-gallery-icons.svg) no-repeat -162px 0;
+  background: url(../img/teamwork.svg) no-repeat;
 }
 .cd-morph-dropdown .links .content > ul > li {
   margin-top: 1em;
