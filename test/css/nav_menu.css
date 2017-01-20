@@ -162,7 +162,7 @@
 }
 
 /*Dropdown Icons */
-.cd-morph-dropdown .gallery li:nth-of-type(1) a::before::after {
+.cd-morph-dropdown .gallery li:nth-of-type(1) a::before {
   background: #f4e58a url(../img/newchat.svg) no-repeat;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(2) a::before {
