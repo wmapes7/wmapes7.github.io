@@ -10,6 +10,7 @@
   height: 60px;
   background-color: #FFFFFF;
 }
+
 .cd-morph-dropdown::before {
   /* never visible - used in JS to check mq */
   content: 'mobile';
