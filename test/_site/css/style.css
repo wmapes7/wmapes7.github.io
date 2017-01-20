@@ -89,6 +89,15 @@ Main site content
   z-index: 0;
 }
 
+.index_headline{
+  color:#FFFFFF;
+  font-weight: 300 !important;
+  font-size: 40px !important;
+  padding-top: 80px !important;
+  position: relative;
+  z-index: 0;
+}
+
 .intro{
   color:#FFFFFF;
   font-weight: 300;
