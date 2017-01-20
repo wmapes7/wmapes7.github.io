@@ -1,5 +1,30 @@
 /* -------------------------------- 
 
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: #1A1A1A;
+  background-color: #FFFFFF;
+}
+
+a {
+  color: #DB6356;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
  Header
 
 -------------------------------- */
@@ -411,5 +436,20 @@
     transition: opacity .3s, -webkit-transform .3s;
     transition: transform .3s, opacity .3s;
     transition: transform .3s, opacity .3s, -webkit-transform .3s;
+  }
+}
+
+/* -------------------------------- 
+
+Main site content
+
+-------------------------------- */
+.cd-main-content {
+  min-height: 100vh;
+  background-color: #548c7e;
+}
+@media only screen and (min-width: 1000px) {
+  .cd-main-content {
+    padding-top: 80px;
   }
 }

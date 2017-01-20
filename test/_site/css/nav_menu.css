@@ -1,4 +1,3 @@
-
 /* -------------------------------- 
 
  Header
@@ -6,11 +5,9 @@
 -------------------------------- */
 .cd-morph-dropdown {
   position: relative;
-  z-index: 1;
   height: 60px;
   background-color: #FFFFFF;
 }
-
 .cd-morph-dropdown::before {
   /* never visible - used in JS to check mq */
   content: 'mobile';
@@ -97,15 +94,15 @@
 .cd-morph-dropdown .dropdown-list > ul > li {
   margin-bottom: 3.3em;
 }
-.cd-morph-dropdown .label_nav {
+.cd-morph-dropdown .label {
   display: block;
   font-size: 2.2rem;
   color: #1A1A1A;
   margin-bottom: .8em;
 }
-cd-morph-dropdown .content li::after {
+.cd-morph-dropdown .content li::after {
   clear: both;
-  content: "desktop";
+  content: "";
   display: block;
 }
 .cd-morph-dropdown .gallery .content li {
@@ -121,59 +118,39 @@ cd-morph-dropdown .content li::after {
   float: left;
   height: 54px;
   width: 54px;
-  margin-right: 1.6em;
-  margin-top: .4em;
+  margin-right: .6em;
   background: red;
   border-radius: 50%;
   -webkit-transition: background .2s;
   transition: background .2s;
 }
-
 .cd-morph-dropdown .gallery .content a span, .cd-morph-dropdown .gallery .content a em {
   display: block;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 .cd-morph-dropdown .gallery .content a em {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: .4em 0 .2em;
   color: #1A1A1A;
 }
 .cd-morph-dropdown .gallery .content a span {
-  font-size: 1.6rem;
-  color: #6b7c93;
-  font-weight: 300;
+  font-size: 1.4rem;
+  color: #a6a6a6;
 }
 .cd-morph-dropdown .gallery .content a:hover::before {
   background-color: #1A1A1A;
 }
-
-
-/*Hover Styles for Icons */
-.cd-morph-dropdown .gallery li:nth-of-type(1) a:hover:before {
-  background: #2196f3 url(../img/newchat_black.svg) no-repeat ;
-}
-.cd-morph-dropdown .gallery li:nth-of-type(2) a:hover:before {
-  background: #ffc107 url(../img/wrench_hover.svg) no-repeat ;
-}
-.cd-morph-dropdown .gallery li:nth-of-type(3) a:hover:before {
-  background: #9c27b0 url(../img/newlaptophover.svg) no-repeat;
-}
-.cd-morph-dropdown .gallery li:nth-of-type(4) a:hover:before {
-  background: #00bcd4 url(../img/teamworkhover.svg) no-repeat;
-}
-
-/*Dropdown Icons */
 .cd-morph-dropdown .gallery li:nth-of-type(1) a::before {
-  background: #f4e58a url(../img/newchat.svg) no-repeat;
+  background: #f4e58a url(../img/cd-gallery-icons.svg) no-repeat 0 0;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(2) a::before {
-  background: #F4AF6D url(../img/wrench2.svg) no-repeat;
+  background: #F4AF6D url(../img/cd-gallery-icons.svg) no-repeat -54px 0;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(3) a::before {
-  background: #DB6356 url(../img/newlaptop.svg) no-repeat;
+  background: #DB6356 url(../img/cd-gallery-icons.svg) no-repeat -108px 0;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(4) a::before {
-  background: #8D4645 url(../img/teamwork.svg) no-repeat;
+  background: #8D4645 url(../img/cd-gallery-icons.svg) no-repeat -162px 0;
 }
 .cd-morph-dropdown .links .content > ul > li {
   margin-top: 1em;
@@ -339,7 +316,7 @@ cd-morph-dropdown .content li::after {
         -ms-transform: translateX(100px);
             transform: translateX(100px);
   }
-  .cd-morph-dropdown .label_nav {
+  .cd-morph-dropdown .label {
     /* hide the label on bigger devices */
     display: none;
   }
@@ -367,7 +344,7 @@ cd-morph-dropdown .content li::after {
   }
   .cd-morph-dropdown .gallery .content {
     /* you need to set a width for the .content elements because they have a position absolute */
-    width: 620px;
+    width: 510px;
     padding-bottom: .8em;
   }
   .cd-morph-dropdown .gallery .content li {
@@ -378,15 +355,13 @@ cd-morph-dropdown .content li::after {
   }
   .cd-morph-dropdown .links .content,
   .cd-morph-dropdown .button .content {
-    width: 490px;
+    width: 390px;
   }
   .cd-morph-dropdown .links-list a {
     font-size: 1.6rem;
     margin-left: 0;
   }
-
   .cd-morph-dropdown .btn {
-    padding-top: 0px;
     display: block;
     width: 100%;
     height: 60px;
@@ -395,7 +370,7 @@ cd-morph-dropdown .content li::after {
     text-align: center;
     color: #FFFFFF;
     line-height: 60px;
-    background: #2196f3;
+    background: #DB6356;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
