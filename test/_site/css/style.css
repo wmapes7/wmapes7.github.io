@@ -624,9 +624,14 @@ Main site content
   border-radius: 5px;
   margin-bottom: 20px !important;
   padding: 10px 20px 20px;
-  
 }
 
 .company_bg{
   background-color: #f5f5f5;
 }
+
+.company h2{
+  font-size: 18px;
+  padding-top: 15px;
+}
+
