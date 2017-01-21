@@ -513,7 +513,7 @@ Main site content
 }
 
 .resource_bg{
-  background-color: #fafafa;
+  background-color: #f5f5f5;
 }
 
 .post_summary{
@@ -616,3 +616,17 @@ Main site content
   color: #FFFFFF;
 }
 
+/* COMPANY STYLES */
+
+.company_div{
+  background-color: #FFFFFF;
+  border: solid 1px #eee;
+  border-radius: 5px;
+  margin-bottom: 20px !important;
+  padding: 10px 20px 20px;
+  
+}
+
+.company_bg{
+  background-color: #f5f5f5;
+}
