@@ -19,12 +19,13 @@ body {
 }
 
 a {
-  color: #2196f3;
+  color: #1A1A1A;
   text-decoration: none !important;
 }
 
 a:hover{
-  text-decoration: none !important;
+  font-weight: 700 !important;
+  color: #1A1A1A !important;
 }
 
 .textcolor{
