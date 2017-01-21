@@ -24,8 +24,7 @@ a {
 }
 
 a:hover{
-  font-weight: 700 !important;
-  color: #1A1A1A !important;
+  text-decoration: none !important;
 }
 
 .textcolor{
