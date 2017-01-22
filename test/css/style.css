@@ -469,7 +469,16 @@ Main site content
 
   }
 }
+.bio_row{
+  margin-top: 15px;
+  vertical-align: middle;
 
+}
+
+.bio_pic{
+  display: inline-block;
+}
+}
 .video_row{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -494,9 +503,7 @@ Main site content
   /*margin-right: 5px !important;*/
 }
 
-.bio_row{
-  margin-top: 15px;
-}
+
 
 .bio_container{
   padding-bottom: 30px;
