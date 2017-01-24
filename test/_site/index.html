@@ -8,6 +8,8 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="vendor/device-mockups/device-mockups.css"> <!--Device mockups -->
+    	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"><!-- Carousel for Partners -->
+    	<link rel="stylesheet" href="css/owl.theme.css">
 		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 		<link rel="stylesheet" href="css/style.css"> <!-- Entire Site style -->
 		<link rel="stylesheet" type="text/css" href="css/nav_menu.css"> <!-- Navigation Styles --> 
@@ -215,6 +217,32 @@
 				</div>
 			</section>
 
+			<!-- Partners -->
+		    <section id="partners">
+		        <div class="container-fluid st_partners partner_img">            
+		            <div id="owl-demo" class="owl-carousel owl-theme">
+		                <div class="owl-item">
+		                    <a target="_blank" href="http://www.cdkglobal.com/michigan-software-design-0"><img class="" src="img/CDK.png"></a>
+		                </div>
+		                <div class="owl-item">
+		                    <a target="_blank" href="http://www.reyrey.com/RCIVendor/(S(x4cfp2hnfcnlwlc0vri4onfr))/solutions/rci.aspx"><img class="" src="img/reyrey.png"></a>
+		                </div>
+		                <div class="owl-item">
+		                    <a target="_blank" href="https://us.dealertrack.com/content/dam/dealertrack/solution/dms/opentrack/DMS_Opentrack_Info_Sheet.pdf#page=2"><img class="" src="img/dealertrack.png"></a>
+		                </div>
+		                <div class="owl-item">
+		                    <a target="_blank" href="http://www.automate.com/partners/openmate-partners/"><img class="" src="img/automatepnglogo2.png"></a>
+		                </div>
+		                <div class="owl-item">
+		                    <a target="_blank" href="http://www.edmunds.com"><img class="" src="img/Edmunds_grey_web.png"></a>
+		                </div>
+		                <div class="owl-item">
+		                    <a target="_blank" href="http://www.trustcommerce.com"><img class="" src="img/trustcommerce.png"></a>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+
 			<section class="headline get_started"> <!-- ST Get Started -->
 				<div class="container" style="">
 					<div class="col-md-6 col-lg-6">
@@ -285,6 +313,23 @@
 		<script src="js/modernizr-custom.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--bootstrap -->
 		<script src="js/main.js"></script> <!-- Nav jQuery -->
+		<!-- Partner Carousel -->
+	    <script src="js/owl.carousel.js"></script>
+	    <script type="text/javascript">
+	      $(document).ready(function() {
+	       
+	        $("#owl-demo").owlCarousel({
+	       
+	            autoPlay: 3000,
+	       
+	            items : 3,
+	            itemsDesktop : [1199,3],
+	            itemsDesktopSmall : [979,3]
+	       
+	        });
+	       
+	      });
+	    </script>
 
 	</body>
 </html>
