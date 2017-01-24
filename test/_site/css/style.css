@@ -325,6 +325,20 @@ Main site content
 }
 
 
+.st_partners{
+  height: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+div.partner_img img{
+  max-width: 100%;
+  max-height: 180px;
+  display: block;
+  margin: auto;
+}
+
 /* CONTACT PAGE STYLES */
 
 .contact_div{
