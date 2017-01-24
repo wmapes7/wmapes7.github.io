@@ -390,7 +390,19 @@ Main site content
   }
 }
 
+@media only screen and (max-width: 1000px){
+  .demo1{
+    height: 100%;
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 769px){
+  .demo2{
+    height: 250px;
+    width: 290px;
+  }
+}
 
 /* TEXT STYLES */
 
