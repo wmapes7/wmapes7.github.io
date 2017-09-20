@@ -444,6 +444,32 @@ div.partner_img img{
   }
 }
 
+/* MOBILE PAY STYLES */
+
+.mp-content {
+  min-height: 100vh;
+  /*background-image: url(../images/chat.png);*/
+  background-color: #52418f !important;
+  background-color: #9C27B0 !important;
+  background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97)) !important;
+  background: linear-gradient(to right bottom,rgba(41,8,48,.97),#2196F3 50%,rgba(156, 39, 176, 0.6)) !important;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.1) !important;
+
+
+}
+@media only screen and (min-width: 1000px) {
+  .mp-content {
+    padding-top: 80px;
+    /*background-image: url(../images/purple.png); */
+    background-color: #52418f !important;
+    background-color: #9C27B0 !important;
+    background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97)) !important;
+    background: linear-gradient(to right bottom,rgba(37,37,37,.97),#ffee58 50%,rgba(156, 39, 176, 0.6)) !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.1) !important;
+
+  }
+}
+
 
 /* INSPECT STYLES */ 
 
