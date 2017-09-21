@@ -313,7 +313,7 @@ Main site content
   font-size: 36px !important;
   color: #FFFFFF !important;
   font-weight: 300 !important;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 
@@ -321,7 +321,7 @@ Main site content
   font-size: 18px !important;
   color: #FFFFFF !important;
   font-weight: 100 !important;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 
@@ -443,6 +443,33 @@ div.partner_img img{
 
   }
 }
+
+/* CHAT STYLES */
+
+.chat-content {
+  min-height: 100vh;
+  /*background-image: url(../images/chat.png);*/
+  background-color: #52418f !important;
+  background-color: #9C27B0 !important;
+  background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97)) !important;
+  background: linear-gradient(to right bottom,rgba(41,8,48,.97),#ab47bc 50%,rgba(156, 39, 176, 0.6)) !important;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.1) !important;
+
+
+}
+@media only screen and (min-width: 1000px) {
+  .chat-content {
+    padding-top: 80px;
+    /*background-image: url(../images/purple.png); */
+    background-color: #52418f !important;
+    background-color: #9C27B0 !important;
+    background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97)) !important;
+    background: linear-gradient(to right bottom,rgba(41,8,48,.97),#ab47bc 50%,rgba(156, 39, 176, 0.6)) !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.1) !important;
+
+  }
+}
+
 
 /* MOBILE PAY STYLES */
 
@@ -661,10 +688,10 @@ div.partner_img img{
 
 .st_foot{
   background-color:#393D3F;
-  height: 400px;
+  height: 100%;
   padding-top: 30px;
   font-color: #b3b3b3;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .st_foot ul li a{
