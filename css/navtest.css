@@ -1,0 +1,152 @@
+/* Body */
+body{
+	font-family: 'Arimo', sans-serif;
+}
+
+	.black{
+		background-color: #000000;
+	}
+	
+/*Navbar Styling*/
+
+	/*Core*/
+	a{
+		color:#000000;
+	}
+	.menu-hr{
+		margin-bottom: .5rem;
+		margin-top: .125rem;
+	}
+
+	.list-unstyled li{
+		margin-bottom: .5rem;
+	}
+
+	.list-unstyled li a{
+		color: #000000;
+		text-decoration: none;
+	}
+
+	.list-unstyled li a:hover{
+		color: #6fa6de;
+		text-decoration: none;
+	}
+	.navbar-nav .dropdown a{
+		font-size: 14px;
+		color: #383E40;
+	}
+	.navbar-nav .dropdown a:hover{
+		color: #6fa6de;
+	}
+	/*Dropdown Styles*/
+	.dropdown-menu{
+		height: 100%;
+		width: 100%;
+		border-style: none;
+		-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+		-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+		box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+
+	}
+
+	.products{
+		height: 310px;
+		width: 210px;
+	}
+
+	.resources{
+		height:200px; 
+		width:550px;
+
+	}
+
+	.contact{
+		height:200px; 
+		width:500px;
+
+	}
+
+	.dropdown:hover .dropdown-menu {
+	    display: block;
+	    margin-top: 0; // remove the gap so it doesn't close
+	 }
+
+  	.hide-lg{
+	 	display: none;
+	 }
+
+	/*Mobile Nav Style */
+	 @media only screen and (max-width: 768px) {
+	    .navbar .navbar-collapse{
+	        border-color: white;
+	        background-color: black;
+	        height: 100vh;	
+	     }
+	    .nav-item .nav-link{
+	    	color: #ffffff;
+	    }
+	    .dropdown-menu{
+	    	width: 100%;
+	    	display: inline-block;
+	    	background-color: #000000;
+	    	font-color:#ffffff;
+	    }
+	    .dropdown-menu .list-unstyled li a{
+	    	color:#ffffff;
+	    }
+    	.dropdown-menu .list-unstyled li a:hover{
+	    	color:#6fa6de;
+	    }
+
+	    .navbar-nav .action-buttons ul li{
+	    	display: inline-block;
+	    }
+
+	    .show-sm{
+	    	display: inline-block;
+	    }
+
+	    .hide-sm{
+	    	display: none;
+	    }
+	 }
+
+	
+
+	/*Menu Icon Styling */
+
+	.navbar-toggler{
+		border-style: none;
+	}
+
+	.animenu {
+	    display: inline-block;
+	    cursor: pointer;
+	}
+
+	.bar1, .bar2, .bar3 {
+	    width: 32px;
+	    height: 2px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.1s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-4px, 6px) ;
+	    transform: rotate(-45deg) translate(-4px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	    opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-5px, -8px) ;
+	    transform: rotate(45deg) translate(-5px, -8px) ;
+	}
+
+
