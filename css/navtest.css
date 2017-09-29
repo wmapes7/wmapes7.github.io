@@ -3,6 +3,7 @@
 .lg-back{
 	font-family: 'Lato', sans-serif;
 	background-color: #52418f;
+	
 	background-color: rgba(82,65,143,.97);
 	background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
   	background: linear-gradient(to right bottom,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
