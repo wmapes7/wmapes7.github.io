@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/navtest.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
-  <body id="main" style="" class="lg-back">
+  <body id="" style="" class="lg-back">
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="#">
         <img src="img/s_logo_trans_white.png" width="50" height="40" alt="">
@@ -37,7 +37,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <small class="text-muted">SINGLETHREAD1</small>
+                    <small class="text-muted">SINGLETHREAD</small>
                     <hr class="menu-hr">
                     <ul class="list-unstyled">
                       <li><a href="#"><img src="img/wallet-blue.svg"> Text Messaging</a></li>
@@ -125,7 +125,7 @@
           <li class="" style="">
             <button class="btn btn-sm btn-outline-primary btn-block" type="">Login</button>
           </li>
-           <li class="" style="margin-left: 5px; margin-right: 5px">
+           <li class="" style="margin-left: 5px; margin-right: 5px; color: white">
             <span class="align-middle"> or </span>
           </li>
           <li class="">
@@ -136,9 +136,10 @@
         </ul>
       </div>
     </nav>
-
-    <section id="intro">
-      <div class="container-fluid jumbotron" style="background-color: #eee">
+    <div>
+    <div id="main">
+      <section id="intro">
+      <div class="container-fluid jumbotron" style="">
         <div class="container">
           <div class="row">
           <div class="col-lg-5 col-md-5 hide-sm">
@@ -147,7 +148,7 @@
           <div class="col-lg-7 col-md-7 col-sm-12">
             <h1 class="display-6 title">Take Back Your Service Department</h1>
             <p class="lead title" style="">Singlethread helps you create a less stressful, more productive, and more profitable service department.</p>
-            <hr class="my-4" style="">
+            <hr class="my-4" style="border-color: #868686">
             <p class="title" style="">The new standard for customer communication in one seamless interface.</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
           </div>
@@ -188,6 +189,8 @@
         </div>
       </div>
     </section>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -198,6 +201,7 @@
       function backgroundChange(x){
       //$("body").removeClass("lg-back").addClass("black");
       $("body").toggleClass("lg-back black");
+      $("#main").toggleClass("move");
       }
     </script>
     <script>
