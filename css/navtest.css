@@ -1,17 +1,60 @@
 /* Body */
-body{
-	font-family: 'Arimo', sans-serif;
-}
 
-	.black{
+.lg-back{
+	font-family: 'Lato', sans-serif;
+	background-color: #52418f;
+	background-color: rgba(82,65,143,.97);
+	background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
+  	background: linear-gradient(to right bottom,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
+  	box-shadow: inset 0 -1px 0 rgba(0,0,0,.1);
+  	margin-bottom: 0px;
+}
+body.black{
 		background-color: #000000;
 	}
+
+	.navbar{
+		opacity: 1;
+	}
+
 	
+	}
+	.btn-primary{
+		background-color: #1e88e5; 
+		border-color: #1e88e5;
+	}
+	.btn-primary:hover{
+		background-color: #005cb2; 
+		border-color: #005cb2;
+	}
+
+	.btn-outline-primary{
+		border-color: #1e88e5;
+		color:#1e88e5;
+	}
+
+	.btn-outline-primary:hover{
+		border-color: #005cb2;
+		background-color: #005cb2;
+	}
+	.title{
+		color: #ffffff;
+
+	}
+
+	.jumbotron{
+		background-color: #52418f;
+  		background-color: rgba(82,65,143,.97);
+  		background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
+  		background: linear-gradient(to right bottom,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
+  		box-shadow: inset 0 -1px 0 rgba(0,0,0,.1);
+  		margin-bottom: 0px;
+	}
 /*Navbar Styling*/
 
 	/*Core*/
 	a{
-		color:#000000;
+		color:#000000;	
 	}
 	.menu-hr{
 		margin-bottom: .5rem;
@@ -28,15 +71,18 @@ body{
 	}
 
 	.list-unstyled li a:hover{
-		color: #6fa6de;
+		color: #1e88e5;
 		text-decoration: none;
 	}
 	.navbar-nav .dropdown a{
-		font-size: 14px;
-		color: #383E40;
+		font-size: 16px;
+		color: #ffffff;
+		font-weight: 100;
 	}
+
+
 	.navbar-nav .dropdown a:hover{
-		color: #6fa6de;
+		color: #1e88e5;
 	}
 	/*Dropdown Styles*/
 	.dropdown-menu{
@@ -95,7 +141,7 @@ body{
 	    	color:#ffffff;
 	    }
     	.dropdown-menu .list-unstyled li a:hover{
-	    	color:#6fa6de;
+	    	color:#1e88e5;
 	    }
 
 	    .navbar-nav .action-buttons ul li{
@@ -110,6 +156,7 @@ body{
 	    	display: none;
 	    }
 	 }
+
 
 	
 
@@ -127,7 +174,7 @@ body{
 	.bar1, .bar2, .bar3 {
 	    width: 32px;
 	    height: 2px;
-	    background-color: #333;
+	    background-color: #ffffff;
 	    margin: 6px 0;
 	    transition: 0.1s;
 	}

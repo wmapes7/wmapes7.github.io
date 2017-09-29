@@ -158,10 +158,10 @@
 
 
 .cd-morph-dropdown .gallery li:nth-of-type(1) a::before {
-  background: url(../img/newchat.svg) no-repeat;
+  background: url(../img/text3.svg) no-repeat;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(2) a::before {
-  background: url(../img/wrench2.svg) no-repeat;
+  background: url(../img/inspect.svg) no-repeat;
 }
 .cd-morph-dropdown .gallery li:nth-of-type(3) a::before {
   background: url(../img/payment.svg) no-repeat;
@@ -212,11 +212,11 @@
   }
   .cd-morph-dropdown .main-nav > ul > li {
     display: inline-block;
-    float: left;
+    /*float: left;*/
   }
   .cd-morph-dropdown .main-nav > ul > li > a {
     display: block;
-    padding: 0 1.8em;
+    padding: 0 2em;
     height: 70px;
     line-height: 70px;
     color: #FFFFFF;
@@ -228,7 +228,7 @@
   }
   .cd-morph-dropdown.is-dropdown-visible .main-nav > ul > li > a {
     /* main navigation hover effect - on hover, reduce opacity of elements not hovered over */
-    opacity: .6;
+    opacity: .5;
   }
   .cd-morph-dropdown.is-dropdown-visible .main-nav > ul > li.active > a {
     opacity: 1;
