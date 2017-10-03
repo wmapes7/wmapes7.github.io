@@ -17,6 +17,10 @@
 		color: #ffffff;
 	}
 
+	.black-font{
+		color: #000000;
+	}
+
 	.move{
 		visibility: hidden;
 	}
@@ -54,10 +58,11 @@
 	}
 /*Navbar Styling*/
 
-	/*Core*/
+	/*Core
 	a{
 		color:#000000;	
-	}
+	}*/
+
 	.menu-hr{
 		margin-bottom: .5rem;
 		margin-top: .125rem;
@@ -78,7 +83,7 @@
 	}
 	.navbar-nav .dropdown a{
 		font-size: 16px;
-		color: #383E40;
+		color: #3a3f42;
 		font-weight: 100;
 	}
 
@@ -93,7 +98,9 @@
 		-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
 		-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
 		box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
-
+	}
+	.dropdown-menu a{
+		color: black;
 	}
 
 	.products{
@@ -115,7 +122,7 @@
 
 	.dropdown:hover .dropdown-menu {
 	    display: block;
-	    margin-top: 0; // remove the gap so it doesn't close
+	    margin-top: 0; /*remove the gap so it doesn't close*/
 	 }
 
   	.hide-lg{
@@ -127,7 +134,7 @@
 	    .navbar .navbar-collapse{
 	        border-color: white;
 	        background-color: black;
-	        height: 100vh;	
+	        z-index: 900;
 	     }
 	    .nav-item .nav-link{
 	    	color: #ffffff;
@@ -173,17 +180,18 @@
 	}
 
 	.bar1, .bar2, .bar3 {
-	    width: 32px;
-	    height: 2px;
+	    width: 26px;
+	    height: 1.5px;
 	    background-color: #ffffff;
 	    margin: 6px 0;
 	    transition: 0.1s;
+	    border-radius: 5px;
 	}
 
 	/* Rotate first bar */
 	.change .bar1 {
-	    -webkit-transform: rotate(-45deg) translate(-4px, 6px) ;
-	    transform: rotate(-45deg) translate(-4px, 6px) ;
+	    -webkit-transform: rotate(-45deg) translate(-3px, 5px) ;
+	    transform: rotate(-45deg) translate(-3px, 5px) ;
 	}
 
 	/* Fade out the second bar */

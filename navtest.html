@@ -12,13 +12,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body id="" style="" class="lg-back">
-    <nav class="navbar navbar-expand-md">
+
+    <nav class="navbar navbar-expand-md navbar-expand-lg">
       <a class="navbar-brand" href="#">
         <img src="img/s_logo_trans_white.png" width="50" height="40" alt="">
       </a>
       <button class="navbar-toggler" id="animenu" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="">
-          <div class="animenu" onclick="myFunction(this);backgroundChange(this)">
+          <div class="animenu" id="animenu" onclick="backgroundChange(this);myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -30,7 +31,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
             <a href="" class="show-sm hide-lg" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a>
-            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
               Products
             </a>
             <div class="dropdown-menu products" aria-labelledby="navbarDropdownMenuLink">
@@ -55,8 +56,35 @@
               </div>
             </div>
           </li>
+          <!--<li class="nav-item">
+            <a href="" class="show-sm hide-lg" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a>
+            <a class="nav-link" href="#" style="color: white">
+              Company
+            </a>
+            <div class="dropdown-menu">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <small class="text-muted">SINGLETHREAD</small>
+                    <hr class="menu-hr">
+                    <ul class="list-unstyled">
+                      <li><a href="#"><img src="img/wallet-blue.svg"> Text Messaging</a></li>
+                      <li><a href="#"><img src="img/wallet-blue.svg"> Vehicle Inspections</a></li>
+                      <li><a href="#"><img src="img/wallet-blue.svg"> Mobile Pay</a></li>
+                      <li><a href="#"><img src="img/wallet-blue.svg"> Internal Chat</a></li>
+                      <li><a href="#"><img src="img/wallet-blue.svg"> Reporting</a></li>
+                    </ul>
+                    <small class="text-muted">APC</small>
+                    <hr class="menu-hr">
+                    <ul class="list-unstyled">
+                      <li><a href="#"><img src="img/wallet-blue.svg"> Process Consulting</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </li>-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
               Resources
             </a>
             <div class="dropdown-menu resources" aria-labelledby="navbarDropdownMenuLink">
@@ -66,7 +94,7 @@
                     <small class="text-muted">PUBLICATIONS</small>
                     <hr class="menu-hr">
                     <ul class="list-unstyled">
-                      <li><a href="#">Press Releases</a></li>
+                      <li class=""><a href="#">Press Releases</a></li>
                       <li><a href="#">Industry Publications</a></li>
                       <li><a href="#">Blogs</a></li>
                     </ul>
@@ -92,7 +120,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
               Contact
             </a>
             <div class="dropdown-menu contact" aria-labelledby="navbarDropdownMenuLink">
@@ -114,7 +142,7 @@
                   </div>
               </div>
               <div style="margin-top: 15px">
-                <button class="btn btn-outline-primary btn-lg btn-block">
+                <button class="btn btn-primary btn-lg btn-block">
                   Live Demo
                 </button>
               </div>
@@ -125,10 +153,10 @@
           <li class="" style="">
             <button class="btn btn-sm btn-outline-primary btn-block" type="">Login</button>
           </li>
-           <li class="" style="margin-left: 5px; margin-right: 5px; color: white">
+           <li class="nav-item" style="margin-left: 5px; margin-right: 5px; color: white">
             <span class="align-middle"> or </span>
           </li>
-          <li class="">
+          <li class="nav-item">
             <span class="align-middle">
               <button class="btn btn-sm btn-primary btn-block" type="">Sign-Up</button>
             </span>
@@ -143,7 +171,7 @@
         <div class="container">
           <div class="row">
           <div class="col-lg-5 col-md-5 hide-sm">
-            <img src="img/ipadpro-phone.png" height="600px" width="510px"> <!--h-w ratio is .85-->
+            <img src="img/ipadpro-phone.png" height="auto" width="100%"> <!--h-w ratio is .85-->
           </div>
           <div class="col-lg-7 col-md-7 col-sm-12">
             <h1 class="display-6 title">Take Back Your Service Department</h1>
@@ -207,7 +235,8 @@
     <script>
       function myFunction(x) {
         //$("body").toggleClass("black");
-        x.classList.toggle("change");
+        //x.classList.toggle("change");
+        $("#animenu").toggleClass("change");
       }
     </script>
   </body>
