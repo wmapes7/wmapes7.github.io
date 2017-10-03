@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/navtest.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
   </head>
   <body id="" style="" class="lg-back">
 
@@ -31,7 +31,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
             <a href="" class="show-sm hide-lg" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a>
-            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+            <a class="nav-link dropdown-toggle top-level" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
               Products
             </a>
             <div class="dropdown-menu products" aria-labelledby="navbarDropdownMenuLink">
@@ -42,7 +42,7 @@
                     <hr class="menu-hr">
                     <ul class="list-unstyled">
                       <li><a href="#"><img src="img/wallet-blue.svg"> Text Messaging</a></li>
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Vehicle Inspections</a></li>
+                      <li><a href="inspect.html"><img src="img/wallet-blue.svg"> Vehicle Inspections</a></li>
                       <li><a href="#"><img src="img/wallet-blue.svg"> Mobile Pay</a></li>
                       <li><a href="#"><img src="img/wallet-blue.svg"> Internal Chat</a></li>
                       <li><a href="#"><img src="img/wallet-blue.svg"> Reporting</a></li>
@@ -56,35 +56,8 @@
               </div>
             </div>
           </li>
-          <!--<li class="nav-item">
-            <a href="" class="show-sm hide-lg" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a>
-            <a class="nav-link" href="#" style="color: white">
-              Company
-            </a>
-            <div class="dropdown-menu">
-              <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <small class="text-muted">SINGLETHREAD</small>
-                    <hr class="menu-hr">
-                    <ul class="list-unstyled">
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Text Messaging</a></li>
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Vehicle Inspections</a></li>
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Mobile Pay</a></li>
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Internal Chat</a></li>
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Reporting</a></li>
-                    </ul>
-                    <small class="text-muted">APC</small>
-                    <hr class="menu-hr">
-                    <ul class="list-unstyled">
-                      <li><a href="#"><img src="img/wallet-blue.svg"> Process Consulting</a></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </li>-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+            <a class="nav-link dropdown-toggle top-level" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
               Resources
             </a>
             <div class="dropdown-menu resources" aria-labelledby="navbarDropdownMenuLink">
@@ -120,7 +93,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+            <a class="nav-link dropdown-toggle top-level" href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
               Contact
             </a>
             <div class="dropdown-menu contact" aria-labelledby="navbarDropdownMenuLink">
@@ -196,22 +169,33 @@
       <div class="container-fluid" style="background-color: white">
         <div class="container">
           <div class="row">
+            <div class="col">
             <img src="img/layers.svg" class="" style="max-height: 200px; width: 100%">
-            <h1 class="display-6">The new standard for communication in one seamless interface.</h1>
+            <h2 class="text-center">The Singlethread Platform</h2>
             <hr>
+            </div>
+
           </div>
           <div class="row">
-            <div class="col">
-              <h1>Text</h1>
+            <div class="col text-center">
+              <h4 class="">Text</h4>
+              <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="" class="btn btn-primary">Explore</a>
             </div>
-            <div class="col">
-              <h1>Inspect</h1>
+            <div class="col text-center">
+              <h4 class="">Inspect</h4>
+              <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="" class="btn btn-primary">Explore</a>
             </div>
-            <div class="col">
-              <h1>Mobile Pay</h1>
+            <div class="col text-center">
+              <h4 class="">Mobile Pay</h4>
+              <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="" class="btn btn-primary">Explore</a>
             </div>
-            <div class="col">
-              <h1>Chat</h1>
+            <div class="col text-center">
+              <h4 class="">Chat</h4>
+              <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="" class="btn btn-primary">Explore</a>
             </div>
           </div>
         </div>

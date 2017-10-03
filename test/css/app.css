@@ -87,6 +87,15 @@
 		font-weight: 100;
 	}
 
+	.top-level{
+		color: #ffffff !important;
+		opacity: .6 !important;
+	}
+
+	.top-level:hover{
+		color: #ffffff !important;
+		opacity: 1 !important;
+	}
 	.navbar-nav .dropdown a:hover{
 		color: #1e88e5;
 	}
