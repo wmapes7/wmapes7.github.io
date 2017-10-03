@@ -129,6 +129,14 @@
 	 	display: none;
 	 }
 
+	 /*Tablet Nav Style */
+
+
+	 .collapsing{
+	 	transition: height .0s ease
+	 }
+
+
 	/*Mobile Nav Style */
 	 @media only screen and (max-width: 768px) {
 	    .navbar .navbar-collapse{
