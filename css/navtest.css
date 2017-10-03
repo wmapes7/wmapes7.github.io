@@ -129,16 +129,10 @@
 	 	display: none;
 	 }
 
-	 /*Tablet Nav Style */
-
-
-	 .collapsing{
-	 	transition: height .0s ease
-	 }
 
 
 	/*Mobile Nav Style */
-	 @media only screen and (max-width: 768px) {
+	 @media only screen and (max-width: 767px) {
 	    .navbar .navbar-collapse{
 	        border-color: white;
 	        background-color: black;
@@ -171,6 +165,12 @@
 	    .hide-sm{
 	    	display: none;
 	    }
+	 /*Speed up mobile nav hide*/
+	 
+	 .collapsing{
+	 	transition: height .0s ease
+	 }
+
 	 }
 
 
