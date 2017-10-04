@@ -267,3 +267,20 @@
 	color: #ffffff;
 	text-decoration: none;
 }
+
+
+/*INSPECT PAGE STYLES*/
+
+@media only screen and (max-width: 767px) {
+	.mobile-pad {
+		padding-top: 20px;
+	}
+}
+
+
+/* TEXT PAGE STYLES */
+
+@media only screen and (max-width: 767px) {
+	
+}
+
