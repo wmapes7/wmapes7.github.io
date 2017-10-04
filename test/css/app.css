@@ -146,7 +146,7 @@
 		background-color: #000000;
 		overflow: hidden;
 		}
-		
+
 	    .navbar .navbar-collapse{
 	        border-color: white;
 	        background-color: black;
@@ -223,5 +223,12 @@
 	    -webkit-transform: rotate(45deg) translate(-6px, -9px) ;
 	    transform: rotate(45deg) translate(-6px, -9px) ;
 	}
+
+	/*Mobile Index Page Product Style */
+	 @media only screen and (max-width: 767px) {
+	    .index-button{
+		margin-bottom: 15px;
+		margin-top: -10px;
+		}
 
 
