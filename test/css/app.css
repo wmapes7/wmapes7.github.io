@@ -68,6 +68,7 @@
 	color: #1e88e5;
 	text-decoration: none;
 }
+
 .navbar-nav .dropdown a {
 	font-size: 16px;
 	color: #3a3f42;
@@ -123,6 +124,10 @@
 	.black {
 		background-color: #000000;
 		overflow: hidden;
+	}
+
+	.navbar-nav .list-unstyled li a:hover {
+	display: none;
 	}
 	.navbar .navbar-collapse {
 		border-color: white;
