@@ -120,15 +120,18 @@
 }
 
 /*Mobile Nav Style */
+@media (hover: none){
+a:link {
+	color: #ffffff;
+}
+
+}
 @media only screen and (max-width: 767px) {
 	.black {
 		background-color: #000000;
 		overflow: hidden;
 	}
 
-	.navbar-nav .list-unstyled li a:hover {
-	display: none;
-	}
 	.navbar .navbar-collapse {
 		border-color: white;
 		background-color: black;
