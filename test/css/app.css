@@ -11,6 +11,7 @@
 }
 .hidden {
 	visibility: hidden;
+	height: 100px;
 }
 .white {
 	color: #ffffff;
