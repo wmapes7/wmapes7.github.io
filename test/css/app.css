@@ -1,7 +1,7 @@
 /* Body */
 
 .lg-back{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arimo', sans-serif;
 	background-color: #52418f;
 	background-color: rgba(82,65,143,.97);
 	background: -webkit-linear-gradient(left top,rgba(41,8,48,.97),rgba(82,65,143,.97) 50%,rgba(114,183,227,.97));
@@ -58,30 +58,26 @@
 	}
 /*Navbar Styling*/
 
-	/*Core
-	a{
-		color:#000000;	
-	}*/
-
 	.menu-hr{
-		border-color: #ffffff;
+		border-color: #999;
 		margin-bottom: .5rem;
 		margin-top: .125rem;
 	}
 
-	.list-unstyled li{
+	.navbar-nav .list-unstyled li{
 		margin-bottom: .5rem;
 	}
 
-	.list-unstyled li a{
+	.navbar-nav .list-unstyled li a{
 		color: #000000;
 		text-decoration: none;
 	}
 
-	.list-unstyled li a:hover{
+	.navbar-nav .list-unstyled li a:hover{
 		color: #1e88e5;
 		text-decoration: none;
 	}
+
 	.navbar-nav .dropdown a{
 		font-size: 16px;
 		color: #3a3f42;
@@ -97,9 +93,11 @@
 		color: #ffffff !important;
 		opacity: 1 !important;
 	}
+
 	.navbar-nav .dropdown a:hover{
 		color: #1e88e5;
 	}
+
 	/*Dropdown Styles*/
 	.dropdown-menu{
 		height: 100%;
@@ -184,6 +182,26 @@
 		color: #ffffff !important;
 		opacity: .7 !important;
 		margin-left: 5px;
+		}
+
+		.menu-hr{
+		border-color: #ffffff;
+		margin-bottom: .5rem;
+		margin-top: .125rem;
+		}
+
+		.navbar-nav .list-unstyled li{
+		margin-bottom: .5rem;
+		}
+
+		.navbar-nav .list-unstyled li a{
+		color: #ffffff;
+		text-decoration: none;
+		}
+
+		.navbar-nav .list-unstyled li a:hover{
+		color: #1e88e5;
+		text-decoration: none;
 	}
 
 	 }
@@ -230,5 +248,65 @@
 		margin-bottom: 15px;
 		margin-top: -10px;
 		}
+	}
 
+
+/*INDEX PRODUCT STYLING*/
+	.product-listing{
+		background-color: #ffffff;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.product-listing h2{
+		color: #52418f;
+	}
+
+	.product-listing h5{
+		margin-bottom: 80px;
+	}
+
+	.product-title{
+		font-weight: bold;
+	}
+
+/*GET STARTED STYLING*/
+	.get-started{	
+		background-color: transparent;
+	}
+
+	.get-started h1{
+		color: #ffffff;
+		font-size: 36px;
+	}
+
+	.get-started p{
+		font-size: 18px;
+		color: #ffffff;
+	}
+
+/*FOOTER*/
+
+	.st-foot{
+		background-color: #292929;
+		color: #ffffff;
+		line-height: 1.8em;
+	}
+
+	.st-foot h4{
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: bold;
+		margin: 1.33rem;
+		text-transform: uppercase;
+	}
+	.st-foot ul li a{
+		color: #999;
+		font-size: 13px;
+	}
+
+	.st-foot ul li a:hover{
+		color: #ffffff;
+		text-decoration: none;
+	}
 
