@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,61 +13,65 @@
   <title>Singlethread</title>
 </head>
 <body class="lg-back" id="" style="">
-  <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="index.html"><img alt="" height="40" src="img/s_logo_trans_white.png" width="50"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" id="animenu" type="button"><span class=""></span>
-    <div class="animenu" id="animenu" onclick="backgroundChange(this);myFunction(this)">
-      <span class=""></span>
-      <div class="bar1">
-        <span class=""></span>
-      </div>
-      <div class="bar2">
-        <span class=""></span>
-      </div>
-      <div class="bar3">
-        <span class=""></span>
-      </div>
-    </div></button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="show-sm hide-lg" href="" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a> <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Products</a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <small class="text-muted">SINGLETHREAD</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="text.html"><img src="img/wallet-blue.svg"> Text Messaging</a>
-                    </li>
-                    <li>
-                      <a href="inspect.html"><img src="img/wallet-blue.svg"> Vehicle Inspections</a>
-                    </li>
-                    <li>
-                      <a href="mobilepay.html"><img src="img/wallet-blue.svg"> Mobile Pay</a>
-                    </li>
-                    <li>
-                      <a href="chat.html"><img src="img/wallet-blue.svg"> Internal Chat</a>
-                    </li>
-                    <li>
-                      <a href="reporting.html"><img src="img/wallet-blue.svg"> Reporting</a>
-                    </li>
-                  </ul><small class="text-muted">APC</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="apc.html"><img src="img/wallet-blue.svg"> Process Consulting</a>
-                    </li>
-                  </ul>
-                </div>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">
+    <img src="img/s-logo-white.png" height="40px" width="50px">
+  </a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-menu" aria-controls="mobile-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="" onclick="backgroundChange(this);"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mobile-nav-menu">
+    <ul class="nav justify-content-end show-sm hide-lg">
+      <li class="nav-item" style="margin-top: 5px">
+        <a class="nav-link btn btn-primary" href="#">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <small class="text-muted">SINGLETHREAD</small>
+                <hr class="menu-hr">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="text.html"><img src="img/wallet-blue.svg"> Text Messaging</a>
+                  </li>
+                  <li>
+                    <a href="inspect.html"><img src="img/wallet-blue.svg"> Vehicle Inspections</a>
+                  </li>
+                  <li>
+                    <a href="mobilepay.html"><img src="img/wallet-blue.svg"> Mobile Pay</a>
+                  </li>
+                  <li>
+                    <a href="chat.html"><img src="img/wallet-blue.svg"> Internal Chat</a>
+                  </li>
+                  <li>
+                    <a href="reporting.html"><img src="img/wallet-blue.svg"> Reporting</a>
+                  </li>
+                </ul><small class="text-muted">APC</small>
+                <hr class="menu-hr">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="apc.html"><img src="img/wallet-blue.svg"> Process Consulting</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Resources</a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources
+        </a>
+            <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -114,9 +119,11 @@
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
+          Contact
+        </a>
           <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu contact">
             <div class="container">
               <div class="row">
@@ -125,7 +132,7 @@
                   <hr class="menu-hr">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">123-123-1234</a>
+                      <a href="tel:+18449202656">844-920-2656</a>
                     </li>
                   </ul>
                 </div>
@@ -134,7 +141,7 @@
                   <hr class="menu-hr">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">support@singlethread.com</a>
+                      <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">support@singlethread.com</a>
                     </li>
                   </ul>
                 </div>
@@ -144,15 +151,15 @@
               </div>
             </div>
           </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav hide-sm">
-        <li class="" style=""><button class="btn btn-sm btn-outline-primary btn-block" type="">Login</button></li>
-        <li class="nav-item" style="margin-left: 5px; margin-right: 5px; color: white"><span class="align-middle">or</span></li>
-        <li class="nav-item"><span class="align-middle"><button class="btn btn-sm btn-primary btn-block" type=""><span class="align-middle"><span class="align-middle">Sign-Up</span></span></button></span></li>
-      </ul>
-    </div>
-  </nav>
+      </li>
+    </ul>
+    <ul class="nav justify-content-end hide-sm">
+  <li class="nav-item">
+    <a class="nav-link btn btn-outline-primary" href="#">Login</a>
+  </li>
+</ul>
+  </div>
+</nav>
 
 
 
@@ -162,27 +169,51 @@
       <div class="container-fluid jumbotron" style="">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-md-5 hide-sm">
-              <img height="auto" src="img/ipadpro-phone.png" width="100%"> <!--h-w ratio is .85-->
+            <div class="col-lg-5 col-md-5">
+              <img height="auto" src="img/apple-collection.png" width="100%"> <!--h-w ratio is .85-->
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12">
               <h1 class="display-6 title">Take Back Your Service Department</h1>
               <p class="lead title" style="">Singlethread helps you create a less stressful, more productive, and more profitable service department.</p>
               <hr class="my-4" style="border-color: #868686">
-              <!--<p class="title" style="">The new standard for customer communication in one seamless interface.</p>--><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              <!--<p class="title" style="">The new standard for customer communication in one seamless interface.</p>--><a class="btn btn-primary btn-lg" href="#platform" role="button">Learn more</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section id="partners">
-      <div class="container-fluid align-items-middle" style="background-color: #eee; padding-top:10px;">
+      <div class="container-fluid" style="background-color: #eee; padding-top:10px;">
         <div class="container">
-          <div class="owl-carousel mx-auto">
-            <div class="col text-center"><img class="mx-auto" src="img/rr-grey.png" style="height: 100px"></div>
-            <div class="col text-center"><img class="mx-auto" src="img/cdk-grey.png" style="height: 110px;"></div>
-            <div class="col text-center"><img class="mx-auto" src="img/dt-grey.png" style="height: 100px;"></div>
-            <div class="col text-center"><img class="mx-auto" src="img/am-grey.png" style="height: 65px; margin-top: 20px"></div>
+          <ul class="nav justify-content-center owl-carousel">
+  <li class="nav-item text-center">
+    <img class="" src="img/rr-grey.png" style="height: 100px">
+  </li>
+  <li class="nav-item text-center">
+    <img class="" src="img/cdk-grey.png" style="height: 110px;">
+  </li>
+  <li class="nav-item text-center">
+    <img class="" src="img/dt-grey.png" style="height: 100px;">
+  </li>
+  <li class="nav-item text-center">
+    <img class="" src="img/am-grey.png" style="height: 65px; margin-top: 20px">
+  </li>
+</ul>
+          <div class="container hide-sm">
+          <div class="row">
+            <div class="col">
+              <img class="" src="img/rr-grey.png" style="height: 100px">
+            </div>
+            <div class="col">
+              <img class="" src="img/cdk-grey.png" style="height: 110px;">
+            </div>
+            <div class="col">
+              <img class="" src="img/dt-grey.png" style="height: 100px;">
+            </div>
+            <div class="col">
+              <img class="" src="img/am-grey.png" style="height: 65px; margin-top: 20px">
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -277,10 +308,11 @@
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-10">
               <h1>Got 20 Minutes?</h1>
-              <p>See how you can gain control of your service department with Singlethread.</p><a class="btn btn-primary show-sm hide-lg" href="" style="margin-bottom: 20px">Live Demo</a>
+              <p>See how Singlethread can help you gain control of your service department.</p>
             </div>
-            <div class="col-md-2 text-right" style="">
+            <div class="col-sm-12 col-md-2" style="">
               <a class="hide-sm btn btn-outline-primary" href="">Live Demo</a>
+              <a class="btn btn-primary show-sm hide-lg" href="" style="">Live Demo</a>
             </div>
           </div>
         </div>
@@ -343,16 +375,20 @@
               <h4 class="">Contact</h4>
               <ul class="list-unstyled">
                 <li>
-                  <a href="">123-123-1234</a>
+                  <a href="tel:8449202656">844-920-2656</a>
                 </li>
                 <li>
-                  <a href="">support@singlethread.com</a>
+                  <a href="mailto:support@singlethread.com?subject=Singlethread Website Request">support@singlethread.com</a>
                 </li>
-                <li class=""><img alt="" height="50" src="img/s_logo_trans_blue.png" width="60"></li>
+                <li>
+                  <a href="www.singlethread.com">&copy; 2017 Michigan Software Design</a>
+                </li>
               </ul>
             </div>
           </div>
+        <hr style="border-color: white">
         </div>
+
       </div>
     </section>
   </div><!-- Optional JavaScript -->
@@ -374,18 +410,14 @@
   });
   </script>
   <!--Menu Animation Scripts -->
+
   <script type="text/javascript">
         function backgroundChange(x){
-        //$("body").removeClass("lg-back");
         $("#main").toggleClass("hidden");
         $("body").toggleClass("black lg-back");
-        $("#animenu").toggleClass("change");
+        //$("#animenu").toggleClass("change");
         }
   </script>
-  <!-- Includes -->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script>
-w3.includeHTML();
-</script>
+
 </body>
 </html>
