@@ -54,7 +54,7 @@
 	margin-top: .125rem;
 }
 
-@media only screen and (min-width: 767px){
+@media (min-width: 767px){
 	.products{
 		width: 250px;
 	}
@@ -66,15 +66,15 @@
 	.contact{
 		width: 400px;
 	}
+	.dropdown:hover .dropdown-menu{
+		display: inline-block;
+		margin-top: 0; /*remove the gap so it doesn't close*/
+	}
+
 }
 
-
-.dropdown:hover .dropdown-menu{
-	display: inline-block;
-	margin-top: 0; /*remove the gap so it doesn't close*/
-}
-
-@media only screen and (max-width: 1023px){
+/*Queries for nav*/
+@media (max-width: 900px){
 	.dropdown .dropdown-menu{
 	display: inline-block;
 	background-color: transparent;
@@ -91,7 +91,7 @@
 
 /*Hide Content on Medium and Large screens*/
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1025px){
 	.hide-lg {
 	display: none;
 	}
@@ -101,7 +101,7 @@
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
 	.show-sm {
 		display: inline;
 	}
@@ -109,21 +109,44 @@
 		display: none;
 	}
 
-	.menu-hr {
-		border-color: #ffffff;
-		margin-bottom: .5rem;
-		margin-top: .125rem;
-	}
-
-
-
-
 	.navbar ul li a{
 		width:100%;
 		line-height: 1.8em;
 	}
 }
 
+
+
+/*768 width - show button */
+@media (width: 768px){
+	.button-768{
+		display: inline !important;
+	}
+
+	.button-1024{
+		display: none !important;
+	}
+}
+
+/*1024 width - hide button*/
+@media (width: 1024px){
+	.button-768{
+		display: none !important;
+	}
+
+	.button-1024{
+		display: inline !important;
+	}
+}
+
+/*Resolutions >768 - hide button */
+@media (min-width: 769px){
+	.button-768{
+		display: none !important;
+	}
+}
+
+/*Resolutions <1024 - hide button*/
 
 /*Menu Icon Styling */
 .custom-toggler.navbar-toggler {
