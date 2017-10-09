@@ -54,6 +54,10 @@
 	margin-top: .125rem;
 }
 
+.list-unstyled li a{
+	line-height: 1.8rem;
+}
+
 .list-unstyled li a:hover{
 	text-decoration: none;
 
