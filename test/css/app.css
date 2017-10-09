@@ -54,6 +54,11 @@
 	margin-top: .125rem;
 }
 
+.list-unstyled li a:hover{
+	text-decoration: none;
+
+}
+
 @media (min-width: 767px){
 	.products{
 		width: 250px;
