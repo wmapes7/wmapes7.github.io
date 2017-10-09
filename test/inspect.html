@@ -12,63 +12,66 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet" type="text/css">
   <title>Singlethread</title>
 </head>
-  <body id="" style="" class="lg-back">
+<body class="lg-back" id="" style="">
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="https://www.singlethread.com">
+    <img src="img/s-logo-white.png" height="40px" width="50px">
+  </a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-menu" aria-controls="mobile-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="" onclick="backgroundChange(this);"></span>
+  </button>
 
-  <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="index.html"><img alt="" height="40" src="img/s_logo_trans_white.png" width="50"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" id="animenu" type="button"><span class=""></span>
-    <div class="animenu" id="animenu" onclick="backgroundChange(this);myFunction(this)">
-      <span class=""></span>
-      <div class="bar1">
-        <span class=""></span>
-      </div>
-      <div class="bar2">
-        <span class=""></span>
-      </div>
-      <div class="bar3">
-        <span class=""></span>
-      </div>
-    </div></button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="show-sm hide-lg" href="" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a> <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Products</a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <small class="text-muted">SINGLETHREAD</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="text.html"><img src="img/wallet-blue.svg"> Text Messaging</a>
-                    </li>
-                    <li>
-                      <a href="inspect.html"><img src="img/wallet-blue.svg"> Vehicle Inspections</a>
-                    </li>
-                    <li>
-                      <a href="mobilepay.html"><img src="img/wallet-blue.svg"> Mobile Pay</a>
-                    </li>
-                    <li>
-                      <a href="chat.html"><img src="img/wallet-blue.svg"> Internal Chat</a>
-                    </li>
-                    <li>
-                      <a href="reporting.html"><img src="img/wallet-blue.svg"> Reporting</a>
-                    </li>
-                  </ul><small class="text-muted">APC</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="apc.html"><img src="img/wallet-blue.svg"> Process Consulting</a>
-                    </li>
-                  </ul>
-                </div>
+  <div class="collapse navbar-collapse" id="mobile-nav-menu">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-primary button-768" href="#">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <small class="text-muted">SINGLETHREAD</small>
+                <hr class="menu-hr">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="text.html"><img src="img/wallet-blue.svg"> Text Messaging</a>
+                  </li>
+                  <li>
+                    <a href="inspect.html"><img src="img/wallet-blue.svg"> Vehicle Inspections</a>
+                  </li>
+                  <li>
+                    <a href="mobilepay.html"><img src="img/wallet-blue.svg"> Mobile Pay</a>
+                  </li>
+                  <li>
+                    <a href="chat.html"><img src="img/wallet-blue.svg"> Internal Chat</a>
+                  </li>
+                  <li>
+                    <a href="reporting.html"><img src="img/wallet-blue.svg"> Reporting</a>
+                  </li>
+                </ul><small class="text-muted">APC</small>
+                <hr class="menu-hr">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="apc.html"><img src="img/wallet-blue.svg"> Process Consulting</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Resources</a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources
+        </a>
+            <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -93,9 +96,6 @@
                     <li>
                       <a href="#">About Us</a>
                     </li>
-                    <li>
-                      <a href="#">Employment</a>
-                    </li>
                   </ul>
                 </div>
                 <div class="col">
@@ -116,9 +116,11 @@
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
+          Contact
+        </a>
           <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu contact">
             <div class="container">
               <div class="row">
@@ -127,7 +129,7 @@
                   <hr class="menu-hr">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">123-123-1234</a>
+                      <a href="tel:+18449202656">844-920-2656</a>
                     </li>
                   </ul>
                 </div>
@@ -136,25 +138,25 @@
                   <hr class="menu-hr">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">support@singlethread.com</a>
+                      <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">support@singlethread.com</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div style="margin-top: 15px">
-                <button class="btn btn-primary btn-lg btn-block">Live Demo</button>
+                <a href="#" class="btn btn-primary btn-lg btn-block">Live Demo</a>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav hide-sm">
-        <li class="" style=""><button class="btn btn-sm btn-outline-primary btn-block" type="">Login</button></li>
-        <li class="nav-item" style="margin-left: 5px; margin-right: 5px; color: white"><span class="align-middle">or</span></li>
-        <li class="nav-item"><span class="align-middle"><button class="btn btn-sm btn-primary btn-block" type=""><span class="align-middle"><span class="align-middle">Sign-Up</span></span></button></span></li>
-      </ul>
-    </div>
-  </nav>
+      </li>
+    </ul>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-primary button-1024" href="#">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <div>
     <div id="main">
       <section id="intro">
@@ -171,15 +173,10 @@
           <div class="row align-items-center" style="">
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <h2 class="mobile-pad">Vehicle Inspections for the Mobile Generation</h2>
-                <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="" style="opacity: .75">Following in our footsteps of our Text product, Inspect is vehicle inspections for the mobile-first world. The purpose of a vehicle inspection is two fold: help the customer maintain their vehicle and provide the dealership a platform from which to sell. Does your existing vehicle inspection product reach all of your customers, especially those on their mobile device? Singlethread does.</p>
             </div>
             <div class="col-md-6 col-lg-6">
-              <img src="img/ipadpro-phone.png" height="auto" width="100%">
+              <img src="img/apple-collection.png" height="auto" width="100%">
             </div>
           </div>
           <div class="row" style="">
@@ -189,12 +186,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Simple
+                      Mobile-First
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Singlethread Inspect is built to sell to mobile customers. Quickly build quotes and capture the attention of mobile customers so you sell more.</p>
                     </div>
                   </div>
                 </div>
@@ -211,7 +208,7 @@
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Time is money, that's why "fast" is critical to Singlethread. Techs complete inspections in minutes and Advisors sell just as quickly.</p>
                     </div>
                   </div>
                 </div>
@@ -228,7 +225,7 @@
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Tablets, desktops, mobile devices.  You pick, Singlethread just works.</p>
                     </div>
                   </div>
                 </div>
@@ -247,7 +244,7 @@
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Just tab into Inspect from Text and you're on your way.  It only takes seconds.</p>
                     </div>
                   </div>
                 </div>
@@ -259,12 +256,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Mobile-First Design
+                      Reduce Tech Frustration
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Techs get frustrated when they waste time inspecting veicles and advisors don't send them to customers. Singlethread inspections get delivered.</p>
                     </div>
                   </div>
                 </div>
@@ -276,12 +273,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Reduce Technician Frustration 
+                      Customized
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Customized to your latest inspection forms.</p>
                     </div>
                   </div>
                 </div>
@@ -293,8 +290,8 @@
               <img src="img/mbpro.png" height="auto" width="100%">
             </div> 
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2>The Ultimate OEM Partnership Opportunity</h2>
-                <p class="" style="opacity: .75">The rich data that is generated and captured in Singlethread's Inspect product offers a wealth of opportunities for OEM partners, dealers, marketing agencies, etc. With real-time data export capabilities, partnering with Singlethread's Inspect product can generate leads, follow-up activites, and help you close more deals.</p>
+                <h2>The Ultimate Partnership Opportunity</h2>
+                <p class="" style="opacity: .75">The rich data that is generated and captured in Singlethread's Inspect product offers a wealth of opportunities for OEMs, dealers, or 3rd parties. With real-time data export capabilities, partnering with Singlethread and it's dealers can generate leads, follow-up activites, and help you close more deals.</p>
             </div>
           </div>
           <div class="row" style="padding-bottom: 60px">
@@ -309,7 +306,7 @@
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Real-time data from your dealers directly to you.  Shape your business intelligence and execute on your opportunities with Singlethread.</p>
                     </div>
                   </div>
                 </div>
@@ -321,12 +318,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Direct Mail Marketing
+                      Digital and Traditional Marketing
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Laser-focus your marketing effort by delivering targetted messaging directly to customers in the market.</p>
                     </div>
                   </div>
                 </div>
@@ -338,12 +335,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Digital Advertising/Marketing
+                      Process Optimizaton 
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">From the showroom to the service department, <a href="apc.html">APC</a> provides best-in-class process consulting. The data generated by Inspect allows APC to advise you in ways other providers cannot.</p>
                     </div>
                   </div>
                 </div>
@@ -353,16 +350,17 @@
         </div>
       </div>
     </section>
-        <section id="get-started">
+<section id="get-started">
       <div class="container-fluid get-started">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-10">
               <h1>Got 20 Minutes?</h1>
-              <p>See how you can gain control of your service department with Singlethread.</p><a class="btn btn-primary show-sm hide-lg" href="" style="margin-bottom: 20px">Live Demo</a>
+              <p>See how Singlethread can help you gain control of your service department.</p>
             </div>
-            <div class="col-md-2 text-right" style="">
-              <a class="hide-sm btn btn-outline-primary" href="">Live Demo</a>
+            <div class="col-sm-12 col-md-2" style="">
+              <a class="hide-sm btn btn-outline-primary show-lg" href="">Live Demo</a>
+              <a class="btn btn-primary show-sm hide-lg" href="" style="">Live Demo</a>
             </div>
           </div>
         </div>
@@ -425,39 +423,49 @@
               <h4 class="">Contact</h4>
               <ul class="list-unstyled">
                 <li>
-                  <a href="">123-123-1234</a>
+                  <a href="tel:8449202656">844-920-2656</a>
                 </li>
                 <li>
-                  <a href="">support@singlethread.com</a>
+                  <a href="mailto:support@singlethread.com?subject=Singlethread Website Request">support@singlethread.com</a>
                 </li>
-                <li class=""><img alt="" height="50" src="img/s_logo_trans_blue.png" width="60"></li>
+                <li>
+                  <a href="www.singlethread.com">&copy; 2017 Michigan Software Design</a>
+                </li>
               </ul>
             </div>
           </div>
+        <hr style="border-color: white">
         </div>
+
       </div>
     </section>
-  </div>
+  </div><!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
+  </script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" type="text/javascript">
+  </script> 
+  <script type="text/javascript">
+     $(document).ready(function(){
+   $(".owl-carousel").owlCarousel({
+     loop:true,
+     center:true,
+   });
+  });
+  </script>
+  <!--Menu Animation Scripts -->
 
+  <script type="text/javascript">
+        function backgroundChange(x){
+        $("#main").toggleClass("hidden");
+        $("body").toggleClass("black lg-back");
+        //$("#animenu").toggleClass("change");
+        }
+  </script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      function backgroundChange(x){
-      //$("body").removeClass("lg-back").addClass("black");
-      $("body").toggleClass("lg-back black");
-      $("#main").toggleClass("move");
-      }
-    </script>
-    <script>
-      function myFunction(x) {
-        //$("body").toggleClass("black");
-        //x.classList.toggle("change");
-        $("#animenu").toggleClass("change");
-      }
-    </script>
-  </body>
+</body>
 </html>
