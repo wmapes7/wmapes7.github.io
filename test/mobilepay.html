@@ -14,61 +14,65 @@
 </head>
   <body id="" style="" class="lg-back">
 
-  <nav class="navbar navbar-expand-md">
-    <a class="navbar-brand" href="index.html"><img alt="" height="40" src="img/s_logo_trans_white.png" width="50"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" id="animenu" type="button"><span class=""></span>
-    <div class="animenu" id="animenu" onclick="backgroundChange(this);myFunction(this)">
-      <span class=""></span>
-      <div class="bar1">
-        <span class=""></span>
-      </div>
-      <div class="bar2">
-        <span class=""></span>
-      </div>
-      <div class="bar3">
-        <span class=""></span>
-      </div>
-    </div></button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="show-sm hide-lg" href="" style="color:#ffffff; margin-left: 85%; margin-top:10px;"><button class="btn btn-outline-primary btn-sm btn-block">Login</button></a> <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Products</a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <small class="text-muted">SINGLETHREAD</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="text.html"><img src="img/wallet-blue.svg"> Text Messaging</a>
-                    </li>
-                    <li>
-                      <a href="inspect.html"><img src="img/wallet-blue.svg"> Vehicle Inspections</a>
-                    </li>
-                    <li>
-                      <a href="mobilepay.html"><img src="img/wallet-blue.svg"> Mobile Pay</a>
-                    </li>
-                    <li>
-                      <a href="chat.html"><img src="img/wallet-blue.svg"> Internal Chat</a>
-                    </li>
-                    <li>
-                      <a href="reporting.html"><img src="img/wallet-blue.svg"> Reporting</a>
-                    </li>
-                  </ul><small class="text-muted">APC</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="apc.html"><img src="img/wallet-blue.svg"> Process Consulting</a>
-                    </li>
-                  </ul>
-                </div>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="https://www.singlethread.com">
+    <img src="img/s-logo-white.png" height="40px" width="50px">
+  </a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-menu" aria-controls="mobile-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="" onclick="backgroundChange(this);"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mobile-nav-menu">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-primary button-768" href="#">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <small class="text-muted">SINGLETHREAD</small>
+                <hr class="menu-hr">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="text.html"><img src="img/text-blue.svg"> Text Messaging</a>
+                  </li>
+                  <li>
+                    <a href="inspect.html"><img src="img/inspect-blue.svg"> Vehicle Inspections</a>
+                  </li>
+                  <li>
+                    <a href="mobilepay.html"><img src="img/wallet-blue.svg"> Mobile Pay</a>
+                  </li>
+                  <li>
+                    <a href="chat.html"><img src="img/chat-blue.svg"> Internal Chat</a>
+                  </li>
+                  <li>
+                    <a href="feedback.html"><img src="img/wallet-blue.svg"> Customer Follow-Up</a>
+                  </li>
+                </ul><small class="text-muted">APC</small>
+                <hr class="menu-hr">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="apc.html"><img src="img/wallet-blue.svg"> Process Consulting</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Resources</a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources
+        </a>
+            <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -93,9 +97,6 @@
                     <li>
                       <a href="#">About Us</a>
                     </li>
-                    <li>
-                      <a href="#">Employment</a>
-                    </li>
                   </ul>
                 </div>
                 <div class="col">
@@ -116,9 +117,11 @@
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle top-level" data-toggle="dropdown" href="#" id="" style="">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
+          Contact
+        </a>
           <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu contact">
             <div class="container">
               <div class="row">
@@ -127,7 +130,7 @@
                   <hr class="menu-hr">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">123-123-1234</a>
+                      <a href="tel:+18449202656">844-920-2656</a>
                     </li>
                   </ul>
                 </div>
@@ -136,32 +139,32 @@
                   <hr class="menu-hr">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#">support@singlethread.com</a>
+                      <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">support@singlethread.com</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div style="margin-top: 15px">
-                <button class="btn btn-primary btn-lg btn-block">Live Demo</button>
+                <a href="#" class="btn btn-primary btn-lg btn-block">Live Demo</a>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav hide-sm">
-        <li class="" style=""><button class="btn btn-sm btn-outline-primary btn-block" type="">Login</button></li>
-        <li class="nav-item" style="margin-left: 5px; margin-right: 5px; color: white"><span class="align-middle">or</span></li>
-        <li class="nav-item"><span class="align-middle"><button class="btn btn-sm btn-primary btn-block" type=""><span class="align-middle"><span class="align-middle">Sign-Up</span></span></button></span></li>
-      </ul>
-    </div>
-  </nav>
+      </li>
+    </ul>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link btn btn-outline-primary button-1024" href="#">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <div>
     <div id="main">
       <section id="intro">
       <div class="container-fluid jumbotron" style="">
         <div class="container text-center">
             <h1 class="display-6 title">Mobile Pay</h1>
-            <p class="lead title" style="">Lorem ipsum dolor sit amet.</p>
+            <p class="lead title" style="">Customer payment flexibility and convenience.</p>
         </div>
       </div>
     </section>
@@ -170,13 +173,8 @@
         <div class="container">
           <div class="row align-items-center" style="">
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2 class="mobile-pad">Pay, Pickup, Satisfaction</h2>
-                <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2 class="mobile-pad">Just Like Your Favorite Website</h2>
+                <p class="" style="opacity: .75">Customers love the flexibility and convenience of mobile payments at thousands of non-automotive retailers worldwide. Singlethread brings that same great experience to your service department. Eliminate the frustrating line-up at the cashier and help advisors self-cashier with ease.</p>
             </div>
             <div class="col-md-6 col-lg-6">
               <img src="img/ipadpro-phone.png" height="auto" width="100%">
@@ -189,12 +187,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Mobile Pay Feature
+                      Transaction Tracking
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">With transaction tracking, Singlethread offers you security and convenience for the customer.</p>
                     </div>
                   </div>
                 </div>
@@ -206,12 +204,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Mobile Pay Feature
+                      Role-based Access
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">The office staff will be in the know and have access to view what they need.</p>
                     </div>
                   </div>
                 </div>
@@ -223,12 +221,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Mobile Pay Feature
+                      Documentation
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Singlethread generates reciepts and payment confirmation documentation to ensure a proper audit trail, should you need it.</p>
                     </div>
                   </div>
                 </div>
@@ -240,8 +238,8 @@
               <img src="img/mbpro.png" height="auto" width="100%">
             </div> 
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2>Mobile Pay with no additional fees</h2>
-                <p class="" style="opacity: .75">The rich data that is generated and captured in Singlethread's Inspect product offers a wealth of opportunities for OEM partners, dealers, marketing agencies, etc. With real-time data export capabilities, partnering with Singlethread's Inspect product can generate leads, follow-up activites, and help you close more deals.</p>
+                <h2>Mobile Pay With No Additional Fees</h2>
+                <p class="" style="opacity: .75">Singlethread is the only provider that doesn't require you to sign up for a new merchant account. And, we don't have additional fees for mobile payments. That means you get mobile payments up and running faster and for less, each month.</p>
             </div>
           </div>
           <div class="row" style="padding-bottom: 60px">
@@ -251,12 +249,12 @@
                 <div class="col">
                   <div class="row">
                     <div class="col product-title">
-                      Mobile Pay Feature
+                      Direct Merchant Integration
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-11">
-                      <p class="" style="opacity: .75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="" style="opacity: .75">Keep your existing merchant account and we'll directly integrate to them <span style="font-size: 12px">(*exlusions may apply).</span></p>
                     </div>
                   </div>
                 </div>
@@ -335,6 +333,9 @@
                 <li>
                   <a href="chat.html">Internal Chat</a>
                 </li>
+                <li>
+                  <a href="feedback.html">Customer Follow-Up</a>
+                </li>
               </ul>
             </div>
             <div class="col-sm-12 col-md-3">
@@ -372,16 +373,20 @@
               <h4 class="">Contact</h4>
               <ul class="list-unstyled">
                 <li>
-                  <a href="">123-123-1234</a>
+                  <a href="tel:8449202656">844-920-2656</a>
                 </li>
                 <li>
-                  <a href="">support@singlethread.com</a>
+                  <a href="mailto:support@singlethread.com?subject=Singlethread Website Request">support@singlethread.com</a>
                 </li>
-                <li class=""><img alt="" height="50" src="img/s_logo_trans_blue.png" width="60"></li>
+                <li>
+                  <a href="www.singlethread.com">&copy; 2017 Michigan Software Design</a>
+                </li>
               </ul>
             </div>
           </div>
+        <hr style="border-color: white;">
         </div>
+
       </div>
     </section>
   </div>
