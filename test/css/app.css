@@ -56,6 +56,7 @@
 
 .list-unstyled li a{
 	line-height: 1.8rem;
+	color: #007bff;
 }
 
 .list-unstyled li a:hover{
@@ -73,7 +74,7 @@
 	}
 
 	.contact{
-		width: 400px;
+		width: 460px;
 	}
 	.dropdown:hover .dropdown-menu{
 		display: inline-block;
