@@ -128,7 +128,7 @@
 
 
 /*768 width - show button */
-@media (width: 768px){
+@media (max-width: 800px){
 	.button-768{
 		display: inline !important;
 	}
@@ -139,7 +139,7 @@
 }
 
 /*1024 width - hide button*/
-@media (width: 1024px){
+@media (min-width: 1024px){
 	.button-768{
 		display: none !important;
 	}
@@ -149,11 +149,11 @@
 	}
 }
 
-/*Resolutions >768 - hide button */
+/*Resolutions >768 - hide button 
 @media (min-width: 769px){
 	.button-768{
 		display: none !important;
-	}
+	}*/
 }
 
 /*Resolutions <1024 - hide button*/
