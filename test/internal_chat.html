@@ -1,263 +1,312 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-  <link href="css/app.css" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet" type="text/css">
-  <title>Singlethread</title>
-</head>
-<body class="" id="" style="">
-<div class="container-fluid"> <!-- Chat container-->
-  <div class="row"> <!-- Chat Row -->
-    <div class="col-md-3" style=""> <!--Buddy lists -->
-
-        <div class="card" style=""><!-- Group Chats -->
-          <div class="card-header">
-            <span class="d-flex justify-content-between align-items-center">Group Chats
-              <a href="" data-toggle="modal" data-target="#newGroupModal"><span class="badge badge-primary">New Group</span></a>
-            </span>
-          </div>
-          <ul class="list-group">
-            <a href="#">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              General
-              <span class="badge badge-danger badge-pill">14</span>
-              </li>
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Group A
-              <span class="badge badge-danger badge-pill">2</span>
-              </li>
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
+  <head>
+    <!-- Requi#fd265c meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <title>Singlethread</title>
+  </head>
+  <body class="" id="" style="background-color: #f3f7fa">
+    <div class="container-fluid">
+    <!-- Chat container-->
+    <div class="row">
+    <!-- Chat Row -->
+    <div class="col-md-3" style="">
+      <!--Buddy lists -->
+      <div class="">
+        <div class="panel-heading" style="background-color: #4d5b6d; color: white">
+          <span class="glyphicon glyphicon-th"></span>
+          Group Chats
+          <a href="" data-toggle="modal" data-target="#newGroupModal">
+          <span class="badge pull-right" style="background-color: #4767f3">New Group</span>
+          </a>
+        </div>
+        <ul class="list-group">
+          <a href="">
+            <li class="list-group-item">
+              General<span class="badge" style="background-color: #fd265c">14</span>
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">
+              Group A<span class="badge" style="background-color: #fd265c">14</span>
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">
               Group B
-              </li>
-            </a>
-          </ul>
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">
+              Group C
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">
+              Group D
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="" style="margin-top: 40px">
+        <!-- Private Chats -->
+        <div class="panel-heading" style="background-color: #4d5b6d; color: white">
+          <span class="glyphicon glyphicon-user"></span>
+          <span class="" style="color: white">Private Chats
+          </span>
         </div>
-
-        <div class="card" style="margin-top: 40px"><!-- Private Chats -->
-          <div class="card-header">
-            <span class="d-flex justify-content-between align-items-center">Private Chats
-            </span>
-          </div>
-          <ul class="list-group">
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>
-            <a href="">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-              Person A <span class="badge badge-danger badge-pill">14</span>
-              </li> 
-            </a>                                                        
-          </ul>
-        </div>
+        <ul class="list-group">
+          <a href="">
+            <li class="list-group-item">Person A
+              <span class="badge" style="background-color: #fd265c">14</span>
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A
+              <span class="badge" style="background-color: #fd265c">14</span>
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Note: Insert CSS to not exceed 100% viewport and overflow scrolls. 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+          <a href="">
+            <li class="list-group-item">Person A 
+            </li>
+          </a>
+        </ul>
+      </div>
     </div>
-
-    <div class="col-md-9"> <!-- Right Chat Pane -->
-      <div class="card">
-        <div class="card-header" style="">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 26px">
-            <a class="navbar-brand" href="#">Group Chat A</a>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-toggle="modal" data-target="#newGroupUserModal"><span class="badge badge-primary">Add User</span></a>
+    <div class="col-md-9">
+      <!-- Right Chat Pane -->
+      <div class="panel-header" style="">
+        <nav class="navbar navbar-default" style="background-color: white">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <span class="navbar-brand" style="color: black; font-size: 20px">Group Chat A</span>
+            </div>
+            <div class="">
+              <ul class="nav navbar-nav">
+                <li class="">
+                  <a href="#" data-toggle="modal" data-target="#newGroupChatUser">
+                  <span class="badge" style="background-color: #4767f3">Edit Users</span>
+                  </a>
                 </li>
-                <li>
-                  <a class="nav-link" href="#" data-toggle="modal" data-target="#endGroupModal"><span class="badge badge-danger">Close Group</span></a>
+                <li class="">
+                  <a href="#" data-toggle="modal" data-target="#endGroup">
+                  <span class="badge" style="background-color: #fd265c">End Group Chat</span>
+                  </a>
                 </li>
               </ul>
-              <span class="navbar-text"><span class="badge badge-primary">X</span></span>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">X</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-          
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Chat Body</h5>
-          <p class="card-text">Text.</p>
-        </div>
-        <div class="card-footer text-muted">
-          Footer
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+      <div class="panel-body" style="background-color: #f7f7f7">
+        <h5 class="">Put existing chat body here</h5>
+      </div>
+      <div class="panel-footer" style="background-color: #f7f7f7">
+        <h5 class="">Put existing chat footer here</h5>
+      </div>
+    </div>
+    <!-- Modals -->
+    <!-- Create New Group Modal -->
+    <div class="modal fade" id="newGroupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Create New Group</h4>
+          </div>
+          <div class="modal-body">
+            <h5>Start a new group chat by entering a group name and clicking 'Create Group'. After creating your group, select your new group from the list on the left, then add users with the 'Add/Remove Users' button.</h5>
+            <input type="text" name="groupname" class="form-control" placeholder="Group name">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" style="background-color: #5bc7a3; border: #5bc7a3">Create Group</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Modals -->
-      
-      <!-- Add User to Group Modal -->
-      <div class="modal fade" id="newGroupUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Add User to Group Chat</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td><a href=""><span class="badge badge-danger">Remove</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td><a href=""><span class="badge badge-danger">Remove</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td><a href=""><span class="badge badge-danger">Remove</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td><a href=""><span class="badge badge-success">Add</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td><a href=""><span class="badge badge-success">Add</span></a></td>
-                  </tr>
-                  <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td><a href=""><span class="badge badge-success">Add</span></a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+    <!-- Add User to Group Modal -->
+    <div class="modal fade" id="newGroupChatUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Add/Remove Person From Group Chat</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #fd265c">Remove</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #fd265c">Remove</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #fd265c">Remove</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #fd265c">Remove</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #fd265c">Remove</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #4767f3">Add</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #4767f3">Add</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #4767f3">Add</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <a href="">
+                    <span class="badge" style="background-color: #4767f3">Add</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" style="background-color: #5bc7a3; border: #5bc7a3">Save changes</button>
           </div>
         </div>
       </div>
-
-      <!-- End Group Modal -->
-      <div class="modal fade" id="endGroupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Close Group Chat</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h4>Are you sure you want to close this group?</h4>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Keep Open</button>
-              <button type="button" class="btn btn-danger">Close Group</button>
-            </div>
+    </div>
+    <!-- End Group Modal -->
+    <div class="modal fade" id="endGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">End Group</h4>
+          </div>
+          <div class="modal-body">
+            <h4>This will delete the group and chat history. Are you sure?</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Keep Group</button>
+            <button type="button" class="btn btn-danger">Delete Group</button>
           </div>
         </div>
       </div>
-
-      <!-- New Group Modal -->
-      <div class="modal fade" id="newGroupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Create New Group Chat</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="">Group Name</label>
-                  <input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Group Name">
-                  <small id="emailHelp" class="form-text text-muted">Remember, others can see your group name.</small>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Create Group</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
-  </script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
-  </script> 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
-  </script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" type="text/javascript">
-  </script> 
-  <script type="text/javascript">
-     $(document).ready(function(){
-   $(".owl-carousel").owlCarousel({
-     loop:true,
-     center:true,
-   });
-  });
-  </script>
-  <!--Menu Animation Scripts -->
-
-  <script type="text/javascript">
-        function backgroundChange(x){
-        $("#main").toggleClass("hidden");
-        $("body").toggleClass("black lg-back");
-        //$("#animenu").toggleClass("change");
-        }
-  </script>
-
-</body>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
