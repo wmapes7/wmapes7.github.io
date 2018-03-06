@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mobile Table Style</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <style>
+          .msg_col{
+              border-bottom: solid 1px #999;
+              width: 25%;
+              text-align: center;
+              vertical-align: middle;
+              height: 10%;
+              padding-top: 15px;
+          }
+          
+           .message {
+             border-radius: 50%;
+             height: 34px;
+             width: 34px;
+             padding: 7px;
+             background: #999;
+             color: #fff;
+             text-align: center;
+             font: 18px Arial, sans-serif;
+             vertical-align: middle;
+             display: inline-block;
+          }
+          
+          .unread {
+              background: red;
+          }
+          
+          .top_row_border{
+              border-top: solid 1px;
+              border-color: #eee;
+          }
+          
+          .bottom_row_border{
+              border-bottom: solid 1px;
+              border-color: #eee;
+              padding-bottom: 15px;
+          }
+          
+          .name_col{
+              width: 25%;
+              vertical-align: bottom;
+          }
+          
+          .time_col{
+              width: 25%;
+              vertical-align: bottom;
+          }
+          
+</style>
+  </head>
+  <body style="background-color: #dae1ea; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif">
+      <div class="">
+          <nav class="navbar navbar-inverse" style="background-color: #4d5b6e; border-color: #4d5b6e ">
+              <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-nav" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#" style="color: white">Logo</a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="st-nav">
+                      <form class="navbar-form navbar-left">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                          </div>
+                          <button type="submit" class="btn btn-default">Search</button>
+                      </form>
+                      <ul class="nav navbar-nav">
+                          <li class="active">
+                              <a href="#">Text</a> <!-- add  <span class="sr-only">(current)</span> if active -->
+                          </li>
+                          <li>
+                              <a href="#">Inspect</a>
+                          </li>
+                          <li>
+                              <a href"#">Mobile Pay</a>   
+                          </li>
+                          <li>
+                              <a href"#">Feedback</a>   
+                          </li>
+                      </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Cog</a></li>
+                  <li><a href="#">Help</a></li>
+                      <li><a href="#">Logout</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+          </nav>
+      </div>
+    <div class="container">
+        <div class="" style="margin-bottom: 20px">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Sort By:</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Default</a></li>
+                    <li><a href="#">RO Number</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Service Advisor:</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Advisor 1</a></li>
+                    <li><a href="#">Advisor 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        
+        <div class="" style="border: 1px solid #fbfcfd; border-radius: 5px"> <!-- Customer List -->
+            <table class="" style="width: 100%; background-color: white; font-family: sans-serif; font: arial">
+                <th>
+                    <tr class="hidden-xs">
+                        <td class="msg_col"><strong>Texts</strong></td>
+                        <td class="msg_col"><strong>Customer</strong></td>
+                        <td class="msg_col hidden-xs"><strong>Status</strong></td>
+                        <td class="msg_col"><strong>Time</strong></td>
+                    </tr>
+                </th>
+                
+                
+                
+                <tr class="top_row_border" style="">
+                    <td class="msg_col bottom_row_border" rowspan="2" style="">
+                        <span class="message unread">1</span>
+                    </td>
+                    <td class="name_col" style="">
+                        <strong>William Mapes</strong>
+                        
+                    </td>
+                    <td class="hidden-xs text-center"><span style="background-color:green" class="badge hidden-xs">Technician In-Process</span></td>
+                    <td class="time_col text-center" style="">
+                        <span class="text-muted" style="">9:53pm</span>
+                    </td>
+                </tr>
+                <tr class="bottom_row_border">
+                    <td colspan="3" class="" style="vertical-align: top" ><span class="text-muted">RO: 123456</span></td>
+                </tr>
+                
+                <tr class="top_row_border" style="">
+                    <td class="msg_col bottom_row_border" rowspan="2" style="">
+                        <span class="message unread">1</span>
+                    </td>
+                    <td class="name_col" style="">
+                        <strong>William Mapes</strong>
+                        
+                    </td>
+                    <td class="hidden-xs text-center"><span style="background-color:green" class="badge hidden-xs">Technician In-Process</span></td>
+                    <td class="time_col text-center" style="">
+                        <span class="text-muted" style="">9:53pm</span>
+                    </td>
+                </tr>
+                <tr class="bottom_row_border">
+                    <td colspan="3" class="" style="vertical-align: top" ><span class="text-muted">RO: 123456</span></td>
+                </tr>
+                
+                <tr class="top_row_border" style="">
+                    <td class="msg_col bottom_row_border" rowspan="2" style="">
+                        <span class="message unread">1</span>
+                    </td>
+                    <td class="name_col" style="">
+                        <strong>William Mapes</strong>
+                        
+                    </td>
+                    <td class="hidden-xs text-center"><span style="background-color:green" class="badge hidden-xs">Technician In-Process</span></td>
+                    <td class="time_col text-center" style="">
+                        <span class="text-muted" style="">9:53pm</span>
+                    </td>
+                </tr>
+                <tr class="bottom_row_border">
+                    <td colspan="3" class="" style="vertical-align: top" ><span class="text-muted">RO: 123456</span></td>
+                </tr>
+                
+            </table>
+            
+        </div>
+      <nav aria-label="Page navigation" class="pull-right">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
