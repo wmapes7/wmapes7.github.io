@@ -7,9 +7,9 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Mobile Table Style</title>
 
-        <!-- Bootstrap Local For Dev-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/st.css">
+        <!-- Bootstrap Local For Dev
+        <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        
         
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -54,6 +54,8 @@
                 
             }
             
+            /*Media Queries for mobile device */
+            
             @media (max-width: 768px){
                 .text-col{
                     padding-left: 0px;
@@ -64,6 +66,29 @@
                 .text-sort-col {
                     text-align: center;
                 }
+                
+                .navbar .badge {
+                    position: absolute;
+                    background-color: #fd265c;
+                    color: #fff;
+                    top: 6px;
+                    right: px;
+                    border-radius: 100%;
+                    width: 20px;
+                    height: 20px;
+                    font-weight: 400;
+                    font-size: 11px;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 1.15;
+                    z-index: 3;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: baseline;
+                }
+            
             }
             
             .time-col{
@@ -91,6 +116,8 @@
                 background-color: #dbe1ea;
             }
             
+            /*Text Message Status Icon Stylings */
+            
             .message {
                 border-radius: 50%;
                 height: 38px;
@@ -104,6 +131,22 @@
                 display: inline-block;
             }
             
+            .unread {
+                background: #fd265c;
+            }
+            
+            .no-message {
+                height: 38px;
+                width: 38px;
+                padding: 6px;
+                color: #999;
+                text-align: center;
+                font: 18px Arial, sans-serif;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            
+            /*Table Column Styles */
             
             .name_col{
                 width: 20%;
@@ -121,9 +164,7 @@
                 width: 20%;
             }
           
-            .unread {
-                background: #fd265c;
-            }
+
           
             .top_row_border{
                 border-top: solid 1px;
@@ -134,22 +175,6 @@
                 border-bottom: 1px solid #c3c3c5;
             }
             
-            .st_badge{
-                display: inline;
-                padding: .2em .6em .3em;
-                font-size: 75%;
-                font-weight: bold;
-                line-height: 1;
-                color: #fff;
-                text-align: center;
-                white-space: nowrap;
-                vertical-align: baseline;
-                border-radius: .25em;
-                border-radius: 6px;
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 1.15;
-            }
             
             .filter-row{
                 height: 60px;
@@ -210,6 +235,11 @@
                 border-bottom: 2px solid #fff;
             }
             
+            .navbar-inverse .navbar-nav li a img :hover {
+                background: #4e5c6e;
+                border-bottom: 0px;
+            }
+            
             .navbar-inverse .navbar-nav li span {
                 font-size: 13px;
                 color: #dae1e9;
@@ -229,6 +259,16 @@
                 
             }
             
+            .status {
+                border-radius: 6px;
+                
+            }
+            
+            .status-badge-container span {
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1.15;
 
 
         </style>
@@ -259,70 +299,68 @@
                           <button type="submit" class="btn btn-default st-btn">Search</button>
                       </form>
                       <ul class="nav navbar-nav">
-                          <li class="">
+                          <li class="hidden-xs">
                               <a href="#">
                               <img src="assets/admin.svg">
                               </a>
                           </li>
-                        <li class="">
+                        <li class="hidden-xs">
                             <a href="#" class="">
                                   <img src="assets/dashboard.svg">
-                                  <span>Dashboard</span>
+                                  <span class="hidden-sm">Dashboard</span>
                             </a>
                           </li>
                           
                           <li class="">
                               <a href="#">
                                   <img src="assets/text.svg">
-                                  <span>Text</span>
+                                  <span class="hidden-sm">Text</span>
                                   <div class="badge">999</div>
                             </a>
                           </li>
-                          <li>
+                          <li class="hidden-xs">
                               <a href="#">
                                 <img src="assets/inspect.svg">
-                                <span>Inspect</span>
+                                <span class="hidden-sm">Inspect</span>
                                 <div class="badge">1</div>
                               </a>
                               
                           </li>
-                          <li>
+                          <li class="hidden-xs">
                                 <a href="#">
                                 <img src="assets/wallet.svg">
-                                <span>Mobile Pay</span>
+                                <span class="hidden-sm">Mobile Pay</span>
                                     <div class="badge">1</div>
                               </a>   
                           </li>
-                          <li>
+                          <li class="hidden-xs">
                               <a href="#">
                                 <img src="assets/feedback.svg">
-                                <span>Feedback</span>
+                                <span class="hidden-sm">Feedback</span>
                                   <div class="badge">1</div>
                               </a>  
                           </li>
-                        <li>
+                        <li class="hidden-xs">
                               <a href="#">
                                 <img src="assets/internal_chat.svg">
-                                <span>Internal Chat</span>
+                                <span class="hidden-sm">Internal Chat</span>
                                   <div class="badge">1</div>
                               </a>   
                           </li>
                       </ul>
 
                   <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li class="hidden-xs">
                         <a href="#">
                             <img src="assets/switcher.svg">
                         </a>
                     </li>
-                  <li>
+                  <li class="hidden-xs">
                         <a href="#">
                             <img src="assets/settings.svg">
                         </a>
-                    </li>
-
-                      
-                                        <li>
+                    </li>  
+                    <li class="hidden-xs">
                         <a href="#">
                             <img src="assets/question.svg">
                         </a>
@@ -365,15 +403,37 @@
                 <table class="table-hover table-striped" style="background-color: white; font-size: 16p; width:100%">
                     <th style="">
                         <tr class="table-sort-row" style="background: #fff">
-                            <td class="text-sort-col" style=""><strong>Texts</strong></td>
-                            <td class="hidden-xs"><strong>Repair Order</strong></td>
-                            <td class=""><strong>Customer</strong></td>
-                            <td class="hidden-xs"><strong>Status</strong></td>
-                            <td class=""><strong>Advisor</strong></td>
-                            <td class="hidden-xs" style="text-align: left"><strong>Last Comm.</strong></td>
+                            <td class="text-sort-col" style=""><strong>Texts</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></td>
+                            <td class="hidden-xs"><strong>Repair Order</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></td>
+                            <td class=""><strong>Customer</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></td>
+                            <td class="hidden-xs"><strong>Status</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></td>
+                            <td class=""><strong>Advisor</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></td>
+                            <td class="hidden-xs" style="text-align: left"><strong>Last Comm.</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></td>
                         </tr>
                     </th>
                 
+                    
+                        <tr class="text-center" style="">
+                            <td class="text-col bottom-row-border" style="">
+                                <span class=""><img src="assets/cancel.svg"></span>
+                            </td>
+                            <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
+                            <td class="text-center bottom-row-border sort-col" style="">
+                                <strong>Super Longnameistan</strong>
+
+                            </td>
+                            <td class="hidden-xs text-center bottom-row-border sort-col">
+                                <div class=""> <!-- status badge -->
+                                    <span style="" class=""><img src="assets/checkmark-sm.svg"></span>
+                                    <span class="glyphicon glyphicon-ok">&nbsp;</span>Inspect - Sent to Customer
+                                </div>
+                                
+                            </td>
+                            <td class="text-center bottom-row-border sort-col">Super Long Name Smitherton</td>
+                            <td class="time-col bottom-row-border hidden-xs" style="">30 minutes ago
+                            </td>
+                        </tr>
+                   
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
                             <span class="message unread">1</span>
@@ -383,7 +443,7 @@
                             <strong>Super Longnameistan</strong>
 
                         </td>
-                        <td class="hidden-xs text-center bottom-row-border  sort-col" rowspan="">
+                        <td class="hidden-xs text-center bottom-row-border  sort-col">
                             <span style="background-color:green; border-bottom: 1px" class="st_badge hidden-xs"><span class="glyphicon glyphicon-ok">&nbsp;</span>Inspect - Sent to Customer</span>
                         </td>
                         <td class="text-center bottom-row-border sort-col">Super Long Name Smitherton</td>
@@ -393,7 +453,24 @@
                     
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
+                            <span class=""><img src="assets/sent.svg"></span>
+                        </td>
+                        <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
+                        <td class="text-center bottom-row-border sort-col" style="">
+                            <strong>Super Longnameistan</strong>
+
+                        </td>
+                        <td class="hidden-xs text-center bottom-row-border sort-col">
+                            <span style="background-color:green; border-bottom: 1px" class="st_badge hidden-xs"><span class="glyphicon glyphicon-ok">&nbsp;</span>Inspect - Sent to Customer</span>
+                        </td>
+                        <td class="text-center bottom-row-border sort-col">Super Long Name Smitherton</td>
+                        <td class="time-col bottom-row-border hidden-xs" style="">30 minutes ago
+                        </td>
+                    </tr>
+                    
+                    <tr class="text-center" style="">
+                        <td class="text-col bottom-row-border" style="">
+                            <span class=""><img src="assets/caution.svg"></span>
                         </td>
                         <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
                         <td class="text-center bottom-row-border sort-col" style="">
@@ -410,7 +487,7 @@
                     
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
+                            <span class="no-message">-</span>
                         </td>
                         <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
                         <td class="text-center bottom-row-border sort-col" style="">
@@ -427,41 +504,7 @@
                     
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
-                        </td>
-                        <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
-                        <td class="text-center bottom-row-border sort-col" style="">
-                            <strong>Super Longnameistan</strong>
-
-                        </td>
-                        <td class="hidden-xs text-center bottom-row-border  sort-col">
-                            <span style="background-color:green; border-bottom: 1px" class="st_badge hidden-xs"><span class="glyphicon glyphicon-ok">&nbsp;</span>Inspect - Sent to Customer</span>
-                        </td>
-                        <td class="text-center bottom-row-border sort-col">Super Long Name Smitherton</td>
-                        <td class="time-col bottom-row-border hidden-xs" style="">30 minutes ago
-                        </td>
-                    </tr>
-                    
-                    <tr class="text-center" style="">
-                        <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
-                        </td>
-                        <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
-                        <td class="text-center bottom-row-border sort-col" style="">
-                            <strong>Super Longnameistan</strong>
-
-                        </td>
-                        <td class="hidden-xs text-center bottom-row-border  sort-col">
-                            <span style="background-color:green; border-bottom: 1px" class="st_badge hidden-xs"><span class="glyphicon glyphicon-ok">&nbsp;</span>Inspect - Sent to Customer</span>
-                        </td>
-                        <td class="text-center bottom-row-border sort-col">Super Long Name Smitherton</td>
-                        <td class="time-col bottom-row-border hidden-xs" style="">30 minutes ago
-                        </td>
-                    </tr>
-                    
-                    <tr class="text-center" style="">
-                        <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
+                            <span class="no-message">-</span>
                         </td>
                         <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
                         <td class="text-center bottom-row-border sort-col" style="">
@@ -478,7 +521,7 @@
                     
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
+                            <span class="no-message">-</span>
                         </td>
                         <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
                         <td class="text-center bottom-row-border sort-col" style="">
@@ -495,7 +538,7 @@
                     
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
+                            <span class="no-message">-</span>
                         </td>
                         <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
                         <td class="text-center bottom-row-border sort-col" style="">
@@ -512,7 +555,7 @@
                     
                     <tr class="text-center" style="">
                         <td class="text-col bottom-row-border" style="">
-                            <span class="message">0</span>
+                            <span class="no-message">-</span>
                         </td>
                         <td class="hidden-xs text-center bottom-row-border sort-col" rowspan="1" style="">123456</td>
                         <td class="text-center bottom-row-border sort-col" style="">
