@@ -188,10 +188,23 @@
                 display: inline-block;
             }
             
+            .auth-no-unread{
+                height: 34px;
+                width: 34px;
+                padding: 6px;
+                color: #999;
+                text-align: center;
+                font: 18px Arial, sans-serif;
+                display: inline-block;
+            }
+            
             .unread {
                 background: #fd265c;
             }
             
+            .unread-other-user {
+                background: #9e9e9e;
+            }
 
             .st-btn{
                 height: 40px;
@@ -433,7 +446,7 @@
                             <th class="mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                             <th class="hidden-xs comm-col"><strong>Last Comm.</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                     </tr>
-                    <tr> <!--RO Open -->
+                    <tr> <!-- Unread Message, RO Open -->
                         <td class="text-col"><span class="message unread">1</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
@@ -446,8 +459,8 @@
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
-                    <tr> <!-- RO Closed -->
-                        <td class="text-col"><span class="message unread">1</span></td>
+                    <tr> <!-- Unauth SMS, RO Closed -->
+                        <td class="text-col"><img src="assets/cancel.svg"></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
@@ -459,8 +472,8 @@
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
-                    <tr> <!-- Inspect - Tech in Process -->
-                        <td class="text-col"><span class="message unread">1</span></td>
+                    <tr> <!-- Sent SMS Auth, Inspect - Tech in Process -->
+                        <td class="text-col"><img src="assets/sent.svg"></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
@@ -472,8 +485,8 @@
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
-                    <tr> <!-- Inspect - Tech Complete -->
-                        <td class="text-col"><span class="message unread">1</span></td>
+                    <tr> <!-- No Unread SMS, Inspect - Tech Complete -->
+                        <td class="text-col"><span class="auth-no-unread">-</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
@@ -486,8 +499,8 @@
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
                     
-                    <tr> <!-- Inspect - Quote Sent -->
-                        <td class="text-col"><span class="message unread">1</span></td>
+                    <tr> <!-- Landline, Inspect - Quote Sent -->
+                        <td class="text-col"><img src="assets/phone.svg"></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
@@ -500,8 +513,8 @@
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
                     
-                    <tr> <!-- Mobile Pay - Invoice Ready -->
-                        <td class="text-col"><span class="message unread">1</span></td>
+                    <tr> <!-- Unread SMS, other user Mobile Pay - Invoice Ready -->
+                        <td class="text-col"><span class="message unread-other-user">1</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
@@ -514,8 +527,8 @@
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
                     
-                    <tr> <!-- Mobile Pay - Invoice Paid -->
-                        <td class="text-col"><span class="message unread">1</span></td>
+                    <tr> <!-- Opt-Out, Mobile Pay - Invoice Paid -->
+                        <td class="text-col"><img src="assets/opt-out.svg"></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
