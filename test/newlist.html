@@ -47,7 +47,7 @@
             
             .material-grey {
                 background-color: #9e9e9e;
-                color: #000;
+                color: #fff;
             }
             
             .st-red {
@@ -433,12 +433,38 @@
                             <th class="mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                             <th class="hidden-xs comm-col"><strong>Last Comm.</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                     </tr>
-                    <tr>
+                    <tr> <!--RO Open -->
                         <td class="text-col"><span class="message unread">1</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
-                            <div class="status-badge-container st-red">        
+                            <div class="status-badge-container material-grey">        
+                                <span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span>
+                                <span>RO Open</span>
+                            </div>
+                        </td>
+                        <td class="">Advisor Name</td>
+                        <td class="hidden-xs comm-col">90 days ago</td>
+                    </tr>
+                    <tr> <!-- RO Closed -->
+                        <td class="text-col"><span class="message unread">1</span></td>
+                        <td class="hidden-xs">123456</td>
+                        <td class="">Customer Name</td>
+                        <td class="hidden-xs">
+                            <div class="status-badge-container material-grey">        
+                                <span class="glyphicon glyphicon-ok" style="padding-right: 5px"></span>
+                                <span>RO Closed</span>
+                            </div>
+                        </td>
+                        <td class="">Advisor Name</td>
+                        <td class="hidden-xs comm-col">90 days ago</td>
+                    </tr>
+                    <tr> <!-- Inspect - Tech in Process -->
+                        <td class="text-col"><span class="message unread">1</span></td>
+                        <td class="hidden-xs">123456</td>
+                        <td class="">Customer Name</td>
+                        <td class="hidden-xs">
+                            <div class="status-badge-container material-yellow">        
                                 <span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span>
                                 <span>Inspection - Tech In Process</span>
                             </div>
@@ -446,45 +472,62 @@
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
-                                        <tr>
+                    <tr> <!-- Inspect - Tech Complete -->
                         <td class="text-col"><span class="message unread">1</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container st-red">        
-                                <span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span>
-                                <span>Inspection - Tech In Process</span>
+                                <span class="glyphicon glyphicon-alert" style="padding-right: 5px"></span>
+                                <span>Inspection - Tech Complete</span>
                             </div>
                         </td>
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
-                                        <tr>
+                    
+                    <tr> <!-- Inspect - Quote Sent -->
                         <td class="text-col"><span class="message unread">1</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
-                            <div class="status-badge-container st-red">        
-                                <span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span>
-                                <span>Inspection - Tech In Process</span>
+                            <div class="status-badge-container material-green">        
+                                <span class="glyphicon glyphicon-ok" style="padding-right: 5px"></span>
+                                <span>Inspection - Quote Sent</span>
                             </div>
                         </td>
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
-                                        <tr>
+                    
+                    <tr> <!-- Mobile Pay - Invoice Ready -->
                         <td class="text-col"><span class="message unread">1</span></td>
                         <td class="hidden-xs">123456</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
-                            <div class="status-badge-container st-red">        
+                            <div class="status-badge-container material-yellow">        
                                 <span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span>
-                                <span>Inspection - Tech In Process</span>
+                                <span>Mobile Pay - Invoice Ready</span>
                             </div>
                         </td>
                         <td class="">Advisor Name</td>
                         <td class="hidden-xs comm-col">90 days ago</td>
                     </tr>
+                    
+                    <tr> <!-- Mobile Pay - Invoice Paid -->
+                        <td class="text-col"><span class="message unread">1</span></td>
+                        <td class="hidden-xs">123456</td>
+                        <td class="">Customer Name</td>
+                        <td class="hidden-xs">
+                            <div class="status-badge-container material-green">        
+                                <span class="glyphicon glyphicon-ok" style="padding-right: 5px"></span>
+                                <span>Mobile Pay - Paid By Mobile</span>
+                            </div>
+                        </td>
+                        <td class="">Advisor Name</td>
+                        <td class="hidden-xs comm-col">90 days ago</td>
+                    </tr>
+                    
                 </table>
             </div>
             
