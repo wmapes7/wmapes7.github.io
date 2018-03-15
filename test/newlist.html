@@ -95,6 +95,14 @@
                 width: 240px;
             }
             
+            .sm-col {
+                width: 180px;
+            }
+            
+            .xs-col {
+                width: 60px;
+            }
+            
             .text-col {
                 text-align: right;
             }
@@ -107,29 +115,35 @@
                 background-color: #dbe1ea;
             }
             
+            .status-badge-container {
+                border-radius: 6px;
+                vertical-align: middle;
+                padding-top: 3px;
+                padding-bottom: 3px;
+
+            }
+            
             
             /*Media Queries for mobile device */
             
             @media (max-width: 767px){
                 .text-col{
+                    width: 33%;
                     text-align: center;
+                    
                 }
                 
                 .mid-col{
                     width: 33%;
                 }
                 
-                .text-sort-col {
-                    text-align: center;
-                    width: 20%;
-                }
                 
                 .navbar .badge {
                     position: absolute;
                     background-color: #fd265c;
                     color: #fff;
                     top: 6px;
-                    right: px;
+                    right: 314px;
                     border-radius: 100%;
                     width: 20px;
                     height: 20px;
@@ -148,19 +162,29 @@
             
             }
             
+            /*Media Queries for Devices with width = 768px */
+            
             @media (width: 768px) {
                 table{
                     table-layout: auto;
                 }
                 
-                .mid-col{
-                    width: 18%;
+                .text-col {
+                    width: 120px;
                 }
                 
-                .status-badge-container {
-                    height: 40px;
+                .sm-col {
+                    width: 100px;
                 }
+                
+                .mid-col{
+                    width: 122px;
+                }
+                
+
             }
+            
+            /* Media Queries for Devices with width = 1024px */
             
             @media (width: 1024px) {
                 table{
@@ -206,9 +230,6 @@
                 background: #9e9e9e;
             }
 
-            .st-btn{
-                height: 40px;
-            }
             
             .navbar-inverse {
                 background: #4e5c6f;
@@ -219,11 +240,11 @@
             }
 
             
-           @media (min-width: 768px)
+           /*@media (min-width: 768px)
                 .navbar-nav {
                     float: left;
                     margin: 0;
-            }
+            }*/
             
             .navbar .badge {
                 position: absolute;
@@ -248,19 +269,19 @@
             }
             
             .navbar-inverse .navbar-nav li :hover {
-                
                 border-bottom: 2px solid #fff;
             }
             
             .navbar-inverse .navbar-nav li :active {
-                
                 border-bottom: 2px solid #fff;
             }
             
+            .navbar-inverse .navbar-nav li a :active {
+                border-bottom: 0px;
+            }
             
             
-            .navbar-inverse .navbar-nav li a :hover {
-                
+            .navbar-inverse .navbar-nav li a :hover {    
                 border-bottom: 0px;
             }
             
@@ -284,14 +305,7 @@
                 
             }
                    
-            .status-badge-container {
-                border-radius: 6px;
-                vertical-align: middle;
-                padding-top: 3px;
-                padding-bottom: 3px;
 
-            }
-            
 
         </style>
     </head>
@@ -440,7 +454,8 @@
                 <table class="table-hover table-striped">
                     <tr class="table-sort-row" style="background: #fff"> <!--Hack here to stop hover effect -->
                             <th class="text-col"><strong>Texts</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
-                            <th class="hidden-xs mid-col"><strong>Repair Order</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
+                            <th class="hidden-xs sm-col"><strong>Repair Order</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
+                            <th class="hidden-xs xs-col"><strong>Tag</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                             <th class="mid-col"><strong>Customer</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                             <th class="hidden-xs mid-col"><strong>Status</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
                             <th class="mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg" style="padding-left: 4px"></th>
@@ -449,6 +464,7 @@
                     <tr> <!-- Unread Message, RO Open -->
                         <td class="text-col"><span class="message unread">1</span></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container material-grey">        
@@ -462,6 +478,7 @@
                     <tr> <!-- Unauth SMS, RO Closed -->
                         <td class="text-col"><img src="assets/no_auth.svg"></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container material-grey">        
@@ -475,6 +492,7 @@
                     <tr> <!-- Sent SMS Auth, Inspect - Tech in Process -->
                         <td class="text-col"><img src="assets/sent.svg"></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container material-yellow">        
@@ -488,6 +506,7 @@
                     <tr> <!-- No Unread SMS, Inspect - Tech Complete -->
                         <td class="text-col"><span class="auth-no-unread">-</span></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container st-red">        
@@ -502,6 +521,7 @@
                     <tr> <!-- Landline, Inspect - Quote Sent -->
                         <td class="text-col"><img src="assets/phone.svg"></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container material-green">        
@@ -516,6 +536,7 @@
                     <tr> <!-- Unread SMS, other user Mobile Pay - Invoice Ready -->
                         <td class="text-col"><span class="message unread-other-user">1</span></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container material-yellow">        
@@ -530,6 +551,7 @@
                     <tr> <!-- Opt-Out, Mobile Pay - Invoice Paid -->
                         <td class="text-col"><img src="assets/opt-out.svg"></td>
                         <td class="hidden-xs">123456</td>
+                        <td class="hidden-xs">123A</td>
                         <td class="">Customer Name</td>
                         <td class="hidden-xs">
                             <div class="status-badge-container material-green">        
