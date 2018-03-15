@@ -129,10 +129,8 @@ table tr th img {
             /*Media Queries for mobile device */
             
             @media (max-width: 767px){
-                .text-col{
-                    width: 33%;
-                    text-align: center;
-                    
+                .sm-col{
+                    width:33%;
                 }
                 
                 .mid-col{
