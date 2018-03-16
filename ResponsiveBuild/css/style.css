@@ -27,22 +27,15 @@ body {
      background-color: #2196f3;
      color: #fff;
 }
- .glyphicon {
-     position: relative;
-     top: 2px;
-     margin-right: 5px;
-     display: inline-block;
-     font-family: 'Glyphicons Halflings';
-     font-style: normal;
-     font-weight: normal;
-     line-height: 1;
-     -webkit-font-smoothing: antialiased;
-}
+
 /*Customer List Table */
  table {
      width: 100%;
      table-layout: fixed;
      background-color: #fff;
+}
+ .table-hover>tbody>tr:hover {
+     background-color: #dbe1ea;
 }
  .table-filter-row{
      height: 60px;
@@ -91,14 +84,22 @@ body {
      padding-top: 3px;
      padding-bottom: 3px;
 }
- .table-hover>tbody>tr:hover {
-     background-color: #dbe1ea;
-}
  .status-badge-container {
      border-radius: 6px;
      vertical-align: middle;
      padding-top: 5px;
      padding-bottom: 5px;
+}
+ .glyphicon {
+     position: relative;
+     top: 2px;
+     margin-right: 5px;
+     display: inline-block;
+     font-family: 'Glyphicons Halflings';
+     font-style: normal;
+     font-weight: normal;
+     line-height: 1;
+     -webkit-font-smoothing: antialiased;
 }
 /*Media Queries for mobile device */
  @media (max-width: 767px){
@@ -193,11 +194,13 @@ body {
  .unread-other-user {
      background: #9e9e9e;
 }
+/*Navbar*/
  .navbar-inverse {
      background: #4e5c6f;
      border: 0 none;
      border-radius: 0px;
      margin: 0;
+     padding-top: 3px;
      min-height: 60px;
 }
  @media (min-width: 768px){
@@ -266,7 +269,6 @@ body {
      margin-right: -15px;
      margin-left: -15px;
 }
-
 /*Buttons*/
  .st-btn{
      height: 40px;
