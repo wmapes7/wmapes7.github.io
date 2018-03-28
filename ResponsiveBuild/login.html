@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Customer List Styles</title>
+    <title>Invoice Page Styles</title>
 
-    <!--Bootstrap Local For Dev 
+    <!--Bootstrap Local For Dev
         <link href="css/bootstrap.css" rel="stylesheet"> -->
 
     <!-- Bootstrap CDN -->
@@ -19,6 +19,8 @@
 
     <!-- App Styles -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +34,7 @@
 <body style="">
     <div class="continer-fluid">
         <!--Navbar -->
-        <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -148,9 +150,9 @@
             </li>
             <li class="">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default st-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advisor Select<span class="caret" style=""></span>
+                    <button type="button" class="btn btn-default st-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advisor Select<span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" style="">
+                    <ul class="dropdown-menu">
                         <li><a href="#">Advisor Longnametest</a></li>
                         <li><a href="#">Advisor Longnametest</a></li>
                         <li><a href="#">Advisor Longnametest</a></li>
@@ -166,7 +168,7 @@
                 <button class="btn btn-default st-btn">Away Message </button>
             </li>
             <li class="text-right hidden-xs">
-                <span class="" style="">Now Showing: 10 Advisors' Repair Orders</span>
+                <span>Now Showing: 10 Advisors' Repair Orders</span>
             </li>
         </ul>
     </div>
@@ -176,170 +178,74 @@
             <!-- Customer List -->
             <table class="table-hover table-striped">
                 <tr class="table-sort-row" style="background: #fff">
-                    <!--Inline style hack to stop hover effect -->
-                    <th class="text-col"><strong>Texts</strong><img src="assets/caret-down-active.svg"></th>
-                    <th class="hidden-xs sm-col"><strong>Repair Order</strong><img src="assets/caret-down.svg"></th>
+                    <!--Background hack to stop hover effect -->
+                    <th class="text-col hidden-xs"><strong>Texts</strong><img src="assets/caret-down-active.svg"></th>
+                    <th class="sm-col"><strong>Repair Order</strong><img src="assets/caret-down.svg"></th>
                     <th class="hidden-xs xs-col"><strong>Tag</strong><img src="assets/caret-down.svg"></th>
-                    <th class="mid-col mid-col"><strong>Customer</strong><img src="assets/caret-down.svg"></th>
-                    <th class="hidden-xs mid-col"><strong>Status</strong><img src="assets/caret-down.svg"></th>
-                    <th class="mid-col mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg"></th>
-                    <th class="hidden-xs comm-col"><strong>Last Comm.</strong><img src="assets/caret-down.svg"></th>
+                    <th class="mid-col"><strong>Customer</strong><img src="assets/caret-down.svg"></th>
+                    <th class="mid-col"><strong>Status</strong><img src="assets/caret-down.svg"></th>
+                    <th class="hidden-xs mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg"></th>
+                    <th class="hidden-xs comm-col"><strong>Invoice?</strong><img src="assets/caret-down.svg"></th>
                 </tr>
                 <tr>
-                    <!-- Unread Message, RO Open -->
-                    <td class="text-col"><span class="message unread">1</span></td>
-                    <td class="hidden-xs">123456</td>
+                    <!-- Invoiced, Paid -->
+                    <td class="hidden-xs text-col"><span class="message unread">1</span></td>
+                    <td class="">123456</td>
                     <td class="hidden-xs">123A</td>
                     <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-grey">
-                            <span class="glyphicon glyphicon-refresh"></span>
-                            <span>RO Open</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-                <tr>
-                    <!-- Unauth SMS, RO Closed -->
-                    <td class="text-col"><img src="assets/no_auth.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-grey">
-                            <span class="glyphicon glyphicon-ok"></span>
-                            <span>RO Closed</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-                <tr>
-                    <!-- Sent SMS Auth, Inspect - Tech in Process -->
-                    <td class="text-col"><img src="assets/sent.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-blue">
-                            <span class="glyphicon glyphicon-refresh"></span>
-                            <span>Inspect - Tech In Process</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-                <tr>
-                    <!-- No Unread SMS, Inspect - Tech Complete -->
-                    <td class="text-col"><span class="auth-no-unread">-</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-yellow">
-                            <span class="glyphicon glyphicon-flag"></span>
-                            <span>Inspect - Tech Complete</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Landline, Inspect - Quote Sent -->
-                    <td class="text-col"><img src="assets/phone.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-green">
-                            <span class="glyphicon glyphicon-send"></span>
-                            <span>Inspect - Sent</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Error, Inspect - Quote Approved -->
-                    <td class="text-col"><img src="assets/caution.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-green">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                            <span>Inspect - Approved!</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Opt-Out, Inspect - Quote Declined -->
-                    <td class="text-col"><img src="assets/opt-out.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container st-red">
-                            <span class="glyphicon glyphicon-thumbs-down"></span>
-                            <span>Inspect - Declined</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Other User Unread SMS, other user Mobile Pay - Invoice Ready -->
-                    <td class="text-col"><span class="message unread-other-user">1</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-yellow">
-                            <span class="glyphicon glyphicon-usd"></span>
-                            <span>Mobile Pay - Invoice Ready</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Opt-Out, Mobile Pay - Invoice Paid -->
-                    <td class="text-col"><span class="auth-no-unread">-</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
+                    <td class="">
                         <div class="status-badge-container material-green">
                             <span class="glyphicon glyphicon-usd"></span>
                             <span>Mobile Pay - Paid By Mobile</span>
                         </div>
                     </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Opt-Out, Mobile Pay - Payment Error -->
-                    <td class="text-col"><span class="auth-no-unread">-</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
+                    <td class="hidden-xs">Advisor Name</td>
                     <td class="hidden-xs">
-                        <div class="status-badge-container st-red">
-                            <span class="glyphicon glyphicon-remove"></span>
-                            <span>Mobile Pay - Payment Error</span>
+                        <div class="invoice-badge-container material-green">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <span>Yes</span>
                         </div>
                     </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
+                </tr>
+                <tr>
+                    <!-- Not Invoiced, Not Sent -->
+                    <td class="hidden-xs text-col"><img src="assets/no_auth.svg"></td>
+                    <td class="">123456</td>
+                    <td class="hidden-xs">123A</td>
+                    <td class="">Customer Name</td>
+                    <td class="">
+                        <div class="status-badge-container material-yellow">
+                            <span class="glyphicon glyphicon-refresh"></span>
+                            <span>Mobile Pay - Invoice Ready</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">Advisor Name</td>
+                    <td class="hidden-xs">
+                        <div class="invoice-badge-container st-red">
+                            <span class="glyphicon glyphicon-alert"></span>
+                            <span>No</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Invoice Sent, Not Paid -->
+                    <td class="hidden-xs text-col"><img src="assets/sent.svg"></td>
+                    <td class="">123456</td>
+                    <td class="hidden-xs">123A</td>
+                    <td class="">Customer Name</td>
+                    <td class="">
+                        <div class="status-badge-container material-green">
+                            <span class="glyphicon glyphicon-send"></span>
+                            <span>Mobile Pay - Sent</span>
+                        </div>
+                    </td>
+                    <td class="hidden-xs">Advisor Name</td>
+                    <td class="hidden-xs">
+                        <div class="invoice-badge-container material-green">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <span>Yes</span>
+                        </div>
+                    </td>
                 </tr>
 
             </table>
@@ -348,7 +254,7 @@
         <div class="container-fluid text-center">
             <!-- Pagination -->
 
-            <nav aria-label="Page navigation">
+            <nav aria-label="Page navigation" class="" style="">
                 <ul class="pagination">
                     <li>
                         <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
@@ -369,8 +275,10 @@
     <!-- CDN jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+
     <!--CDN Bootstrap js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 </body>
 

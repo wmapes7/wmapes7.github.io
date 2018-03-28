@@ -177,170 +177,28 @@
             <table class="table-hover table-striped">
                 <tr class="table-sort-row" style="background: #fff">
                     <!--Inline style hack to stop hover effect -->
-                    <th class="text-col"><strong>Texts</strong><img src="assets/caret-down-active.svg"></th>
-                    <th class="hidden-xs sm-col"><strong>Repair Order</strong><img src="assets/caret-down.svg"></th>
+                    <th class="text-col"><strong>Repair Order</strong><img src="assets/caret-down-active.svg"></th>
+                    <th class="hidden-xs mid-col"><strong>Name</strong><img src="assets/caret-down.svg"></th>
                     <th class="hidden-xs xs-col"><strong>Tag</strong><img src="assets/caret-down.svg"></th>
-                    <th class="mid-col mid-col"><strong>Customer</strong><img src="assets/caret-down.svg"></th>
+                    <th class="desc-col"><strong>Vehicle Descripton</strong><img src="assets/caret-down.svg"></th>
                     <th class="hidden-xs mid-col"><strong>Status</strong><img src="assets/caret-down.svg"></th>
-                    <th class="mid-col mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg"></th>
-                    <th class="hidden-xs comm-col"><strong>Last Comm.</strong><img src="assets/caret-down.svg"></th>
+                    <th class="mid-col comm-col"><strong>Technician</strong><img src="assets/caret-down.svg"></th>
                 </tr>
                 <tr>
                     <!-- Unread Message, RO Open -->
-                    <td class="text-col"><span class="message unread">1</span></td>
-                    <td class="hidden-xs">123456</td>
+                    <td class="text-col">12345</td>
+                    <td class="hidden-xs">Customer Name</td>
                     <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
+                    <td class="">2016 Ford Explorer XLT</td>
                     <td class="hidden-xs">
                         <div class="status-badge-container material-grey">
                             <span class="glyphicon glyphicon-refresh"></span>
                             <span>RO Open</span>
                         </div>
                     </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-                <tr>
-                    <!-- Unauth SMS, RO Closed -->
-                    <td class="text-col"><img src="assets/no_auth.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-grey">
-                            <span class="glyphicon glyphicon-ok"></span>
-                            <span>RO Closed</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-                <tr>
-                    <!-- Sent SMS Auth, Inspect - Tech in Process -->
-                    <td class="text-col"><img src="assets/sent.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-blue">
-                            <span class="glyphicon glyphicon-refresh"></span>
-                            <span>Inspect - Tech In Process</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-                <tr>
-                    <!-- No Unread SMS, Inspect - Tech Complete -->
-                    <td class="text-col"><span class="auth-no-unread">-</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-yellow">
-                            <span class="glyphicon glyphicon-flag"></span>
-                            <span>Inspect - Tech Complete</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
+                    <td class="comm-col" style="padding-left: 20px">Tech Name</td>
                 </tr>
 
-                <tr>
-                    <!-- Landline, Inspect - Quote Sent -->
-                    <td class="text-col"><img src="assets/phone.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-green">
-                            <span class="glyphicon glyphicon-send"></span>
-                            <span>Inspect - Sent</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Error, Inspect - Quote Approved -->
-                    <td class="text-col"><img src="assets/caution.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-green">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                            <span>Inspect - Approved!</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Opt-Out, Inspect - Quote Declined -->
-                    <td class="text-col"><img src="assets/opt-out.svg"></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container st-red">
-                            <span class="glyphicon glyphicon-thumbs-down"></span>
-                            <span>Inspect - Declined</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Other User Unread SMS, other user Mobile Pay - Invoice Ready -->
-                    <td class="text-col"><span class="message unread-other-user">1</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-yellow">
-                            <span class="glyphicon glyphicon-usd"></span>
-                            <span>Mobile Pay - Invoice Ready</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Opt-Out, Mobile Pay - Invoice Paid -->
-                    <td class="text-col"><span class="auth-no-unread">-</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container material-green">
-                            <span class="glyphicon glyphicon-usd"></span>
-                            <span>Mobile Pay - Paid By Mobile</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
-
-                <tr>
-                    <!-- Opt-Out, Mobile Pay - Payment Error -->
-                    <td class="text-col"><span class="auth-no-unread">-</span></td>
-                    <td class="hidden-xs">123456</td>
-                    <td class="hidden-xs">123A</td>
-                    <td class="">Customer Name</td>
-                    <td class="hidden-xs">
-                        <div class="status-badge-container st-red">
-                            <span class="glyphicon glyphicon-remove"></span>
-                            <span>Mobile Pay - Payment Error</span>
-                        </div>
-                    </td>
-                    <td class="">Advisor Name</td>
-                    <td class="hidden-xs comm-col">90 days ago</td>
-                </tr>
 
             </table>
         </div>

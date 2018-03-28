@@ -179,19 +179,17 @@
             <table class="table-hover table-striped">
                 <tr class="table-sort-row" style="background: #fff">
                     <!--Background hack to stop hover effect -->
-                    <th class="text-col hidden-xs"><strong>Texts</strong><img src="assets/caret-down-active.svg"></th>
-                    <th class="sm-col"><strong>Repair Order</strong><img src="assets/caret-down.svg"></th>
-                    <th class="hidden-xs xs-col"><strong>Tag</strong><img src="assets/caret-down.svg"></th>
-                    <th class="mid-col"><strong>Customer</strong><img src="assets/caret-down.svg"></th>
-                    <th class="mid-col"><strong>Status</strong><img src="assets/caret-down.svg"></th>
-                    <th class="hidden-xs mid-col"><strong>Advisor</strong><img src="assets/caret-down.svg"></th>
-                    <th class="hidden-xs comm-col"><strong>Invoice?</strong><img src="assets/caret-down.svg"></th>
+
+                    <th class="invoice-left" style=""><strong>Repair Order</strong><img src="assets/caret-down.svg"></th>
+                    <th class="invoice-middle" style=""><strong>Customer</strong><img src="assets/caret-down.svg"></th>
+                    <th class="invoice-middle"><strong>Status</strong><img src="assets/caret-down.svg"></th>
+                    <th class="hidden-xs invoice-middle"><strong>Advisor</strong><img src="assets/caret-down.svg"></th>
+                    <th class="hidden-xs invoice-right"><strong>Invoice?</strong><img src="assets/caret-down.svg"></th>
                 </tr>
                 <tr>
                     <!-- Invoiced, Paid -->
-                    <td class="hidden-xs text-col"><span class="message unread">1</span></td>
-                    <td class="">123456</td>
-                    <td class="hidden-xs">123A</td>
+                    
+                    <td class="invoice-left">123456</td>
                     <td class="">Customer Name</td>
                     <td class="">
                         <div class="status-badge-container material-green">
@@ -209,9 +207,8 @@
                 </tr>
                 <tr>
                     <!-- Not Invoiced, Not Sent -->
-                    <td class="hidden-xs text-col"><img src="assets/no_auth.svg"></td>
-                    <td class="">123456</td>
-                    <td class="hidden-xs">123A</td>
+                    
+                    <td class="invoice-left">123456</td>
                     <td class="">Customer Name</td>
                     <td class="">
                         <div class="status-badge-container material-yellow">
@@ -229,9 +226,8 @@
                 </tr>
                 <tr>
                     <!-- Invoice Sent, Not Paid -->
-                    <td class="hidden-xs text-col"><img src="assets/sent.svg"></td>
-                    <td class="">123456</td>
-                    <td class="hidden-xs">123A</td>
+                    
+                    <td class="invoice-left">123456</td>
                     <td class="">Customer Name</td>
                     <td class="">
                         <div class="status-badge-container material-green">

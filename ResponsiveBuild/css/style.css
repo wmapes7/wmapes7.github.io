@@ -58,23 +58,46 @@ body {
      border-bottom: 1px solid #c3c3c5;
      text-align: center;
 }
- table td {
+ tr td {
      height: 60px;
      text-align: center;
 }
- .mid-col {
-     width: 240px;
+
+
+.invoice-left {
+    width: 24.2857%;
+    text-align: right;
 }
- .sm-col {
-     width: 180px;
+
+.invoice-middle {
+    width: 14.2857%;
 }
- .xs-col {
-     width: 60px;
+
+.invoice-right {
+    width: 24.2857%;
+    text-align: left;
 }
+
  .text-col {
+     width: 20%;
      text-align: right;
 }
+ .xs-col {
+     width: 3%;
+}
+ .sm-col {
+     width: 9%;
+}
+ .mid-col {
+     width: 14.72%;
+}
+
+.desc-col {
+    width: 18.56%;
+}
+
  .comm-col {
+     width: 20%;
      text-align: left;
 }
  .invoice-badge-container {
@@ -135,6 +158,20 @@ body {
          white-space: nowrap;
          vertical-align: baseline;
     }
+     
+     .invoice-left {
+         width: 33%;
+         text-align: center;
+     }
+
+     .invoice-middle {
+         width: 33%;
+     }
+
+     .invoice-right {
+        width: 33%;
+     }
+
 }
 /*Media Queries for Devices with width = 768px */
  @media (max-width: 769px) {
