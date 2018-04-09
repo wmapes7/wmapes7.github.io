@@ -334,12 +334,19 @@ body {
     margin-bottom: 15px;
 }
 
-.date-time {
+.note-header {
     font-size: 20px;
     background-color: #eeeeee;
     margin-bottom: 10px;
     border-bottom: 1px dashed black;
-    height: 100%;
+}
+
+.date-time {
+    float: left;
+}
+
+.note-from {
+    float: right;
 }
 
 .note-body {
@@ -351,6 +358,10 @@ body {
 .note-entry {
     text-align: left;
     background-color: #eee;
+}
+
+.note-instruct {
+    font-size: 16px;
 }
 
 .note-buttons {

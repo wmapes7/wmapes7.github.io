@@ -26,15 +26,18 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">Internal Notes RO #12345 | TAG 123</h4>
+						<h4 class="modal-title" id="myModalLabel"><strong>Internal Notes</strong><br>
+                            <strong>RO: </strong>12345 | <strong>Tag: </strong>123
+                            <br>
+                            <strong>Team: </strong>Advisor Name, Tech Name, All Parts Users</h4>
 					</div>
 					<div class="modal-body">
 						<div class="note">
 							<!--P&A Request Note -->
-							<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">P&A Request</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
+							<div class="col-md-12 note-header text-center">
+                                <span class="date-time">04/09/18 10:00am</span>
+                                <span>P&A Request</span>
+                                <span class="note-from">Service Advisor</span>
 							</div>
 							<div class="note-body container">
 								<!--Note Body -->
@@ -44,38 +47,36 @@
 						</div>
 						<div class="note">
 							<!--P&A Response Note -->
-							<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">P&A Response</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
+							<div class="col-md-12 note-header text-center">
+                                <span class="date-time">04/09/18 10:00am</span>
+                                <span>P&A Response</span>
+                                <span class="note-from">Parts User</span>
 							</div>
 							<div class="note-body container">
 								<!--Note Body -->
-								<span class="">P/A-DMTL PUMP ASSY WTR500030 VALVE C $256.78<br>
-								<!-- for illustration purposes only -->
-								 P/A-DMTL PUMP GROMMIT/SEAL LR003198 INSULATOR - $13.17<br>
-								<!-- for illustration purposes only -->
-								 IN STOCK</span>
+								<span class="">P/A-DMTL PUMP ASSY<br>
+								P/A-DMTL PUMP GROMMIT/SEAL</span>
 							</div>
 						</div>
 						<div class="note">
-							<!--Pull Parts Note -->
-								<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">Pull Parts Request</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
+							<!--Pull Parts Request Note -->
+							<div class="col-md-12 note-header text-center">
+                                <span class="date-time">04/09/18 10:00am</span>
+                                <span>Pull Parts Request</span>
+                                <span class="note-from">Service Advisor</span>
 							</div>
 							<div class="note-body container">
 								<!--Note Body -->
-								<span class="">CUSTOMER APPROVED WORK</span>
+								<span class="">P/A-DMTL PUMP ASSY<br>
+								P/A-DMTL PUMP GROMMIT/SEAL</span>
 							</div>
 						</div>
 						<div class="note">
-							<!--Parts Pulled Note -->
-							<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">Parts Pull Response</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
+							<!--Pull Parts Response Note -->
+							<div class="col-md-12 note-header text-center">
+                                <span class="date-time">04/09/18 10:00am</span>
+                                <span>Parts Pulled</span>
+                                <span class="note-from">Parts User</span>
 							</div>
 							<div class="note-body container">
 								<!--Note Body -->
@@ -84,45 +85,22 @@
 						</div>
 						<div class="note">
 							<!--General Note -->
-							<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">General Note</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
+							<div class="col-md-12 note-header text-center">
+                                <span class="date-time">04/09/18 10:00am</span>
+                                <span>General Note</span>
+                                <span class="note-from">Service Advisor</span>
 							</div>
 							<div class="note-body container">
 								<!--Note Body -->
-								<span class="">CUSTOMER IS UNHAPPY. PLEASE MAKE SURE TO LEAVE EXTRA DENTS.</span>
+								<span class="">General Note about the customer</span>
 							</div>
 						</div>
-						<div class="note">
-							<!--General Note -->
-							<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">General Note</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
-							</div>
-							<div class="note-body container">
-								<!--Note Body -->
-								<span class="">CUSTOMER IS UNHAPPY. PLEASE MAKE SURE TO LEAVE EXTRA DENTS.</span>
-							</div>
-						</div>
-						<div class="note">
-							<!--General Note -->
-							<div>
-                                <div class="col-md-4 date-time">04/09/18 10:00am</div>
-                                <div class="col-md-4 date-time text-center">General Note</div>
-                                <div class="col-md-4 date-time text-right">Service Advsior</div>
-							</div>
-							<div class="note-body container">
-								<!--Note Body -->
-								<span class="">CUSTOMER IS UNHAPPY. PLEASE MAKE SURE TO LEAVE EXTRA DENTS.</span>
-							</div>
-						</div>
+
 						<div class="modal-footer">
 
 						<div id="summernote"></div><!--WYSIWYG  -->
                         <div>
-							<p>In the field above, type or copy/paste a note. Then, click one of the blue note type buttons below to update the RO and notify other users.</p>
+							<p class="note-instruct">In the field above, type or copy/paste a note. Then, click one of the blue note type buttons below to update the RO and notify other users.</p>
 						</div>
 						<div class="text-center note-buttons">
 							<!-- Note Type Buttons -->
