@@ -339,7 +339,7 @@ body {
     background-color: #eeeeee;
     margin-bottom: 10px;
     border-bottom: 1px dashed black;
-    
+    height: 100%;
 }
 
 .note-body {
@@ -359,7 +359,7 @@ body {
 }
 
 .modal-footer {
-    padding:0px;
+    padding: 0px;
     text-align: left;
         
 }
