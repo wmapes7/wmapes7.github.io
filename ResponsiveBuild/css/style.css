@@ -28,6 +28,11 @@ body {
      color: #fff;
 }
 
+.material-purple {
+    background-color: #673ab7;
+    color: #fff;
+}
+
 /*Customer List Table */
  table {
      width: 100%;
