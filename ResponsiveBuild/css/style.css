@@ -379,3 +379,44 @@ body {
     text-align: left;
         
 }
+
+/* Login Page */
+
+.login-page {
+background: linear-gradient(180deg, rgba(29,119,239,1) 35%, rgba(0,212,255,1) 100%);    
+}
+
+.login-box {
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.1);
+    margin-top: 40%;
+}
+
+.login-content {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login-box a {
+    cursor: pointer;
+}
+
+.forgot {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    margin-top: 20px;
+    border: 1px solid #999;
+    
+    
+}
+
+.login-button:hover {
+    background-color: #f3f7fa;
+}
