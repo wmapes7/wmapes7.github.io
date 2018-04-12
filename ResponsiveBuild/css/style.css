@@ -383,7 +383,9 @@ body {
 /* Login Page */
 
 .login-page {
-background: linear-gradient(180deg, rgba(29,119,239,1) 35%, rgba(0,212,255,1) 100%);    
+    height: 100vh;
+background: rgb(29,119,239);
+background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 100%);
 }
 
 .login-box {
@@ -395,25 +397,30 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 35%, rgba(0,212,255,1) 10
 }
 
 .login-content {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.login-content img {
+    margin-bottom: 5%;
 }
 
 .login-box a {
     cursor: pointer;
+
 }
 
 .forgot {
+    display: block;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .login-button {
-    margin-top: 20px;
+    margin-top: 5%;
     border: 1px solid #999;
-    
     
 }
 
