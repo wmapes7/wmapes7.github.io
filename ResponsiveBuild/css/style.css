@@ -404,7 +404,7 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
 }
 
 .login-content img {
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 
 .login-box a {
@@ -419,9 +419,7 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
 }
 
 .login-button {
-    margin-top: 5%;
     border: 1px solid #999;
-    
 }
 
 .login-button:hover {
