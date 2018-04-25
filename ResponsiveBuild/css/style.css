@@ -426,3 +426,107 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
 .login-button:hover {
     background-color: #f3f7fa;
 }
+
+/* Quote Page */
+
+#quote-page strong {
+    font-size: 16px;
+}
+
+
+.quote-container{
+    border: 1px solid #dbe1ea;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+ #quote-page input {
+    border: 1px solid #7b94b7;
+    background-color: #f3f7fa;
+}
+
+#quote-page td {
+    vertical-align: bottom;
+}
+
+.line-input {
+    vertical-align: bottom;
+}
+
+#quote-totals tr {
+    background-color: #fff;
+    border: none;
+}
+
+#quote-totals td {
+    vertical-align: middle;
+}
+
+.totals-label {
+    width: 90%;
+    text-align: right;
+    background-color: #fff;
+    border: none;
+        
+}
+
+.totals-field {
+    width: 10%;
+    vertical-align: middle;
+    padding-left: 8px;
+    padding-right: 8px;
+        
+}
+
+.sub-total-row {
+    background-color: #dbe1ea;
+    border: none;
+}
+
+.tech-comment {
+    margin-top: 5px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.middle {
+    vertical-align: middle !important;
+}
+
+.add-btn {
+    width: 35px;
+    border: 1px solid #7b94b7;
+    padding-left: 10px;
+    background-color: #fff;
+    color: #4767f3;
+}
+
+.add-btn:hover {
+    color: #fff;
+    background-color: #4767f3;
+}
+
+.delete-btn {
+    width: 35px;
+    border: 1px solid #7b94b7;
+    padding-left: 10px;
+    color: #9e9e9e;
+}
+
+.delete-btn:hover {
+    color: #fff;
+    background-color: #fd265c;
+}
