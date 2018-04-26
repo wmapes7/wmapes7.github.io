@@ -541,10 +541,10 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
     background-color: white;
     border: 1px solid #dbe1eb;
     border-radius: 6px;
+    padding-bottom: 10px;    
 }
 
 .customer-info-header div {
-    
     vertical-align: middle;
     line-height: 2;
     margin: 0px;
@@ -575,16 +575,16 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
 
 .initial-bubble2 {
     display: inline-block;
+    background-color: #4767f3;
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background: #4e5c6e;
     color: #fff;
     text-align: center;
 }
 
 .customer-name {
-    font-size: 22px;
+    font-size: 18px;
     vertical-align: middle;
     margin-left: 5px;
 }
