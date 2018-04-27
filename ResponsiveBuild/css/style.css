@@ -429,10 +429,52 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
 
 /* Quote Page */
 
+.customer-info-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #dbe1eb;
+    border-radius: 6px;
+    padding-bottom: 10px;    
+}
+
+.customer-info-header #title {
+    font-size: 20px;
+}
+
+.customer-info-header div {
+    vertical-align: middle;
+    line-height: 2;
+    margin: 0px;
+}
+
+.initial-circle {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 3px;
+    background-color: #4767f3;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.customer-name {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.quote-btn {
+    background-color: #4767f3;
+    color: #fff;
+}
+
 #quote-page strong {
     font-size: 16px;
 }
-
 
 .quote-container{
     border: 1px solid #dbe1ea;
@@ -532,59 +574,4 @@ background: linear-gradient(180deg, rgba(29,119,239,1) 0%, rgba(104,191,231,1) 1
     background-color: #fd265c;
 }
 
-/* Quote Page Header */
 
-.customer-info-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 100%;
-    background-color: white;
-    border: 1px solid #dbe1eb;
-    border-radius: 6px;
-    padding-bottom: 10px;    
-}
-
-.customer-info-header div {
-    vertical-align: middle;
-    line-height: 2;
-    margin: 0px;
-}
-
-.name-short {
-    height: 340px;
-    width: 340px;
-    border-radius: 50%;
-    background-color: blue;
-    color: white;
-}
-
-
-.initial-bubble{
-    display: flex;
-    vertical-align: middle;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #4e5c6e;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-}
-
-.initial-bubble2 {
-    display: inline-block;
-    background-color: #4767f3;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-}
-
-.customer-name {
-    font-size: 18px;
-    vertical-align: middle;
-    margin-left: 5px;
-}

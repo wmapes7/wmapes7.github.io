@@ -135,13 +135,17 @@
     </div>
     <div class="container"> <!-- customer header -->
         <div class="row customer-info-header">
-            <div class="col-md-3" style="margin-left: 0px">
-                <div class=""><span style="font-size: 20px">Quote Builder</span>
+            <div class="col-md-3">
+                <div class="">
+                    <span id="title">Quote Builder</span>
                 </div>
-                <div class=""><span class="initial-bubble2">C</span><span class="customer-name">Long Customer Name</span></div>
+                <div class="">
+                    <span class="initial-circle">C</span>
+                    <span class="customer-name">Long Customer Name</span>
+                </div>
                 
             </div>
-            <div class="col-md-2" style="">
+            <div class="col-md-2">
                 <span><strong>Make: </strong></span><span>Vehicle</span>
                 <br>
                 <span><strong>Mileage: </strong></span><span>75000</span>
@@ -156,33 +160,27 @@
                 <br>
                 <span><strong>Advisor #: </strong></span><span>Jane Doe</span>
             </div>
-            <div class="col-md-3" style="">
+            <div class="col-md-3">
                 <div>
                    <strong>VIN: </strong><span>1234sdfasdfa1234ssf</span> 
                 </div>
                 <br>
                 <div class="text-right">
-                    <button class="btn btn-primary">Print Report & Quote</button>
-                    <button class="btn btn-primary">View Notes</button>
+                    <button class="btn quote-btn">Print Report & Quote</button>
+                    <button class="btn quote-btn">View Notes</button>
                 </div>           
             </div>
-          
         </div>
-        <div class="row" style=""> <!-- Alert banners -->
-            <div class="alert alert-success" role="alert">This inspection and quote has been sent to the customer!</div>
-                
-            </div>
-            <div class="col-md-2 text-right" style="padding: 0; vertical-align: middle">
-                
-            </div>
-            
+        <div class="row"> <!-- Alert banners -->
+            <div class="alert alert-success" role="alert">This inspection and quote has been sent to the customer!</div> 
         </div>
+    </div>
     
 
-    <div class="container quote-container">
+    <div class="container quote-container"> <!-- Quote Builder -->
 
         <div class="row" style="">        
-        <table class="table borderless" id="quote-table"> <!-- Rows table -->
+        <table class="table borderless" id="quote-table">
             <thead>
                 <tr style="">
                     <th style="width: 5%">Add/Delete</th>
@@ -201,14 +199,14 @@
                         <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
                     </td>
                     <td class="middle">
-                        <span class="circle st-red"></span>
+                        <span class="circle st-red"></span> <!--used st-red as placeholder, can be system-wide red -->
                     </td>
                     <td>
                         <div class="text-left">
                             <span><strong>Left Front Brakes</strong>
                             </span>
                             <br>
-                            <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                            <input class="form-control tech-comment" value="This is a tech comment that is editable"> <!--map tech comments into value field -->
                         </div>
                     </td>
                     <td>
@@ -218,16 +216,16 @@
                         <input type="" class="form-control quote-input" placeholder="Hours">
                     </td>
                     <td>
-                        <input type="" class="form-control quote-input" placeholder="Total Labor">
+                        <input type="" class="form-control quote-input" placeholder="Total Labor"> <!-- Rate * Hours = Total Labor -->
                     </td>
                     <td>
                         <input type="" class="form-control quote-input" placeholder="Parts">
                     </td>
                     <td>
-                        <input type="" class="form-control quote-input" placeholder="Line Total">
+                        <input type="" class="form-control quote-input" placeholder="Line Total"> <!-- Sum of row -->
                     </td>
                 </tr>
-                <tr style="">
+                <tr style=""> <!-- Example rows added for visual effect -->
                     <td class="middle">
                         <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
                     </td>
@@ -258,7 +256,7 @@
                         <input type="" class="form-control quote-input" placeholder="Line Total">
                     </td>
                 </tr>
-                <tr style="">
+                <tr style=""> <!-- Example rows added for visual effect -->
                     <td class="middle">
                         <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
                     </td>
@@ -289,7 +287,7 @@
                         <input type="" class="form-control quote-input" placeholder="Line Total">
                     </td>
                 </tr>
-                <tr style="">
+                <tr style=""> <!-- Example rows added for visual effect -->
                     <td class="middle">
                         <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
                     </td>
@@ -320,7 +318,7 @@
                         <input type="" class="form-control quote-input" placeholder="Line Total">
                     </td>
                 </tr>
-                <tr> <!--blank row before adding a line-->
+                <tr> <!--Row before user clicks plus button-->
                     <td class="middle">
                         <button class="btn add-btn"><span class="glyphicon glyphicon-plus"></span></button>
                     </td>
@@ -350,7 +348,7 @@
                         
                     </td>
                 </tr>
-                <tr> <!-- New row where user enters info -->
+                <tr> <!-- Row after user clicks plus button -->
                     <td class="middle">
                         <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
                     </td>
@@ -460,8 +458,8 @@
                 </tr>
             </table>
                 <div class="pull-right" style="margin-bottom: 20px; margin-top: 20px; margin-right: 8px">
-                    <button class="btn btn-primary" style="margin-right:10px"><span class="glyphicon glyphicon-arrow-left"></span>View Report</button>
-                    <button class="btn btn-primary">Save And Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
+                    <button class="btn quote-btn" style="margin-right:10px"><span class="glyphicon glyphicon-arrow-left"></span>View Report</button>
+                    <button class="btn quote-btn">Save And Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
                     </div>
             </div>
 
