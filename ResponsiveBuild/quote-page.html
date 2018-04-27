@@ -47,7 +47,6 @@
 
                     </a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="st-nav">
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -133,7 +132,8 @@
             </div>
         </nav>
     </div>
-    <div class="container"> <!-- customer header -->
+    <div class="container">
+        <!-- customer header -->
         <div class="row customer-info-header">
             <div class="col-md-3">
                 <div class="">
@@ -143,7 +143,7 @@
                     <span class="initial-circle">C</span>
                     <span class="customer-name">Long Customer Name</span>
                 </div>
-                
+
             </div>
             <div class="col-md-2">
                 <span><strong>Make: </strong></span><span>Vehicle</span>
@@ -162,249 +162,263 @@
             </div>
             <div class="col-md-3">
                 <div>
-                   <strong>VIN: </strong><span>1234sdfasdfa1234ssf</span> 
+                    <strong>VIN: </strong><span>1234sdfasdfa1234ssf</span>
                 </div>
                 <br>
                 <div class="text-right">
                     <button class="btn quote-btn">Print Report & Quote</button>
                     <button class="btn quote-btn">View Notes</button>
-                </div>           
+                </div>
             </div>
         </div>
-        <div class="row"> <!-- Alert banners -->
-            <div class="alert alert-success" role="alert">This inspection and quote has been sent to the customer!</div> 
+        <div class="row">
+            <!-- Alert banners -->
+            <div class="alert alert-success" role="alert" style="display: ">This inspection and quote has been sent to the customer!</div>
         </div>
     </div>
-    
 
-    <div class="container quote-container"> <!-- Quote Builder -->
+    <div class="container quote-container">
+        <!-- Quote Builder -->
 
-        <div class="row" style="">        
-        <table class="table borderless" id="quote-table">
-            <thead>
-                <tr style="">
-                    <th style="width: 5%">Add/Delete</th>
-                    <th style="width: 5%"></th>
-                    <th style="width: 40%">Recommendation</th>
-                    <th style="width: 10%">Labor Rate</th>
-                    <th style="width: 10%">Labor Hours</th>
-                    <th style="width: 10%">Total Labor</th>
-                    <th style="width: 10%">Parts Total</th>
-                    <th style="width: 10%">Line Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="">
-                    <td class="middle">
-                        <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                    </td>
-                    <td class="middle">
-                        <span class="circle st-red"></span> <!--used st-red as placeholder, can be system-wide red -->
-                    </td>
-                    <td>
-                        <div class="text-left">
-                            <span><strong>Left Front Brakes</strong>
+        <div class="row">
+            <table class="table borderless" id="quote-table">
+                <thead>
+                    <tr style="">
+                        <th style="width: 5%">Add/Delete</th>
+                        <th style="width: 5%"></th>
+                        <th style="width: 40%">Recommendation</th>
+                        <th style="width: 10%">Labor Rate</th>
+                        <th style="width: 10%">Labor Hours</th>
+                        <th style="width: 10%">Total Labor</th>
+                        <th style="width: 10%">Parts Total</th>
+                        <th style="width: 10%">Line Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="">
+                        <td class="middle">
+                            <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                            <!--Delete button removes row from quote -->
+                        </td>
+                        <td class="middle">
+                            <span class="circle st-red"></span>
+                            <!--used st-red as placeholder, can be system-wide red -->
+                        </td>
+                        <td>
+                            <div class="text-left">
+                                <span><strong>Left Front Brakes</strong>
                             </span>
-                            <br>
-                            <input class="form-control tech-comment" value="This is a tech comment that is editable"> <!--map tech comments into value field -->
-                        </div>
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Rate">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Hours">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Total Labor"> <!-- Rate * Hours = Total Labor -->
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Parts">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Line Total"> <!-- Sum of row -->
-                    </td>
-                </tr>
-                <tr style=""> <!-- Example rows added for visual effect -->
-                    <td class="middle">
-                        <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                    </td>
-                    <td class="middle">
-                        <span class="circle st-red"></span>
-                    </td>
-                    <td>
-                        <div class="text-left">
-                            <span><strong>Right Front Brakes</strong>
+                                <br>
+                                <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                <!--map tech comments into value field -->
+                            </div>
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Rate">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Hours">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Total Labor">
+                            <!-- Rate * Hours = Total Labor -->
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Parts">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Line Total">
+                            <!-- Line Total = Total Labor + Parts -->
+                        </td>
+                    </tr>
+                    <tr style="">
+                        <!-- Example rows added for visual effect -->
+                        <td class="middle">
+                            <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                        </td>
+                        <td class="middle">
+                            <span class="circle st-red"></span>
+                        </td>
+                        <td>
+                            <div class="text-left">
+                                <span><strong>Right Front Brakes</strong>
                             </span>
-                            <br>
-                            <input class="form-control tech-comment" value="This is a tech comment that is editable">
-                        </div>
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Rate">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Hours">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Total Labor">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Parts">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Line Total">
-                    </td>
-                </tr>
-                <tr style=""> <!-- Example rows added for visual effect -->
-                    <td class="middle">
-                        <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                    </td>
-                    <td class="middle">
-                        <span class="circle st-red"></span>
-                    </td>
-                    <td>
-                        <div class="text-left">
-                            <span><strong>Left Rear Brakes</strong>
+                                <br>
+                                <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                            </div>
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Rate">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Hours">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Total Labor">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Parts">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Line Total">
+                        </td>
+                    </tr>
+                    <tr style="">
+                        <!-- Example rows added for visual effect -->
+                        <td class="middle">
+                            <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                        </td>
+                        <td class="middle">
+                            <span class="circle st-red"></span>
+                        </td>
+                        <td>
+                            <div class="text-left">
+                                <span><strong>Left Rear Brakes</strong>
                             </span>
-                            <br>
-                            <input class="form-control tech-comment" value="This is a tech comment that is editable">
-                        </div>
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Rate">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Hours">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Total Labor">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Parts">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Line Total">
-                    </td>
-                </tr>
-                <tr style=""> <!-- Example rows added for visual effect -->
-                    <td class="middle">
-                        <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                    </td>
-                    <td class="middle">
-                        <span class="circle st-red"></span>
-                    </td>
-                    <td>
-                        <div class="text-left">
-                            <span><strong>Right Rear Brakes</strong>
+                                <br>
+                                <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                            </div>
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Rate">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Hours">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Total Labor">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Parts">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Line Total">
+                        </td>
+                    </tr>
+                    <tr style="">
+                        <!-- Example rows added for visual effect -->
+                        <td class="middle">
+                            <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                        </td>
+                        <td class="middle">
+                            <span class="circle st-red"></span>
+                        </td>
+                        <td>
+                            <div class="text-left">
+                                <span><strong>Right Rear Brakes</strong>
                             </span>
-                            <br>
-                            <input class="form-control tech-comment" value="This is a tech comment that is editable">
-                        </div>
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Rate">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Hours">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Total Labor">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Parts">
-                    </td>
-                    <td>
-                        <input type="" class="form-control quote-input" placeholder="Line Total">
-                    </td>
-                </tr>
-                <tr> <!--Row before user clicks plus button-->
-                    <td class="middle">
-                        <button class="btn add-btn"><span class="glyphicon glyphicon-plus"></span></button>
-                    </td>
-                    <td>
-                        <span class="circle material-grey"></span>
-                    </td>
-                    <td class="middle">
-                        <div class="text-left">
-                            <span><strong>To add a custom row, click plus. Click the circle to change colors.</strong>
+                                <br>
+                                <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                            </div>
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Rate">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Hours">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Total Labor">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Parts">
+                        </td>
+                        <td>
+                            <input type="" class="form-control quote-input" placeholder="Line Total">
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--Row before user clicks plus button-->
+                        <td class="middle">
+                            <button class="btn add-btn"><span class="glyphicon glyphicon-plus"></span></button>
+                        </td>
+                        <td>
+                            <span class="circle material-grey"></span>
+                        </td>
+                        <td class="middle">
+                            <div class="text-left">
+                                <span><strong>To add a custom line, click plus. Click the circle to change colors.</strong>
                             </span>
-                            <br>
-                        </div>
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-                <tr> <!-- Row after user clicks plus button -->
-                    <td class="middle">
-                        <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                    </td>
-                    <td class="middle">
-                        <span class="circle material-grey"></span>
-                    </td>
-                    <td>
-                        <div class="text-left">
-                            <span><strong>Type here</strong>
+                                <br>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Row after user clicks plus button -->
+                        <td class="middle">
+                            <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                        </td>
+                        <td class="middle">
+                            <span class="circle material-grey"></span>
+                            <!-- User can click circle and background color will change green, yellow, red, grey -->
+                        </td>
+                        <td>
+                            <div class="text-left">
+                                <span><strong>Type here</strong>
                             </span>
-                            <br>
-                            <input class="form-control quote-input" placeholder="Enter a comment" style="width: 100%; margin-top: 10px">
-                        </div>
-                    </td>
-                    <td>
-                        <input type="" class="form-control" id="" placeholder="Rate">
-                    </td>
-                    <td>
-                        <input type="" class="form-control" id="" placeholder="Hours">
-                    </td>
-                    <td>
-                        <input type="" class="form-control" id="" placeholder="Total Labor">
-                    </td>
-                    <td>
-                        <input type="" class="form-control" id="" placeholder="Parts">
-                    </td>
-                    <td>
-                        <input type="" class="form-control" id="" placeholder="Line Total">
-                    </td>
-                </tr>
-                <tr class="sub-total-row"> <!-- New row where user enters info -->
-                    <td> 
-                    </td>
-                    <td> 
-                    </td>
-                    <td>
-                    </td>
-                    <td class="middle">
-                        <span><strong>Subtotals</strong></span>
-                    </td>
-                    <td class="middle">
-                        <input type="" class="form-control quote-input" id="" placeholder="Hours Sold">
-                    </td>
-                    <td class="middle">
-                        <input type="" class="form-control quote-input" id="" placeholder="Labor Sold">
-                    </td>
-                    <td class="middle">
-                        <input type="" class="form-control quote-input" id="" placeholder="Parts Sold">
-                    </td>
-                    <td class="middle">
-                        <input type="" class="form-control quote-input" id="" placeholder="Subtotal">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-            <table id="quote-totals"> <!--Subtotals, tax, etc. -->
+                                <br>
+                                <input class="form-control tech-comment" placeholder="Enter a comment">
+                            </div>
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Rate">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Hours">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Total Labor">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Parts">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Line Total">
+                        </td>
+                    </tr>
+                    <tr id="sub-total-row">
+                        <!--Sum the above into this row -->
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <span><strong>Subtotals</strong></span>
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Hours Sold">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Labor Sold">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Parts Sold">
+                        </td>
+                        <td>
+                            <input class="form-control" placeholder="Subtotal">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="quote-totals">
+                <!--Subtotals, tax, etc. -->
                 <tr>
                     <td class="totals-label">
                         <strong>Gas, Oil, Grease</strong>
@@ -457,18 +471,13 @@
 
                 </tr>
             </table>
-                <div class="pull-right" style="margin-bottom: 20px; margin-top: 20px; margin-right: 8px">
-                    <button class="btn quote-btn" style="margin-right:10px"><span class="glyphicon glyphicon-arrow-left"></span>View Report</button>
-                    <button class="btn quote-btn">Save And Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
-                    </div>
+            <div class="pull-right quote-nav-buttons">
+                <button class="btn back-btn"><span class="glyphicon glyphicon-arrow-left"></span>View Inspection</button>
+                <button class="btn quote-btn">Save And Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
             </div>
+        </div>
 
     </div>
-
-
-        
-
-
 
     <!-- CDN jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
