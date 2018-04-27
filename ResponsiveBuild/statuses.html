@@ -11,6 +11,9 @@
     <!--Bootstrap Local For Dev 
         <link href="css/bootstrap.css" rel="stylesheet"> -->
 
+    <!--- Bootstrap Toggle http://www.bootstraptoggle.com/-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -135,7 +138,7 @@
     </div>
     <div class="container-fluid table-filter-row">
         <!-- Filter Row -->
-        <ul class="list-inline">
+        <ul class="list-inline" style="">
             <li class="hidden-xs">
                 <div class="btn-group">
                     <button type="button" class="btn btn-default st-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page Sort <span class="caret"></span>
@@ -162,12 +165,45 @@
                     </ul>
                 </div>
             </li>
-            <li class="hidden-xs">
-                <button class="btn btn-default st-btn">Away Message </button>
-            </li>
-            <li class="text-right hidden-xs">
-                <span class="" style="">Now Showing: 10 Advisors' Repair Orders</span>
-            </li>
+            <li class="">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default st-btn"  data-toggle="modal" data-target="#myModal">Status Select
+                    </button>
+                    <ul class="dropdown-menu" style="width: 300px; padding-left: 10px; padding-right: 60px;">
+                        <li><a href="">All</a></li>
+                        <li role="separator" class="divider"></li>
+
+                        <li class="text-center" style="padding-bottom: 5px;">
+                            <div class="status-badge-container material-blue">
+                                <span class="glyphicon glyphicon-refresh"></span><input type="checkbox" checked data-toggle="toggle" data-onstyle="danger" data-size="small">
+                                <span>All Inspect Statuses</span>
+                            </div>
+                        </li>
+                        <li class="text-center" style="padding-bottom: 5px;">
+                            <div class="status-badge-container material-purple">
+                                <span class="glyphicon glyphicon-flag"></span>
+                                <span>All Parts Statuses</span>
+                            </div>
+                        </li>
+                        <li class="text-center" style="padding-bottom: 5px;">
+                            <div class="status-badge-container material-green">
+                            <span class="glyphicon glyphicon-usd"></span>
+                            <span>Mobile Pay Statuses</span>
+                            </div>
+                        </li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Hide Closed ROs</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="text-right hidden-xs">
+            <span class="" style="">Now Showing: 10 Advisors' Repair Orders with All Statuses</span>
+        </li>
+        <li class="hidden-xs pull-right">
+            <span>Away Message:</span>
+            <input type="checkbox" checked data-toggle="toggle" data-onstyle="danger" data-size="small">
+        </li>
         </ul>
     </div>
 
@@ -458,8 +494,45 @@
 
     </div>
 
+        <!-- Status Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Status Selector</h4>
+          </div>
+          <div class="modal-body">
+            <p>Toggling these statuses will hide these ROs from your view. Press the reset button to return to the default view.</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="status-badge-container material-yellow">
+                        <span class="glyphicon glyphicon-send"></span>
+                        <span>Mobile Pay - Invoice Sent</span>
+                        
+                    </div>
+                    <input type="checkbox" checked data-toggle="toggle" data-onstyle="danger" data-size="small" style="padding-left: 40px">
+
+                </li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- CDN jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap Toggle -->
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
     <!--CDN Bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

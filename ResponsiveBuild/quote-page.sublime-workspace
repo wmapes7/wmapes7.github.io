@@ -1,0 +1,354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mobile",
+				"mobile_height"
+			],
+			[
+				"mobi",
+				"mobile_height"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"form-",
+				"form-inline"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"contain",
+				"container-fluid"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"gl",
+				"glyphicon"
+			],
+			[
+				"new",
+				"newGroupChatUser"
+			],
+			[
+				"ne",
+				"newGroupModal"
+			],
+			[
+				"panel",
+				"panel-heading"
+			],
+			[
+				"pan",
+				"panel-heading"
+			],
+			[
+				"list-group",
+				"list-group-item"
+			],
+			[
+				"bad",
+				"badge-danger"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"ba",
+				"badge-primary"
+			],
+			[
+				"nav",
+				"nav-item"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"bt",
+				"btn-primary"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"pddin",
+				"padding-left"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"paddn",
+				"padding-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 389.0,
+		"last_filter": "liv",
+		"selected_items":
+		[
+			[
+				"liv",
+				"LiveReload: Self test"
+			],
+			[
+				"auto",
+				"Toggle AutoSave: current file only"
+			],
+			[
+				"live",
+				"Snippet: Insert livereload.js script"
+			],
+			[
+				"liver",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"Autosave",
+				"Toggle AutoSave: current file only"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 159.0,
+		"history":
+		[
+			"package control",
+			"livereload",
+			"install package"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/williammapes/Library/Application Support/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/Users/williammapes/Library/Application Support/Sublime Text 3/Packages/auto-save/auto_save.sublime-settings",
+		"/Users/williammapes/Library/Application Support/Sublime Text 3/Packages/User/auto_save.sublime-settings",
+		"/Users/williammapes/Documents/Github/wmapes7.github.io/ResponsiveBuild/internalnotes.html",
+		"/Volumes/GoogleDrive/My Drive/Dev/iOS App Development/Download-on-the-App-Store/US/Download_on_App_Store/Black_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
+		"/Volumes/GoogleDrive/My Drive/Business/Marketing/Blog Posts/06-Singlethread-2018-Whitepaper.md",
+		"/Users/williammapes/Documents/test/wmapes7.github.io/test/css/app.css",
+		"/Users/williammapes/Documents/test/wmapes7.github.io/test/assets/redcancel.svg",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/new_help.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/cust_list.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/chat.html",
+		"/Users/williammapes/Documents/email templates/mobile_pay.html",
+		"/Users/williammapes/Desktop/prefs.json",
+		"/Users/williammapes/Documents/email templates/internal_chat.html",
+		"/Volumes/GoogleDrive/My Drive/Dev/Marketing SIte/Marketing Site 2017/2017 Marketing Site Update/text.html",
+		"/Users/williammapes/Desktop/Ftp upload@michigansoftwaredesign.com@michigansoftwaredesign.com.xml",
+		"/Users/williammapes/Desktop/ford-form/index.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/feedback.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/apc.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/inspect.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/mobilepay.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/text.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/css/app.css",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/about.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/index.html",
+		"/Users/williammapes/Downloads/dashboard.svg",
+		"/Users/williammapes/Downloads/dashboard-white.svg",
+		"/Users/williammapes/Downloads/fill-191.svg",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/form.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/resources.html",
+		"/Users/williammapes/Documents/GitHub/wmapes7.github.io/test/contact.html"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "quote-page.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packagecontrol",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
