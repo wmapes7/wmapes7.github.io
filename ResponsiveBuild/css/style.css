@@ -410,17 +410,6 @@ tr td {
 	border-radius: 6px;
 	padding-bottom: 10px;
 }
-.customer-info-header .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.customer-info-header .nav-buttons {
-    vertical-align: middle;
-    padding-right: 8px;
-}
-
-
 .customer-info-header #title {
 	font-size: 20px;
 }
