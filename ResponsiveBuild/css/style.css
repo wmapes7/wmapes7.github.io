@@ -540,3 +540,13 @@ tr td {
 	color: #fff;
 	background-color: #fd265c;
 }
+
+/*Summary Page Styles */
+
+.summary-circle {
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	display: inline-block;
+	padding-top: 12px;
+}
