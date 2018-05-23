@@ -448,13 +448,13 @@ tr td {
 	text-decoration: underline;
 	color: #fff;
 }
-.back-btn {
+.outline-btn {
 	background-color: #fff;
 	color: #4767f3;
 	border: 1px solid #4767f3;
 	margin-right: 10px;
 }
-.back-btn:hover {
+.outline-btn:hover {
 	background-color: #4767f3;
 	color: #fff;
 	border: 1px solid #4767f3;

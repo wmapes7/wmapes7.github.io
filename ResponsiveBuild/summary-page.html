@@ -113,8 +113,8 @@
 				</div>
 				<div class="col-sm-3 col-md-3">
 					<div>
-						<strong>VIN:</strong> <span>1234sdfasdfa1234ssf</span>
-					</div><br>
+						<strong>VIN:</strong> <span>1234sdfasdfa1234ssf</span><br>
+					</div>
 				</div>
 			</div>
 			<div class="row" style="padding-right: 8px"></div>
@@ -124,29 +124,43 @@
 	<div class="container quote-container text-center">
 		<div class="row" style="padding-bottom:15px">
 			<h3>Technician Recommendations</h3>
+      <h4>
+        <span>Inspection Status: </span>
+        <span class="hidden"><span class="glyphicon glyphicon-exclamation-sign" style="color:red"></span>Incomplete</span>
+        <span class=""><span class="glyphicon glyphicon-ok" style="border-radius:50%; color:green"></span>Completed!</span>
+      </h4>
 		</div>
+    <div class="row" style="margin-bottom: 30px">
+      <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-wrench"></span>Vehicle Damage</button>
+      <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-list-alt"></span>View Notes</button>
+      <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-print"></span>Print Report</button>
+    </div>
 		<div class="row" style="padding-bottom: 30px">
-			<div class="col-md-4">
-				<span class="summary-circle middle material-green">30</span><br>
-				Items
-			</div>
-			<div class="col-md-4">
-				<span class="summary-circle material-yellow">0</span><br>
-				Items
-			</div>
-			<div class="col-md-4">
-				<span class="summary-circle st-red">0</span><br>
-				Items
-			</div>
+      <div class="container" style="width:80%">
+        <div class="col-md-3 col-sm-3">
+  				<span class="summary-circle middle material-green">30</span><br>
+  				Not Required
+  			</div>
+  			<div class="col-md-3 col-sm-3">
+  				<span class="summary-circle material-yellow">0</span><br>
+  				Soon
+  			</div>
+  			<div class="col-md-3 col-sm-3">
+  				<span class="summary-circle st-red">0</span><br>
+  				Now
+  			</div>
+        <div class="col-md-3 col-sm-3">
+          <span class="summary-circle material-grey">0</span><br>
+          Not Applicable
+        </div>
+      </div>
 		</div>
 		<div class="row" style="padding-bottom: 15px">
-			<div class="col-md-3 text-left">
-				<button class="btn back-btn"><span class="glyphicon glyphicon-arrow-left"></span>View Inspection</button>
+			<div class="col-md-6 col-sm-6 text-left">
+				<button class="btn outline-btn"><span class="glyphicon glyphicon-arrow-left"></span>View Inspection </button>
+
 			</div>
-			<div class="col-md-6 text-center">
-				<button class="btn back-btn" style=""><span class="glyphicon glyphicon-wrench"></span>Vehicle Damage</button> <button class="btn back-btn" style=""><span class="glyphicon glyphicon-list-alt"></span>View Notes</button> <button class="btn back-btn" style=""><span class="glyphicon glyphicon-print"></span>Print Report</button>
-			</div>
-			<div class="col-md-3 text-right">
+			<div class="col-md-6 col-sm-6 text-right">
 				<button class="btn quote-btn">Send Report <span class="glyphicon glyphicon-send"></span></button> <button class="btn quote-btn">Add Quote <span class="glyphicon glyphicon-arrow-right"></span></button>
 			</div>
 		</div>
