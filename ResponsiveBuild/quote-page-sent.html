@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Quote Builder</title>
+        <title>Sent Quote</title>
 
         <!--Bootstrap Local For Dev
             <link href="css/bootstrap.css" rel="stylesheet"> -->
@@ -139,7 +139,7 @@
                 <div class="row">
                 <div class="col-sm-3 col-md-3">
                     <div class="">
-                        <span id="title">Quote Builder</span>
+                        <span id="title">Quote Override</span>
                     </div>
                     <div class="">
                         <span class="initial-circle">C</span>
@@ -174,15 +174,15 @@
 
                 <div class="row" style="padding-right: 8px">
                     <div class="text-right">
-                        <button class="btn outline-btn" style="margin-right: 4px"><span class="glyphicon glyphicon-print"></span>Print</button>
-                        <button class="btn outline-btn" style="margin-right: 4px"><span class="glyphicon glyphicon-list-alt"></span>Notes</button>
-                        <button class="btn outline-btn"><span class="glyphicon glyphicon-pencil"></span>Damage</button>
+                        <button class="btn quote-btn" style="margin-right: 4px"><span class="glyphicon glyphicon-print"></span>Print</button>
+                        <button class="btn quote-btn" style="margin-right: 4px"><span class="glyphicon glyphicon-list-alt"></span>Notes</button>
+                        <button class="btn quote-btn"><span class="glyphicon glyphicon-pencil"></span>Damage</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <!-- Alert banners -->
-                <div class="alert alert-info" role="alert" style="display: "><strong>Info:</strong> This quote builder shows all totals to you only. End customer sees only line totals.</div>
+                <div class="alert alert-success" role="alert" style="display: ">This inspection and quote has been sent to the customer!</div>
             </div>
         </div>
 
@@ -193,22 +193,48 @@
                 <table class="table borderless" id="quote-table">
                     <thead>
                         <tr style="">
-                            <th style="width: 5%">Add/Delete</th>
-                            <th style="width: 5%"></th>
+                            <th style="width: 5%">RYG</th>
                             <th style="width: 40%">Recommendation</th>
-                            <th style="width: 10%">Labor Rate</th>
-                            <th style="width: 10%">Labor Hours</th>
-                            <th style="width: 10%">Total Labor</th>
-                            <th style="width: 10%">Parts Total</th>
-                            <th style="width: 10%">Line Total</th>
+                            <th style="width: 20%">Status</th>
+                            <th style="width: 20%">Action</th>
+                            <th style="width: 10%">Total</th>
                         </tr>
                     </thead>
                     <tbody>
+                      <tr style="">
+                          <td class="middle">
+                              <span class="circle st-red"></span>
+                              <!--used st-red as placeholder, can be system-wide red -->
+                          </td>
+                          <td>
+                              <div class="text-left">
+                                  <span><strong>Left Front Brakes</strong>
+                              </span>
+                                  <br>
+                                  <input class="form-control tech-comment" value="This comment is no longer editable." disabled>
+                                  <!--map tech comments into value field -->
+                              </div>
+                          </td>
+                          <td>
+                              <span class="glyphicon glyphicon-hourglass" style="margin-bottom:15px"></span><strong>Pending Customer</strong>
+                          </td>
+                          <td class="">
+                            <!-- Action Button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn outline-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Override <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Manual Approval</a></li>
+                                <li><a href="#">Manual Decline</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                              <input type="" class="form-control quote-input" placeholder="Line Total" disabled>
+                          </td>
+                      </tr>
                         <tr style="">
-                            <td class="middle">
-                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                                <!--Delete button removes row from quote -->
-                            </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
                                 <!--used st-red as placeholder, can be system-wide red -->
@@ -218,186 +244,126 @@
                                     <span><strong>Left Front Brakes</strong>
                                 </span>
                                     <br>
-                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <input class="form-control tech-comment" value="This comment is no longer editable." disabled>
                                     <!--map tech comments into value field -->
                                 </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Rate">
+                                <span class="glyphicon glyphicon-ok" style="margin-bottom:15px"></span><strong>Customer Approved</strong>
+                            </td>
+                            <td class="">
+                              <!-- Action Button -->
+                              <div class="btn-group">
+                                <button type="button" class="btn outline-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Override <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Manual Approval</a></li>
+                                  <li><a href="#">Manual Decline</a></li>
+                                </ul>
+                              </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Hours">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Total Labor">
-                                <!-- Rate * Hours = Total Labor -->
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Parts">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Line Total">
-                                <!-- Line Total = Total Labor + Parts -->
+                                <input type="" class="form-control quote-input" placeholder="Line Total" disabled>
                             </td>
                         </tr>
                         <tr style="">
-                            <!-- Example rows added for visual effect -->
-                            <td class="middle">
-                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                            </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Right Front Brakes</strong>
+                                    <span><strong>Left Front Brakes</strong>
                                 </span>
                                     <br>
-                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <input class="form-control tech-comment" value="This comment is no longer editable." disabled>
+                                    <!--map tech comments into value field -->
                                 </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Rate">
+                                <span class="glyphicon glyphicon-remove" style="margin-bottom:15px; color:red"></span><strong>Customer Declined</strong>
+                            </td>
+                            <td class="">
+                              <!-- Action Button -->
+                              <div class="btn-group">
+                                <button type="button" class="btn outline-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Override <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Manual Approval</a></li>
+                                  <li><a href="#">Manual Decline</a></li>
+                                </ul>
+                              </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Hours">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Total Labor">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Parts">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <input type="" class="form-control quote-input" placeholder="Line Total" disabled>
                             </td>
                         </tr>
                         <tr style="">
-                            <!-- Example rows added for visual effect -->
-                            <td class="middle">
-                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                            </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Left Rear Brakes</strong>
+                                    <span><strong>Left Front Brakes</strong>
                                 </span>
                                     <br>
-                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <input class="form-control tech-comment" value="This comment is no longer editable." disabled>
+                                    <!--map tech comments into value field -->
                                 </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Rate">
+                                <span class="glyphicon glyphicon-remove" style="margin-bottom:15px; color:red"></span><strong>Dealer Override - Declined</strong>
+                            </td>
+                            <td class="">
+                              <!-- Action Button -->
+                              <div class="btn-group">
+                                <button type="button" class="btn outline-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Override <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Manual Approval</a></li>
+                                  <li><a href="#">Manual Decline</a></li>
+                                </ul>
+                              </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Hours">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Total Labor">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Parts">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <input type="" class="form-control quote-input" placeholder="Line Total" disabled>
                             </td>
                         </tr>
                         <tr style="">
-                            <!-- Example rows added for visual effect -->
-                            <td class="middle">
-                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                            </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Right Rear Brakes</strong>
+                                    <span><strong>Left Front Brakes</strong>
                                 </span>
                                     <br>
-                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <input class="form-control tech-comment" value="This comment is no longer editable." disabled>
+                                    <!--map tech comments into value field -->
                                 </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Rate">
+                                <span class="glyphicon glyphicon-ok" style="margin-bottom:15px"></span><strong>Dealer Override - Approved</strong>
+                            </td>
+                            <td class="">
+                              <!-- Action Button -->
+                              <div class="btn-group">
+                                <button type="button" class="btn outline-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Override <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Manual Approval</a></li>
+                                  <li><a href="#">Manual Decline</a></li>
+                                </ul>
+                              </div>
                             </td>
                             <td>
-                                <input type="" class="form-control quote-input" placeholder="Hours">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Total Labor">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Parts">
-                            </td>
-                            <td>
-                                <input type="" class="form-control quote-input" placeholder="Line Total">
-                            </td>
-                        </tr>
-                        <tr>
-                            <!--Row before user clicks plus button-->
-                            <td class="middle">
-                                <button class="btn add-btn"><span class="glyphicon glyphicon-plus"></span></button>
-                            </td>
-                            <td>
-                                <span class="circle material-grey"></span>
-                            </td>
-                            <td class="middle">
-                                <div class="text-left">
-                                    <span><strong>To add a custom line, click plus. Click the circle to change colors.</strong>
-                                </span>
-                                    <br>
-                                </div>
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- Row after user clicks plus button -->
-                            <td class="middle">
-                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
-                            </td>
-                            <td class="middle">
-                                <span class="circle material-grey"></span>
-                                <!-- User can click circle and background color will change green, yellow, red, grey -->
-                            </td>
-                            <td>
-                                <div class="text-left">
-                                    <span><strong>Type here</strong>
-                                </span>
-                                    <br>
-                                    <input class="form-control tech-comment" placeholder="Enter a comment">
-                                </div>
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Rate">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Hours">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Total Labor">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Parts">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Line Total">
+                                <input type="" class="form-control quote-input" placeholder="Line Total" disabled>
                             </td>
                         </tr>
                         <tr id="sub-total-row">
@@ -409,21 +375,13 @@
                             <td>
                             </td>
                             <td>
-                                <span><strong>Subtotals</strong></span>
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Hours Sold">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Labor Sold">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Parts Sold">
+                                <span><strong>Subtotal</strong></span>
                             </td>
                             <td>
                                 <input class="form-control" placeholder="Subtotal">
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
                 <table id="quote-totals">
@@ -485,10 +443,11 @@
                       <button class="btn outline-btn"><span class="glyphicon glyphicon-arrow-left"></span>Back to Summary</button>
                   </div>
                   <div class="col-sm-6 text-right" style="padding-right:0px">
-                      <button class="btn outline-btn">Send <span class="glyphicon glyphicon-send"></span></button>
+                      <button class="btn outline-btn">Save <span class="glyphicon glyphicon-ok"></span></button>
                   </div>
                 </div>
             </div>
+
         </div>
 
         <!-- CDN jQuery -->
