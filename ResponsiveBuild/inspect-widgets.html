@@ -169,15 +169,15 @@
         <div class="container">
           <div class="row"> <!--Tires Panel -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
+              <div class="panel panel-default" id="tires-panel">
+                <div class="panel-heading" role="tab" id="tires-heading">
                   <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <span style="padding-top:10px">Tires</span>
                     </a>
                     <div class="pull-right">
-                      <span>Set All:</span>
-                      <div class="square material-green" style="margin-left:10px" id="all-green">
+                      <span>Set Section:</span>
+                      <div class="square material-green" style="margin-left:10px" id="tires-green">
                       </div>
                     </div>
 
@@ -340,7 +340,7 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
@@ -416,7 +416,7 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
@@ -494,7 +494,7 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
@@ -569,7 +569,7 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
@@ -600,7 +600,7 @@
                       <span>Measurements Not Taken:</span>
                       <div class="square material-grey" style="margin-left:10px">
                       </div>
-                      <span>Set All:</span>
+                      <span>Set Section:</span>
                       <div class="square material-green" style="margin-left:10px">
                       </div>
                     </div>
@@ -722,7 +722,7 @@
                               <span style="padding-top:10px">Fluids</span>
                             </a>
                             <div class="pull-right">
-                              <span>Set All:</span>
+                              <span>Set Section:</span>
                               <div class="square material-green" style="margin-left:10px">
                               </div>
                             </div>
@@ -789,7 +789,7 @@
                             <span style="padding-top:10px">Battery</span>
                           </a>
                           <div class="pull-right">
-                            <span>Set All:</span>
+                            <span>Set Section:</span>
                             <div class="square material-green" style="margin-left:10px">
                             </div>
                           </div>
@@ -842,7 +842,7 @@
                                 <span style="padding-top:10px">Check Following Systems / Components</span>
                               </a>
                               <div class="pull-right">
-                                <span>Set All:</span>
+                                <span>Set Section:</span>
                                 <div class="square material-green" style="margin-left:10px">
                                 </div>
                               </div>
@@ -988,7 +988,7 @@
           <div class="row" style="padding-bottom: 60px;"> <!-- Nav -->
             <div class="col-sm-12 text-right" style="padding-right:0px">
               <span> Set Remaining: </span>
-              <span class="square material-green"></span>
+              <span class="square material-green" id="all-green"></span>
               <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Request Parts">
     	          Request P&A
     	          <span class="glyphicon glyphicon-list-alt"></span>
@@ -1029,7 +1029,16 @@
         //check all green
         $('#all-green').click(function() {
           $($okGlyph).appendTo('.material-green');
+          $('.panel').css('border-color','green');
+          $('.panel-heading').css('background-color','green');
         });
+
+        //section green
+        $('#tires-green').click(function(){
+          $('.tires-green').append($okGlyph);
+          $('#tires-panel').css('border-color','green');
+          $('#tires-heading').css('background-color','green');
+        })
 
         //show hours widget after red click
         $('.st-red').click(function() {
