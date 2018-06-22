@@ -191,7 +191,7 @@
                         <br>
                         <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">7/32 or Greater | </span>
                         <span class="square material-yellow"><span class="glyphicon glyphicon-alert" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">4/32 - 6/32</span>
-                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span>Less than 3mm</span>
+                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span>3/32 or less</span>
                       </div>
                     </div>
                     <div class="" style="border-bottom: 1px solid #eee; border-top: 1px solid #eee; height: 60px; font-size:16px;"> <!-- General Tire Stuff row -->
@@ -340,30 +340,12 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <span class="square material-green">
+                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
-                            <span class="square material-yellow">
+                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
-                            <a class="square st-red" href="#" id="red">
+                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
                             </a>
-                            <div class="dropdown" style="display: none" id="hours">
-                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Hours
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">.1</a></li>
-                                <li><a href="#">.2</a></li>
-                                <li><a href="#">.3</a></li>
-                                <li><a href="#">.4</a></li>
-                                <li><a href="#">.5</a></li>
-                                <li><a href="#">.6</a></li>
-                                <li><a href="#">.7</a></li>
-                                <li><a href="#">.8</a></li>
-                                <li><a href="#">.9</a></li>
-                                <li><a href="#">1</a></li>
-                              </ul>
-                            </div>
                           </div>
                         </div>
 
@@ -434,15 +416,12 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <div class="square material-green">
-                              <span></span>
-                            </div>
-                            <div class="square material-yellow">
-                              <span></span>
-                            </div>
-                            <div class="square st-red">
-                              <span></span>
-                            </div>
+                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            </span>
+                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            </span>
+                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -515,15 +494,12 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <div class="square material-green">
-                              <span></span>
-                            </div>
-                            <div class="square material-yellow">
-                              <span></span>
-                            </div>
-                            <div class="square st-red">
-                              <span></span>
-                            </div>
+                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            </span>
+                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            </span>
+                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -593,15 +569,12 @@
                             Tread Depth
                           </div>
                           <div class="col-md-8">
-                            <div class="square material-green">
-                              <span></span>
-                            </div>
-                            <div class="square material-yellow">
-                              <span></span>
-                            </div>
-                            <div class="square st-red">
-                              <span></span>
-                            </div>
+                            <span class="square material-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            </span>
+                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            </span>
+                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -847,10 +820,10 @@
                           </a>
                         </h4>
                       </div>
-                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" style="height:140px">
                         <div class="panel-body">
                           <div class="col-sm-12">
-                            <input type="text" name="" value="" class="form-control" placeholder="Enter additional vehicle comments here.">
+                            <input type="text" name="" value="" class="form-control" placeholder="Enter additional vehicle comments here." style="height:60px">
                           </div>
                         </div>
                       </div>
@@ -1016,11 +989,11 @@
             <div class="col-sm-12 text-right" style="padding-right:0px">
               <span> Set Remaining: </span>
               <span class="square material-green"></span>
-              <button class="btn outline-btn" style="margin-right:5px">
+              <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Request Parts">
     	          Request P&A
     	          <span class="glyphicon glyphicon-list-alt"></span>
     	        </button>
-    	        <a class="btn outline-btn" ng-href="#/mpi/567/quote" href="#/mpi/567/quote">
+    	        <a class="btn outline-btn" data-toggle="tooltip" data-placement="top" title="Save">
     	          Save & Complete
     	          <span class="glyphicon glyphicon-ok"></span>
     	        </a>
@@ -1037,9 +1010,15 @@
 
         <!--CDN Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Tooltips -->
+        <script type="text/javascript">
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        });
+        </script>
         <!-- jQuery to make widgets work -->
         <script type="text/javascript">
-        var $hoursWidget = '<div class="dropdown" id="hours" style="display:inline">' + '<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">' + 'Hours' + '<span class="caret"></span>' + '</button>' + '<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">' + '<li><a href="#">1</a></li>' + '<li><a href="#">2</a></li>' + '</ul>' + '</div>';
+        var $hoursWidget = '<div class="dropdown" id="hours" style="display:inline"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hours<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">.1</a></li><li><a href="#">.2</a></li><li><a href="#">.3</a></li><li><a href="#">.4</a></li><li><a href="#">.5</a></li><li><a href="#">.6</a></li><li><a href="#">.8</a></li><li><a href="#">.9</a></li><li><a href="#">1</a></li></ul></div>';
         var $okGlyph = '<span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px; color:#fff; border-bottom:0px;"></span>';
 
         //add a check mark to the selected square
