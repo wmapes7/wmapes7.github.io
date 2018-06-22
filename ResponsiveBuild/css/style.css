@@ -549,3 +549,80 @@ tr td {
 	display: inline-block;
 	padding-top: 12px;
 }
+
+/*Inspect Widgets */
+
+.panel-default>.panel-heading {
+	color: #000;
+  border-color: #dae1e9;
+  background-color: #dbe1ea;
+  transition: all 0.3s;
+  padding: 10px;
+  width: 100%;
+}
+
+.mpi-section {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.plus-box {
+	border: 2px solid #4e5c6e;
+	border-radius: 4px;
+	color: #4e5c6e;
+	padding: 0;
+	margin: 0 5px 0 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+.fake-box {
+	border: 2px solid #000;
+	border-radius: 4px;
+	color: #fff;
+	padding: 0;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.square {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+		vertical-align: middle;
+	}
+
+.panel-collapse {
+	width: 100%;
+}
+
+.panel-body {
+	padding-left:5px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
