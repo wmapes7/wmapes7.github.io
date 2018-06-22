@@ -737,216 +737,286 @@
           </div>
 
 
-          <div class="row"> <!--Fluids & Systems Row -->
-            <div class="col-sm-4" style="margin-left:-15px; padding-right:0px"> <!-- Fluids Panel -->
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          <span style="padding-top:10px">Fluids</span>
-                        </a>
-                        <div class="pull-right">
-                          <span>Set All:</span>
-                          <div class="square material-green" style="margin-left:10px">
-                          </div>
-                        </div>
+          <div class="row"> <!--Fluids, Battery, & Systems Row -->
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Fluids Panel -->
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <span style="padding-top:10px">Fluids</span>
+                            </a>
+                            <div class="pull-right">
+                              <span>Set All:</span>
+                              <div class="square material-green" style="margin-left:10px">
+                              </div>
+                            </div>
 
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Engine Oil</span>
+                          </h4>
                         </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Brake Reservoir</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Windshield Washer</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Headlamp Washer</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Power Steering</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Coolant Recovery Reservoir</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Engine Oil</span>
+                            </div>
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Brake Reservoir</span>
+                            </div>
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Windshield Washer</span>
+                            </div>
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Headlamp Washer</span>
+                            </div>
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Power Steering</span>
+                            </div>
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Coolant Recovery Reservoir</span>
+                            </div>
+                            <div class="col-sm-12">
+                              <span class="square material-green"></span>
+                              <span class="square"></span>
+                              <span class="square st-red"></span>
+                              <span style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
-            <div class="col-sm-8" style="margin-left:15px; padding-right:0px;"> <!-- Check Following Systems / Components Panel -->
+              <div class="row">
+                <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Battery Panel -->
+                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span style="padding-top:10px">Battery</span>
+                              </a>
+                              <div class="pull-right">
+                                <span>Set All:</span>
+                                <div class="square material-green" style="margin-left:10px">
+                                </div>
+                              </div>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Battery</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-sm-8"> <!-- Right panel -->
+              <div class="col-sm-12" style="margin-left:15px; padding-right:0px;"> <!-- Check Following Systems / Components Panel -->
+                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span style="padding-top:10px">Check Following Systems / Components</span>
+                              </a>
+                              <div class="pull-right">
+                                <span>Set All:</span>
+                                <div class="square material-green" style="margin-left:10px">
+                                </div>
+                              </div>
+
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Visually inspect headlamp alignment</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Windshield washer spray, wiper operation and wiper blades</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Windshield cracks and/or chips</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Heating, ventilation and air conditioning check</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Engine air cleaner filter</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Oil and/or fluid leaks</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Constant velocity (CV) drive axle boots (if equipped)</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Exhaust system (leaks, damage, loose parts)</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Steering and steering linkages</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Shocks/struts, air suspension and other suspension components for leaks and/or damage</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Brake system (including lines, hoses and parking brake)</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Engine cooling system, hoses and clamps</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Radiator, heater and air conditioning hoses for leaks / damage</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Accessory drive belt(s)</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Clutch operation (if equipped)</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Floor Mats</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square material-yellow"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Navigation map update required</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">State inspection due (if applicable)</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Your last completed maintenance</span>
+                              </div>
+                              <div class="col-sm-12">
+                                <span class="square material-green"></span>
+                                <span class="square"></span>
+                                <span class="square st-red"></span>
+                                <span style="padding-right:10px">Your next factory scheduled maintenance is due</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+
+          
+          <div class="row"> <!-- Notes Row -->
+            <div class="" style="margin-left:-15px; padding-right:0px"> <!-- Notes Panel -->
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingOne">
                       <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          <span style="padding-top:10px">Check Following Systems / Components</span>
+                          <span style="padding-top:10px">Additional Notes</span>
                         </a>
-                        <div class="pull-right">
-                          <span>Set All:</span>
-                          <div class="square material-green" style="margin-left:10px">
-                          </div>
-                        </div>
-
                       </h4>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                       <div class="panel-body">
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Visually inspect headlamp alignment</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Windshield washer spray, wiper operation and wiper blades</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Windshield cracks and/or chips</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Heating, ventilation and air conditioning check</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Engine air cleaner filter</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Oil and/or fluid leaks</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Constant velocity (CV) drive axle boots (if equipped)</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Exhaust system (leaks, damage, loose parts)</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Steering and steering linkages</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Shocks/struts, air suspension and other suspension components for leaks and/or damage</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Brake system (including lines, hoses and parking brake)</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Engine cooling system, hoses and clamps</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Radiator, heater and air conditioning hoses for leaks / damage</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Accessory drive belt(s)</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Clutch operation (if equipped)</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Floor Mats</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square material-yellow"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Navigation map update required</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">State inspection due (if applicable)</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Your last completed maintenance</span>
-                        </div>
-                        <div class="col-sm-12">
-                          <span class="square material-green"></span>
-                          <span class="square"></span>
-                          <span class="square st-red"></span>
-                          <span style="padding-right:10px">Your next factory scheduled maintenance is due</span>
-                        </div>
+                        <input type="text" name="" value="" class="form-control" placeholder="Enter additional vehicle comments here.">
+
                       </div>
                     </div>
                   </div>
@@ -959,7 +1029,7 @@
               <span> Set Remaining: </span>
               <span class="square material-green"></span>
               <button class="btn outline-btn" style="margin-right:5px">
-    	          Add Notes / Request P&A
+    	          Request P&A
     	          <span class="glyphicon glyphicon-list-alt"></span>
     	        </button>
     	        <a class="btn outline-btn" ng-href="#/mpi/567/quote" href="#/mpi/567/quote">
