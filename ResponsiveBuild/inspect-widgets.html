@@ -177,14 +177,14 @@
                     </a>
                     <div class="pull-right">
                       <span>Set Section:</span>
-                      <div class="square material-green" style="margin-left:10px" id="tires-green">
+                      <div class="square material-green" style="margin-left:10px" id="tires-section-green">
                       </div>
                     </div>
 
                   </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
+                  <div class="panel-body" id="tires-section">
                     <div class="" style="border-bottom: 1px solid #eee; border-top: 1px solid #eee; font-size:16px;"> <!-- Brake Color Legend -->
                       <div class="text-center" style="padding-bottom:15px">
                         <h4>Tire Depth Legend</h4>
@@ -723,7 +723,7 @@
                             </a>
                             <div class="pull-right">
                               <span>Set Section:</span>
-                              <div class="square material-green" style="margin-left:10px">
+                              <div id="section-green" class="square material-green section-green" style="margin-left:10px">
                               </div>
                             </div>
 
@@ -989,11 +989,11 @@
             <div class="col-sm-12 text-right" style="padding-right:0px">
               <span> Set Remaining: </span>
               <span class="square material-green" id="all-green"></span>
-              <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Request Parts">
+              <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Request Parts" id="all-green">
     	          Request P&A
     	          <span class="glyphicon glyphicon-list-alt"></span>
     	        </button>
-    	        <a class="btn outline-btn" data-toggle="tooltip" data-placement="top" title="Save">
+    	        <a class="btn outline-btn-disabled" id="save">
     	          Save & Complete
     	          <span class="glyphicon glyphicon-ok"></span>
     	        </a>
@@ -1005,54 +1005,15 @@
         <!-- CDN jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-        <!-- FOR DEV ONLY REMOVE BEFORE PRODUCTION -->
-        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
         <!--CDN Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- Tooltips -->
-        <script type="text/javascript">
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        });
-        </script>
-        <!-- jQuery to make widgets work -->
-        <script type="text/javascript">
-        var $hoursWidget = '<div class="dropdown" id="hours" style="display:inline"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hours<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">.1</a></li><li><a href="#">.2</a></li><li><a href="#">.3</a></li><li><a href="#">.4</a></li><li><a href="#">.5</a></li><li><a href="#">.6</a></li><li><a href="#">.8</a></li><li><a href="#">.9</a></li><li><a href="#">1</a></li></ul></div>';
-        var $okGlyph = '<span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px; color:#fff; border-bottom:0px;"></span>';
 
-        //add a check mark to the selected square
-        $( ".square" ).click(function() {
-          $($okGlyph).appendTo(this);
-        });
-
-        //check all green
-        $('#all-green').click(function() {
-          $($okGlyph).appendTo('.material-green');
-          $('.panel').css('border-color','green');
-          $('.panel-heading').css('background-color','green');
-        });
-
-        //section green
-        $('#tires-green').click(function(){
-          $('.tires-green').append($okGlyph);
-          $('#tires-panel').css('border-color','green');
-          $('#tires-heading').css('background-color','green');
-        })
-
-        //show hours widget after red click
-        $('.st-red').click(function() {
-          $(this).after($hoursWidget);
-          //$("#red").append($hoursWidget).after("#red");
-          //$( "#hours" ).css( "display", "inline" );
-          //$("#red-driver-tire").after($hoursWidget);
-          console.log("showed hours")
-        })
-
-        //fluids show hours
-
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/app.js">
 
         </script>
+
 
     </body>
 
