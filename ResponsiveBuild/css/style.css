@@ -458,6 +458,15 @@ tr td {
 	color: #fff;
 	border: 1px solid #4767f3;
 }
+
+.outline-btn-disabled {
+	background-color: #fff;
+	color: #999;
+	border: 1px solid #999;
+	opacity: .5;
+	cursor: not-allowed;
+}
+
 #quote-page strong {
 	font-size: 16px;
 }
