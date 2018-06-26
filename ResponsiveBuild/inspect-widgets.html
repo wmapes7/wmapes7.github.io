@@ -170,17 +170,16 @@
           <div class="row"> <!--Tires Panel -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default" id="tires-panel">
-                <div class="panel-heading" role="tab" id="tires-heading">
+                <div class="st-panel-heading" role="tab" id="tires-heading">
                   <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <span style="padding-top:10px">Tires</span>
                     </a>
                     <div class="pull-right">
                       <span>Set Section:</span>
-                      <div class="square material-green" style="margin-left:10px" id="tires-section-green">
-                      </div>
+                      <span class="square material-green" style="margin-left:10px;" id="tires-section-green">
+                      </span>
                     </div>
-
                   </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -339,7 +338,7 @@
                           <div class="col-md-4">
                             Tread Depth
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8" id="qwe">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
@@ -590,8 +589,8 @@
 
           <div class="row"> <!--Brakes Panel -->
             <div class="panel-group" id="brakes" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="brakeHeading">
+              <div class="panel panel-default" id="brakes-panel">
+                <div class="st-panel-heading" role="tab" id="brakes-heading">
                   <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#brakes" href="#brakeHeading" aria-expanded="true" aria-controls="collapseOne">
                       <span style="padding-top:10px">Brakes</span>
@@ -601,7 +600,7 @@
                       <div class="square material-grey" style="margin-left:10px">
                       </div>
                       <span>Set Section:</span>
-                      <div class="square material-green" style="margin-left:10px">
+                      <div class="square material-green" style="margin-left:10px" id="brakes-section-green">
                       </div>
                     </div>
 
@@ -629,7 +628,7 @@
                               Brake Depth
                             </div>
                             <div class="col-md-8">
-                              <div class="square material-green">
+                              <div class="square material-green brakes-green">
                               </div>
                               <div class="square material-yellow">
                               </div>
@@ -649,7 +648,7 @@
                               Brake Depth
                             </div>
                             <div class="col-md-8">
-                              <div class="square material-green">
+                              <div class="square material-green brakes-green">
                               </div>
                               <div class="square material-yellow">
                               </div>
@@ -672,7 +671,7 @@
                               Brake Depth
                             </div>
                             <div class="col-md-8">
-                              <div class="square material-green">
+                              <div class="square material-green brakes-green">
                               </div>
                               <div class="square material-yellow">
                               </div>
@@ -692,7 +691,7 @@
                               Brake Depth
                             </div>
                             <div class="col-md-8">
-                              <div class="square material-green">
+                              <div class="square material-green brakes-green">
                               </div>
                               <div class="square material-yellow">
                               </div>
@@ -715,15 +714,15 @@
               <div class="row">
                 <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Fluids Panel -->
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
+                      <div class="panel panel-default" id="fluids-panel">
+                        <div class="st-panel-heading" role="tab" id="fluids-heading">
                           <h4 class="panel-title">
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               <span style="padding-top:10px">Fluids</span>
                             </a>
                             <div class="pull-right">
                               <span>Set Section:</span>
-                              <div id="section-green" class="square material-green section-green" style="margin-left:10px">
+                              <div id="fluids-section-green" class="square material-green" style="margin-left:10px">
                               </div>
                             </div>
 
@@ -732,43 +731,43 @@
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Engine Oil</span>
                             </div>
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Brake Reservoir</span>
                             </div>
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Windshield Washer</span>
                             </div>
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Headlamp Washer</span>
                             </div>
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Power Steering</span>
                             </div>
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Coolant Recovery Reservoir</span>
                             </div>
                             <div class="col-sm-12">
-                              <span class="square material-green"></span>
+                              <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
@@ -782,15 +781,15 @@
               <div class="row">
                 <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Battery Panel -->
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingOne">
+                    <div class="panel panel-default" id="battery-panel">
+                      <div class="st-panel-heading" role="tab" id="battery-heading">
                         <h4 class="panel-title">
                           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <span style="padding-top:10px">Battery</span>
                           </a>
                           <div class="pull-right">
                             <span>Set Section:</span>
-                            <div class="square material-green" style="margin-left:10px">
+                            <div class="square material-green" style="margin-left:10px" id="battery-section-green">
                             </div>
                           </div>
                         </h4>
@@ -798,7 +797,7 @@
                       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
                           <div class="col-sm-12">
-                            <span class="square material-green"></span>
+                            <span class="square material-green battery-green"></span>
                             <span class="square material-yellow"></span>
                             <span class="square st-red"></span>
                             <span style="padding-right:10px">Battery</span>
@@ -813,14 +812,14 @@
                 <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Notes Panel -->
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingOne">
+                      <div class="st-panel-heading" role="tab" id="headingOne">
                         <h4 class="panel-title">
                           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <span style="padding-top:10px">Additional Notes</span>
                           </a>
                         </h4>
                       </div>
-                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" style="height:140px">
+                      <div id="" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" style="height:140px">
                         <div class="panel-body">
                           <div class="col-sm-12">
                             <input type="text" name="" value="" class="form-control" placeholder="Enter additional vehicle comments here." style="height:60px">
@@ -834,25 +833,25 @@
             </div>
             <div class="col-sm-8" style="padding-left:0px"> <!-- Right panel -->
               <div class="col-sm-12" style="margin-left:15px; padding-right:0px;"> <!-- Check Following Systems / Components Panel -->
-                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingOne">
+                      <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default" id="systems-panel">
+                          <div class="st-panel-heading" role="tab" id="systems-heading">
                             <h4 class="panel-title">
                               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <span style="padding-top:10px">Check Following Systems / Components</span>
                               </a>
                               <div class="pull-right">
                                 <span>Set Section:</span>
-                                <div class="square material-green" style="margin-left:10px">
+                                <div class="square material-green" style="margin-left:10px" id="systems-section-green">
                                 </div>
                               </div>
 
                             </h4>
                           </div>
-                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
                               <div class="col-sm-12">
-                                <span class="square material-green"></span>
+                                <span class="square material-green systems-green"></span>
                                 <span class="square"></span>
                                 <span class="square st-red"></span>
                                 <span style="padding-right:10px">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
@@ -879,7 +878,7 @@
                                 <span class="square material-green"></span>
                                 <span class="square"></span>
                                 <span class="square st-red"></span>
-                                <span style="padding-right:10px">Heating, ventilation and air conditioning check</span>
+                                <span class="description" style="padding-right:10px">Heating, ventilation and air conditioning check</span>
                               </div>
                               <div class="col-sm-12">
                                 <span class="square material-green"></span>
@@ -989,8 +988,8 @@
             <div class="col-sm-12 text-right" style="padding-right:0px">
               <span> Set Remaining: </span>
               <span class="square material-green" id="all-green"></span>
-              <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Request Parts" id="all-green">
-    	          Request P&A
+              <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Check Completion" id="test-button">
+    	          Check Form
     	          <span class="glyphicon glyphicon-list-alt"></span>
     	        </button>
     	        <a class="btn outline-btn-disabled" id="save">

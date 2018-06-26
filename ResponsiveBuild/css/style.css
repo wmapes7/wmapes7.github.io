@@ -113,7 +113,7 @@ tr td {
 }
 .glyphicon {
 	position: relative;
-	top: 2px;
+	top: 1px !important;
 	margin-right: 5px;
 	display: inline-block;
 	font-family: 'Glyphicons Halflings';
@@ -559,15 +559,42 @@ tr td {
 	padding-top: 12px;
 }
 
-/*Inspect Widgets */
+/*Inspect Widgets*/
 
-.panel-default>.panel-heading {
+/*.panel-default>.panel-heading {
 	color: #000;
   border-color: #dae1e9;
   background-color: #dbe1ea;
   transition: all 0.3s;
   padding: 10px;
   width: 100%;
+}*/
+
+.st-panel-complete-heading {
+	background-color: #4caf50 !important;
+	color: #fff !important;
+}
+
+.st-panel-heading {
+	color: #000;
+	border-color: #dae1e9;
+	background-color: #dbe1ea;
+	transition: all 0.3s;
+	padding: 10px;
+	width: 100%;
+}
+
+.st-panel-complete-border {
+	border: 1px solid #4caf50;
+}
+
+.st-panel-incomplete-heading {
+	background-color: #fd265c !important;
+	color: #fff !important;
+}
+
+.st-panel-incomplete-border {
+	border: 1px solid #fd265c;
 }
 
 .mpi-section {
