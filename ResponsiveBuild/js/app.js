@@ -133,3 +133,21 @@ $('#test-button').click(function(){
 
   });
 });
+
+
+//Validate each line has a checkmark
+$('#systems-check').click(function(){
+  console.log('clicked button');
+  $('.item').children('span').each(function(){
+    console.log('checking span, entering loop...')
+    if ($(this).hasClass('glyphicon glyphicon-ok')) {
+      console.log('found glyph in green square');
+      //$(this).next().next().next().css('background-color','green');
+    } else if ($(this).next().hasClass('glyphicon glyphicon-ok')) {
+      console.log('found glyph in yellow square');
+      //$(this).next().next().next().css('background-color','green');
+    } else {
+      $(this).next().next().next().css('background-color','#ffc107');
+    }
+  })
+})
