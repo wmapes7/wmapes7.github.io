@@ -63,6 +63,7 @@ $('#battery-section-green').click(function() {
 //Mark systems section all-green
 $('#systems-section-green').click(function() {
   $(this).css('border','1px solid #fff');
+  $(this).toggleClass('glyphicon glyphicon-ok');
   console.log('added check mark');
   $('#systems-panel').toggleClass('st-panel-complete-border');
   console.log('added border');
@@ -104,10 +105,13 @@ $('#save').click(function(){
     console.log('panel'+ i);
     if ( !$(obj).hasClass('material-green')) {
       console.log('found incomplete');
-      $('.panel').css('border-color','#fd265c');
-      $('.st-panel-heading').toggleClass('.st-panel-complete');
+      $('.panel').toggleClass('border-color','#fd265c');
+      $('.st-panel-heading').toggleClass('st-panel-incomplete-heading');
       $('html, body').animate ({scrollTop: 0},800);
       return false;
+    } else {
+      $('.panel').toggleClass('st-panel-complete-border');
+      $('.st-panel-heading').toggleClass('st-panel-complete-heading');
     }
   });
 });
