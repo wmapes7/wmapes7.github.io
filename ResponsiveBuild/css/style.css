@@ -594,7 +594,7 @@ tr td {
 }
 
 .st-panel-incomplete-border {
-	border: 1px solid #fd265c;
+	border: 1px solid #fd265c !important;
 }
 
 .mpi-section {
@@ -661,4 +661,8 @@ tr td {
 
 input[type=checkbox] {
   transform: scale(1.5);
+}
+
+.label-incomplete {
+	background-color: #ffc107;
 }

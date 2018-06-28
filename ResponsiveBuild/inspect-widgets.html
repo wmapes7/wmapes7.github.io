@@ -1,4 +1,3 @@
-
     <!DOCTYPE html>
     <html lang="en">
 
@@ -167,7 +166,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="row"> <!--Tires Panel -->
+          <div class="row" id="tires"> <!--Tires Panel -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default" id="tires-panel">
                 <div class="st-panel-heading" role="tab" id="tires-heading">
@@ -182,7 +181,7 @@
                     </div>
                   </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body" id="tires-section">
                     <div class="" style="border-bottom: 1px solid #eee; border-top: 1px solid #eee; font-size:16px;"> <!-- Brake Color Legend -->
                       <div class="text-center" style="padding-bottom:15px">
@@ -195,7 +194,9 @@
                     </div>
                     <div class="" style="border-bottom: 1px solid #eee; border-top: 1px solid #eee; height: 60px; font-size:16px;"> <!-- General Tire Stuff row -->
                       <div class="col-md-4" style="padding-top:15px;">
-                        <span style="padding-right: 10px;">Alignment Needed:</span><input type="checkbox" name="" value="">
+                        <span style="padding-right: 10px;">Alignment Needed:</span>
+                        <span></span>
+                        <span><input type="checkbox" name="" value=""></span>
                       </div>
                       <div class="col-md-4" style="padding-top:15px;">
                         <span style="padding-right: 10px">Wheel Balance Needed:</span><input type="checkbox" name="" value="">
@@ -334,17 +335,17 @@
                           </div>
                         </div>
 
-                        <div class="row" style="padding-top:10px">
+                        <div class="row tread-depth-row" style="padding-top:10px">
                           <div class="col-md-4">
-                            Tread Depth
+                            <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8" id="">
+                          <div class="col-md-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
-                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
-                            </a>
+                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </span>
                           </div>
                         </div>
 
@@ -410,17 +411,17 @@
                           </div>
                         </div>
 
-                        <div class="row" style="padding-top:10px">
+                        <div class="row tread-depth-row" style="padding-top:10px">
                           <div class="col-md-4">
-                            Tread Depth
+                            <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
-                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
-                            </a>
+                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -488,17 +489,17 @@
                           </div>
                         </div>
 
-                        <div class="row" style="padding-top:10px">
+                        <div class="row tread-depth-row" style="padding-top:10px">
                           <div class="col-md-4">
-                            Tread Depth
+                            <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
-                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
-                            </a>
+                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -563,17 +564,17 @@
                           </div>
                         </div>
 
-                        <div class="row" style="padding-top:10px">
+                        <div class="row tread-depth-row" style="padding-top:10px">
                           <div class="col-md-4">
-                            Tread Depth
+                            <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
                             </span>
-                            <a class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
-                            </a>
+                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -587,8 +588,8 @@
 
 
 
-          <div class="row"> <!--Brakes Panel -->
-            <div class="panel-group" id="brakes" role="tablist" aria-multiselectable="true">
+          <div class="row" id="brakes"> <!--Brakes Panel -->
+            <div class="panel-group"role="tablist" aria-multiselectable="true">
               <div class="panel panel-default" id="brakes-panel">
                 <div class="st-panel-heading" role="tab" id="brakes-heading">
                   <h4 class="panel-title">
@@ -627,13 +628,13 @@
                             <div class="col-md-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8">
-                              <div class="square material-green brakes-green">
-                              </div>
-                              <div class="square material-yellow">
-                              </div>
-                              <div class="square st-red">
-                              </div>
+                            <div class="col-md-8 brakes-rating">
+                              <span class="square material-green brakes-green">
+                              </span>
+                              <span class="square material-yellow">
+                              </span>
+                              <span class="square st-red">
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -647,13 +648,13 @@
                             <div class="col-md-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8">
-                              <div class="square material-green brakes-green">
-                              </div>
-                              <div class="square material-yellow">
-                              </div>
-                              <div class="square st-red">
-                              </div>
+                            <div class="col-md-8 brakes-rating">
+                              <span class="square material-green brakes-green">
+                              </span>
+                              <span class="square material-yellow">
+                              </span>
+                              <span class="square st-red">
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -670,13 +671,13 @@
                             <div class="col-md-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8">
-                              <div class="square material-green brakes-green">
-                              </div>
-                              <div class="square material-yellow">
-                              </div>
-                              <div class="square st-red">
-                              </div>
+                            <div class="col-md-8 brakes-rating">
+                              <span class="square material-green brakes-green">
+                              </span>
+                              <span class="square material-yellow">
+                              </span>
+                              <span class="square st-red">
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -690,13 +691,13 @@
                             <div class="col-md-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8">
-                              <div class="square material-green brakes-green">
-                              </div>
-                              <div class="square material-yellow">
-                              </div>
-                              <div class="square st-red">
-                              </div>
+                            <div class="col-md-8 brakes-rating">
+                              <span class="square material-green brakes-green">
+                              </span>
+                              <span class="square material-yellow">
+                              </span>
+                              <span class="square st-red">
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -711,7 +712,7 @@
 
           <div class="row"> <!--Fluids, Battery, & Systems Row -->
             <div class="col-sm-4" style="padding-right:0px">
-              <div class="row">
+              <div class="row" id="fluids">
                 <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Fluids Panel -->
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                       <div class="panel panel-default" id="fluids-panel">
@@ -730,47 +731,47 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Engine Oil</span>
+                              <span class="fluids-desc" style="padding-right:10px" >Engine Oil</span>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Brake Reservoir</span>
+                              <span class="fluids-desc" style="padding-right:10px">Brake Reservoir</span>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Windshield Washer</span>
+                              <span class="fluids-desc" style="padding-right:10px">Windshield Washer</span>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Headlamp Washer</span>
+                              <span class="fluids-desc" style="padding-right:10px">Headlamp Washer</span>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Power Steering</span>
+                              <span class="fluids-desc" style="padding-right:10px">Power Steering</span>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Coolant Recovery Reservoir</span>
+                              <span class="fluids-desc" style="padding-right:10px">Coolant Recovery Reservoir</span>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 fluids-rating">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
-                              <span style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
+                              <span class="fluids-desc" style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
                             </div>
                           </div>
                         </div>
@@ -778,7 +779,7 @@
                     </div>
                   </div>
               </div>
-              <div class="row">
+              <div class="row" id="battery">
                 <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Battery Panel -->
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default" id="battery-panel">
@@ -789,18 +790,18 @@
                           </a>
                           <div class="pull-right">
                             <span>Set Section:</span>
-                            <div class="square material-green" style="margin-left:10px" id="battery-section-green">
-                            </div>
+                            <span class="square material-green" style="margin-left:10px" id="battery-section-green">
+                            </span>
                           </div>
                         </h4>
                       </div>
                       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
-                          <div class="col-sm-12">
+                          <div class="col-sm-12 battery-rating">
                             <span class="square material-green battery-green"></span>
                             <span class="square material-yellow"></span>
                             <span class="square st-red"></span>
-                            <span style="padding-right:10px">Battery</span>
+                            <span class="battery-desc"style="padding-right:10px">Battery</span>
                           </div>
                         </div>
                       </div>
@@ -832,7 +833,7 @@
               </div>
             </div>
             <div class="col-sm-8" style="padding-left:0px"> <!-- Right panel -->
-              <div class="col-sm-12" style="margin-left:15px; padding-right:0px;"> <!-- Check Following Systems / Components Panel -->
+              <div class="col-sm-12" style="margin-left:15px; padding-right:0px;" id="systems"> <!-- Check Following Systems / Components Panel -->
                       <div class="panel-group" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default" id="systems-panel">
                           <div class="st-panel-heading" role="tab" id="systems-heading">
@@ -988,9 +989,9 @@
             <div class="col-sm-12 text-right" style="padding-right:0px">
               <span> Set Remaining: </span>
               <span class="square material-green" id="all-green"></span>
-              <button class="btn outline-btn" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Check Completion" id="test-button">
-    	          Check Form
-    	          <span class="glyphicon glyphicon-list-alt"></span>
+              <button class="btn outline-btn" id="validate" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Check Completion" id="test-button">
+    	          What did I miss?
+    	          <span class="glyphicon glyphicon-question-mark"></span>
     	        </button>
     	        <a class="btn outline-btn-disabled" id="save">
     	          Save & Complete

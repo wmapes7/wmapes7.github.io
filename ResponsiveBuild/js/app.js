@@ -4,8 +4,8 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
 
-
-var $hoursWidget = '<div class="dropdown" id="hours" style="display:inline"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hours<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">.1</a></li><li><a href="#">.2</a></li><li><a href="#">.3</a></li><li><a href="#">.4</a></li><li><a href="#">.5</a></li><li><a href="#">.6</a></li><li><a href="#">.8</a></li><li><a href="#">.9</a></li><li><a href="#">1</a></li></ul></div>';
+//variable for hoursWidget
+var $hoursWidget = '<div class="dropdown" id="hours" style="display:inline-flex"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hours<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">.1</a></li><li><a href="#">.2</a></li><li><a href="#">.3</a></li><li><a href="#">.4</a></li><li><a href="#">.5</a></li><li><a href="#">.6</a></li><li><a href="#">.8</a></li><li><a href="#">.9</a></li><li><a href="#">1</a></li></ul></div>';
 
 //add a check mark to the selected square
 $( ".square" ).click(function() {
@@ -86,7 +86,6 @@ $('#all-green').click(function() {
     console.log('toggled panel border');
     //$('.panel-heading').css('background-color','#4caf50');
     $('#save').toggleClass('outline-btn').toggleClass('outline-btn-disabled');
-  //$($okGlyph).appendTo('.material-green');
 
 });
 
@@ -99,7 +98,7 @@ $('.st-red').click(function() {
   console.log("showed hours")
 });
 
-//save button, section not completed
+/*save button, section not completed
 $('#save').click(function(){
   $('.st-panel-heading').each(function(i,obj){
     console.log('panel'+ i);
@@ -114,9 +113,9 @@ $('#save').click(function(){
       $('.st-panel-heading').toggleClass('st-panel-complete-heading');
     }
   });
-});
+});*/
 
-//Check to see if an item has at least one check
+/*Check to see if an item has at least one check
 $('#test-button').click(function(){
   console.log('button clicked');
   $('.panel-body .col-sm-12 span:nth-last-of-type(4)').each(function(i,e){
@@ -132,22 +131,76 @@ $('#test-button').click(function(){
     };
 
   });
-});
+});*/
 
 
-//Validate each line has a checkmark
-$('#systems-check').click(function(){
-  console.log('clicked button');
-  $('.item').children('span').each(function(){
-    console.log('checking span, entering loop...')
-    if ($(this).hasClass('glyphicon glyphicon-ok')) {
-      console.log('found glyph in green square');
-      //$(this).next().next().next().css('background-color','green');
-    } else if ($(this).next().hasClass('glyphicon glyphicon-ok')) {
-      console.log('found glyph in yellow square');
-      //$(this).next().next().next().css('background-color','green');
+//Validate Form
+$('#validate').click(function(){
+  console.log('Validating form...');
+
+  //check Tires Section
+  $('.tires-rating').children('span').each(function(){
+    console.log('Checking tire row...')
+    if ($(this).hasClass('glyphicon glyphicon-ok') || $(this).next().hasClass('glyphicon glyphicon-ok') || $(this).next().next().hasClass('glyphicon glyphicon-ok')) {
+      console.log("found a check in " + this);
     } else {
-      $(this).next().next().next().css('background-color','#ffc107');
+      console.log("did not find check");
+      $(this).parent().prev().toggleClass('label-incomplete');
+      //$(this).parent().parent().parent().parent().parent().css('border','1px solid #fd265c');
+      $('#tires').find('.st-panel-heading').css('background','#fd265c');
+      $('#tires').find('.panel-body').css('border','1px solid #fd265c');
     }
   })
+
+  //check Brakes Section
+  $('.brakes-rating').children('span').each(function(){
+    console.log('Checking brakes row...')
+    if ($(this).hasClass('glyphicon glyphicon-ok') || $(this).next().hasClass('glyphicon glyphicon-ok') || $(this).next().next().hasClass('glyphicon glyphicon-ok')) {
+      console.log("found a check in " + this);
+    } else {
+      console.log("did not find check");
+      $(this).parent().prev().toggleClass('label-incomplete');
+      $('#brakes').find('.st-panel-heading').css('background','#fd265c');
+      $('#brakes').find('.panel-body').css('border','1px solid #fd265c');
+    }
+  })
+
+  //check Fluids Section
+  $('.fluids-rating').children('span').each(function(){
+    console.log('Checking fluids row...')
+    if ($(this).hasClass('glyphicon glyphicon-ok') || $(this).next().hasClass('glyphicon glyphicon-ok') || $(this).next().next().hasClass('glyphicon glyphicon-ok')) {
+      console.log("found a check in " + this);
+    } else {
+      console.log("did not find check");
+      $(this).siblings('.fluids-desc').toggleClass('label-incomplete');
+      $('#fluids').find('.st-panel-heading').css('background','#fd265c');
+      $('#fluids').find('.panel-body').css('border','1px solid #fd265c');
+    }
+  })
+
+  //check Battery Section
+  $('.battery-rating').children('span').each(function(){
+    console.log('Checking battery row...')
+    if ($(this).hasClass('glyphicon glyphicon-ok') || $(this).next().hasClass('glyphicon glyphicon-ok') || $(this).next().next().hasClass('glyphicon glyphicon-ok')) {
+      console.log("found a check in " + this);
+    } else {
+      console.log("did not find check");
+      $(this).siblings('.battery-desc').toggleClass('label-incomplete');
+      $('#battery').find('.st-panel-heading').css('background','#fd265c');
+      $('#battery').find('.panel-body').css('border','1px solid #fd265c');
+    }
+  })
+
+  //Check systems
+  $('.item').children('span').each(function(){
+    console.log('checking system row...')
+    if ($(this).hasClass('glyphicon glyphicon-ok') || $(this).next().hasClass('glyphicon glyphicon-ok') || $(this).next().next().hasClass('glyphicon glyphicon-ok')) {
+      console.log('found glyph in square');
+    } else {
+      $(this).next().next().next().css('background-color','#ffc107');
+      $('#systems').find('.st-panel-heading').css('background','#fd265c');
+      $('#systems').find('.panel-body').css('border','1px solid #fd265c');
+    }
+  })
+
 })
