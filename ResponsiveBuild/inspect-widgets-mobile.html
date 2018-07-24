@@ -8,9 +8,6 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Inspect Widgets</title>
 
-        <!--Bootstrap Local For Dev
-            <link href="css/bootstrap.css" rel="stylesheet"> -->
-
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -174,16 +171,17 @@
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <span style="padding-top:10px">Tires</span>
                     </a>
-                    <div class="pull-right">
+                    </h4>
+                    <div class="pull-right panel-title-set-all">
                       <span>Set Section:</span>
                       <span class="square material-green" style="margin-left:10px;" id="tires-section-green">
                       </span>
                     </div>
-                  </h4>
+
                 </div>
                 <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body" id="tires-section">
-                    <div class="" style="border-bottom: 1px solid #eee; border-top: 1px solid #eee; font-size:16px;"> <!-- Brake Color Legend -->
+                    <div class="panel-legend"> <!-- Brake Color Legend -->
                       <div class="text-center" style="padding-bottom:15px">
                         <h4>Tire Depth Legend</h4>
                         <br>
@@ -192,17 +190,17 @@
                         <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span>3/32 or less</span>
                       </div>
                     </div>
-                    <div class="" style="border-bottom: 1px solid #eee; border-top: 1px solid #eee; height: 60px; font-size:16px;"> <!-- General Tire Stuff row -->
-                      <div class="col-md-4" style="padding-top:15px;">
+                    <div class="nav nav-justified" style="border-bottom:1px solid #eee; padding-bottom:10px"> <!-- General Tire Stuff row -->
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-top:15px;">
                         <span style="padding-right: 10px;">Alignment Needed:</span>
                         <span></span>
                         <span><input type="checkbox" name="" value=""></span>
                       </div>
-                      <div class="col-md-4" style="padding-top:15px;">
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-top:15px;">
                         <span style="padding-right: 10px">Wheel Balance Needed:</span><input type="checkbox" name="" value="">
                       </div>
 
-                      <div class="col-md-4" style="padding-top:15px;">
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-top:15px;">
                         <span style="padding-right:5px">PSI Set To:</span>
                         <div class="dropdown"  style="vertical-align:middle; display:inline">
                           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -280,10 +278,10 @@
                         </div>
 
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             Tread Wear
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
                               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Select
@@ -336,10 +334,10 @@
                         </div>
 
                         <div class="row tread-depth-row" style="padding-top:10px">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8 tires-rating">
+                          <div class="col-md-8 col-xs-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
@@ -356,10 +354,10 @@
                         </div>
 
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             Tread Wear
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
                               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Select
@@ -412,10 +410,10 @@
                         </div>
 
                         <div class="row tread-depth-row" style="padding-top:10px">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8 tires-rating">
+                          <div class="col-md-8 col-xs-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
@@ -434,10 +432,10 @@
                         </div>
 
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             Tread Wear
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
                               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Select
@@ -490,10 +488,10 @@
                         </div>
 
                         <div class="row tread-depth-row" style="padding-top:10px">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8 tires-rating">
+                          <div class="col-md-8 col-xs-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
@@ -509,10 +507,10 @@
                         </div>
 
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             Tread Wear
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
                               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Select
@@ -565,10 +563,10 @@
                         </div>
 
                         <div class="row tread-depth-row" style="padding-top:10px">
-                          <div class="col-md-4">
+                          <div class="col-md-4 col-xs-4">
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
-                          <div class="col-md-8 tires-rating">
+                          <div class="col-md-8 col-xs-8 tires-rating">
                             <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
                             </span>
                             <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
@@ -596,16 +594,17 @@
                     <a role="button" data-toggle="collapse" data-parent="#brakes" href="#brakeHeading" aria-expanded="true" aria-controls="collapseOne">
                       <span style="padding-top:10px">Brakes</span>
                     </a>
-                    <div class="pull-right">
-                      <span>Measurements Not Taken:</span>
-                      <div class="square material-grey" style="margin-left:10px">
-                      </div>
-                      <span>Set Section:</span>
-                      <div class="square material-green" style="margin-left:10px" id="brakes-section-green">
-                      </div>
-                    </div>
-
                   </h4>
+                  <div class="pull-right panel-title-set-all">
+                    <span>Not Reviewed:</span>
+                    <div class="square material-grey" style="margin-left:10px">
+                    </div>
+                    <span>Set Section:</span>
+                    <div class="square material-green" style="margin-left:10px" id="brakes-section-green">
+                    </div>
+                  </div>
+
+
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
@@ -625,10 +624,10 @@
                         </div>
                         <div class="row">
                           <div class="" style="padding-top:10px">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8 brakes-rating">
+                            <div class="col-md-8 col-xs-8 brakes-rating">
                               <span class="square material-green brakes-green">
                               </span>
                               <span class="square material-yellow">
@@ -645,10 +644,10 @@
                         </div>
                         <div class="row">
                           <div class="" style="padding-top:10px">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8 brakes-rating">
+                            <div class="col-md-8 col-xs-8 brakes-rating">
                               <span class="square material-green brakes-green">
                               </span>
                               <span class="square material-yellow">
@@ -668,10 +667,10 @@
                         </div>
                         <div class="row">
                           <div class="" style="padding-top:10px">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8 brakes-rating">
+                            <div class="col-md-8 col-xs-8 brakes-rating">
                               <span class="square material-green brakes-green">
                               </span>
                               <span class="square material-yellow">
@@ -688,10 +687,10 @@
                         </div>
                         <div class="row">
                           <div class="" style="padding-top:10px">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-4">
                               Brake Depth
                             </div>
-                            <div class="col-md-8 brakes-rating">
+                            <div class="col-md-8 col-xs-8 brakes-rating">
                               <span class="square material-green brakes-green">
                               </span>
                               <span class="square material-yellow">
@@ -721,53 +720,54 @@
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               <span style="padding-top:10px">Fluids</span>
                             </a>
-                            <div class="pull-right">
-                              <span>Set Section:</span>
-                              <div id="fluids-section-green" class="square material-green" style="margin-left:10px">
-                              </div>
-                            </div>
-
                           </h4>
+                          <div class="pull-right panel-title-set-all">
+                            <span>Set Section:</span>
+                            <div id="fluids-section-green" class="square material-green" style="margin-left:10px">
+                            </div>
+                          </div>
+
+
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span class="fluids-desc" style="padding-right:10px" >Engine Oil</span>
                             </div>
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span class="fluids-desc" style="padding-right:10px">Brake Reservoir</span>
                             </div>
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span class="fluids-desc" style="padding-right:10px">Windshield Washer</span>
                             </div>
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span class="fluids-desc" style="padding-right:10px">Headlamp Washer</span>
                             </div>
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span class="fluids-desc" style="padding-right:10px">Power Steering</span>
                             </div>
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
                               <span class="fluids-desc" style="padding-right:10px">Coolant Recovery Reservoir</span>
                             </div>
-                            <div class="col-sm-12 fluids-rating">
+                            <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
                               <span class="square"></span>
                               <span class="square st-red"></span>
@@ -788,12 +788,12 @@
                           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <span style="padding-top:10px">Battery</span>
                           </a>
-                          <div class="pull-right">
-                            <span>Set Section:</span>
-                            <span class="square material-green" style="margin-left:10px" id="battery-section-green">
-                            </span>
-                          </div>
                         </h4>
+                        <div class="pull-right panel-title-set-all">
+                          <span>Set Section:</span>
+                          <span class="square material-green" style="margin-left:10px" id="battery-section-green">
+                          </span>
+                        </div>
                       </div>
                       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
@@ -839,15 +839,14 @@
                           <div class="st-panel-heading" role="tab" id="systems-heading">
                             <h4 class="panel-title">
                               <a role="button" id="systems-check">
-                                <span style="padding-top:10px">Check Following Systems / Components</span>
+                                <span style="padding-top:10px">Check Following Systems</span>
                               </a>
-                              <div class="pull-right">
+                              </h4>
+                              <div class="pull-right panel-title-set-all">
                                 <span>Set Section:</span>
                                 <div class="square material-green" style="margin-left:10px" id="systems-section-green">
                                 </div>
                               </div>
-
-                            </h4>
                           </div>
                           <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
@@ -855,7 +854,7 @@
                                 <span class="square material-green systems-green"></span>
                                 <span class="square material-yellow"></span>
                                 <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
+                                <span class="systems-desc"  style="padding-right:10px; ">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
                               </div>
                               <div class="col-sm-12 item">
                                 <span class="square material-green"></span>
@@ -887,7 +886,7 @@
                                 <span class="square st-red"></span>
                                 <span class="systems-desc"  style="padding-right:10px">Engine air cleaner filter</span>
                               </div>
-                              <div class="col-sm-12 item">
+                              <div class="col-sm-12 item" style="">
                                 <span class="square material-green"></span>
                                 <span class="square material-yellow"></span>
                                 <span class="square st-red"></span>
