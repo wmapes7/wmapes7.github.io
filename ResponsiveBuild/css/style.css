@@ -632,8 +632,8 @@ tr td {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 4px;
     margin-right: 5px;
     color: #fff;
@@ -673,5 +673,5 @@ input[type=checkbox] {
 }
 
 .panel-title-set-all {
-	margin-top: -20px;
+	margin-top: -23px;
 }
