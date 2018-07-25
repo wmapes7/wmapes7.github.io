@@ -2,6 +2,13 @@
 //videoWidget
 var $videoWidget = '<span class="square" style="border: 1px solid black"><span class="glyphicon glyphicon-facetime-video" style="color: black; padding-left:3px"></span></span>';
 
+//show video widget after red click
+$('.st-red, .material-yellow').click(function() {
+  $(this).siblings('.video-button').toggleClass('show-video');
+  console.log("showed video widget")
+});
+
+
 //add a check mark to the selected square
 $( ".square" ).click(function() {
   $(this).toggleClass('glyphicon glyphicon-ok');
@@ -84,12 +91,6 @@ $('#all-green').click(function() {
 
 });
 
-//show video widget after red click
-$('.st-red, .material-yellow').click(function() {
-  $(this).siblings('.video-button').toggleClass('show-video');
-  //$(this).siblings('.video-button').css("display","inline-flex");
-  console.log("showed video widget")
-});
 
 
 //Validate Form
