@@ -171,7 +171,7 @@
                     <span style="">Tires</span>
                     <div class="pull-right">
                       <span>Set Section:</span>
-                      <span class="square material-green" style="margin-left:10px;" id="tires-section-green">
+                      <span class="square material-green heading-square" id="tires-section-green">
                       </span>
                     </div>
                   </div>
@@ -184,85 +184,98 @@
                       <div class="text-center" style="padding-bottom:15px">
                         <h4>Tire Depth Legend</h4>
                         <br>
-                        <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">7/32 or Greater | </span>
+                        <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">>&nbsp7/32 </span>
                         <span class="square material-yellow"><span class="glyphicon glyphicon-alert" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">4/32 - 6/32</span>
-                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span>3/32 or less</span>
+                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span><&nbsp 3/32</span>
                       </div>
                     </div>
                     <div class="nav nav-justified" style="border-bottom:1px solid #eee; padding-top: 10px;"> <!-- General Tire Stuff row -->
-                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-top:10px">
-                        <span style="padding-right: 10px;">Alignment Needed:</span>
-                        <span></span>
-                        <span><input type="checkbox" name="" value=""></span>
-                      </div>
-                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-top:10px">
-                        <span style="padding-right: 10px">Wheel Balance Needed:</span><input type="checkbox" name="" value="">
-                      </div>
-                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-top:10px">
-                        <span style="padding-right:5px">PSI Set To:</span>
-                        <div class="dropdown"  style="display:inline">
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Select
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">30</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">31</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">32</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">33</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">34</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">35</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">36</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">37</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">38</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">39</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <span style="vertical-align:middle">40</span>
-                              </a>
-                            </li>
-                          </ul>
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left:0px; padding-top:10px;">
+                        <div class="col-xs-8 col-md-5">
+                          <span style="">Alignment Needed:</span>
                         </div>
+                        <div class="col-xs-4 col-md-7">
+                          <span class=""><input type="checkbox" name="" value=""></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left:0px; padding-top:10px;">
+                        <div class="col-xs-8 col-md-7">
+                          <span style="padding-right: 10px">Wheel Balance Needed:</span>
+                        </div>
+                        <div class="col-xs-4 col-md-5">
+                          <span class=""><input type="checkbox" name="" value=""></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left:0px; padding-top:10px; padding-bottom:10px">
+                        <div class="col-xs-8 col-md-6">
+                          <span style="">PSI Set To:</span>
+                        </div>
+                        <div class="col-xs-4 col-md-6" style="padding-left:8px; margin-top:-5px">
+                          <div class="dropdown"  style="display:inline;">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Select
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">30</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">31</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">32</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">33</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">34</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">35</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">36</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">37</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">38</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">39</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">40</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                     <div class="" style=""> <!-- Driver + Passenger Front Row -->
@@ -273,7 +286,7 @@
 
                         <div class="row">
                           <div class="col-md-4 col-xs-4">
-                            Tread Wear
+                            <span>Tread Wear</span>
                           </div>
                           <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
@@ -332,12 +345,13 @@
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
                           <div class="col-md-8 col-xs-8 tires-rating">
-                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green">
                             </span>
-                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            <span class="square material-yellow">
                             </span>
-                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            <span class="square st-red" id="red">
                             </span>
+                            <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                           </div>
                         </div>
 
@@ -349,7 +363,7 @@
 
                         <div class="row">
                           <div class="col-md-4 col-xs-4">
-                            Tread Wear
+                            <span>Tread Wear</span>
                           </div>
                           <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
@@ -408,12 +422,13 @@
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
                           <div class="col-md-8 col-xs-8 tires-rating">
-                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green">
                             </span>
-                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            <span class="square material-yellow">
                             </span>
-                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            <span class="square st-red" id="red">
                             </span>
+                            <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                           </div>
                         </div>
                       </div>
@@ -427,7 +442,7 @@
 
                         <div class="row">
                           <div class="col-md-4 col-xs-4">
-                            Tread Wear
+                            <span>Tread Wear</span>
                           </div>
                           <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
@@ -486,12 +501,13 @@
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
                           <div class="col-md-8 col-xs-8 tires-rating">
-                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green">
                             </span>
-                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            <span class="square material-yellow">
                             </span>
-                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            <span class="square st-red" id="red">
                             </span>
+                            <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                           </div>
                         </div>
                       </div>
@@ -502,7 +518,7 @@
 
                         <div class="row">
                           <div class="col-md-4 col-xs-4">
-                            Tread Wear
+                            <span>Tread Wear</span>
                           </div>
                           <div class="col-md-8 col-xs-8">
                             <div class="dropdown">
@@ -561,12 +577,13 @@
                             <span class="tread-depth-label">Tread Depth</span>
                           </div>
                           <div class="col-md-8 col-xs-8 tires-rating">
-                            <span class="square material-green tires-green" data-toggle="tooltip" data-placement="top" title="7/32 or Greater">
+                            <span class="square material-green tires-green">
                             </span>
-                            <span class="square material-yellow" data-toggle="tooltip" data-placement="top" title="4/32 - 6/32">
+                            <span class="square material-yellow">
                             </span>
-                            <span class="square st-red" data-toggle="tooltip" data-placement="top" title="3/32 or Less" id="red">
+                            <span class="square st-red" id="red">
                             </span>
+                            <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                           </div>
                         </div>
                       </div>
@@ -588,10 +605,10 @@
                     <span>Brakes</span>
                     <div class="pull-right">
                       <span>N/A:</span>
-                      <div class="square material-grey" style="margin-left:10px">
+                      <div class="square material-grey heading-square" style="margin-left:10px">
                       </div>
                       <span>Set Section:</span>
-                      <div class="square material-green" style="margin-left:10px" id="brakes-section-green">
+                      <div class="square material-green heading-square" id="brakes-section-green">
                       </div>
                     </div>
 
@@ -606,9 +623,9 @@
                       <div class="text-center" style="padding-bottom:15px">
                         <h4>Brake Depth Legend</h4>
                         <br>
-                        <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">Over 5mm | </span>
-                        <span class="square material-yellow"><span class="glyphicon glyphicon-alert" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">3mm - 5mm | </span>
-                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span>Less than 3mm</span>
+                        <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">>&nbsp5mm </span>
+                        <span class="square material-yellow"><span class="glyphicon glyphicon-alert" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">3mm - 5mm </span>
+                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span>< &nbsp 3mm</span>
                       </div>
                     </div>
                     <div class="" style=""> <!-- Driver + Passenger Front Row -->
@@ -628,6 +645,7 @@
                               </span>
                               <span class="square st-red">
                               </span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                             </div>
                           </div>
                         </div>
@@ -648,6 +666,7 @@
                               </span>
                               <span class="square st-red">
                               </span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                             </div>
                           </div>
                         </div>
@@ -671,6 +690,7 @@
                               </span>
                               <span class="square st-red">
                               </span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                             </div>
                           </div>
                         </div>
@@ -691,6 +711,7 @@
                               </span>
                               <span class="square st-red">
                               </span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                             </div>
                           </div>
                         </div>
@@ -714,7 +735,7 @@
                             <span>Fluids</span>
                             <div class="pull-right">
                               <span>Set Section:</span>
-                              <div id="fluids-section-green" class="square material-green" style="margin-left:10px"></div>
+                              <div class="square material-green heading-square" id="fluids-section-green" ></div>
                             </div>
                           </div>
                         </div>
@@ -722,44 +743,44 @@
                           <div class="panel-body">
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px" >Engine Oil</span>
                             </div>
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px">Brake Reservoir</span>
                             </div>
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px">Windshield Washer</span>
                             </div>
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px">Headlamp Washer</span>
                             </div>
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px">Power Steering</span>
                             </div>
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px">Coolant Recovery Reservoir</span>
                             </div>
                             <div class="col-sm-12 fluids-rating item">
                               <span class="square material-green fluids-green"></span>
-                              <span class="square"></span>
                               <span class="square st-red"></span>
+                              <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                               <span class="fluids-desc" style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
                             </div>
                           </div>
@@ -777,7 +798,7 @@
                             <span>Battery</span>
                             <div class="pull-right">
                               <span>Set Section:</span>
-                              <span class="square material-green" style="margin-left:10px" id="battery-section-green">
+                              <span class="square material-green heading-square" id="battery-section-green">
                               </span>
                             </div>
 
@@ -790,6 +811,7 @@
                             <span class="square material-green battery-green"></span>
                             <span class="square material-yellow"></span>
                             <span class="square st-red"></span>
+                            <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
                             <span class="battery-desc"style="padding-right:10px">Battery</span>
                           </div>
                         </div>
@@ -805,6 +827,11 @@
                       <div class="st-panel-heading" role="tab" id="headingOne">
                         <div class="panel-title">
                           <span>Additional Notes</span>
+                          <div class="pull-right">
+                            <span style="padding-right:10px">Add Video:</span>
+                            <span class="square static-video-button heading-square"><span class="glyphicon glyphicon-facetime-video" style="padding-left:3px; padding-top:7px"></span></span>
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <div id="" class="panel-collapse collapse in">
@@ -821,168 +848,187 @@
             </div>
             <div class="col-sm-8" style=""> <!-- Right panel -->
               <div class="row" style="" id="systems"> <!-- Check Following Systems / Components Panel -->
-                      <div class="panel-group" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default" id="systems-panel">
-                          <div class="st-panel-heading" role="tab" id="systems-heading">
-                            <div class="panel-title">
-                              <span>Systems</span>
-                              <div class="pull-right">
-                                <span>Set Section:</span>
-                                <div class="square material-green" style="margin-left:10px" id="systems-section-green">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                              <div class="col-sm-12 item">
-                                <span class="square material-green systems-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px; ">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Visually inspect headlamp alignment</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Windshield washer spray, wiper operation and wiper blades</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc" style="padding-right:10px">Windshield cracks and/or chips</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc" style="padding-right:10px">Heating, ventilation and air conditioning check</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Engine air cleaner filter</span>
-                              </div>
-                              <div class="col-sm-12 item" style="">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Oil and/or fluid leaks</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Constant velocity (CV) drive axle boots (if equipped)</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Exhaust system (leaks, damage, loose parts)</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Steering and steering linkages</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Shocks/struts, air suspension and other suspension components for leaks and/or damage</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Brake system (including lines, hoses and parking brake)</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Engine cooling system, hoses and clamps</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Radiator, heater and air conditioning hoses for leaks / damage</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Accessory drive belt(s)</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Clutch operation (if equipped)</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Floor Mats</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square material-yellow"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Navigation map update required</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">State inspection due (if applicable)</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Your last completed maintenance</span>
-                              </div>
-                              <div class="col-sm-12 item">
-                                <span class="square material-green"></span>
-                                <span class="square"></span>
-                                <span class="square st-red"></span>
-                                <span class="systems-desc"  style="padding-right:10px">Your next factory scheduled maintenance is due</span>
-                              </div>
-                            </div>
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default" id="systems-panel">
+                    <div class="st-panel-heading" role="tab" id="systems-heading">
+                      <div class="panel-title">
+                        <span>Systems</span>
+                        <div class="pull-right">
+                          <span>Set Section:</span>
+                          <div class="square material-green heading-square" id="systems-section-green">
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <div class="col-sm-12 item">
+                          <span class="square material-green systems-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px; ">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Visually inspect headlamp alignment</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Windshield washer spray, wiper operation and wiper blades</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc" style="padding-right:10px">Windshield cracks and/or chips</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc" style="padding-right:10px">Heating, ventilation and air conditioning check</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Engine air cleaner filter</span>
+                        </div>
+                        <div class="col-sm-12 item" style="">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Oil and/or fluid leaks</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Constant velocity (CV) drive axle boots (if equipped)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Exhaust system (leaks, damage, loose parts)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Steering and steering linkages</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Shocks/struts, air suspension and other suspension components for leaks and/or damage</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Brake system (including lines, hoses and parking brake)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Engine cooling system, hoses and clamps</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Radiator, heater and air conditioning hoses for leaks / damage</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Accessory drive belt(s)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Clutch operation (if equipped)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Floor Mats</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Navigation map update required</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">State inspection due (if applicable)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Your last completed maintenance</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+                          <span class="square video-button"><span class="glyphicon glyphicon-facetime-video"></span></span>
+                          <span class="systems-desc"  style="padding-right:10px">Your next factory scheduled maintenance is due</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="row" style="padding-bottom: 60px;"> <!-- Nav -->
-            <div class="col-sm-12 text-right" style="padding-right:0px">
-              <span> Set Remaining: </span>
-              <span class="square material-green" id="all-green"></span>
-              <button class="btn outline-btn" id="validate" style="margin-right:5px"  data-toggle="tooltip" data-placement="top" title="Check Completion" id="test-button">
-    	          What did I miss?
-    	          <span class="glyphicon glyphicon-question-mark"></span>
-    	        </button>
-    	        <a class="btn outline-btn-disabled" id="save">
-    	          Save & Complete
-    	          <span class="glyphicon glyphicon-ok"></span>
-    	        </a>
-    	      </div>
-    	    </div> <!-- Nav -->
+          <div class="col-xs-12 col-md-12" style="padding-left:0px; padding-right:0px">
+            <div class="row" style="padding-bottom:30px">
+              <div class="col-xs-12 text-right">
+                <span style="padding-right:10px"> Set Remaining: </span>
+                <span class="square material-green" id="all-green"></span>
+                <button class="btn outline-btn" id="validate" style="margin-right:5px;" id="test-button">
+                  What did I miss?
+                  <span class="glyphicon glyphicon-question-mark"></span>
+                </button>
+              </div>
+            </div>
+  	      </div>
         </div>
 
 
@@ -993,7 +1039,7 @@
         <!--CDN Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <!-- Scripts -->
+        <!-- Validation Scripts -->
         <script type="text/javascript" src="js/app.js">
 
         </script>

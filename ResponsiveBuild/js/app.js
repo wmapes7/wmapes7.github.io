@@ -1,11 +1,6 @@
 
-//active bootstrap tooltips
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-
-//variable for hoursWidget
-var $hoursWidget = '<div class="dropdown" id="hours" style="display:inline-flex"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hours<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">.1</a></li><li><a href="#">.2</a></li><li><a href="#">.3</a></li><li><a href="#">.4</a></li><li><a href="#">.5</a></li><li><a href="#">.6</a></li><li><a href="#">.8</a></li><li><a href="#">.9</a></li><li><a href="#">1</a></li></ul></div>';
+//videoWidget
+var $videoWidget = '<span class="square" style="border: 1px solid black"><span class="glyphicon glyphicon-facetime-video" style="color: black; padding-left:3px"></span></span>';
 
 //add a check mark to the selected square
 $( ".square" ).click(function() {
@@ -89,49 +84,12 @@ $('#all-green').click(function() {
 
 });
 
-//show hours widget after red click
-$('.st-red').click(function() {
-  $(this).after($hoursWidget);
-  //$("#red").append($hoursWidget).after("#red");
-  //$( "#hours" ).css( "display", "inline" );
-  //$("#red-driver-tire").after($hoursWidget);
-  console.log("showed hours")
+//show video widget after red click
+$('.st-red, .material-yellow').click(function() {
+  $(this).siblings('.video-button').toggleClass('show-video');
+  //$(this).siblings('.video-button').css("display","inline-flex");
+  console.log("showed video widget")
 });
-
-/*save button, section not completed
-$('#save').click(function(){
-  $('.st-panel-heading').each(function(i,obj){
-    console.log('panel'+ i);
-    if ( !$(obj).hasClass('material-green')) {
-      console.log('found incomplete');
-      $('.panel').toggleClass('border-color','#fd265c');
-      $('.st-panel-heading').toggleClass('st-panel-incomplete-heading');
-      $('html, body').animate ({scrollTop: 0},800);
-      return false;
-    } else {
-      $('.panel').toggleClass('st-panel-complete-border');
-      $('.st-panel-heading').toggleClass('st-panel-complete-heading');
-    }
-  });
-});*/
-
-/*Check to see if an item has at least one check
-$('#test-button').click(function(){
-  console.log('button clicked');
-  $('.panel-body .col-sm-12 span:nth-last-of-type(4)').each(function(i,e){
-    console.log('selected spans');
-    if (!$('.st-panel-heading').hasClass('st-panel-complete-heading')) {
-      $('.panel').toggleClass('st-panel-incomplete-border');
-      console.log('toggled red border');
-      //description fields
-      $('.panel-body .col-sm-12 span:nth-last-of-type(1)').css('background-color','#ffc107')
-      console.log('yellow background description');
-      $('.st-panel-heading').toggleClass('st-panel-incomplete-heading');
-      console.log('toggled red heading');
-    };
-
-  });
-});*/
 
 
 //Validate Form
@@ -197,7 +155,7 @@ $('#validate').click(function(){
     if ($(this).hasClass('glyphicon glyphicon-ok') || $(this).next().hasClass('glyphicon glyphicon-ok') || $(this).next().next().hasClass('glyphicon glyphicon-ok')) {
       console.log('found glyph in square');
     } else {
-      $(this).next().next().next().css('background-color','#ffc107');
+      $(this).siblings('.systems-desc').css('background-color','#ffc107');
       $('#systems').find('.st-panel-heading').css('background','#fd265c');
       $('#systems').find('.panel-body').css('border','1px solid #fd265c');
     }
