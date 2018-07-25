@@ -669,6 +669,6 @@ input[type="file"] {
     display: none;
 }
 .custom-file-upload {
-    display: inline;
+    display: inline; 
     cursor: pointer;
 }
