@@ -645,7 +645,7 @@ input[type=checkbox] {
 
 .video-button {
 	border: solid 1px #4767f3;
-	display: none;
+	/*display: none;*/
 	color: #4767f3;
 	padding-left: 5px;
 }
@@ -669,6 +669,6 @@ input[type="file"] {
     display: none;
 }
 .custom-file-upload {
-    display: inline; 
+    display: inline;
     cursor: pointer;
 }

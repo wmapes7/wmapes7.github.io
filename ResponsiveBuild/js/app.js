@@ -1,12 +1,24 @@
 
 //videoWidget
 var $videoWidget = '<span class="square" style="border: 1px solid black"><span class="glyphicon glyphicon-facetime-video" style="color: black; padding-left:3px"></span></span>';
+var $vidwid2 = '<label for="file-upload" class="custom-file-upload"><span class="square video-button"><span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span></label><input id="file-upload" type="file" accept="video/*"/>'
+
+$('.st-red').click(function(){
+  $(this).after($vidwid2);
+  //$(this).next().append($vidwid2);
+  console.log('showed vidwid after red');
+});
+
+$('.material-yellow').click(function(){
+  $(this).next().after($vidwid2);
+  console.log('clicked yellow, showed vidwid ');
+})
 
 //show video widget after red click
-$('.st-red, .material-yellow').click(function() {
-  $(this).siblings('.video-button').toggleClass('show-video');
-  console.log("showed video widget")
-});
+//$('.st-red, .material-yellow').click(function() {
+//  $(this).siblings('.video-button').toggleClass('show-video');
+//  console.log("showed video widget")
+//});
 
 
 //add a check mark to the selected square
