@@ -663,3 +663,12 @@ input[type=checkbox] {
 .show-video {
 	display: inline-flex;
 }
+
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline;
+    cursor: pointer;
+}
