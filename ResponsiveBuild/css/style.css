@@ -424,10 +424,25 @@ tr td {
 	opacity: 0.4;
 }
 
+.login-btn {
+	background-color: #fff;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.login-btn :hover{
+	text-decoration: underline;
+}
+
 .forgot-password {
 	color: #fff;
 	font-weight: 300;
 	margin-top: 10px;
+}
+
+.forgot-password :hover{
+	text-decoration: underline;
+	color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
@@ -457,6 +472,7 @@ tr td {
 
 .ad-content p {
 	opacity: .5;
+	font-weight: 300;
 }
 .ad-content a {
 	color: #fff;
@@ -466,9 +482,6 @@ tr td {
 	cursor: pointer;
 }
 
-.login-btn {
-	margin-top: 30px;
-}
 
 /* Quote Page */
 
