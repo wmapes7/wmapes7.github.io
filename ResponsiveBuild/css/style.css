@@ -367,38 +367,110 @@ tr td {
 .login-page {
 	height: 100vh;
 	background: rgb(29, 119, 239);
-	background: linear-gradient(180deg, rgba(29, 119, 239, 1) 0%, rgba(104, 191, 231, 1) 100%);
+	/*background: linear-gradient(180deg, rgba(29, 119, 239, 1) 0%, rgba(104, 191, 231, 1) 100%);*/
+	background: linear-gradient(to right bottom, rgba(41, 8, 48, .97), rgba(82, 65, 143, .97) 50%, rgba(114, 183, 227, .97));
 }
-.login-box {
-	background-color: #fff;
-	border-radius: 5px;
+
+.login-container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-div {
 	text-align: center;
-	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
-	margin-top: 40%;
+	padding-top: 25%;
 }
-.login-content {
-	padding-top: 15%;
-	padding-bottom: 15%;
-	padding-left: 15%;
-	padding-right: 15%;
+
+.login-header {
+	font-size: 36px;
+	font-weight: 300;
+	color: #fff;
+
 }
-.login-content img {
-	margin-bottom: 10px;
+
+#loginpage form {
+	line-height: 2.5;
 }
+
+#loginpage input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #999;
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff;
+	width: 100%;
+}
+
+#loginpage input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+	opacity: 0.4;
+}
+#loginpage input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+	opacity: 0.4;
+}
+#loginpage input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+	opacity: 0.4;
+}
+#loginpage input:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+	opacity: 0.4;
+}
+
+.forgot-password {
+	color: #fff;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+	#loginpage input {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.login-container {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.login-div {
+		text-align: left;
+	}
+}
+
+.ad-box {
+	height: 50vh;
+	color: #fff;
+	text-align: left;
+}
+
+.ad-content {
+	padding-top: 25%;
+}
+
+.ad-content p {
+	opacity: .5;
+}
+
+.ad-content a {
+	color: #fff;
+}
+
 .login-box a {
 	cursor: pointer;
 }
-.forgot {
-	display: block;
-	font-size: 16px;
-	margin-top: 10px;
+
+.login-btn {
+	margin-top: 30px;
 }
-.login-button {
-	border: 1px solid #999;
-}
-.login-button:hover {
-	background-color: #f3f7fa;
-}
+
 /* Quote Page */
 
 .customer-info-header {

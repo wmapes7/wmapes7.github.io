@@ -8,14 +8,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Login Page</title>
 
-    <!--Bootstrap Local For Dev 
+    <!--Bootstrap Local For Dev
         <link href="css/bootstrap.css" rel="stylesheet"> -->
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Source Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
 
     <!-- App Styles -->
     <link href="css/style.css" rel="stylesheet">
@@ -29,30 +29,32 @@
 
 </head>
 
-<body class="login-page">
-    <div class="container-fluid">
-        <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-            <div class="login-box"> <!-- Login Div -->
-                <div class="login-content">
-                    <img src="assets/st-name.png">
-                    <form>
-                        <div class="form-group" style="padding-top: 20px;">
-                            
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
-                        </div>
-                        <div class="form-group">
-                            
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="alert alert-danger" role="alert" style="display: none"><span class="glyphicon glyphicon-exclamation-sign"></span>Invalid Email or Password</div>
-                        <button type="submit" class="btn login-button" >Login</button>   
-                        <br>
-                        <a class="forgot">Help Me Login</a>         
-                    </form>  
-                </div>
-            </div>
-        </div>
+<body class="login-page" id="loginpage">
+  <div class="container" style="padding-top:160px">
+
+    <div class="col-md-7 ad-box hidden-xs"> <!--Ad box -->
+      <div class="col-md-6 ad-content">
+        <span class="login-header">Singlethread Video Inspections</span>
+        <p>Easily capture and share video with customers to improve trust and transparency. Easily review videos before sending to ensure they're customer-friendly. Free trials available.</p>
+        <a href="#"><span>Get Started</span></a>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/iPhone-7-Silver-vertical-video.png" alt="" height="auto" width="100%">
+      </div>
     </div>
+
+    <div class="col-md-5">
+      <div class="login-div">
+        <span class="login-header">Log into <br> your account</span>
+        <form class="" action="index.html" method="post" style="">
+          <input type="text" name="email" value="" placeholder="Email">
+          <input type="text" name="password" value="" placeholder="Password">
+          <button href="#" class="btn btn-block login-btn"><span>Login</span></button><br>
+          <a href="#" class="forgot-password"><span>Help Me Login</span></a>
+        </form>
+      </div>
+    </div>
+  </div>
 
     <!-- CDN jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
