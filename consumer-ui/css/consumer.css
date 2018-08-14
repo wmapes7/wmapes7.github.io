@@ -123,16 +123,6 @@
     cursor: pointer;
 }
 
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 23px;
-    width: 23px;
-    background-color: #eee;
-}
-
 /* On mouse-over, add a grey background color */
 .footer-custom-checkbox-label:hover input ~ .checkmark {
     background-color: #ccc;
@@ -141,13 +131,6 @@
 /* When the checkbox is checked, add a blue background */
 .footer-custom-checkbox-label input:checked ~ .checkmark {
     background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
 }
 
 /* Show the checkmark when checked */
@@ -166,4 +149,8 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+a[aria-expanded='false'] > .rotate {
+    transform: rotate(180deg);
 }

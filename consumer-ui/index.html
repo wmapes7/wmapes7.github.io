@@ -17,368 +17,285 @@
 
     <title>Consumer UI Proto</title>
   </head>
-  <body style="background-color: #f4f7fa; font-weight:300" id="consumer">
+  <body style="background-color: #f4f7fa; font-weight:300;" id="consumer">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#4e5c6f">
       <a class="navbar-brand" href="#">Test Dealer</a>
     </nav>
     <div class="container" style="background-color:#f4f7fa; max-width: 640px"> <!--Main Page Container -->
-      <!--<div class="container"> <!-- Advertising Container Start
+
+      <!-- Advertising Container Start -->
+      <div class="container" style="display:none; padding-top:15px">
         <div class="row text-center" style="padding-bottom:10px; padding-left:0px; padding-right:0px">
           <div class="col">
             <img src="img/paygo.png" alt="" class="img-fluid">
           </div>
         </div>
       </div> <!-- End Advertising Container -->
-      <!--<div class="container" style="background-color: #f4f7fa; color:#4e5c6f"> <!--Customer Info Container Start
-        <div class="row">
-          <div class="col" style="color:#4e5c6f">
-            <h3>John Customer</h3>
-          </div>
-        </div>
-        <!--<div class="row" style="font-size:13px">
-          <div class="col" style="padding-left:0px">
-            <span><strong>Vehicle:</strong> 2018 Ford Explorer</span>
-            <br>
-            <span><strong>Repair Order:</strong> 12345
-          </div>
-          <div class="col text-right" style="padding-right:0px">
-            <!-- <button type="button" name="button" class="btn btn-sm btn-primary">Appraise my vehicle</button>
-          </div>
-        </div>
-        <div class="row" style="font-size:13px;">
-          <div class="col-8" style="padding-left:0px">
-            <span><strong>Advisor:</strong> Service Advisorname</span>
-          </div>
-        </div>-->
-        <!--<div class="row" style="padding-top:10px">
-          <div class="col" style="padding-left:0px;">
-            <span style="font-size:20px; color:#4e5c6f"><i class="far fa-calendar-check"></i> August 9th, 4:00pm</span>
-          </div>
-        </div> -->
-        <!--<div class="row">
-          <div class="col" style="padding-left:0px; margin-top:-10px">
-            <span style="font-size:11px; color:#7c94b7; padding-left:22px">ESTIMATED COMPLETION</span>
-          </div>
-        </div>
-      </div> -->
-      <div class="container consumer-container"> <!-- timeline container -->
+
+      <!-- timeline container -->
+      <div class="container consumer-container">
         <div class="row no-gutters" style="padding-bottom:10px">
           <div class="col">
-            <div style="display:none">
+            <div style="display:auto">
               <h5 style="">John Customer</h5>
-              <span>your vehicle is checked-in.</span>
-            </div>
-            <div class="" style="display:auto">
-              <h5 style="">John Customer</h5>
-              <span>your approval is requsted to continue service.</span>
-            </div>
-            <div style="display:none">
-              <h5 style="">John Customer</h5>
-              <span>your vehicle is being serviced.</span>
-            </div>
-            <div style="display:none">
-              <h5 style="">John Customer</h5>
-              <span>your mobile invoice is ready.</span>
-            </div>
-            <div style="display:none">
-              <h5 style="">John Customer</h5>
-              <span>your feedback has been requested.</span>
+              <span style="display:none">your vehicle is checked-in.</span>
+              <span style="display:auto">your approval is requsted to continue service.</span>
+              <span style="display:none">your vehicle is being serviced.</span>
+              <span style="display:none">your mobile invoice is ready for payment.</span>
+              <span style="display:none">your feedback has been requested.</span>
             </div>
           </div>
         </div>
-        <!--<div class="row text-right" style="padding-top:10px">
-          <div class="col">
-            <span style="font-size:16px; color:#4e5c6f"><i class="far fa-calendar-check"></i> August 9th, 4:00pm</span>
-          </div>
-        </div>
-        <div class="row text-right">
-          <div class="col">
-            <span style="font-size:11px; color:#7c94b7;">ESTIMATED COMPLETION</span>
-          </div>
-        </div>-->
         <div class="row" style="padding-bottom:15px">
           <div class="col">
             <div class="progress" style="height:5px">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
             </div>
           </div>
         </div>
-        <!--<div class="row" style="font-size:13px; padding-top:5px; padding-bottom:5px">
-          <div class="col">
-            <span>Check-In <i class="fas fa-check" style="color:green"></i></span>
-          </div>
-          <div class="col-5 text-center">
-            <span>Vehicle Service <i class="far fa-bell" style="color:red"></i></span>
+      </div> <!-- End Timeline Container -->
+
+      <!--Vehicle Check-in Container -->
+      <div class="container consumer-container" style="display:auto">
+        <div class="row">
+          <div class="col-10">
+            <h5 style="font-weight:300">Vehicle Check-In</h5>
           </div>
           <div class="col text-right">
-            <span>Payment <i class="far fa-hourglass"></i></span>
-          </div>
-        </div> -->
-      </div>
+            <a class="" data-toggle="collapse" href="#reported-concerns" role="button" aria-expanded="false" aria-controls="collapseCheckin"><i class="fa fa-angle-down rotate" style="font-size:18px"></i></a>
 
-        <!--<div class="container consumer-container"> Vehicle Check-in Container
+          </div>
+        </div>
+        <div class="collapse" id="reported-concerns">
           <div class="row">
-            <div class="col-8">
-              <h4 style="font-weight:300"> <i class="far fa-check-circle" style="color: green"></i> Vehicle Check-In</h4>
-            </div>
-            <div class="col text-right">
-              <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="	fa fa-angle-down" style="font-size:18px"></i></a>
+            <div class="col">
+              <span>Reported Concerns</span>
             </div>
           </div>
-          <div class="collapse" id="collapseExample"> <!--Start Check-in Collapse
-
-
-            <div class="row" id="services-concerns">
-              <div class="col">
-                <span>Reported Concerns</span>
-              </div>
-            </div>
-            <div class="row" id="services-items">
-              <div class="col" style="font-size:12px">
-                <ul class="list-unstyled" style="padding-top:5px">
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
-                  <br>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
-                  <br>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
-                  <br>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row text-center" id="services-button">
-              <div class="col" style="font-size:14px; font-weight:400; padding-bottom:15px; padding-top:10px">
-                <button class="btn btn-sm btn-block btn-secondary">Vehicle is checked-in <i class="far fa-check-circle" style=""></i></button>
-              </div>
-            </div>
-          </div> End check-in collapse container
-        </div> End Vehicle Check-in Container -->
-        <div class="container consumer-container" style="margin-bottom:135px"> <!--Vehicle Service Container -->
-          <div class="row no-gutters">
-            <div class="col-11">
-              <h4 style="font-weight:300">Vehicle Services</h4>
-            </div>
-            <!--<div class="col-1 text-right">
-              <a class="" data-toggle="collapse" href="#collapseServices" role="button" aria-expanded="false" aria-controls="collapseServices"><i class="fa fa-angle-down" style="font-size:18px"></i></a>
-            </div>-->
-          </div>
-          <div class="collapse show" id="collapseServices"> <!--Vehicle Services Collapse Container -->
-            <div class="row no-gutters" style="padding-top:10px;">
-              <table class="table table-sm" style="font-size:12px;">
-                <thead>
-                  <tr class="estimate-table">
-                    <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Job</th>
-                    <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Media</th>
-                    <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Approve</th>
-                    <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300; font-weight:300">Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Lorem ipsum dolor sit amet.</td>
-                    <td class="text-center align-middle" style="font-size:22px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
-                    <td class="text-center align-middle">
-                      <label class="custom-checkbox-label">
-                        <input type="checkbox" name="" value="" checked="true">
-                        <span class="checkmark"></span>
-                      </label>
-                    </td>
-                    <td class="text-center align-middle"><span>$999.99</span></td>
-                  </tr>
-                  <tr>
-                  <tr style="">
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                    <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
-                    <td class="text-center align-middle">
-                      <label class="custom-checkbox-label">
-                        <input type="checkbox" name="" value="" checked="true">
-                        <span class="checkmark"></span>
-                      </label>
-                    </td>
-                    <td class="text-center align-middle"><span>$999.99</span></td>
-                  </tr>
-                  <tr style="">
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                    <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
-                    <td class="text-center align-middle">
-                      <label class="custom-checkbox-label">
-                        <input type="checkbox" name="" value="" checked="true">
-                        <span class="checkmark"></span>
-                      </label>
-                    </td>
-                    <td class="text-center align-middle"><span>$999.99</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="row no-gutters" style="padding-bottom:10px">
-              <div class="col text-right">
-                <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
-              </div>
-            </div>
-            <!--<div class="row" style="padding-top:5px">
-              <div class="col text-center" style="font-size:12px">
-                <input type="checkbox" name="" value=""> I agree to <a href="#">Terms & Conditions</a>.
-              </div>
-            </div>
-            <div class="row" style="padding-bottom:15px; padding-top:15px">
-              <div class="col text-center">
-                <button type="button" name="button" class="btn btn-sm btn-secondary">Decline</button>
-              </div>
-              <div class="col text-center">
-                <button type="button" name="button" class="btn btn-sm btn-primary">Approve</button>
-              </div>
-            </div><--></-->
-          </div> <!-- End Collapse Container -->
-        </div> <!--End Vehicle Services Container -->
-        <!--<div class="container consumer-container" style="font-size:13px"> Start Payment Container
-          <div class="row">
-            <div class="col-8">
-              <h4 style="font-weight:300"><i class="far fa-hourglass" style="color:#999"></i>  Mobile Payment</h4>
-            </div>
-            <div class="col text-right">
-              <a data-toggle="collapse" href="#collapsePayment" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="	fa fa-angle-down" style="font-size:18px"></i></a>
+          <div class="row" id="services-items">
+            <div class="col" style="font-size:12px">
+              <ul class="list-unstyled" style="padding-top:5px">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
+                <br>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
+                <br>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
+                <br>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
+              </ul>
             </div>
           </div>
-          <div class="collapse" id="collapsePayment"> Start collapse container
-            <div class="row">
-              <div class="col-8">
-                <span>Labor</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
+          <div class="row text-center" id="services-button">
+            <div class="col" style="font-size:14px; font-weight:400; padding-bottom:15px; padding-top:10px">
+              <button class="btn btn-sm btn-block btn-secondary">Vehicle is checked-in <i class="far fa-check-circle" style=""></i></button>
             </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Parts</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Sublet</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Gas, Oil, Lube</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Deductible, Rental, Supplies</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Sales Tax</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Subtotal</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Less Discount</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-8">
-                <span>Total</span>
-              </div>
-              <div class="col text-right">
-                <span>$999.99</span>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col">
-                <input type="checkbox" name="" value="">
-                <span>I agree to </span> <a href="#">Terms & Conditions</a>
-              </div>
-            </div>
-            <div class="row text-center" style="padding-bottom:15px; padding-top:15px">
-              <div class="col">
-                <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Make Payment</button>
-              </div>
-            </div>
-          </div> End collapse container
-        </div> End Payment Container -->
+          </div>
+        </div>
 
-      <!--<div class="container consumer-container"> Feedback container
+      </div> <!--End Vehicle Check-in Container -->
+
+      <!--Vehicle Service Container -->
+      <div class="container consumer-container" style="display:auto; margin-bottom:160px">
+        <div class="row no-gutters">
+          <div class="col-11">
+            <h5 style="font-weight:300">Vehicle Services</h5>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-top:10px;">
+          <table class="table table-sm" style="font-size:12px;">
+            <thead>
+              <tr class="estimate-table">
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Job</th>
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Media</th>
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Approve</th>
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300; font-weight:300">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td class="text-center align-middle" style="font-size:22px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td class="text-center align-middle">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="" value="" checked="true">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
+              </tr>
+              <tr>
+              <tr style="">
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td class="text-center align-middle">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="" value="" checked="true">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
+              </tr>
+              <tr style="">
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td class="text-center align-middle">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="" value="" checked="true">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row no-gutters" style="padding-bottom:10px">
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
+          </div>
+        </div>
+      </div> <!--End Vehicle Services Container -->
+
+      <!--Start Payment Container-->
+      <div class="container consumer-container" style="font-size:13px; display:none">
         <div class="row">
           <div class="col">
-            <h4 style="font-weight:300"><i class="far fa-bell" style="color:red"></i>  Feedback</h4>
+            <h4 style="font-weight:300">Mobile Payment</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Labor</span>
           </div>
           <div class="col text-right">
-            <a class="" data-toggle="collapse" href="#collapseFeedback" role="button" aria-expanded="false" aria-controls="collapseFeedback"><i class="	fa fa-angle-down" style="font-size:18px"></i></a>
+            <span>$999.99</span>
           </div>
         </div>
-        <div class="collapse" id="collapseFeedback">
-          <div class="row text-center" style="padding-bottom:15px">
-            <div class="col">
-              <div class="collapse show multi-collapse" id="multiCollapseExample1">
-                <span>Have we met or exceeded your expectations?</span>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Parts</span>
           </div>
-          <div class="row" style="padding-bottom:15px">
-            <div class="col">
-              <div class="collapse show multi-collapse" id="multiCollapseExample2">
-                <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">No</button>
-              </div>
-            </div>
-            <div class="col">
-              <div class="collapse show multi-collapse" id="multiCollapseExample3">
-                <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Yes</button>
-              </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Sublet</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Gas, Oil, Lube</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Deductible, Rental, Supplies</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Sales Tax</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Subtotal</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Less Discount</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Total</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row text-center" style="padding-top:10px">
+          <div class="col">
+            <label class="footer-custom-checkbox-label" style="">
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="checkmark"></span>
+            </label>
+            <span>I agree to </span> <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="row text-center" style="padding-bottom:15px; padding-top:15px">
+          <div class="col">
+            <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Make Payment</button>
+          </div>
+        </div>
+      </div> <!--End Payment Container-->
+
+      <!--Feedback container-->
+      <div class="container consumer-container" style="display:none">
+        <div class="row">
+          <div class="col">
+            <h4 style="font-weight:300">Feedback</h4>
+          </div>
+        </div>
+        <div class="row text-center" style="padding-bottom:15px">
+          <div class="col">
+            <div class="collapse show multi-collapse" id="multiCollapseExample1">
+              <span>Have we met or exceeded your expectations?</span>
             </div>
           </div>
         </div>
-      </div> -->
-      <!--<div class="container" style="padding-top:15px; margin-bottom:120px"> <!-- Advertising Container Start
+        <div class="row" style="padding-bottom:15px">
+          <div class="col">
+            <div class="collapse show multi-collapse" id="multiCollapseExample2">
+              <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">No</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse show multi-collapse" id="multiCollapseExample3">
+              <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div> <!--End Feedback Container -->
+
+      <!-- Advertising Container Start -->
+      <div class="container" style="padding-top:15px; margin-bottom:120px; display:none">
         <div class="row text-center" style="padding-bottom:10px; padding-left:0px; padding-right:0px">
           <div class="col">
             <img src="img/paygo.png" alt="" class="img-fluid">
           </div>
         </div>
-      </div> End Advertising Container -->
+      </div> <!--End Advertising Container -->
 
-      <!--bottom navbar -->
-      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; max-width:640px">
+      <!-- Payment Bottom Nav -->
+      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:auto">
           <div class="row" style="padding-top:10px">
             <div class="col">
               <span>Approval Request:</span>
             </div>
             <div class="col text-right">
               <span>$2,997.97</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 text-right" style="margin-top:-5px">
-              <a href="#" style="font-size:11px;">Help Me Pay</a>
             </div>
           </div>
           <div class="row no-gutters" style="padding-top:10px">
@@ -397,53 +314,6 @@
           </div>
         </div>
       </div>
-
-      <nav class="navbar fixed-bottom navbar-light " style="background-color: #fff; height:120px; display:none">
-        <div class="row">
-          <div class="col-12">
-            Approval Request:
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-right">
-          $2,997.97
-          </div>
-        </div>
-        <div class="row" style="padding-top:5px">
-          <div class="col-1" style="margin-left:0px">
-            <label class="custom-checkbox-label">
-              <input type="checkbox" name="" value="" checked="true">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="col text-left" style="">
-            <span style="font-size:11px;" style="">I agree to <a href="#">Terms & Conditions</a>.</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <button type="button" name="button" class="btn btn-sm btn-secondary">Decline</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-right">
-          <button type="button" name="button" class="btn btn-sm btn-primary">Approve</button>
-          </div>
-        </div>
-        <div class="row" style="margin-left:auto; margin-right:auto">
-          <div class="col-12">
-            <button type="button" name="button" class="btn btn-sm btn-secondary">Decline</button>
-          </div>
-        </div>
-        <div class="row">
-
-
-          <div class="col-12 text-right">
-            <button type="button" name="button" class="btn btn-sm btn-primary">Approve</button>
-          </div>
-        </div>
-
-      </nav>
     </div> <!-- End Main Content Container -->
 
     <!-- Video Modal -->
