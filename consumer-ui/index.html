@@ -18,10 +18,10 @@
     <title>Consumer UI Proto</title>
   </head>
   <body style="background-color: #f4f7fa; font-weight:300" id="consumer">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#4e5c6f">
       <a class="navbar-brand" href="#">Test Dealer</a>
     </nav>
-    <div class="container" style="background-color:#f4f7fa; padding-top:30px; padding-bottom: 30px; max-width: 640px"> <!--Main Page Container -->
+    <div class="container" style="background-color:#f4f7fa; max-width: 640px"> <!--Main Page Container -->
       <!--<div class="container"> <!-- Advertising Container Start
         <div class="row text-center" style="padding-bottom:10px; padding-left:0px; padding-right:0px">
           <div class="col">
@@ -65,16 +65,26 @@
       <div class="container consumer-container"> <!--timeline container -->
         <div class="row no-gutters">
           <div class="col">
-            <div class="">
+            <div style="display:none">
               <h5 style="">John Customer,</h5>
-                 <h6>your vehicle is checked-in.</h6>
+              <span>your vehicle is checked-in.</span>
             </div>
-
-            <h5 style="display:none">John Customer, your vehicle is being serviced.</h5>
-            <h5 style="display:none">John Customer, your vehicle is being inspected.</h5>
-            <h5 style="display:none">John Customer, your approval is required.</h5>
-            <h5 style="display:none">John Customer, your mobile invoice is ready.</h5>
-            <h5 style="display:none">John Customer, your vehicle is ready for pick-up.</h5>
+            <div class="" style="display:auto">
+              <h5 style="">John Customer,</h5>
+              <span>your approval is requsted.</span>
+            </div>
+            <div style="display:none">
+              <h5 style="">John Customer,</h5>
+              <span>your vehicle is being serviced.</span>
+            </div>
+            <div style="display:none">
+              <h5 style="">John Customer,</h5>
+              <span>your mobile invoice is ready.</span>
+            </div>
+            <div style="display:none">
+              <h5 style="">John Customer,</h5>
+              <span>your feedback has been requested.</span>
+            </div>
           </div>
         </div>
         <div class="row text-right" style="padding-top:10px">
