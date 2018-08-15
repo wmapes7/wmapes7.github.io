@@ -55,18 +55,18 @@
         </div>
         <div class="row" style="margin-top:-10px; padding-bottom:20px">
           <div class="col" style="font-size:14px">
-            <span style="display:auto;" class="text-muted">your vehicle is checked-in.</span>
+            <span style="display:none;" class="text-muted">your vehicle is checked-in.</span>
             <span style="display:none" class="text-muted">your approval is requsted to continue service.</span>
             <span style="display:none" class="text-muted">your vehicle is being serviced.</span>
             <span style="display:none" class="text-muted">your approval is required.</span>
-            <span style="display:none" class="text-muted">your mobile invoice is ready for payment.</span>
+            <span style="display:auto" class="text-muted">your mobile invoice is ready for payment.</span>
             <span style="display:none" class="text-muted">your feedback has been requested.</span>
           </div>
         </div>
         <div class="row" style="padding-bottom:5px">
           <div class="col">
             <div class="progress" style="height:5px">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@
       </div> <!--End Vehicle Check-in Container -->
 
       <!--Vehicle Service Container -->
-      <div class="container consumer-container" style="display:auto;">
+      <div class="container consumer-container" style="display:none;">
         <div class="row no-gutters">
           <div class="col-11">
             <h5 style="font-weight:300">Repair Estimate</h5>
@@ -185,7 +185,7 @@
       </div> <!--End Vehicle Services Container -->
 
       <!--Start Payment Container-->
-      <div class="container consumer-container" style="font-size:13px; display:none">
+      <div class="container consumer-container" style="font-size:13px; display:auto">
         <div class="row">
           <div class="col">
             <h4 style="font-weight:300">Mobile Payment</h4>
@@ -255,7 +255,7 @@
             <span>$999.99</span>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="border-top:1px solid #eee; padding-top:10px; font-size:16px">
           <div class="col-8">
             <span>Total</span>
           </div>
@@ -263,7 +263,7 @@
             <span>$999.99</span>
           </div>
         </div>
-        <div class="row text-center" style="padding-top:10px">
+        <!--<div class="row text-center" style="padding-top:10px">
           <div class="col">
             <label class="footer-custom-checkbox-label" style="">
               <input type="checkbox" name="" value="" checked="true">
@@ -276,7 +276,7 @@
           <div class="col">
             <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Make Payment</button>
           </div>
-        </div>
+        </div> -->
       </div> <!--End Payment Container-->
 
       <!--Feedback container-->
@@ -316,8 +316,8 @@
         </div>
       </div> <!--End Advertising Container -->
 
-      <!-- Payment Fixed-Bottom Div -->
-      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:auto">
+      <!-- Estimate Approval Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:none">
         <div class="row" style="padding-top:10px">
           <div class="col">
             <span>Repair Quote:</span>
@@ -341,8 +341,32 @@
         </div>
       </div>
 
+      <!-- Mobile Payment Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:auto">
+        <div class="row" style="padding-top:10px">
+          <div class="col">
+            <span>Invoice Total:</span>
+          </div>
+          <div class="col text-right">
+            <a href="#" data-toggle="modal" data-target="#paymentModal">$2,997.97</a>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-top:10px">
+          <div class="col-7">
+            <label class="footer-custom-checkbox-label" style="">
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="checkmark"></span>
+            </label>
+            <span style="font-size:11px;">I agree to <a href="#">Terms & Conditions</a>.</span>
+          </div>
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-primary">Make Payment</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Vehicle Appraisal Fixed-Bottom -->
-      <div class="container-fluid fixed-bottom" style="background-color:#fff; border-radius: 6px; height:120px; max-width:640px; display:auto">
+      <div class="container-fluid fixed-bottom" style="background-color:#fff; border-radius: 6px; height:120px; max-width:640px; display:none">
         <div class="row" style="padding-top:10px">
           <div class="col">
             <span>Vehicle Appraisal:</span>
