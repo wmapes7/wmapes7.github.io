@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Local CSS
+    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/consumer.css">
+
+    <!-- Bootstrap CDN CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title>Consumer UI Proto</title>
+  </head>
+
+  <!-- Containers made dynamic by use of CSS class 'hide'. Insert that on the container based on the RO status to hide the container. -->
+
+  <body style="background-color: #f4f7fa; font-weight:300;" id="consumer">
+    <!--navbar -->
+    <nav class="navbar navbar-light" style="background-color: #f4f7fa;">
+      <div class="flex-column mx-auto" id="">
+          <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                  <img src="img/audi-5.png" alt="" height="45px"> <!--Wire this into st-admin with support for OEM logos. Add parameter to st-admin to pull that OEMs logo from S3-->
+              </li>
+          </ul>
+          <ul class="navbar-nav mx-auto text-center" style="">
+              <li class="nav-item">
+                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fortlauderdale</span> <!--pull from st-admin dealer name field. OEM Color schemes Phase 2 -->
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container" style="background-color:#f4f7fa; max-width: 640px"> <!--Main Page Container -->
+
+      <!-- Timeline container --> <!-- Always show timeline container -->
+      <div class="container consumer-container">
+        <div class="row no-gutters" style="padding-bottom:0px">
+          <div class="col">
+            <div>
+              <h5 style="font-weight:300">John Customer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:-10px; padding-bottom:20px"> <!-- Change value based on RO status -->
+          <div class="col" style="font-size:14px">
+            <span class="text-muted">your vehicle is checked-in.</span> <!-- RO Open -->
+            <span class="text-muted hide">your approval is requsted to continue service.</span> <!-- Quote sent -->
+            <span class="text-muted hide">your vehicle is being serviced.</span> <!-- vehicle being serviced -->
+            <span class="text-muted hide">your mobile invoice is ready for payment.</span>
+            <span class="text-muted hide">your feedback has been requested.</span>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom:5px">
+          <div class="col">
+            <div class="progress" style="height:5px">
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                <!-- Set CSS width property of progress bar to the following values
+
+                Vehicle Checked in = 25%
+                Vehicle Service Started = 50%
+                Inspection or Quote = 50%
+                Invoice sent = 75%
+                Mobile payment success = 100%
+                RO Closed = 100%
+
+              -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="font-size:12px">
+          <div class="col">
+            Check-In
+          </div>
+          <div class="col text-center">
+            Repair
+          </div>
+          <div class="col text-right">
+            Payment
+          </div>
+
+        </div>
+      </div> <!-- End Timeline Container -->
+
+      <!--Vehicle Check-in Container -->
+      <div class="container consumer-container hide"> <!-- Hide this container if quote sent, quote approve/decline, mobile payment sent/paid -->
+        <div class="row">
+          <div class="col-10">
+            <h5 style="font-weight:300">Vehicle Check-In</h5>
+          </div>
+          <div class="col text-right">
+            <a class="" data-toggle="collapse" href="#reported-concerns" role="button" aria-expanded="false" aria-controls="collapseCheckin"><i class="fa fa-angle-down rotate" style="font-size:18px"></i></a>
+          </div>
+        </div>
+        <div class="collapse show" id="reported-concerns">
+          <div class="row">
+            <div class="col">
+              <span>Reported Concerns</span>
+            </div>
+          </div>
+          <div class="row" id="services-items"> <!-- Feature update - parse RO service lines onto their own lines. Current implmentation has them grouped together on one line. -->
+            <div class="col" style="font-size:12px">
+              <ul class="list-unstyled" style="padding-top:5px">
+                <li>RATTLE FRONT DRIVERS SIDE. CHECK AND ADVISE.</li>
+                <br>
+                <li>COMPLIMENTARY MULTIPOINT INSPECTION</li>
+                <br>
+                <li>OIL CHANGE</li>
+                <br>
+                <li>INTERIOR AND EXTERIOR DETAIL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row text-center" id="services-button">
+            <div class="col" style="font-size:14px; font-weight:400; padding-bottom:15px; padding-top:10px">
+              <button class="btn btn-sm btn-block btn-secondary">Vehicle is checked-in <i class="far fa-check-circle" style=""></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--End Vehicle Check-in Container -->
+
+      <!--Vehicle Service Container -->
+      <div class="container consumer-container"> <!-- Show this container if quote/inspection sent or customer approves/declines -->
+        <div class="row no-gutters">
+          <div class="col-11">
+            <h5 style="font-weight:300">Repair Estimate</h5>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-top:10px;">
+          <table class="table table-sm" style="font-size:12px;">
+            <thead>
+              <tr class="estimate-table">
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Job</th>
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Media</th>
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300">Approve</th>
+                <th scope="col" style="border-bottom:0px; border-top:0px; font-weight:300; font-weight:300">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td class="text-center align-middle" style="font-size:22px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td class="text-center align-middle">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="" value="" checked="true">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
+              </tr>
+              <tr>
+              <tr style="">
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td class="text-center align-middle">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="" value="" checked="true">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
+              </tr>
+              <tr style="">
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td class="text-center align-middle">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="" value="" checked="true">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row no-gutters" style="padding-bottom:10px">
+          <div class="col-6 col-md-9 align-self-center" style="padding-right:10px">
+            <button type="button" name="button" class="btn btn-sm btn-success btn-block hide" style="margin-top:0"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
+            <button type="button" name="button" class="btn btn-sm btn-danger btn-block hide" style="margin-top:0"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
+            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block hide" style="margin-top:0"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
+          </div>
+          <div class="col-6 col-md-3 align-self-center text-right">
+            <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
+          </div>
+        </div>
+      </div> <!--End Vehicle Services Container -->
+
+      <!--Start Payment Container-->
+      <div class="container consumer-container hide" style="font-size:13px"> <!-- Add hide class here to hide this. Only show when invoice available -->
+        <div class="row">
+          <div class="col">
+            <h5 style="font-weight:300">Mobile Payment</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Labor</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Parts</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Sublet</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Gas, Oil, Lube</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Deductible, Rental, Supplies</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Sales Tax</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Subtotal</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <span>Less Discount</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row" style="border-top:1px solid #eee; padding-top:10px; font-size:16px">
+          <div class="col-8">
+            <span>Total</span>
+          </div>
+          <div class="col text-right">
+            <span>$999.99</span>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom:10px">
+          <div class="col">
+            <button type="button" name="button" class="btn btn-block btn-sm btn-success hide"><i class="far fa-check-circle"></i> Your invoice has been paid</button>
+            <button type="button" name="button" class="btn btn-block btn-sm btn-danger"><i class="far fa-times-circle"></i> Payment Error. Please contact dealer.</button>
+          </div>
+
+        </div>
+      </div> <!--End Payment Container-->
+
+      <!--Feedback container-->
+      <div class="container consumer-container hide"> <!-- Add hide class here to hide this. Only show this container when feedback sent or feedback recieved. -->
+        <div class="row">
+          <div class="col">
+            <h4 style="font-weight:300">Feedback</h4>
+          </div>
+        </div>
+        <div class="row text-center" style="padding-bottom:15px">
+          <div class="col">
+            <div class="collapse show">
+              <span>Have we met or exceeded your expectations?</span> <!-- Hide if feedback captured -->
+              <span class="hide">Thanks! Your feedback has been sent to the dealer.</span> <!-- Show when feedback captured -->
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom:15px;"> <!-- add hide class to this row to hide buttons after feedback captured -->
+          <div class="col">
+            <div class="">
+              <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">No</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="">
+              <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div> <!--End Feedback Container -->
+
+      <!-- Advertising Container Start --> <!-- Always show ad container -->
+      <div class="container" style="padding-top:15px; margin-bottom:80px;">
+        <div class="row text-center" style="padding-bottom:120px; padding-left:0px; padding-right:0px">
+          <div class="col">
+            <img src="img/paygo.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div> <!--End Advertising Container -->
+
+      <!-- Advisor Info Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This always shows unless Estimate Approval or Mobile Payment div showing. -->
+        <div class="row" style="padding-top:10px">
+          <div class="col">
+            <span> <strong>Advisor:</strong> Steve Anderson</span>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-bottom:10px">
+          <div class="col">
+            <span><strong>RO:</strong> 23123</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">Call</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Text</button>
+          </div>
+        </div>
+      </div> <!-- End advisor info div -->
+
+      <!-- Estimate Approval Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom footer-action-div"> <!-- Add hide class here to hide this. This shows only when estimate/invoice/quote is sent to customer -->
+        <div class="row" style="padding-top:10px">
+          <div class="col">
+            <span>Repair Quote:</span>
+          </div>
+          <div class="col text-right">
+            <spam>$2,997.97</span>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-top:10px">
+          <div class="col-7">
+            <label class="footer-custom-checkbox-label" style="">
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="checkmark"></span>
+            </label>
+            <span style="font-size:11px;">I agree to <a href="#" data-toggle="modal" data-target="#estimateTCModal">Terms & Conditions</a>.</span>
+          </div>
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-secondary">Decline</button>
+            <button type="button" name="button" class="btn btn-sm btn-primary">Approve</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Payment Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This shows only when invoice is sent to customer but unpaid. -->
+        <div class="row" style="padding-top:10px">
+          <div class="col">
+            <span>Invoice Total:</span>
+          </div>
+          <div class="col text-right">
+            <span>$2,997.97</span>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-top:10px">
+          <div class="col-7">
+            <label class="footer-custom-checkbox-label" style="">
+              <input type="checkbox" name="" value="" checked="true">
+              <span class="checkmark"></span>
+            </label>
+            <span style="font-size:11px;">I agree to <a href="#" data-toggle="modal" data-target="#paymentTCModal">Terms & Conditions</a>.</span>
+          </div>
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-primary">Make Payment</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future scope : vehicle Appraisal Fixed-Bottom
+      <div class="container-fluid fixed-bottom" style="background-color:#fff; border-radius: 6px; height:120px; max-width:640px;">
+        <div class="row" style="padding-top:10px">
+          <div class="col">
+            <span>Vehicle Appraisal:</span>
+          </div>
+          <div class="col text-right">
+            <span>$TBD</span>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-top:10px; font-size:12px;">
+          <div class="col">
+            <span>1999</span>
+            <span>Ford</span>
+            <span>Explorer</span>
+            <span>XLT</span>
+            <br>
+            <span>VIN: 123ASD123ASD</span>
+          </div>
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-primary">Request Appraisal</button>
+          </div>
+        </div>
+      </div> -->
+
+    </div> <!-- End Main Content Container -->
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header video-modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="font-weight:300">Vehicle Pictures & Video</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body video-modal-body text-center">
+            <iframe width="100%" height="316" frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+          <div class="modal-footer video-modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Video Modal -->
+
+    <!-- Mobile Payment T&C Modal -->
+    <div class="modal fade" id="paymentTCModal" tabindex="-1" role="dialog" aria-labelledby="paymentTCModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header video-modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="font-weight:300">Mobile Payment Terms & Conditions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <p>By clicking the payment button, you are: (a) authorizing your automobile dealer (“Dealer”) to charge your credit or debit card (“Card”) in the indicated approved amount and (b) representing that you are at least 18 years old and an authorized user of the Card.</p>
+          <p>Your payment transaction is directly between you, Dealer and Dealer’s authorized merchant provider. Michigan Software Design, LLC (“MSD”) is not a party to the transaction. Dealer will provide you with a receipt for the transaction that may include additional terms, such as applicable warranties and warranty limitations and refund policies.</p>
+          <p>These Mobile Payment Terms of Use are subject to and incorporated into the Singlethread Customer Privacy Policy &amp; Terms of Use.</p>
+        </div>
+          <div class="modal-footer video-modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Mobile Payment T&C Modal -->
+
+    <!-- Estimate Approval T&C Modal -->
+    <div class="modal fade" id="estimateTCModal" tabindex="-1" role="dialog" aria-labelledby="estimateTCModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header video-modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="font-weight:300">Repair Estimate Terms & Conditions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <p>By clicking the Approve button, you are:</p>
+          <p>(a) communicating your approval of services to be performed by the Dealer on your vehicle (“Dealer Services”) and the estimates or costs associated with those services (“Costs”).</p>
+          <p>Your approval of the Dealer Services and Costs, the performance of Dealer Services and provision of Costs may be subject to additional terms and conditions directly between you and the Dealer.</p>
+        </div>
+          <div class="modal-footer video-modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Estimate Approval T&C Modal -->
+
+    <!-- Future scope: Appraisal  Modal
+    <div class="modal fade" id="appraisalModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Payment Options</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Appraise my car!
+            Get a credit Card!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> End Payment Option Modal -->
+
+
+
+    <!-- Optional JavaScript -->
+
+    <!-- Local
+    <script type="text/javascript" src="js/jquery331.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+    <!-- CDN jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
