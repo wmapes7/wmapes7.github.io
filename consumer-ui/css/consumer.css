@@ -15,8 +15,10 @@
 .footer-action-div {
   background-color:#fff;
   height: 120px;
+  /*border: 1px solid #dae1ea;*/
   border-radius: 6px;
   max-width:640px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 }
 
 .services-row {
