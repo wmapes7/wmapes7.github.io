@@ -12,6 +12,36 @@
    left: -9999px !important;
 }
 
+.banner-btn.btn-success:hover {
+  cursor: default !important;
+  background-color: #28a745 !important;
+}
+
+.banner-btn.btn-success:active {
+  cursor: default !important;
+  background-color: #28a745 !important;
+}
+
+.banner-btn.btn-danger:hover {
+  cursor: default !important;
+  background-color: #dc3545 !important;
+}
+
+.banner-btn.btn-danger:active {
+  background-color: #dc3545 !important;
+  box-shadow: 0 !important;
+}
+
+.banner-btn.btn-secondary:active {
+  cursor: default !important;
+  background-color: #6c757d !important;
+}
+
+.banner-btn.btn-secondary:hover {
+  cursor: default !important;
+  background-color: #6c757d !important;
+}
+
 .footer-action-div {
   background-color:#fff;
   height: 120px;
