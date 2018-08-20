@@ -17,6 +17,9 @@
 
     <title>Consumer UI Proto</title>
   </head>
+
+  <!-- Containers made dynamic by use of CSS class 'hide'. Insert that on the container based on the RO status to hide the container. -->
+
   <body style="background-color: #f4f7fa; font-weight:300;" id="consumer">
     <!--navbar -->
     <nav class="navbar navbar-light" style="background-color: #f4f7fa;">
@@ -28,14 +31,14 @@
           </ul>
           <ul class="navbar-nav mx-auto text-center" style="">
               <li class="nav-item">
-                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fortlauderdale</span> <!--pull from st-admin dealer name field -->
+                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fortlauderdale</span> <!--pull from st-admin dealer name field. OEM Color schemes Phase 2 -->
               </li>
           </ul>
       </div>
     </nav>
     <div class="container" style="background-color:#f4f7fa; max-width: 640px"> <!--Main Page Container -->
 
-      <!-- timeline container -->
+      <!-- Timeline container --> <!-- Always show timeline container -->
       <div class="container consumer-container">
         <div class="row no-gutters" style="padding-bottom:0px">
           <div class="col">
@@ -46,11 +49,11 @@
         </div>
         <div class="row" style="margin-top:-10px; padding-bottom:20px"> <!-- Change display value based on RO status -->
           <div class="col" style="font-size:14px">
-            <span style="display:auto;" class="text-muted">your vehicle is checked-in.</span> <!-- RO Open -->
-            <span style="display:none" class="text-muted">your approval is requsted to continue service.</span> <!-- Quote sent -->
-            <span style="display:none" class="text-muted">your vehicle is being serviced.</span> <!-- vehicle being serviced -->
-            <span style="display:none" class="text-muted">your mobile invoice is ready for payment.</span>
-            <span style="display:none" class="text-muted">your feedback has been requested.</span>
+            <span class="text-muted">your vehicle is checked-in.</span> <!-- RO Open -->
+            <span class="text-muted hide">your approval is requsted to continue service.</span> <!-- Quote sent -->
+            <span class="text-muted hide">your vehicle is being serviced.</span> <!-- vehicle being serviced -->
+            <span class="text-muted hide">your mobile invoice is ready for payment.</span>
+            <span class="text-muted hide">your feedback has been requested.</span>
           </div>
         </div>
         <div class="row" style="padding-bottom:5px">
@@ -65,7 +68,6 @@
                 Invoice sent = 75%
                 Mobile payment success = 100%
                 RO Closed = 100%
-
 
               -->
               </div>
@@ -87,7 +89,7 @@
       </div> <!-- End Timeline Container -->
 
       <!--Vehicle Check-in Container -->
-      <div class="container consumer-container" style="display:auto"> <!-- Hide this container if quote sent, quote approve/decline, mobile payment sent/paid -->
+      <div class="container consumer-container hide"> <!-- Hide this container if quote sent, quote approve/decline, mobile payment sent/paid -->
         <div class="row">
           <div class="col-10">
             <h5 style="font-weight:300">Vehicle Check-In</h5>
@@ -125,7 +127,7 @@
       </div> <!--End Vehicle Check-in Container -->
 
       <!--Vehicle Service Container -->
-      <div class="container consumer-container" style="display:none;"> <!-- Show this container if quote/inspection sent or customer approves/declines -->
+      <div class="container consumer-container"> <!-- Show this container if quote/inspection sent or customer approves/declines -->
         <div class="row no-gutters">
           <div class="col-11">
             <h5 style="font-weight:300">Repair Estimate</h5>
@@ -180,22 +182,19 @@
           </table>
         </div>
         <div class="row no-gutters" style="padding-bottom:10px">
-          <div class="col text-right">
+          <div class="col-6 col-md-9 align-self-center" style="padding-right:10px">
+            <button type="button" name="button" class="btn btn-sm btn-success btn-block hide" style="margin-top:0"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
+            <button type="button" name="button" class="btn btn-sm btn-danger btn-block hide" style="margin-top:0"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
+            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block" style="margin-top:0"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
+          </div>
+          <div class="col-6 col-md-3 align-self-center">
             <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
           </div>
         </div>
-        <div class="row" style="padding-bottom:10px">
-          <div class="col">
-            <button type="button" name="button" class="btn btn-sm btn-success btn-block" style="display:auto"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
-            <button type="button" name="button" class="btn btn-sm btn-danger btn-block" style="display:auto"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
-            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block" style="display:auto"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
-          </div>
-
-        </div>
       </div> <!--End Vehicle Services Container -->
 
-      <!--Start Payment Container--> <!-- Only show if invoice sent to customer -->
-      <div class="container consumer-container" style="font-size:13px; display:none">
+      <!--Start Payment Container-->
+      <div class="container consumer-container" style="font-size:13px"> <!-- Add hide class here to hide this. Only show when invoice available -->
         <div class="row">
           <div class="col">
             <h5 style="font-weight:300">Mobile Payment</h5>
@@ -275,7 +274,7 @@
         </div>
         <div class="row" style="padding-bottom:10px">
           <div class="col">
-            <button type="button" name="button" class="btn btn-block btn-sm btn-success"><i class="far fa-check-circle"></i> Your invoice has been paid</button>
+            <button type="button" name="button" class="btn btn-block btn-sm btn-success hide"><i class="far fa-check-circle"></i> Your invoice has been paid</button>
             <button type="button" name="button" class="btn btn-block btn-sm btn-danger"><i class="far fa-times-circle"></i> Payment Error. Please contact dealer.</button>
           </div>
 
@@ -283,7 +282,7 @@
       </div> <!--End Payment Container-->
 
       <!--Feedback container-->
-      <div class="container consumer-container" style="display:none"> <!-- Only show this container when feedback sent or feedback recieved. -->
+      <div class="container consumer-container"> <!-- Add hide class here to hide this. Only show this container when feedback sent or feedback recieved. -->
         <div class="row">
           <div class="col">
             <h4 style="font-weight:300">Feedback</h4>
@@ -292,12 +291,12 @@
         <div class="row text-center" style="padding-bottom:15px">
           <div class="col">
             <div class="collapse show">
-              <span style="display:auto">Have we met or exceeded your expectations?</span> <!-- Hide if feedback captured -->
-              <span style="display:none">Thanks! Your feedback has been sent to the dealer.</span> <!-- Show when feedback captured -->
+              <span>Have we met or exceeded your expectations?</span> <!-- Hide if feedback captured -->
+              <span class="hide">Thanks! Your feedback has been sent to the dealer.</span> <!-- Show when feedback captured -->
             </div>
           </div>
         </div>
-        <div class="row" style="padding-bottom:15px; display:auto">
+        <div class="row" style="padding-bottom:15px;"> <!-- add hide class to this row to hide buttons after feedback captured -->
           <div class="col">
             <div class="">
               <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">No</button>
@@ -311,7 +310,7 @@
         </div>
       </div> <!--End Feedback Container -->
 
-      <!-- Advertising Container Start -->
+      <!-- Advertising Container Start --> <!-- Always show ad container -->
       <div class="container" style="padding-top:15px; margin-bottom:80px; display:auto">
         <div class="row text-center" style="padding-bottom:120px; padding-left:0px; padding-right:0px">
           <div class="col">
@@ -320,8 +319,30 @@
         </div>
       </div> <!--End Advertising Container -->
 
-      <!-- Estimate Approval Fixed-Bottom Div --> <!-- This shows only when estimate/invoice/quote is sent to customer -->
-      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:none">
+      <!-- Advisor Info Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom footer-action-div"> <!-- Add hide class here to hide this. This always shows unless Estimate Approval or Mobile Payment div showing. -->
+        <div class="row" style="padding-top:10px">
+          <div class="col">
+            <span> <strong>Advisor:</strong> Service Advisorname</span>
+          </div>
+        </div>
+        <div class="row no-gutters" style="padding-bottom:10px">
+          <div class="col">
+            <span><strong>RO:</strong> 12345</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">Call</button>
+          </div>
+          <div class="col">
+            <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Text</button>
+          </div>
+        </div>
+      </div> <!-- End advisor info div -->
+
+      <!-- Estimate Approval Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This shows only when estimate/invoice/quote is sent to customer -->
         <div class="row" style="padding-top:10px">
           <div class="col">
             <span>Repair Quote:</span>
@@ -345,33 +366,8 @@
         </div>
       </div>
 
-      <!-- Advisor Info Fixed-Bottom Div --> <!-- This shows on vehicle check-in only -->
-      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:auto">
-        <div class="row" style="padding-top:10px">
-          <div class="col">
-            <span> <strong>Advisor:</strong> Service Advisorname</span>
-          </div>
-        </div>
-        <div class="row no-gutters" style="padding-bottom:10px">
-          <div class="col">
-            <span><strong>RO:</strong> 12345</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-right">
-            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block">Call</button>
-          </div>
-          <div class="col">
-            <button type="button" name="button" class="btn btn-sm btn-primary btn-block">Text</button>
-          </div>
-        </div>
-      </div>
-
-
-      </div> <!-- End advisor info div -->
-
-      <!-- Mobile Payment Fixed-Bottom Div --> <!-- This shows only when invoice is sent to customer. -->
-      <div class="container-fluid fixed-bottom" style="background-color:#fff; height: 120px; border-radius: 6px; max-width:640px; display:none">
+      <!-- Mobile Payment Fixed-Bottom Div -->
+      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This shows only when invoice is sent to customer but unpaid. -->
         <div class="row" style="padding-top:10px">
           <div class="col">
             <span>Invoice Total:</span>

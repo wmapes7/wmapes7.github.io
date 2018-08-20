@@ -6,6 +6,19 @@
   padding-top: 15px
 }
 
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+
+.footer-action-div {
+  background-color:#fff;
+  height: 120px;
+  border-radius: 6px;
+  max-width:640px;
+}
+
 .services-row {
   display: block;
   padding-top: 5px;
