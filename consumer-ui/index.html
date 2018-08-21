@@ -18,7 +18,13 @@
     <title>Consumer UI Proto</title>
   </head>
 
-  <!-- Containers made dynamic by use of CSS class 'hide'. Insert that on the container based on the RO status to hide the container. -->
+  <!--
+
+  Containers are dynamic by use of CSS class 'hide'.
+  Insert that on the container based on the RO status to hide the container.
+  See comments throughout code for places to make dynamic.
+
+  -->
 
   <body style="background-color: #f4f7fa; font-weight:300;" id="consumer">
     <!--navbar -->
@@ -31,7 +37,7 @@
           </ul>
           <ul class="navbar-nav mx-auto text-center" style="">
               <li class="nav-item">
-                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fortlauderdale</span> <!--pull from st-admin dealer name field. OEM Color schemes Phase 2 -->
+                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fort Lauderdale</span> <!--pull from st-admin dealer name field. OEM Color schemes Phase 2 -->
               </li>
           </ul>
       </div>
@@ -47,25 +53,29 @@
             </div>
           </div>
         </div>
-        <div class="row" style="margin-top:-10px; padding-bottom:20px"> <!-- Change value based on RO status -->
+
+
+
+        <!-- Consumer Instruction --> <!-- Show/hide the spans below based on RO status -->
+        <div class="row" style="margin-top:-10px; padding-bottom:20px">
           <div class="col" style="font-size:14px">
             <span class="text-muted">your vehicle is checked-in.</span> <!-- RO Open -->
-            <span class="text-muted hide">your approval is requsted to continue service.</span> <!-- Quote sent -->
-            <span class="text-muted hide">your vehicle is being serviced.</span> <!-- vehicle being serviced -->
-            <span class="text-muted hide">your mobile invoice is ready for payment.</span>
-            <span class="text-muted hide">your feedback has been requested.</span>
+            <span class="text-muted hide">your approval is requsted to continue service.</span> <!-- Quote/Inspection sent -->
+            <span class="text-muted hide">your vehicle is being serviced.</span> <!-- Working status -->
+            <span class="text-muted hide">your mobile invoice is ready for payment.</span> <!-- invoice sent -->
+            <span class="text-muted hide">your feedback has been requested.</span> <!-- Invoice paid, RO Closed -->
           </div>
         </div>
         <div class="row" style="padding-bottom:5px">
           <div class="col">
             <div class="progress" style="height:5px">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
-                <!-- Set CSS width property of progress bar to the following values
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                <!-- Set CSS 'width' property of progress bar to the following values
 
-                Vehicle Checked in = 25%
+                RO Open = 25%
                 Vehicle Service Started = 50%
-                Inspection or Quote = 50%
-                Invoice sent = 75%
+                Inspection or Quote Sent = 50%
+                Invoice sent = 90%
                 Mobile payment success = 100%
                 RO Closed = 100%
 
@@ -129,8 +139,11 @@
       <!--Vehicle Service Container -->
       <div class="container consumer-container"> <!-- Show this container if quote/inspection sent or customer approves/declines -->
         <div class="row no-gutters">
-          <div class="col-11">
-            <h5 style="font-weight:300">Repair Estimate</h5>
+          <div class="col-6 col-sm-8">
+            <h5 style="font-weight:300; margin:0">Repair Estimate</h5>
+          </div>
+          <div class="col-6 col-sm-4 align-self-center text-right">
+            <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
           </div>
         </div>
         <div class="row no-gutters" style="padding-top:10px;">
@@ -182,13 +195,10 @@
           </table>
         </div>
         <div class="row no-gutters" style="padding-bottom:10px">
-          <div class="col-6 col-md-9 align-self-center" style="padding-right:10px">
-            <button type="button" name="button" class="btn btn-sm btn-success banner-btn btn-block " style="margin-top:0"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
-            <button type="button" name="button" class="btn btn-sm btn-danger banner-btn btn-block hide" style="margin-top:0"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
-            <button type="button" name="button" class="btn btn-sm btn-secondary banner-btn btn-block hide" style="margin-top:0"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
-          </div>
-          <div class="col-6 col-md-3 align-self-center text-right">
-            <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
+          <div class="col align-self-center">
+            <button type="button" name="button" class="btn btn-sm btn-success banner-btn btn-block"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
+            <button type="button" name="button" class="btn btn-sm btn-danger banner-btn btn-block"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
+            <button type="button" name="button" class="btn btn-sm btn-secondary banner-btn btn-block"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
           </div>
         </div>
       </div> <!--End Vehicle Services Container -->
@@ -274,8 +284,8 @@
         </div>
         <div class="row" style="padding-bottom:10px">
           <div class="col">
-            <button type="button" name="button" class="btn btn-block banner-btn btn-sm btn-success hide"><i class="far fa-check-circle"></i> Your invoice has been paid</button>
-            <button type="button" name="button" class="btn btn-block banner-btn btn-sm btn-danger"><i class="far fa-times-circle"></i> Payment Error. Please contact dealer.</button>
+            <button type="button" name="button" class="btn btn-block banner-btn btn-sm btn-success"><i class="far fa-check-circle"></i> Your invoice has been paid</button> <!-- Dynamic show/hide based on payment status -->
+            <button type="button" name="button" class="btn btn-block banner-btn btn-sm btn-danger"><i class="far fa-times-circle"></i> Payment Error. Please contact dealer.</button> <!-- Dynamic show/hide based on payment status -->
           </div>
 
         </div>
