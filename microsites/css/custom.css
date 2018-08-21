@@ -1,0 +1,37 @@
+.step-container {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  height: 540px;
+}
+
+.step-row {
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.number {
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  background-color: #327fc7;
+  border-radius: 200px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  left: -30px;
+  top: -34px;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  z-index: 100;
+}
+
+.price {
+  padding-top:30px;  
+  background-color:#fff;
+  border: 1px solid #ddd;
+  border-radius:6px;
+  margin-bottom:10px;
+  margin-top:20px
+}
