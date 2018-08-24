@@ -3,15 +3,18 @@
 var $videoWidget = '<span class="square" style="border: 1px solid black"><span class="glyphicon glyphicon-facetime-video" style="color: black; padding-left:3px"></span></span>';
 var $vidwid2 = '<label for="file-upload" class="custom-file-upload"><span class="square video-button"><span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span></label><input id="file-upload" type="file" accept="video/*"/>'
 
+//commentWidget
+var $commentWidget = '<input type="text" name="" value="" class="form-control mpi-comment hide">'
+
 $('.st-red').click(function(){
   $(this).after($vidwid2);
-  //$(this).next().append($vidwid2);
-  console.log('showed vidwid after red');
+  $(this).next().after().append($commentWidget);
+  console.log('showed video widget after red');
 });
 
 $('.material-yellow').click(function(){
   $(this).next().after($vidwid2);
-  console.log('clicked yellow, showed vidwid ');
+  console.log('clicked yellow, showed video widget ');
 })
 
 //show video widget after red click
@@ -102,6 +105,22 @@ $('#all-green').click(function() {
     $('#save').toggleClass('outline-btn').toggleClass('outline-btn-disabled');
 
 });
+
+//Show comment input after clicking comment buttons
+$('.comment-button').click(function() {
+  console.log('clicked comment button');
+  $(this).prev().toggleClass('hide');
+  console.log('video icon hidden');
+  $(this).prev().prev('.mpi-comment').toggleClass('hide');
+  console.log('comment field shown');
+  $(this).css('margin-bottom','4px');
+  console.log('margin added to align correctly');
+  $(this).toggleClass('glyphicon glyphicon-ok');
+  $(this).toggleClass('glyphicon glyphicon-comment');
+  $(this).toggleClass('glyphicon glyphicon-remove');
+  console.log($(this).next().next().next());
+
+})
 
 
 

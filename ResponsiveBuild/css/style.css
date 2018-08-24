@@ -358,10 +358,7 @@ tr td {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.modal-footer {
-	padding: 0px;
-	text-align: left;
-}
+
 /* Login Page */
 
 .login-page {
@@ -755,4 +752,23 @@ input[type="file"] {
 .custom-file-upload {
     display: inline;
     cursor: pointer;
+}
+
+.comment-button {
+	border: solid 1px #4767f3;
+	/*display: none;*/
+	color: #4767f3;
+	margin-left: 5px;
+}
+
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+	 display: inline-flex !important;
+}
+
+.mpi-comment {
+	width:75%;
+	margin-right:5px;
 }

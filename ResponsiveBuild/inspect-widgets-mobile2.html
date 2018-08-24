@@ -1,0 +1,1293 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Inspect Widgets</title>
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Source Sans -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <!-- App Styles -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+    </head>
+
+    <body style="" id="">
+        <div class="continer-fluid">
+            <!--Navbar -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-nav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="color: white">
+                            <img src="assets/singlethread.svg">
+
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="st-nav">
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control st-btn" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default st-btn">Search</button>
+                        </form>
+                        <ul class="nav navbar-nav">
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/admin.svg">
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#" class="">
+                                    <img src="assets/dashboard.svg">
+                                    <span class="hidden-sm">Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="#">
+                                    <img src="assets/text.svg">
+                                    <span class="hidden-sm">Text</span>
+                                    <div class="badge">999</div>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/inspect.svg">
+                                    <span class="hidden-sm">Inspect</span>
+                                    <div class="badge">1</div>
+                                </a>
+
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/wallet.svg">
+                                    <span class="hidden-sm">Mobile Pay</span>
+                                    <div class="badge">1</div>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/feedback.svg">
+                                    <span class="hidden-sm">Feedback</span>
+                                    <div class="badge">1</div>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/internal_chat.svg">
+                                    <span class="hidden-sm">Internal Chat</span>
+                                    <div class="badge">1</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/switcher.svg">
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/settings.svg">
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/question.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/logout.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+        <div class="container"> <!-- customer header -->
+
+          <div class="customer-info-header">
+            <div class="row">
+              <div class="col-sm-3 col-md-3">
+                <div class="">
+                  <span id="title">Inspection Summary</span>
+                </div>
+                <div class="">
+                  <span class="initial-circle">C</span> <span class="customer-name">Demo Customer Name</span>
+                </div>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <span><strong>Make:</strong></span> <span>Vehicle</span><br>
+                <span><strong>Mileage:</strong></span> <span>75000</span>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <span><strong>Repair Order:</strong></span> <span>12345</span><br>
+                <span><strong>Tag #:</strong></span> <span>123A</span>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <span><strong>Technician:</strong></span> <span>Joe Smith</span><br>
+                <span><strong>Advisor #:</strong></span> <span>Jane Doe</span>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <div>
+                  <strong>VIN:</strong> <span>1234sdfasdfa1234ssf</span><br>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="padding-right: 8px"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="" id="tires"> <!--Tires Panel -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default" id="tires-panel">
+                <div class="st-panel-heading" role="tab" id="tires-heading">
+                  <div class="panel-title">
+                    <span style="">Tires</span>
+                    <div class="pull-right">
+                      <span>Set Section:</span>
+                      <span class="square material-green heading-square" id="tires-section-green">
+                      </span>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body" id="tires-section">
+                    <div class="panel-legend"> <!-- Brake Color Legend -->
+                      <div class="text-center" style="padding-bottom:15px">
+                        <h4>Tire Depth Legend</h4>
+                        <br>
+                        <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">>&nbsp7/32 </span>
+                        <span class="square material-yellow"><span class="glyphicon glyphicon-alert" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">4/32 - 6/32</span>
+                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span><&nbsp 3/32</span>
+                      </div>
+                    </div>
+                    <div class="nav nav-justified" style="border-bottom:1px solid #eee; padding-top: 10px;"> <!-- General Tire Stuff row -->
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left:0px; padding-top:10px;">
+                        <div class="col-xs-8 col-md-5">
+                          <span style="">Alignment Needed:</span>
+                        </div>
+                        <div class="col-xs-4 col-md-7">
+                          <span class=""><input type="checkbox" name="" value=""></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left:0px; padding-top:10px;">
+                        <div class="col-xs-8 col-md-7">
+                          <span style="padding-right: 10px">Wheel Balance Needed:</span>
+                        </div>
+                        <div class="col-xs-4 col-md-5">
+                          <span class=""><input type="checkbox" name="" value=""></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-12" style="padding-left:0px; padding-top:10px; padding-bottom:10px">
+                        <div class="col-xs-8 col-md-6">
+                          <span style="">PSI Set To:</span>
+                        </div>
+                        <div class="col-xs-4 col-md-6" style="padding-left:8px; margin-top:-5px">
+                          <div class="dropdown"  style="display:inline;">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Select
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">30</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">31</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">32</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">33</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">34</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">35</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">36</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">37</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">38</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">39</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <span style="vertical-align:middle">40</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="" style=""> <!-- Driver + Passenger Front Row -->
+                      <div class="col-md-6" style="border-bottom: 1px solid #eee; padding-bottom: 10px; border-right: 1px solid #eee">
+                        <div class="">
+                          <h4 style="">Driver Front</h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Tread Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>7/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">6/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">5/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">3/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2/32</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6" style="border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <div class="">
+                          <h4 style="">Passenger Front</h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Tread Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>7/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">6/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">5/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">3/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2/32</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+
+                    </div> <!-- End of Driver + Passenger Row -->
+                    <div class=""> <!-- Driver + Passenger Rear Row -->
+                      <div class="col-md-6" style=" border-right: 1px solid #eee">
+                        <div class="">
+                          <h4 style="">Driver Rear</h4>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Tread Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>7/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">6/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">5/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">3/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2/32</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6" style="">
+                        <div class="">
+                          <h4 style="">Passenger Rear</h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Tread Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>7/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">6/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">5/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">3/32</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2/32</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+
+                    </div> <!-- End of Driver + Passenger Row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="" id="tires" style="margin-top:15px;"> <!--Brakes Panel -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default" id="tires-panel">
+                <div class="st-panel-heading" role="tab" id="tires-heading">
+                  <div class="panel-title">
+                    <span style="">Brakes</span>
+                    <div class="pull-right">
+                      <span>Set Section:</span>
+                      <span class="square material-green heading-square" id="tires-section-green">
+                      </span>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body" id="tires-section">
+                    <div class="panel-legend"> <!-- Brake Color Legend -->
+                      <div class="text-center" style="padding-bottom:15px">
+                        <h4>Brake Depth Legend</h4>
+                        <br>
+                        <span class="square material-green"><span class="glyphicon glyphicon-ok" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">>5mm</span>
+                        <span class="square material-yellow"><span class="glyphicon glyphicon-alert" style="top: 0px; margin-right: 0px;"></span></span><span style="padding-right: 10px">5mm - 3mm</span>
+                        <span class="square st-red" style=""><span class="glyphicon glyphicon-exclamation-sign" style="top: 0px; margin-right: 0px;"></span></span><span><3mm</span>
+                      </div>
+                    </div>
+                    <div class="" style=""> <!-- Driver + Passenger Front Row -->
+                      <div class="col-md-6" style="border-bottom: 1px solid #eee; padding-bottom: 10px; border-right: 1px solid #eee">
+                        <div class="">
+                          <h4 style="">Driver Front</h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Brake Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">3mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">2mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2mm</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6" style="border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <div class="">
+                          <h4 style="">Passenger Front</h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Brake Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">3mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">2mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2mm</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+
+                    </div> <!-- End of Driver + Passenger Row -->
+                    <div class=""> <!-- Driver + Passenger Rear Row -->
+                      <div class="col-md-6" style=" border-right: 1px solid #eee">
+                        <div class="">
+                          <h4 style="">Driver Rear</h4>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Brake Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">3mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">2mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2mm</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6" style="">
+                        <div class="">
+                          <h4 style="">Passenger Rear</h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4">
+                            <span>Brake Depth</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Select
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-green">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">>5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                      <span class=""></span>
+                                    </div>
+                                    <span style="vertical-align:middle">5mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">4mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square material-yellow">
+                                    </div>
+                                    <span style="vertical-align:middle">3mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">2mm</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <div class="square st-red">
+                                    </div>
+                                    <span style="vertical-align:middle">< 2mm</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row tread-depth-row" style="padding-top:10px">
+                          <div class="col-md-4 col-xs-4">
+                            <span class="tread-depth-label">Details</span>
+                          </div>
+                          <div class="col-md-8 col-xs-8 tires-rating">
+                            <span class="mpi-line-details" style="display:flex">
+                              <input type="text" name="" value="" class="form-control mpi-comment hide">
+                              <span class="square video-button" style="">
+                                <span class="glyphicon glyphicon-facetime-video" style="padding-left:3px"></span>
+                              </span>
+                              <span class="square comment-button glyphicon glyphicon-comment" style="">
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+
+                    </div> <!-- End of Driver + Passenger Row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="" style="margin-top:15px"> <!--Fluids, Battery, & Systems Row -->
+            <div class="col-sm-4" style="">
+              <div class="row" id="fluids">
+                <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Fluids Panel -->
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default" id="fluids-panel">
+                        <div class="st-panel-heading" role="tab" id="fluids-heading">
+                          <div class="panel-title">
+                            <span>Fluids</span>
+                            <div class="pull-right">
+                              <span>Set Section:</span>
+                              <div class="square material-green heading-square" id="fluids-section-green" ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px" >Engine Oil</span>
+                            </div>
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px">Brake Reservoir</span>
+                            </div>
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px">Windshield Washer</span>
+                            </div>
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px">Headlamp Washer</span>
+                            </div>
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px">Power Steering</span>
+                            </div>
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px">Coolant Recovery Reservoir</span>
+                            </div>
+                            <div class="col-sm-12 fluids-rating item">
+                              <span class="square material-green fluids-green"></span>
+                              <span class="square st-red"></span>
+                              <span class="fluids-desc" style="padding-right:10px">Transmission (if equipped w/dipstick)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row" id="battery">
+                <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Battery Panel -->
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default" id="battery-panel">
+                      <div class="st-panel-heading" role="tab" id="battery-heading">
+                        <div class="panel-title">
+                            <span>Battery</span>
+                            <div class="pull-right">
+                              <span>Set Section:</span>
+                              <span class="square material-green heading-square" id="battery-section-green">
+                              </span>
+                            </div>
+
+                        </div>
+
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <div class="col-sm-12 battery-rating">
+                            <span class="square material-green battery-green"></span>
+                            <span class="square material-yellow"></span>
+                            <span class="square st-red"></span>
+                            <span class="battery-desc"style="padding-right:10px">Battery</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12" style="margin-left:-15px; padding-right:0px"> <!-- Notes Panel -->
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="st-panel-heading" role="tab" id="headingOne">
+                        <div class="panel-title">
+                          <span>Additional Notes</span>
+                          <div class="pull-right">
+                            <span style="padding-right:10px">Add Video:</span>
+                            <label for="file-upload" class="custom-file-upload"><span class="square static-video-button heading-square"><span class="glyphicon glyphicon-facetime-video" style="padding-top:5px; padding-left:3px"></span></label><input id="file-upload" type="file" accept="video/*"/>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="col-sm-12">
+                            <input type="text" name="" value="" class="form-control" placeholder="Enter additional vehicle comments here." style="height:60px">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8" style=""> <!-- Right panel -->
+              <div class="row" style="" id="systems"> <!-- Check Following Systems / Components Panel -->
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default" id="systems-panel">
+                    <div class="st-panel-heading" role="tab" id="systems-heading">
+                      <div class="panel-title">
+                        <span>Systems</span>
+                        <div class="pull-right">
+                          <span>Set Section:</span>
+                          <div class="square material-green heading-square" id="systems-section-green">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <div class="col-sm-12 item">
+                          <span class="square material-green systems-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px; ">Operation of horn, interior lights, exterior lamps, turn signals, hazard and brake lamps</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Visually inspect headlamp alignment</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Windshield washer spray, wiper operation and wiper blades</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc" style="padding-right:10px">Windshield cracks and/or chips</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc" style="padding-right:10px">Heating, ventilation and air conditioning check</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Engine air cleaner filter</span>
+                        </div>
+                        <div class="col-sm-12 item" style="">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Oil and/or fluid leaks</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Constant velocity (CV) drive axle boots (if equipped)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Exhaust system (leaks, damage, loose parts)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Steering and steering linkages</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Shocks/struts, air suspension and other suspension components for leaks and/or damage</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Brake system (including lines, hoses and parking brake)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Engine cooling system, hoses and clamps</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Radiator, heater and air conditioning hoses for leaks / damage</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Accessory drive belt(s)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Clutch operation (if equipped)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Floor Mats</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square material-yellow"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Navigation map update required</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">State inspection due (if applicable)</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Your last completed maintenance</span>
+                        </div>
+                        <div class="col-sm-12 item">
+                          <span class="square material-green"></span>
+                          <span class="square"></span>
+                          <span class="square st-red"></span>
+
+                          <span class="systems-desc"  style="padding-right:10px">Your next factory scheduled maintenance is due</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-12" style="padding-left:0px; padding-right:0px">
+            <div class="row" style="padding-bottom:30px">
+              <div class="col-xs-12 text-right">
+                <span style="padding-right:10px"> Set Remaining: </span>
+                <span class="square material-green" id="all-green"></span>
+                <button class="btn outline-btn" id="validate" style="margin-right:5px;" id="test-button">
+                  What did I miss?
+                  <span class="glyphicon glyphicon-question-mark"></span>
+                </button>
+              </div>
+            </div>
+  	      </div>
+        </div>
+
+
+        <!-- CDN jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <!--CDN Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Validation Scripts -->
+        <script type="text/javascript" src="js/app.js">
+
+        </script>
+
+
+    </body>
+
+    </html>
