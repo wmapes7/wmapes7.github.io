@@ -12,7 +12,7 @@
         <!--Bootstrap Local For Dev
             <link href="css/bootstrap.css" rel="stylesheet"> -->
 
-        <!-- Bootstrap CDN -->
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Source Sans -->
@@ -195,7 +195,8 @@
                         <tr style="">
                             <th style="width: 5%">Add/Delete</th>
                             <th style="width: 5%"></th>
-                            <th style="width: 40%">Recommendation</th>
+                            <th style="width: 35%">Recommendation</th>
+                            <th style="width: 5%">Media</th>
                             <th style="width: 10%">Labor Rate</th>
                             <th style="width: 10%">Labor Hours</th>
                             <th style="width: 10%">Total Labor</th>
@@ -215,12 +216,16 @@
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Left Front Brakes</strong>
-                                </span>
+                                    <span><strong>Left Front Brakes</strong></span>
                                     <br>
                                     <input class="form-control tech-comment" value="This is a tech comment that is editable">
+
                                     <!--map tech comments into value field -->
                                 </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Rate">
@@ -241,20 +246,26 @@
                             </td>
                         </tr>
                         <tr style="">
-                            <!-- Example rows added for visual effect -->
                             <td class="middle">
                                 <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                                <!--Delete button removes row from quote -->
                             </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Right Front Brakes</strong>
-                                </span>
+                                    <span><strong>Right Front Brakes</strong></span>
                                     <br>
                                     <input class="form-control tech-comment" value="This is a tech comment that is editable">
+
+                                    <!--map tech comments into value field -->
                                 </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Rate">
@@ -264,29 +275,36 @@
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Total Labor">
+                                <!-- Rate * Hours = Total Labor -->
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Parts">
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <!-- Line Total = Total Labor + Parts -->
                             </td>
                         </tr>
                         <tr style="">
-                            <!-- Example rows added for visual effect -->
                             <td class="middle">
                                 <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                                <!--Delete button removes row from quote -->
                             </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Left Rear Brakes</strong>
-                                </span>
+                                    <span><strong>Left Rear Brakes</strong></span>
                                     <br>
                                     <input class="form-control tech-comment" value="This is a tech comment that is editable">
+
+                                    <!--map tech comments into value field -->
                                 </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Rate">
@@ -296,29 +314,37 @@
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Total Labor">
+                                <!-- Rate * Hours = Total Labor -->
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Parts">
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <!-- Line Total = Total Labor + Parts -->
                             </td>
                         </tr>
                         <tr style="">
-                            <!-- Example rows added for visual effect -->
                             <td class="middle">
                                 <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                                <!--Delete button removes row from quote -->
                             </td>
                             <td class="middle">
                                 <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
                             </td>
                             <td>
                                 <div class="text-left">
-                                    <span><strong>Right Rear Brakes</strong>
-                                </span>
+                                    <span><strong>Right Rear Brakes</strong></span>
                                     <br>
                                     <input class="form-control tech-comment" value="This is a tech comment that is editable">
+
+                                    <!--map tech comments into value field -->
                                 </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Rate">
@@ -328,12 +354,14 @@
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Total Labor">
+                                <!-- Rate * Hours = Total Labor -->
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Parts">
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <!-- Line Total = Total Labor + Parts -->
                             </td>
                         </tr>
                         <tr>
@@ -350,6 +378,9 @@
                                 </span>
                                     <br>
                                 </div>
+                            </td>
+                            <td>
+
                             </td>
                             <td>
 
@@ -384,6 +415,7 @@
                                     <input class="form-control tech-comment" placeholder="Enter a comment">
                                 </div>
                             </td>
+                            <td><!--empty for media column--></td>
                             <td>
                                 <input class="form-control" placeholder="Rate">
                             </td>
@@ -409,7 +441,10 @@
                             <td>
                             </td>
                             <td>
-                                <span><strong>Subtotals</strong></span>
+                              <span><strong>Subtotals</strong></span>
+                            </td>
+                            <td>
+
                             </td>
                             <td>
                                 <input class="form-control" placeholder="Hours Sold">
@@ -491,11 +526,35 @@
             </div>
         </div>
 
+        <!-- Modal -->
+
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="modal-video-label" style="display: none;">
+        	<div class="modal-dialog" role="document">
+        		<div class="modal-content">
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        					<span aria-hidden="true">×</span>
+        				</button>
+        			</div>
+        			<div class="modal-body">
+        				<div class="modal-video">
+	        				<div class="embed-responsive embed-responsive-16by9">
+			                    <iframe class="embed-responsive-item" src="img/tech-video.mp4" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+			                </div>
+		                </div>
+        			</div>
+              <div class="modal-footer">
+                <button type="button" name="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Delete</button>
+                <button type="button" name="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
+
+              </div>
+        		</div>
+        	</div>
+        </div>
+
         <!-- CDN jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-        <!-- FOR DEV ONLY REMOVE BEFORE PRODUCTION -->
-        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
         <!--CDN Bootstrap js -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
