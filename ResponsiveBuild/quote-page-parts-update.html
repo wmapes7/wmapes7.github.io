@@ -1,0 +1,600 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Quote Builder</title>
+
+        <!--Bootstrap Local For Dev
+            <link href="css/bootstrap.css" rel="stylesheet"> -->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Source Sans -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <!-- App Styles -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+    </head>
+
+    <body style="" id="quote-page">
+        <div class="continer-fluid">
+            <!--Navbar -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-nav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="color: white">
+                            <img src="assets/singlethread.svg">
+
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="st-nav">
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control st-btn" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default st-btn">Search</button>
+                        </form>
+                        <ul class="nav navbar-nav">
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/admin.svg">
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#" class="">
+                                    <img src="assets/dashboard.svg">
+                                    <span class="hidden-sm">Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="#">
+                                    <img src="assets/text.svg">
+                                    <span class="hidden-sm">Text</span>
+                                    <div class="badge">999</div>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/inspect.svg">
+                                    <span class="hidden-sm">Inspect</span>
+                                    <div class="badge">1</div>
+                                </a>
+
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/wallet.svg">
+                                    <span class="hidden-sm">Mobile Pay</span>
+                                    <div class="badge">1</div>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/feedback.svg">
+                                    <span class="hidden-sm">Feedback</span>
+                                    <div class="badge">1</div>
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/internal_chat.svg">
+                                    <span class="hidden-sm">Internal Chat</span>
+                                    <div class="badge">1</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/switcher.svg">
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/settings.svg">
+                                </a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">
+                                    <img src="assets/question.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/logout.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <!-- customer header -->
+            <div class="row customer-info-header">
+                <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="">
+                        <span id="title">Quote Builder</span>
+                    </div>
+                    <div class="">
+                        <span class="initial-circle">C</span>
+                        <span class="customer-name">Long Customer Name</span>
+                    </div>
+
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <span><strong>Make: </strong></span><span>Vehicle</span>
+                    <br>
+                    <span><strong>Mileage: </strong></span><span>75000</span>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <span><strong>Repair Order: </strong></span><span>12345</span>
+                    <br>
+                    <span><strong>Tag #: </strong></span><span>123A</span>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <span><strong>Technician: </strong></span><span>Joe Smith</span>
+                    <br>
+                    <span><strong>Advisor #: </strong></span><span>Jane Doe</span>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div>
+                        <strong>VIN: </strong><span>1234sdfasdfa1234ssf</span>
+                    </div>
+                    <br>
+
+                </div>
+
+                </div>
+
+                <div class="row" style="padding-right: 8px">
+                    <div class="text-right">
+                        <button class="btn outline-btn" style="margin-right: 4px"><span class="glyphicon glyphicon-print"></span>Print</button>
+                        <button class="btn outline-btn" style="margin-right: 4px"><span class="glyphicon glyphicon-list-alt"></span>Notes</button>
+                        <button class="btn outline-btn"><span class="glyphicon glyphicon-pencil"></span>Damage</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Alert banners -->
+                <div class="alert alert-info" role="alert" style="display: "><strong>Info:</strong> This quote builder shows all totals to you only. End customer sees only line totals.</div>
+            </div>
+        </div>
+
+        <div class="container quote-container">
+            <!-- Quote Builder -->
+
+            <div class="row">
+                <table class="table borderless" id="quote-table">
+                    <thead>
+                        <tr style="">
+                            <th style="width: 5%">Add/Delete</th>
+                            <th style="width: 5%"></th>
+                            <th style="width: 40%">Recommendation</th>
+                            <th style="width: 5%">Media</th>
+                            <th style="width: 10%">Parts Stock</th>
+                            <th style="width: 10%">Parts Total</th>
+                            <th style="width: 5%">Labor</th>
+                            <th style="width: 10%">Labor</th>
+                            <th style="width: 10%">Line Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="">
+                            <td class="middle">
+                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                                <!--Delete button removes row from quote -->
+                            </td>
+                            <td class="middle">
+                                <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
+                            </td>
+                            <td>
+                                <div class="text-left">
+                                    <span><strong>Left Front Brakes</strong></span>
+                                    <br>
+                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <!--map tech comments into value field -->
+                                </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+                            </td>
+                            <td>
+                              <span class="">In-Stock</span> <span class="glyphicon glyphicon-ok" style="color:green"></span>
+                              <br>
+                              <span><a href="#partsModal" data-toggle="modal" data-target="#partsModal" style="text-decoration:none">Details</a></span>
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Parts Total">
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Hours">
+                                <!-- Rate * Hours = Total Labor -->
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Total Labor">
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <!-- Line Total = Total Labor + Parts -->
+                            </td>
+                        </tr>
+                        <tr style="">
+                            <td class="middle">
+                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                                <!--Delete button removes row from quote -->
+                            </td>
+                            <td class="middle">
+                                <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
+                            </td>
+                            <td>
+                                <div class="text-left">
+                                    <span><strong>Left Front Brakes</strong></span>
+                                    <br>
+                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <!--map tech comments into value field -->
+                                </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+                            </td>
+                            <td>
+                              <span class="">Partial</span> <span class="glyphicon glyphicon-minus" style="color:black"></span>
+                              <br>
+                              <span><a href="#partsModal" data-toggle="modal" data-target="#partsModal" style="text-decoration:none">Details</a></span>
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Parts Total">
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Hours">
+                                <!-- Rate * Hours = Total Labor -->
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Total Labor">
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <!-- Line Total = Total Labor + Parts -->
+                            </td>
+                        </tr>
+                        <tr style="">
+                            <td class="middle">
+                                <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                                <!--Delete button removes row from quote -->
+                            </td>
+                            <td class="middle">
+                                <span class="circle st-red"></span>
+                                <!--used st-red as placeholder, can be system-wide red -->
+                            </td>
+                            <td>
+                                <div class="text-left">
+                                    <span><strong>Left Front Brakes</strong></span>
+                                    <br>
+                                    <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                    <!--map tech comments into value field -->
+                                </div>
+                            </td>
+                            <td>
+                              <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+                            </td>
+                            <td>
+                              <span class="">Waiting</span> <span class="glyphicon glyphicon-remove" style="color:red"></span>
+                              <br>
+                              <span><a href="#partsModal" data-toggle="modal" data-target="#partsModal" style="text-decoration:none">Details</a></span>
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Parts Total">
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Hours">
+                                <!-- Rate * Hours = Total Labor -->
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Total Labor">
+                            </td>
+                            <td>
+                                <input type="" class="form-control quote-input" placeholder="Line Total">
+                                <!-- Line Total = Total Labor + Parts -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--Row before user clicks plus button-->
+                            <td class="middle">
+                                <button class="btn add-btn"><span class="glyphicon glyphicon-plus"></span></button>
+                            </td>
+                            <td>
+                                <span class="circle material-grey"></span>
+                            </td>
+                            <td class="middle">
+                                <div class="text-left">
+                                    <span><strong>To add a custom line, click plus. Click the circle to change colors.</strong>
+                                </span>
+                                    <br>
+                                </div>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr id="sub-total-row">
+                            <!--Sum the above into this row -->
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                              <span><strong>Subtotals</strong></span>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Hours Sold">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Labor Sold">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Parts Sold">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Subtotal">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="quote-totals">
+                    <!--Subtotals, tax, etc. -->
+                    <tr>
+                        <td class="totals-label">
+                            <strong>Gas, Oil, Grease</strong>
+                        </td>
+                        <td class="totals-field">
+                            <input type="" class="form-control" id="" placeholder="GoG" style="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="totals-label">
+                            <strong>Deductible, Rental, Supplies</strong>
+                        </td>
+                        <td class="totals-field">
+                            <input type="" class="form-control" id="" placeholder="Deduct" style="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="totals-label">
+                          <a href="#">Calc.</a>
+                            <strong>Sales Tax</strong>
+                        </td>
+                        <td class="totals-field">
+                            <input type="" class="form-control" id="" placeholder="Tax" style="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="totals-label">
+                            <strong>Total Charges</strong>
+                        </td>
+                        <td class="totals-field">
+                            <input type="" class="form-control" id="" placeholder="Total" style="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="totals-label">
+                            <strong>Less Insurance/Discount</strong>
+                        </td>
+                        <td class="totals-field">
+                            <input type="" class="form-control" id="" placeholder="Discount" style="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="totals-label">
+                            <strong>Total</strong>
+                        </td>
+                        <td class="totals-field">
+                            <input type="" class="form-control" id="" placeholder="Total" style="">
+                        </td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+                <div class="container" style="padding-top:5px; padding-bottom:10px; padding-left:10px; padding-right:10px">
+                  <div class="col-sm-6" style="padding-left:0px;">
+                      <button class="btn outline-btn"><span class="glyphicon glyphicon-arrow-left"></span>Back to Summary</button>
+                  </div>
+                  <div class="col-sm-6 text-right" style="padding-right:0px">
+                      <button class="btn outline-btn">Send <span class="glyphicon glyphicon-send"></span></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="modal-video-label" style="display: none;">
+        	<div class="modal-dialog" role="document">
+        		<div class="modal-content">
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        					<span aria-hidden="true">×</span>
+        				</button>
+        			</div>
+        			<div class="modal-body">
+        				<div class="modal-video">
+	        				<div class="embed-responsive embed-responsive-16by9">
+			                    <iframe class="embed-responsive-item" src="img/tech-video.mp4" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+			                </div>
+		                </div>
+        			</div>
+              <div class="modal-footer">
+                <button type="button" name="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Delete</button>
+                <button type="button" name="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
+
+              </div>
+        		</div>
+        	</div>
+        </div>
+
+        <!-- Parts Modal -->
+
+        <div class="modal fade" id="partsModal" tabindex="-1" role="dialog" aria-labelledby="modal-video-label" style="display: none;">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span>Parts</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="" style="padding-bottom:20px">
+                  <table class="">
+                    <tr>
+                      <th style="width:10%"></th>
+                      <th style="width:20%"></th>
+                      <th style="width:40%"></th>
+                      <th style="width:30%"></th>
+                    </tr>
+                    <tr>
+                      <td class="middle"> <!-- Color -->
+                          <span class="circle st-red"></span>
+                      </td>
+                      <td class="middle"> <!-- Description -->
+                          <div class="text-left">
+                              <span><strong>Left Front Brakes</strong></span>
+                          </div>
+                      </td>
+                      <td class="middle"> <!-- Tech Comment -->
+                        <span>This is the tech comment on the issue</span>
+                      </td>
+                      <td class="middle">
+                        <span> <strong>VIN:</strong> 1234ASDF1234ASDF</span>
+
+                      </td>
+
+                    </tr>
+                  </table>
+                </div>
+
+                <table class="table">
+                  <tr>
+                    <th style="width:10%">Add/Del</th>
+                    <th style="width:20%">Part Number</th>
+                    <th style="width:35%">Description</th>
+                    <th style="width:10%">Stock</th>
+                    <th style="width:15%">Price</th>
+
+                  </tr>
+                  <tr>
+                      <!--Add parts -->
+                      <td class="middle"> <!-- Add/Del -->
+                          <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                      </td>
+                      <td class="middle"> <!-- Part Number -->
+                          <input type="" class="form-control quote-input" placeholder="Part Number">
+                      </td>
+                      <td class="middle"> <!-- Part Description -->
+                          <input type="" class="form-control quote-input" placeholder="Description">
+                      </td>
+                      <td class="middle"> <!-- In stock -->
+
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Stock<span class="caret"></span></button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">In Stock</a></li>
+                            <li><a href="#">1 Day</a></li>
+                            <li><a href="#">2 Days</a></li>
+                            <li><a href="#">3 Days</a></li>
+                            <li><a href="#">4 Days</a></li>
+                            <li><a href="#">5 Days</a></li>
+                            <li><a href="#">Backordered</a></li>
+                          </ul>
+                        </div>
+                      </td>
+
+                      <td class="middle"> <!--Price -->
+                        <input type="" class="form-control quote-input" placeholder="Part Price">
+                      </td>
+
+                  </tr>
+                  <tr>
+                    <td class="middle"> <!-- Add/Del -->
+                        <button class="btn add-btn"><span class="glyphicon glyphicon-plus"></span></button>
+                    </td>
+                    <td>
+                      <span> <strong>To add more parts, click the plus button.</strong> </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="middle text-right">Total:</td>
+                    <td><input type="" class="form-control quote-input" placeholder="Parts Total"></td> <!--Parts Total -->
+                  </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" name="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Cancel</button>
+                <button type="button" name="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CDN jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <!--CDN Bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
