@@ -206,6 +206,47 @@
                         </tr>
                     </thead>
                     <tbody>
+                      <tr style="">
+                          <td class="middle">
+                              <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
+                              <!--Delete button removes row from quote -->
+                          </td>
+                          <td class="middle">
+                              <span class="circle st-red"></span>
+                              <!--used st-red as placeholder, can be system-wide red -->
+                          </td>
+                          <td>
+                              <div class="text-left">
+                                  <span><strong>Left Front Brakes</strong></span>
+                                  <br>
+                                  <input class="form-control tech-comment" value="This is a tech comment that is editable">
+                                  <!--map tech comments into value field -->
+                              </div>
+                          </td>
+                          <td>
+                            <a href="#videoModal" data-toggle="modal" data-target="#videoModal" style="text-decoration:none"><span class="square" style="border: 1px solid blue"><span class="glyphicon glyphicon-facetime-video" style="color: blue; padding-left:3px"></span></span></a>
+                          </td>
+                          <td>
+                            <span><a href="#partsModal" data-toggle="modal" data-target="#partsModal" style="text-decoration:none">Edit</a></span>
+                          </td>
+                          <td>
+                              <input type="" class="form-control quote-input" placeholder="Parts Total">
+                          </td>
+                          <td>
+                              <input type="" class="form-control quote-input" placeholder="#">
+                              <!-- Rate * Hours = Total Labor -->
+                          </td>
+                          <td> <!--labor rate -->
+                            <input type="" class="form-control quote-input" placeholder="Rate">
+                          </td>
+                          <td>
+                              <input type="" class="form-control quote-input" placeholder="Total Labor">
+                          </td>
+                          <td>
+                              <input type="" class="form-control quote-input" placeholder="Line Total">
+                              <!-- Line Total = Total Labor + Parts -->
+                          </td>
+                      </tr>
                         <tr style="">
                             <td class="middle">
                                 <button class="btn delete-btn"><span class="glyphicon glyphicon-remove"></span></button>
