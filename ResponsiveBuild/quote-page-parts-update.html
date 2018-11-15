@@ -195,11 +195,12 @@
                         <tr style="">
                             <th style="width: 5%">Add/Delete</th>
                             <th style="width: 5%"></th>
-                            <th style="width: 40%">Recommendation</th>
+                            <th style="width: 32%">Recommendation</th>
                             <th style="width: 5%">Media</th>
-                            <th style="width: 10%">Parts Stock</th>
-                            <th style="width: 10%">Parts Total</th>
-                            <th style="width: 5%">Labor</th>
+                            <th style="width: 8%">Parts Stock</th>
+                            <th style="width: 10%">Parts</th>
+                            <th style="width: 7%">Hours</th>
+                            <th style="width: 8%">Rate</th>
                             <th style="width: 10%">Labor</th>
                             <th style="width: 10%">Line Total</th>
                         </tr>
@@ -236,6 +237,9 @@
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="#">
                                 <!-- Rate * Hours = Total Labor -->
+                            </td>
+                            <td> <!--labor rate -->
+                              <input type="" class="form-control quote-input" placeholder="Rate">
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Total Labor">
@@ -277,6 +281,9 @@
                                 <input type="" class="form-control quote-input" placeholder="#">
                                 <!-- Rate * Hours = Total Labor -->
                             </td>
+                            <td> <!--labor rate -->
+                              <input type="" class="form-control quote-input" placeholder="Rate">
+                            </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Total Labor">
                             </td>
@@ -316,6 +323,9 @@
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="#">
                                 <!-- Rate * Hours = Total Labor -->
+                            </td>
+                            <td> <!--labor rate -->
+                              <input type="" class="form-control quote-input" placeholder="Rate">
                             </td>
                             <td>
                                 <input type="" class="form-control quote-input" placeholder="Total Labor">
@@ -374,13 +384,14 @@
 
                             </td>
                             <td>
+                                <input class="form-control" placeholder="Parts Total">
+                            </td>
+                            <td>
                                 <input class="form-control" placeholder="Hours Sold">
                             </td>
+                            <td></td>
                             <td>
                                 <input class="form-control" placeholder="Labor Sold">
-                            </td>
-                            <td>
-                                <input class="form-control" placeholder="Parts Sold">
                             </td>
                             <td>
                                 <input class="form-control" placeholder="Subtotal">
