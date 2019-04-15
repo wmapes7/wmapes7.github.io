@@ -121,56 +121,147 @@
 		</div>
 	</div>
   <!-- Summmary Container -->
-	<div class="container quote-container text-center">
-		<div class="row" style="padding-bottom:15px">
-			<h3>Technician Recommendations</h3>
-      <h4>
-        <span>Inspection Status: </span>
-        <span class="hidden"><span class="glyphicon glyphicon-exclamation-sign" style="color:red"></span>Incomplete</span>
-        <span class=""><span class="glyphicon glyphicon-ok" style="border-radius:50%; color:green"></span>Completed!</span>
-      </h4>
-		</div>
-    <!--<div class="row" style="margin-bottom: 30px">
-      <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-wrench"></span>Vehicle Damage</button>
-      <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-list-alt"></span>View Notes</button>
-      <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-print"></span>Print Report</button>
-    </div>-->
-		<div class="row" style="padding-bottom: 30px">
-      <div class="container" style="width:80%">
-        <div class="col-md-3 col-sm-3">
-  				<span class="summary-circle middle material-green">30</span><br>
-  				Not Required
-  			</div>
-  			<div class="col-md-3 col-sm-3">
-  				<span class="summary-circle material-yellow">0</span><br>
-  				Soon
-  			</div>
-  			<div class="col-md-3 col-sm-3">
-  				<span class="summary-circle st-red">0</span><br>
-  				Now
-  			</div>
-        <div class="col-md-3 col-sm-3">
-          <span class="summary-circle material-grey">0</span><br>
-          Not Applicable
-        </div>
-      </div>
-		</div>
-		<div class="row" style="padding-bottom: 15px">
-			<div class="col-md-3 col-sm-3 text-left">
-				<button class="btn outline-btn"><span class="glyphicon glyphicon-arrow-left"></span>View Inspection </button>
 
+	<div class="app-mpi-summary ng-scope">
+	  <!-- Summmary Container -->
+	  <div class="container quote-container panel">
+	    <div class="row text-center" style="padding-bottom:15px">
+	      <h3>Technician Recommendations</h3>
+	    </div>
+			<div class="row" style="padding-bottom:15px">
+				<div class="col-xs-6 col-md-6 text-right" style="">
+					<strong>RO Status:</strong>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<span class="app-mpi-incomplete" ng-hide="isComplete(ro)">
+						<span class="glyphicon glyphicon-exclamation-sign" style="color:red"></span>
+						Incomplete
+					</span>
+					<span class="app-mpi-complete ng-hide" ng-show="isComplete(ro)">
+						<span class="glyphicon glyphicon-ok" style="border-radius:50%; color:green"></span>
+						Completed!
+					</span>
+				</div>
 			</div>
-      <div class="col-md-6 col-sm-6 text-center">
-        <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-wrench"></span>Vehicle Damage</button>
-        <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-list-alt"></span>View Notes</button>
-        <button class="btn outline-btn" style=""><span class="glyphicon glyphicon-print"></span>Print Report</button>
-      </div>
-			<div class="col-md-3 col-sm-3 text-right">
-				<button class="btn quote-btn">Send Report <span class="glyphicon glyphicon-send"></span></button>
-        <button class="btn outline-btn">Add Quote <span class="glyphicon glyphicon-arrow-right"></span></button>
-			</div>
-		</div>
-	</div><!-- CDN jQuery -->
+	    <div class="row" style="padding-bottom:15px">
+	      <div class="col-xs-6 col-md-6 text-right" style="">
+	        <strong>Inspection Status:</strong>
+	      </div>
+	      <div class="col-xs-6 col-md-6">
+	        <span class="app-mpi-incomplete" ng-hide="isComplete(ro)">
+	          <span class="glyphicon glyphicon-exclamation-sign" style="color:red"></span>
+	          Incomplete
+	        </span>
+	        <span class="app-mpi-complete ng-hide" ng-show="isComplete(ro)">
+	          <span class="glyphicon glyphicon-ok" style="border-radius:50%; color:green"></span>
+	          Completed!
+	        </span>
+	      </div>
+	    </div>
+	    <div class="row" style="padding-bottom:15px">
+	      <div class="col-xs-6 col-md-6 text-right" style="">
+	        <strong>Quote Status:</strong>
+	      </div>
+	      <div class="col-xs-6 col-md-6">
+	        <span class="app-mpi-incomplete" ng-hide="isComplete(ro)">
+	          <span class="glyphicon glyphicon-exclamation-sign" style="color:red"></span>
+	          <a href="" data-toggle="modal" data-target="#myModal">Update Requested</a>
+	        </span>
+	        <span class="app-mpi-complete ng-hide" ng-show="isComplete(ro)">
+	          <span class="glyphicon glyphicon-ok" style="border-radius:50%; color:green"></span>
+	          Completed!
+	        </span>
+	      </div>
+	    </div>
+	    <div class="row" style="padding-bottom:15px">
+	      <div class="col-xs-6 col-md-6 text-right" style="">
+	        <strong>Quote Total Charges:</strong>
+	      </div>
+	      <div class="col-xs-6 col-md-6 ng-binding">
+	        $0.00
+	      </div>
+	    </div>
+	    <div class="row text-center" style="padding-top: 15px; padding-bottom: 30px">
+	      <div class="container" style="width:80%">
+	        <div class="col-md-3 col-sm-3">
+	          <span class="summary-circle middle material-green app-not-required-count ng-binding">
+	            0
+	          </span>
+	          <br>
+	          Not Required
+	        </div>
+	        <div class="col-md-3 col-sm-3">
+	          <span class="summary-circle material-yellow app-soon-count ng-binding">
+	            0
+	          </span>
+	          <br>
+	          Soon
+	        </div>
+	        <div class="col-md-3 col-sm-3">
+	          <span class="summary-circle st-red app-now-count ng-binding">
+	            0
+	          </span>
+	          <br>
+	          Now
+	        </div>
+	        <div class="col-md-3 col-sm-3">
+	          <span class="summary-circle material-grey app-not-available-count ng-binding">
+	            0
+	          </span>
+	          <br>
+	          Not Applicable
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row" style="padding-bottom: 15px">
+	      <div class="col-xs-4 col-md4">
+	        <a class="btn outline btn-primary app-view-inspection" ng-href="#/mpi/567/inspect" href="#/mpi/567/inspect">
+	          <span class="glyphicon glyphicon-arrow-left" style="padding-right: 2px"></span>
+	          View Inspection
+	        </a>
+	      </div>
+	      <div class="col-xs-4 col-md-4 text-center">
+
+
+	        <button class="btn outline btn-primary" ng-click="printIframe()">
+	          <span class="glyphicon glyphicon-print" style="padding-right: 2px"></span>
+	          Print Report
+	        </button>
+	      </div>
+	      <div class="col-xs-4 text-right">
+	        <button class="btn btn-primary outline" ng-click="sendToCustomer()" ng-disabled="mpi.approval_status == 'active' || mpi.approval_status == 'complete' || mpi.approval_status == 'denied'">
+	          Send Report
+	          <span class="glyphicon glyphicon-send"></span>
+	        </button>
+	        <a class="btn outline btn-primary app-view-quote" ng-href="#/mpi/567/quote" href="#/mpi/567/quote">
+	          View Quote
+	          <span class="glyphicon glyphicon-arrow-right"></span>
+	        </a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+		<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- CDN jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script> <!--CDN Bootstrap js -->
 

@@ -5,17 +5,34 @@ var $vidwid2 = '<label for="file-upload" class="custom-file-upload"><span class=
 
 //commentWidget
 var $commentWidget = '<input type="text" name="" value="" class="form-control mpi-comment hide">'
+var $commentButton = '<span class="square comment-button glyphicon glyphicon-comment" style="margin-bottom:1px"></span>'
 
 $('.st-red').click(function(){
   $(this).after($vidwid2);
-  $(this).next().after().append($commentWidget);
-  console.log('showed video widget after red');
+  $(this).next().after($commentButton);
 });
 
 $('.material-yellow').click(function(){
   $(this).next().after($vidwid2);
   console.log('clicked yellow, showed video widget ');
 })
+
+//Show comment input after clicking comment buttons
+$('span.comment-button').click(function() {
+  console.log('clicked comment button');
+  $(this).prev().toggleClass('hide');
+  console.log('video icon hidden');
+  $(this).prev().prev('.mpi-comment').toggleClass('hide');
+  console.log('comment field shown');
+  $(this).css('margin-bottom','4px');
+  console.log('margin added to align correctly');
+  $(this).toggleClass('glyphicon glyphicon-ok');
+  $(this).toggleClass('glyphicon glyphicon-comment');
+  $(this).toggleClass('glyphicon glyphicon-remove');
+  console.log($(this).next().next().next());
+
+})
+
 
 //show video widget after red click
 //$('.st-red, .material-yellow').click(function() {
@@ -106,21 +123,7 @@ $('#all-green').click(function() {
 
 });
 
-//Show comment input after clicking comment buttons
-$('.comment-button').click(function() {
-  console.log('clicked comment button');
-  $(this).prev().toggleClass('hide');
-  console.log('video icon hidden');
-  $(this).prev().prev('.mpi-comment').toggleClass('hide');
-  console.log('comment field shown');
-  $(this).css('margin-bottom','4px');
-  console.log('margin added to align correctly');
-  $(this).toggleClass('glyphicon glyphicon-ok');
-  $(this).toggleClass('glyphicon glyphicon-comment');
-  $(this).toggleClass('glyphicon glyphicon-remove');
-  console.log($(this).next().next().next());
 
-})
 
 
 

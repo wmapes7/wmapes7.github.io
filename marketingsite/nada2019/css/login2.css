@@ -1,0 +1,160 @@
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.is-flex .box {
+  background: none;
+  position: static;
+}
+.is-flex [class*="col-"] {
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base Stuff Ignore */
+body {
+    background: linear-gradient(325deg,#1cbaeb 7%,#FFBABA 90%);
+    padding: 50px 0 100px;
+    -webkit-font-smoothing: antialiased;
+}
+a { transition: all 225ms ease; }
+header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.big-sexy-buttons {
+  margin-bottom: 25px;
+}
+header h1 { font-weight: 400; }
+header .note {
+    margin: 0;
+    font-style: italic;
+    max-width: 600px;
+    margin: 55px auto 0;
+}
+
+.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.row {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*[class*="col-"] { border: solid 1px #e3e3e3; border-top-width: 2px; border-bottom-width: 2px; padding-top: 25px; padding-bottom: 25px; background: rgba(255, 255, 255, 0.5); }
+[class*="col-"]:first-child { border-left-width: 2px; }
+[class*="col-"]:last-child { border-right-width: 2px; }*/
+
+
+.box {
+    padding: 25px 7% 0;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+.box h2 {
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    margin-bottom: 15px;
+}
+.box a {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 25px 0;
+}
+.box p {
+    padding-bottom: 125px;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.legend {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.legend span {
+    display: block;
+    padding: 3px 5px;
+    line-height: 100%;
+    color: #fff;
+    font-weight: 700;
+}
+.key-container { background: rgba(255, 255, 255, 0.1); }
+.key-row { background: rgba(255, 255, 255, 0.4); }
+.key-col { background: rgba(255, 255, 255, 0.9); color: #555 !important; }
+.key-box { background: #fff; color: #111 !important; }
+
+
+
+/*Existing Stuff */
+#loginpage form {
+	line-height: 2.5;
+}
+
+#loginpage input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #999;
+	font-size: 24px;
+	font-weight: 300;
+	color: #000;
+	width: 100%;
+}
+
+#loginpage input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+	opacity: 0.4;
+}
+#loginpage input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+	opacity: 0.4;
+}
+#loginpage input:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+	opacity: 0.4;
+}
+#loginpage input:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+	opacity: 0.4;
+}

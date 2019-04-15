@@ -18,7 +18,13 @@
     <title>Consumer UI Proto</title>
   </head>
 
-  <!-- Containers made dynamic by use of CSS class 'hide'. Insert that on the container based on the RO status to hide the container. -->
+  <!--
+
+  Containers are dynamic by use of CSS class 'hide'.
+  Insert that on the container based on the RO status to hide the container.
+  See comments throughout code for places to make dynamic.
+
+  -->
 
   <body style="background-color: #f4f7fa; font-weight:300;" id="consumer">
     <!--navbar -->
@@ -31,7 +37,7 @@
           </ul>
           <ul class="navbar-nav mx-auto text-center" style="">
               <li class="nav-item">
-                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fortlauderdale</span> <!--pull from st-admin dealer name field. OEM Color schemes Phase 2 -->
+                  <span style="font-size:10px; color:red; font-weight:400">Audi of Fort Lauderdale</span> <!--pull from st-admin dealer name field. OEM Color schemes Phase 2 -->
               </li>
           </ul>
       </div>
@@ -42,30 +48,35 @@
       <div class="container consumer-container">
         <div class="row no-gutters" style="padding-bottom:0px">
           <div class="col">
-            <div>
               <h5 style="font-weight:300">John Customer</h5>
-            </div>
+          </div>
+          <div class="col text-right">
+            <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
           </div>
         </div>
-        <div class="row" style="margin-top:-10px; padding-bottom:20px"> <!-- Change value based on RO status -->
+
+
+
+        <!-- Consumer Instruction --> <!-- Show/hide the spans below based on RO status -->
+        <div class="row" style="margin-top:-10px; padding-bottom:20px">
           <div class="col" style="font-size:14px">
-            <span class="text-muted hide">your vehicle is checked-in.</span> <!-- RO Open -->
-            <span class="text-muted">your approval is requsted to continue service.</span> <!-- Quote sent -->
-            <span class="text-muted hide">your vehicle is being serviced.</span> <!-- vehicle being serviced -->
-            <span class="text-muted hide">your mobile invoice is ready for payment.</span>
-            <span class="text-muted hide">your feedback has been requested.</span>
+            <span class="text-muted">your vehicle is checked-in.</span> <!-- RO Open -->
+            <span class="text-muted hide">your approval is requsted to continue service.</span> <!-- Quote/Inspection sent -->
+            <span class="text-muted hide">your vehicle is being serviced.</span> <!-- Working status -->
+            <span class="text-muted hide">your mobile invoice is ready for payment.</span> <!-- invoice sent -->
+            <span class="text-muted hide">your feedback has been requested.</span> <!-- Invoice paid, RO Closed -->
           </div>
         </div>
         <div class="row" style="padding-bottom:5px">
           <div class="col">
             <div class="progress" style="height:5px">
-              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                <!-- Set CSS width property of progress bar to the following values
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                <!-- Set CSS 'width' property of progress bar to the following values
 
-                Vehicle Checked in = 25%
+                RO Open = 25%
                 Vehicle Service Started = 50%
-                Inspection or Quote = 50%
-                Invoice sent = 75%
+                Inspection or Quote Sent = 50%
+                Invoice sent = 90%
                 Mobile payment success = 100%
                 RO Closed = 100%
 
@@ -84,12 +95,11 @@
           <div class="col text-right">
             Payment
           </div>
-
         </div>
       </div> <!-- End Timeline Container -->
 
       <!--Vehicle Check-in Container -->
-      <div class="container consumer-container hide"> <!-- Hide this container if quote sent, quote approve/decline, mobile payment sent/paid -->
+      <div class="container consumer-container"> <!-- Hide this container if quote sent, quote approve/decline, mobile payment sent/paid -->
         <div class="row">
           <div class="col-10">
             <h5 style="font-weight:300">Vehicle Check-In</h5>
@@ -98,7 +108,7 @@
             <a class="" data-toggle="collapse" href="#reported-concerns" role="button" aria-expanded="false" aria-controls="collapseCheckin"><i class="fa fa-angle-down rotate" style="font-size:18px"></i></a>
           </div>
         </div>
-        <div class="collapse show" id="reported-concerns">
+        <div class="collapse" id="reported-concerns">
           <div class="row">
             <div class="col">
               <span>Reported Concerns</span>
@@ -107,19 +117,19 @@
           <div class="row" id="services-items"> <!-- Feature update - parse RO service lines onto their own lines. Current implmentation has them grouped together on one line. -->
             <div class="col" style="font-size:12px">
               <ul class="list-unstyled" style="padding-top:5px">
-                <li>RATTLE FRONT DRIVERS SIDE. CHECK AND ADVISE.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
                 <br>
-                <li>COMPLIMENTARY MULTIPOINT INSPECTION</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
                 <br>
-                <li>OIL CHANGE</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
                 <br>
-                <li>INTERIOR AND EXTERIOR DETAIL</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</li>
               </ul>
             </div>
           </div>
           <div class="row text-center" id="services-button">
             <div class="col" style="font-size:14px; font-weight:400; padding-bottom:15px; padding-top:10px">
-              <button class="btn btn-sm btn-block btn-secondary">Vehicle is checked-in <i class="far fa-check-circle" style=""></i></button>
+              <button class="btn btn-sm btn-block banner-btn btn-secondary"><i class="far fa-check-circle" style=""></i> Vehicle is checked-in</button>
             </div>
           </div>
         </div>
@@ -129,8 +139,11 @@
       <!--Vehicle Service Container -->
       <div class="container consumer-container"> <!-- Show this container if quote/inspection sent or customer approves/declines -->
         <div class="row no-gutters">
-          <div class="col-11">
-            <h5 style="font-weight:300">Repair Estimate</h5>
+          <div class="col-6 col-sm-8">
+            <h5 style="font-weight:300; margin:0">Repair Estimate</h5>
+          </div>
+          <div class="col-6 col-sm-4 align-self-center text-right">
+            <button type="button" name="button" class="btn btn-sm btn-outline-primary hide"><i class="far fa-clipboard"></i> Inspection Report</button>
           </div>
         </div>
         <div class="row no-gutters" style="padding-top:10px;">
@@ -145,19 +158,19 @@
             </thead>
             <tbody>
               <tr>
-                <td>CUST STATES ON MONDAY USING A/C STARTED TO BLOW WARM AIR - NOTED A/C BUTTON RECIRC BUTTON WERE FLASHING YELLOW WHILE THIS WAS GOING ON</td>
-                <td class="text-center align-middle" style="font-size:22px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
+                <td>TRANSMISSION KIT PERFORM COMPLETE TRANSMISSION FLUID EXCHANGE, INST ALL FLUSHING AGENT TO LOOSEN CLEAN DIRT DEPOSI TS, COMPLETELY EXCHANGE UP TO 13 QTS OF TRANSMISSI ON FLUID. INSTALL 1 BOTTLE OF FLUID CONITIONER </td>
+                <td class="text-center align-middle" style="font-size:22px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"  data-theVideo="http://www.youtube.com/embed/loFtozxZG0s"> <i class="far fa-images"></i></a></td>
                 <td class="text-center align-middle">
                   <label class="custom-checkbox-label">
                     <input type="checkbox" name="" value="" checked="true">
                     <span class="checkmark"></span>
                   </label>
                 </td>
-                <td class="text-center align-middle"><span>$899.00</span></td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
               </tr>
               <tr>
               <tr style="">
-                <td>TRANSMISSION KIT PERFORM COMPLETE TRANSMISSION FLUID EXCHANGE, INST ALL FLUSHING AGENT TO LOOSEN CLEAN DIRT DEPOSI TS, COMPLETELY EXCHANGE UP TO 13 QTS OF TRANSMISSI ON FLUID. INSTALL 1 BOTTLE OF FLUID CONITIONER </td>
+                <td>CUST STATES ON MONDAY USING A/C STARTED TO BLOW WARM AIR - NOTED A/C BUTTON RECIRC BUTTON WERE FLASHING YELLOW WHILE THIS WAS GOING ON</td>
                 <td class="text-center align-middle" style="font-size:20px"><a href="#" data-toggle="modal" data-target="#videoModal" class="playButton"> <i class="far fa-images"></i></a></td>
                 <td class="text-center align-middle">
                   <label class="custom-checkbox-label">
@@ -165,7 +178,7 @@
                     <span class="checkmark"></span>
                   </label>
                 </td>
-                <td class="text-center align-middle"><span>$149.99</span></td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
               </tr>
               <tr style="">
                 <td>MAINT DUE LOF COMPLETE TIRES ROTATED</td>
@@ -176,25 +189,22 @@
                     <span class="checkmark"></span>
                   </label>
                 </td>
-                <td class="text-center align-middle"><span>$49.99</span></td>
+                <td class="text-center align-middle"><span>$999.99</span></td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="row no-gutters" style="padding-bottom:10px">
-          <div class="col-6 col-md-9 align-self-center" style="padding-right:10px">
-            <button type="button" name="button" class="btn btn-sm btn-success btn-block" style="margin-top:0"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
-            <button type="button" name="button" class="btn btn-sm btn-danger btn-block" style="margin-top:0"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
-            <button type="button" name="button" class="btn btn-sm btn-secondary btn-block" style="margin-top:0"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
-          </div>
-          <div class="col-6 col-md-3 align-self-center text-right">
-            <button type="button" name="button" class="btn btn-sm btn-outline-primary"><i class="far fa-clipboard"></i> Inspection Report</button>
+          <div class="col align-self-center">
+            <button type="button" name="button" class="btn btn-sm btn-success banner-btn btn-block"><i class="far fa-check-circle"></i> Estimate Approved</button> <!-- show if customer approves -->
+            <button type="button" name="button" class="btn btn-sm btn-danger banner-btn btn-block hide"><i class="far fa-times-circle"></i> Estimate Declined</button> <!-- show if customer declines -->
+            <button type="button" name="button" class="btn btn-sm btn-secondary banner-btn btn-block hide"><i class="far fa-hourglass"></i> Update Requested</button> <!-- show if customer selects only certain items-->
           </div>
         </div>
       </div> <!--End Vehicle Services Container -->
 
       <!--Start Payment Container-->
-      <div class="container consumer-container hide" style="font-size:13px"> <!-- Add hide class here to hide this. Only show when invoice available -->
+      <div class="container consumer-container" style="font-size:13px"> <!-- Add hide class here to hide this. Only show when invoice available -->
         <div class="row">
           <div class="col">
             <h5 style="font-weight:300">Mobile Payment</h5>
@@ -274,15 +284,15 @@
         </div>
         <div class="row" style="padding-bottom:10px">
           <div class="col">
-            <button type="button" name="button" class="btn btn-block btn-sm btn-success hide"><i class="far fa-check-circle"></i> Your invoice has been paid</button>
-            <button type="button" name="button" class="btn btn-block btn-sm btn-danger"><i class="far fa-times-circle"></i> Payment Error. Please contact dealer.</button>
+            <button type="button" name="button" class="btn btn-block banner-btn btn-sm btn-success"><i class="far fa-check-circle"></i> Your invoice has been paid</button> <!-- Dynamic show/hide based on payment status -->
+            <button type="button" name="button" class="btn btn-block banner-btn btn-sm btn-danger hide"><i class="far fa-times-circle"></i> Payment Error. Please contact dealer.</button> <!-- Dynamic show/hide based on payment status -->
           </div>
 
         </div>
       </div> <!--End Payment Container-->
 
       <!--Feedback container-->
-      <div class="container consumer-container hide"> <!-- Add hide class here to hide this. Only show this container when feedback sent or feedback recieved. -->
+      <div class="container consumer-container"> <!-- Add hide class here to hide this. Only show this container when feedback sent or feedback recieved. -->
         <div class="row">
           <div class="col">
             <h4 style="font-weight:300">Feedback</h4>
@@ -320,15 +330,15 @@
       </div> <!--End Advertising Container -->
 
       <!-- Advisor Info Fixed-Bottom Div -->
-      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This always shows unless Estimate Approval or Mobile Payment div showing. -->
+      <div class="container-fluid fixed-bottom footer-action-div"> <!-- Add hide class here to hide this. This always shows unless Estimate Approval or Mobile Payment div showing. -->
         <div class="row" style="padding-top:10px">
           <div class="col">
-            <span> <strong>Advisor:</strong> Steve Anderson</span>
+            <span> <strong>Advisor:</strong> Service Advisorname</span>
           </div>
         </div>
         <div class="row no-gutters" style="padding-bottom:10px">
           <div class="col">
-            <span><strong>RO:</strong> 23123</span>
+            <span><strong>RO:</strong> 12345</span>
           </div>
         </div>
         <div class="row">
@@ -342,13 +352,13 @@
       </div> <!-- End advisor info div -->
 
       <!-- Estimate Approval Fixed-Bottom Div -->
-      <div class="container-fluid fixed-bottom footer-action-div"> <!-- Add hide class here to hide this. This shows only when estimate/invoice/quote is sent to customer -->
+      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This shows only when estimate/invoice/quote is sent to customer -->
         <div class="row" style="padding-top:10px">
           <div class="col">
             <span>Repair Quote:</span>
           </div>
           <div class="col text-right">
-            <spam>$1,098.98</span>
+            <spam>$2,997.97</span>
           </div>
         </div>
         <div class="row no-gutters" style="padding-top:10px">
@@ -367,7 +377,7 @@
       </div>
 
       <!-- Mobile Payment Fixed-Bottom Div -->
-      <div class="container-fluid fixed-bottom footer-action-div hide"> <!-- Add hide class here to hide this. This shows only when invoice is sent to customer but unpaid. -->
+      <div class="container-fluid fixed-bottom footer-action-div"> <!-- Add hide class here to hide this. This shows only when invoice is sent to customer but unpaid. -->
         <div class="row" style="padding-top:10px">
           <div class="col">
             <span>Invoice Total:</span>
@@ -515,5 +525,27 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+function autoPlayYouTubeModal(){
+  var trigger = $("body").find('[data-toggle="modal"]');
+  trigger.click(function() {
+    var theModal = $(this).data( "target" ),
+    videoSRC = $(this).attr( "data-theVideo" ),
+    videoSRCauto = videoSRC+"?autoplay=1" ;
+    $(theModal+' iframe').attr('src', videoSRCauto);
+    $(theModal+' button.close').click(function () {
+        $(theModal+' iframe').attr('src', videoSRC);
+    });
+  });
+}
+
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+  autoPlayYouTubeModal();
+});
+
+    </script>
   </body>
 </html>
