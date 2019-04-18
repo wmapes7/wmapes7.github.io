@@ -70,6 +70,16 @@
 
 .list-unstyled li a:hover {
   text-decoration: none;
+  color: #000000;
+}
+
+.navbar-nav-svg:hover {
+  opacity: 1;
+}
+
+.navbar-nav-svg {
+  fill: #fff;
+  opacity: 0.5;
 }
 
 .faded {
