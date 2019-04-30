@@ -241,7 +241,9 @@
                 <td class="hidden-xs"> <a href="">123456</a></td>
                 <td class="hidden-xs">123A</td>
                 <td class="">Customer Name</td>
-                <td class=""><a href="">Jobs</a></td>
+                <td class="">
+                    <a href="" data-toggle="modal" data-target="#myModal">Jobs</a>
+                </td>
                 <td class="hidden-xs">
                     <div class="status-badge-container material-green" id="one">
                         <span class="glyphicon glyphicon-ok"></span>
@@ -260,7 +262,9 @@
                 <td class="hidden-xs"> <a href="">123456</a></td>
                 <td class="hidden-xs">123A</td>
                 <td class="">Customer Name</td>
-                <td class=""><a href="">Jobs</a></td>
+                <td class="">
+                        <a href="" data-toggle="modal" data-target="#myModal">Jobs</a>
+                    </td>
                 <td class="hidden-xs">
                     <div class="status-badge-container material-green" id="two">
                         <span class="glyphicon glyphicon-ok"></span>
@@ -279,7 +283,9 @@
                 <td class="hidden-xs"> <a href="">123456</a></td>
                 <td class="hidden-xs">123A</td>
                 <td class="">Customer Name</td>
-                <td><a href="">Jobs</a></td>
+                <td class="">
+                        <a href="" data-toggle="modal" data-target="#myModal">Jobs</a>
+                    </td>
                 <td class="hidden-xs">
                     <div class="status-badge-container material-grey" id="three">
                         <span class="glyphicon glyphicon-refresh"></span>
@@ -314,6 +320,89 @@
     </div>
 
 </div>
+
+<!--Jobs Modal-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Technician Assignment</h4>
+            </div>
+            <div class="modal-body">
+              <table>
+                  <tr>
+                      <th>Job #1</th>
+                      <th>Desc.</th>
+                      <th>Tech</th>
+                      <th>Assign</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </td>
+                      <td>tech name</td>
+                      <td>
+                            <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Change <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Tech #1</a></li>
+                                      <li><a href="#">Tech #2</a></li>
+                                      <li><a href="#">Tech #3</a></li>
+                                      <li><a href="#">Tech #4</a></li>
+                                      <li><a href="#">Tech #5</a></li>
+                                    </ul>
+                                  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                        <td>2</td>
+                        <td>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </td>
+                        <td>tech name</td>
+                        <td>
+                              <div class="btn-group">
+                                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Change <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Tech #1</a></li>
+                                        <li><a href="#">Tech #2</a></li>
+                                        <li><a href="#">Tech #3</a></li>
+                                        <li><a href="#">Tech #4</a></li>
+                                        <li><a href="#">Tech #5</a></li>
+                                      </ul>
+                                    </div>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>3</td>
+                            <td>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </td>
+                            <td>tech name</td>
+                            <td>
+                                  <div class="btn-group">
+                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Change <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Tech #1</a></li>
+                                            <li><a href="#">Tech #2</a></li>
+                                            <li><a href="#">Tech #3</a></li>
+                                            <li><a href="#">Tech #4</a></li>
+                                            <li><a href="#">Tech #5</a></li>
+                                          </ul>
+                                        </div>
+                            </td>
+                        </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" class="close" data-dismiss="modal" aria-label="Close">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <!-- CDN jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
