@@ -45,6 +45,11 @@ body {
 	color: #fff;
 }
 
+.material-purple a {
+	color: #fff;
+	text-decoration: underline;
+}
+
 .black {
 	background-color: #999;
 	color: #fff;
@@ -236,6 +241,19 @@ tr td {
 	height: 30px;
 	width: 30px;
 	padding: 5px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+	font: 18px Arial, sans-serif;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.notes-message-bold {
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	padding: 5px;
 	background: #000;
 	color: #fff;
 	text-align: center;
@@ -260,8 +278,17 @@ tr td {
 	background: #9e9e9e;
 }
 
-.unread-notes {
-	background: #2196f3;
+.unread-note {
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+	font: 18px Arial, sans-serif;
+	vertical-align: middle;
+	display: inline-block;
 }
 /*Navbar*/
 
