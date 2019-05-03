@@ -261,7 +261,7 @@ body { font-family: 'Inter', sans-serif; }
 .product-listing {
   background-color: #ffffff;
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .product-listing h2 {
   color: #000000;
