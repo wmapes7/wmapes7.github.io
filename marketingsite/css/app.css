@@ -1,18 +1,12 @@
 @import url('https://rsms.me/inter/inter.css');
 body { font-family: 'Inter', sans-serif; }
 
-.jumbotron {
-  background-color: transparent;
-}
-
-/* Body */
+/* MAIN */
 
 .st-intro {
   margin-top: -70px;
   padding-top: 120px;
-  height: 40vh;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+  height: 30vh;
   background: -webkit-linear-gradient(
     left top,
     rgba(41, 8, 48, 0.97),
@@ -26,10 +20,33 @@ body { font-family: 'Inter', sans-serif; }
     rgba(114, 183, 227, 0.97)
   );
 }
-.lg-back {
-  /*font-family: 'Lato', sans-serif;*/
-  
+
+.main {
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.33);
+  padding-bottom: 60px;
 }
+
+.jumbotron {
+  margin-top: -70px;
+  margin-bottom: 0;
+  padding-top: 120px;
+  height: 80vh;
+  background: -webkit-linear-gradient(
+    left top,
+    rgba(41, 8, 48, 0.97),
+    rgba(82, 65, 143, 0.97) 50%,
+    rgba(114, 183, 227, 0.97)
+  );
+  background: linear-gradient(
+    to right bottom,
+    rgba(41, 8, 48, 0.97),
+    rgba(82, 65, 143, 0.97) 50%,
+    rgba(114, 183, 227, 0.97)
+  );
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -64,6 +81,10 @@ body { font-family: 'Inter', sans-serif; }
   font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
+}
+
+.lighter {
+  opacity: .75;
 }
 
 /*Button Styles*/
@@ -248,15 +269,15 @@ body { font-family: 'Inter', sans-serif; }
 .product-listing h5 {
   margin-bottom: 80px;
 }
-.product-title {
-  font-weight: 600;
+.feature-title {
+  font-weight: 500;
 }
 
 
 /*GET STARTED STYLING*/
 .get-started {
-  padding-top: 70px;
-  padding-bottom: 140px;
+  padding-top: 50px;
+  padding-bottom: 70px;
   background: -webkit-linear-gradient(
     left top,
     rgba(41, 8, 48, 0.97),
@@ -269,10 +290,6 @@ body { font-family: 'Inter', sans-serif; }
     rgba(82, 65, 143, 0.97) 50%,
     rgba(114, 183, 227, 0.97)
   );
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-  position: relative;
-  top: 51px;
 }
 .get-started h1 {
   margin-top: 40px;
@@ -285,14 +302,25 @@ body { font-family: 'Inter', sans-serif; }
   margin-bottom: 20px;
 }
 
+
+/*SEAMLESS*/
+
+.seamless {
+  background-color:#f5f5f5;
+  padding-top:30px;
+  padding-bottom:30px;
+  -moz-box-shadow:    inset 0 0 1px #000000;
+  -webkit-box-shadow: inset 0 0 1px #000000;
+  box-shadow:         inset 0 0 1px #000000;
+}
+
 /*FOOTER*/
 .st-foot {
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
   background-color: #292929;
   color: #ffffff;
   line-height: 1.8em;
   padding-bottom: 120px;
+  padding-top: 60px;
 }
 
 .st-foot p {
@@ -318,7 +346,7 @@ body { font-family: 'Inter', sans-serif; }
 
 @media only screen and (max-width: 767px) {
   .mobile-pad {
-    padding-top: 20px;
+    padding-top: 30px;
   }
 }
 

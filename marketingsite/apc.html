@@ -1,365 +1,563 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <meta name="Description" content="Singlethread is a leading provider of text messaging, vehicle inspection, mobile payment, and chat products for automotive service departments.">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-  <link href="css/app.css" rel="stylesheet" type="text/css">
-  <title>Process Consulting | Singlethread</title>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <meta name="Description" content="Singlethread is a leading provider of text messaging, video vehicle inspection, mobile payment, and chat products for automotive service departments." />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <title>Dealership Training | Singlethread</title>
+    <!--Intercom-->
+    <script>
+        window.intercomSettings = {
+            app_id: 'vtsmn3ws'
+        }
+            ; (function () {
+                var w = window
+                var ic = w.Intercom
+                if (typeof ic === 'function') {
+                    ic('reattach_activator')
+                    ic('update', intercomSettings)
+                } else {
+                    var d = document
+                    var i = function () {
+                        i.c(arguments)
+                    }
+                    i.q = []
+                    i.c = function (args) {
+                        i.q.push(args)
+                    }
+                    w.Intercom = i
+                    function l() {
+                        var s = d.createElement('script')
+                        s.type = 'text/javascript'
+                        s.async = true
+                        s.src = 'https://widget.intercom.io/widget/vtsmn3ws'
+                        var x = d.getElementsByTagName('script')[0]
+                        x.parentNode.insertBefore(s, x)
+                    }
+                    if (w.attachEvent) {
+                        w.attachEvent('onload', l)
+                    } else {
+                        w.addEventListener('load', l, false)
+                    }
+                }
+            })()
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return
+            n = f.fbq = function () {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments)
+            }
+            if (!f._fbq) f._fbq = n
+            n.push = n
+            n.loaded = !0
+            n.version = '2.0'
+            n.queue = []
+            t = b.createElement(e)
+            t.async = !0
+            t.src = v
+            s = b.getElementsByTagName(e)[0]
+            s.parentNode.insertBefore(t, s)
+        })(
+            window,
+            document,
+            'script',
+            'https://connect.facebook.net/en_US/fbevents.js'
+        )
+        fbq('init', '385850792012883')
+        fbq('track', 'PageView')
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=385850792012883&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
-<body class="lg-back" id="" style="">
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="index.html">
-    <img src="img/s-logo-white.png" height="40px" width="50px" alt="Singlethread">
-  </a>
-  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-menu" aria-controls="mobile-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" style="" onclick="backgroundChange(this);"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="mobile-nav-menu">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link btn btn-outline-primary button-768" href="/dealer">Login</a>
-      </li>
-    </ul>
-
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Products
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/s-logo-white.png" height="40px" width="50px" alt="Singlethread" />
         </a>
-        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <small class="text-muted">SINGLETHREAD</small>
-                <hr class="menu-hr">
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="text.html"><img src="img/text-blue.svg" alt="Text Messaging"> Text Messaging</a>
-                  </li>
-                  <li>
-                    <a href="inspect.html"><img src="img/inspect-blue.svg" alt="Vehicle Inspections"> Video/Digital Inspections</a>
-                  </li>
-                  <li>
-                    <a href="chat.html"><img src="img/chat-blue.svg" alt="Dealership Chat"> Team Collaboration</a>
-                  </li>
-                  <li>
-                    <a href="mobilepay.html"><img src="img/wallet-blue.svg" alt="Dealership Mobile Payments"> Mobile Pay</a>
-                  </li>
-                  <li>
-                    <a href="feedback.html"><img src="img/feedback-blue.svg" alt="Customer Follow Up"> Customer Follow-Up</a>
-                  </li>
-
-
-                </ul><small class="text-muted">APC</small>
-                <hr class="menu-hr">
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="apc.html"><img src="img/avatar.svg" alt="Dealership Training"> Dealership Training</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Resources
-        </a>
-            <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <small class="text-muted">PUBLICATIONS</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li class="">
-                      <a href="/blog">Press Releases</a>
-                    </li>
-                    <li>
-                      <a href="/blog">Industry Publications</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <small class="text-muted">COMPANY</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <small class="text-muted">SOCIAL MEDIA</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a target="_blank" href="http://www.youtube.com/singlethread">YouTube</a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="http://www.facebook.com/singlethread0">Facebook</a>
-                    </li>
-                    <li>
-                      <a target="_blank"  href="http://www.twitter.com/singlethread">Twitter</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
-          Contact
-        </a>
-          <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu contact">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <small class="text-muted">PHONE</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="tel:+18449202656">844-920-2656</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <small class="text-muted">EMAIL</small>
-                  <hr class="menu-hr">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">support@singlethread.com</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div style="margin-top: 15px">
-                <a href="/contact" class="btn btn-primary btn-lg btn-block">Live Demo</a>
-              </div>
-            </div>
-          </div>
-      </li>
-    </ul>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link btn btn-outline-primary button-1024" href="/dealer" style="">Login</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div>
-    <div id="main">
-      <section id="intro">
-        <div class="container-fluid jumbotron" style="">
-          <div class="container text-center">
-              <h1 class="display-6 title">Process Optimization</h1>
-              <p class="lead title" style="">from Automotive Process Champions</p>
-          </div>
-        </div>
-    </section>
-    <section id="platform">
-      <div class="container-fluid" style="background-color: white">
-        <div class="container">
-          <div class="row align-items-center" style="padding-top: 60px">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2 class="mobile-pad">Implement a Proven Process</h2>
-                <p class="" style="opacity: .75">Automotive Process Champions helps you implement a process that takes advantage of modern technology to drive customer satisfaction and develops staff to reduce turnover and generate revenue.</p>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lIRTEVjGQMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-              </div>
-            </div>
-          </div>
-          <div class="row" style="padding-top: 60px">
-            <div class="col-sm-12 col-md-4">
-              <div class="row">
-                <div class="col-1"><img src="img/wallet-blue.svg"></div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col product-title">
-                      Exclusive Data Access
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-11">
-                      <p class="" style="opacity: .75"> Do you spend more time providing data to your consultant than learning from your consultant? APC and Singlethread eliminate the need to pull data.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div class="row">
-                <div class="col-1"><img src="img/wallet-blue.svg"></div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col product-title">
-                      On-Site Team
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-11">
-                      <p class="" style="opacity: .75">APC works side-by-side with your team to customize a process to fit your specific needs.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div class="row">
-                <div class="col-1"><img src="img/wallet-blue.svg"></div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col product-title">
-                      Experience
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-11">
-                      <p class="" style="opacity: .75">With decades of industry experience, APC has likely encountered the situation you are trying to remedy.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="get-started">
-      <div class="container-fluid get-started">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-sm-12 col-md-10">
-              <h1>Got 20 Minutes?</h1>
-              <p>See how you can gain control of your service department with Singlethread.</p><a class="btn btn-primary show-sm hide-lg" href="" style="margin-bottom: 20px">Live Demo</a>
-            </div>
-            <div class="col-md-2 text-right" style="">
-              <a class="hide-sm btn btn-outline-primary" href="">Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <section id="footer">
-      <div class="container-fluid st-foot">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <h4>SINGLETHREAD</h4>
-              <p>Singlethread is a leading provider of web-based tools that help automotive service departments improve communication, sell more, and succeed in a rapidly-changing, mobile-first world.</p>
-            </div>
-            <div class="col-sm-12 col-md-2">
-              <h4>PRODUCTS</h4>
-              <ul class="list-unstyled">
-                <li class="">
-                  <a href="text.html">Text</a>
-                </li>
-                <li class="">
-                  <a href="inspect.html">Vehicle Inspections</a>
-                </li>
-                <li class="">
-                  <a href="chat.html">Team Collaboration</a>
-                </li>
-                <li class="">
-                  <a href="mobilepay.html">Mobile Pay</a>
-                </li>
-                <li class="">
-                  <a href="feedback.html">Customer Follow-Up</a>
-                </li>
-
-              </ul>
-            </div>
-            <div class="col-sm-12 col-md-2">
-              <h4>RESOURCES</h4>
-              <ul class="list-unstyled">
-                <li class="">
-                  <a href="resources.html">Press Releases</a>
-                </li>
-                <li class="">
-                  <a href="resources.html">Industry Publications</a>
-                </li>
-                <li class="">
-                  <a href="https://www.youtube.com/singlethread" target="_blank">YouTube</a>
-                </li>
-                <li class="">
-                  <a href="http://www.facebook.com/singlethread0" target="_blank">Facebook</a>
-                </li>
-                <li class="">
-                  <a href="http://www.twitter.com/singlethread" target="_blank">Twitter</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-md-2">
-              <h4>CONTACT</h4>
-              <ul class="list-unstyled">
-                <li class="">
-                  <a href="tel:1844-920-2656">844-920-2656</a>
-                </li>
-                <li>
-                  <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">Email</a>
-                  </li>
-                <li class="" style="margin-top: 30px"><img height="56px" src="img/s-logo-white.png" width="70px"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Singlethread</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav-menu" aria-controls="mobile-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="backgroundChange(this);"></span>
         </button>
-      </div>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WQHgc5QqmiY" allowfullscreen></iframe>
+        <div class="collapse navbar-collapse" id="mobile-nav-menu">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary button-768" href="/dealer">Login</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu products">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <small class="text-muted">SINGLETHREAD</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="text.html"><img src="img/text-blue.svg" alt="Text Messaging" />
+                                                Text Messaging</a>
+                                        </li>
+                                        <li>
+                                            <a href="inspect.html"><img src="img/inspect-blue.svg" alt="Vehicle Inspections" />
+                                                Video/Digital Inspections</a>
+                                        </li>
+                                        <li>
+                                            <a href="chat.html"><img src="img/chat-blue.svg" alt="Dealership Chat" />
+                                                Team Chat</a>
+                                        </li>
+                                        <li>
+                                            <a href="mobilepay.html"><img src="img/wallet-blue.svg" alt="Dealership Mobile Payments" />
+                                                Mobile Pay</a>
+                                        </li>
+                                        <li>
+                                            <a href="feedback.html"><img src="img/feedback-blue.svg" alt="Customer Follow Up" />
+                                                Customer Follow-Up</a>
+                                        </li>
+                                    </ul>
+                                    <small class="text-muted">TRAINING</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="apc.html"><img src="img/avatar.svg" alt="Dealership Training" />
+                                                Dealership Training</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu resources">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <small class="text-muted">VIDEOS</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a target="_blank" href="http://www.youtube.com/singlethread">YouTube</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <small class="text-muted">PUBLICATIONS</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li class="">
+                                            <a href="/blog">Blogs</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog">Press Releases</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <small class="text-muted">COMPANY</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact
+                    </a>
+                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <small class="text-muted">SOCIAL</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a target="_blank" href="https://www.linkedin.com/company/singlethread">LinkedIn</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="http://www.facebook.com/singlethread0">Facebook</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <small class="text-muted">PHONE</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="tel:+18449202656">844-920-2656</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <small class="text-muted">EMAIL</small>
+                                    <hr class="menu-hr" />
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">Email
+                                                Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px">
+                                <a href="/contact" class="btn btn-primary btn-lg btn-block">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class="nav-item">
+                    <a class="nav-link p-2" href="https://www.linkedin.com/company/singlethread" target="_blank" aria-label="LinkedIn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+                            <path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472L341.91,330.654L341.91,330.654z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2" href="https://www.facebook.com/singlethread0" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 72 72">
+                            <title>Facebook</title>
+                            <path class="cls-1" d="M68,0H4A4,4,0,0,0,0,4V68a4,4,0,0,0,4,4H38.46V44.16H29.11V33.26h9.35v-8c0-9.3,5.68-14.36,14-14.36a77.46,77.46,0,0,1,8.38.43V21H55.08c-4.5,0-5.37,2.14-5.37,5.29v6.94H60.5l-1.4,10.9H49.71V72H68a4,4,0,0,0,4-4V4A4,4,0,0,0,68,0Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2" href="https://www.youtube.com/singlethread" target="_blank" rel="noopener" aria-label="Youtube">
+                        <img class="navbar-nav-svg" src="img/yt-white.png" alt="">
+                        <!--<svg version="1.0" style="width:1.25em" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                           class="navbar-nav-svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                           viewBox="0 0 158 110" enable-background="new 0 0 158 110" xml:space="preserve">
+                                           <path d="M154.4,17.5c-1.8-6.7-7.1-12-13.9-13.8C128.2,0.5,79,0.5,79,0.5s-48.3-0.2-60.6,3c-6.8,1.8-13.3,7.3-15.1,14C0,29.7,0.3,55,0.3,55S0,80.3,3.3,92.5c1.8,6.7,8.4,12.2,15.1,14c12.3,3.3,60.6,3,60.6,3s48.3,0.2,60.6-3c6.8-1.8,13.1-7.3,14.9-14c3.3-12.1,3.3-37.5,3.3-37.5S157.7,29.7,154.4,17.5z M63.9,79.2V30.8L103.2,55L63.9,79.2z" />
+                                        </svg>-->
+                    </a>
+                </li>
+            </ul>
+            <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Login</a>
+        </div>
+    </nav>
+    <!--Jumbotron-->
+    <div class="container-fluid st-intro">
+        <div class="container text-center">
+            <h1 class="display-4 title">Dealership Training</h1>
+            <p class="lead" style="color:#fff; line-height: 1">Cost Effective Training from Proven Leaders</p>
         </div>
     </div>
-  </div>
-</div>
-  </div>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!--Main Content-->
+    <div class="container-fluid main" style="background-color: white">
+        <div class="container">
+            <div class="row align-items-center" style="padding-top: 60px">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h2 class="mobile-pad">Implement a Proven Process</h2>
+                    <p class="" style="opacity: .75">Singlethread helps you develop staff and implement a process based on modern technology that drives customer satisfaction and generates revenue.</p>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lIRTEVjGQMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-  <!--Menu Animation Scripts -->
-  <script type="text/javascript">
-        function backgroundChange(x){
-        $("#main").toggleClass("hidden");
-        $("body").toggleClass("black lg-back");
-        //$("#animenu").toggleClass("change");
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 60px">
+                <div class="col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="col-1"><img src="img/wallet-blue.svg"></div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col feature-title">
+                                    Exclusive Data Access
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <p class="" style="opacity: .75"> Do you spend more time providing data to your consultant than learning from your consultant? APC and Singlethread eliminate the need to pull data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="col-1"><img src="img/wallet-blue.svg"></div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col feature-title">
+                                    On-Site Team
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <p class="" style="opacity: .75">APC works side-by-side with your team to customize a process to fit your specific needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="col-1"><img src="img/wallet-blue.svg"></div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col feature-title">
+                                    Experience
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <p class="" style="opacity: .75">With decades of industry experience, APC has likely encountered the situation you are trying to remedy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Seamless with Singlethread-->
+    <div class="container-fluid seamless">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6 text-center"><img height="auto" src="img/apple-collection-2019.png" width="100%"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <h2 class="sub-head">It's Seamless with Singlethread</h2>
+                        <p class="lighter">Singlethread's modules integrate in a seamless design. Start working on your desktop and continue on your mobile. Quickly update a customer with a Text, send an video in an instant, and capture payments with Mobile Payments. Get in, get out, get on with your day.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md">
+                        <div class="row">
+                            <div class="col-1"><img src="img/inspect-blue.svg"></div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col feature-title">
+                                        Digital Vehicle Inspections
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-11">
+                                        <p class="lighter">Revenue generating picture & video. Fast for techs, easy for advisors, and mobile for customers. <a href="inspect.html">Explore</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md">
+                        <div class="row">
+                            <div class="col-1"><img src="img/text-blue.svg"></div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col feature-title">
+                                        Text Messaging
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-11">
+                                        <p class="lighter">The industry leader. Solve communication problems, improve satisfaction, and reduce stress. <a class="" href="text.html" style="margin-bottom: 20px;">Explore</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md">
+                        <div class="row">
+                            <div class="col-1"><img src="img/chat-blue.svg"></div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col feature-title">
+                                        Mobile Payments
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-11">
+                                        <p class="lighter">Securely capture payments from customer's mobile device directly to your merchant account, with no additional fees. <a href="mobilepay.html">Explore</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md">
+                        <div class="row">
+                            <div class="col-1"><img src="img/feedback-blue.svg"></div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col feature-title">
+                                        Customer Follow-Up
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-11">
+                                        <p class="lighter">Automate your customer follow-up and monitor it with real-time notifications. <a href="feedback.html">Explore</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Get Started-->
+    <div class="container-fluid get-started">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-10">
+                    <h1 class="lead">Live Demo</h1>
+                    <p>See how Singlethread can help you gain control of your service department.</p>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <a class="hide-sm btn btn-outline-primary show-lg" href="">Live Demo</a> <a class="btn btn-primary show-sm hide-lg" href="">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid st-foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h4>SINGLETHREAD</h4>
+                    <p>
+                        Singlethread is a leading provider of web-based tools that
+                        help service departments improve communication,
+                        sell more, and succeed in a rapidly-changing, mobile-first
+                        world.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <h4>PRODUCTS</h4>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="text.html">Text Messaging</a>
+                        </li>
+                        <li class="">
+                            <a href="inspect.html">Vehicle Inspections</a>
+                        </li>
+                        <li class="">
+                            <a href="chat.html">Team Chat</a>
+                        </li>
+                        <li class="">
+                            <a href="mobilepay.html">Mobile Pay</a>
+                        </li>
+                        <li class="">
+                            <a href="feedback.html">Customer Follow-Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <h4>RESOURCES</h4>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="https://www.youtube.com/singlethread" target="_blank">Videos</a>
+                        </li>
+                        <li class="">
+                            <a href="blog.html">Blogs</a>
+                        </li>
+                        <li class="">
+                            <a href="blog.html">Press Releases</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <h4>CONTACT</h4>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a href="https://www.linkedin.com/company/singlethread" target="_blank">LinkedIn</a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.facebook.com/singlethread0" target="_blank">Facebook</a>
+                        </li>
+                        <li class="">
+                            <a href="tel:1844-920-2656">844-920-2656</a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@singlethread.com?Subject=Question%20About%20Singlethread">Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Menu Animation-->
+    <script type="text/javascript">
+        function backgroundChange(x) {
+            $('#main').toggleClass('hidden')
+            $('body').toggleClass('black lg-back')
+            //$("#animenu").toggleClass("change");
         }
-  </script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </script>
+    <!--Google Analytics-->
+    <script>
+        ; (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r
+                ; (i[r] =
+                    i[r] ||
+                    function () {
+                        ; (i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ; (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+            a.async = 1
+            a.src = g
+            m.parentNode.insertBefore(a, m)
+        })(
+            window,
+            document,
+            'script',
+            'https://www.google-analytics.com/analytics.js',
+            'ga'
+        )
 
-  ga('create', 'UA-58407976-1', 'auto');
-  ga('send', 'pageview');
-
-
-</script>
-
-
+        ga('create', 'UA-58407976-1', 'auto')
+        ga('send', 'pageview')
+    </script>
+    <!-- Intercom -->
+    <script>
+        window.intercomSettings = {
+            app_id: 'vtsmn3ws'
+        }
+    </script>
+    <script>
+        window.Intercom('boot', { app_id: 'vtsmn3ws' })
+    </script>
+    <!-- Mail Chimp -->
+    <script id="mcjs">
+        !(function (c, h, i, m, p) {
+            ; (m = c.createElement(h)),
+                (p = c.getElementsByTagName(h)[0]),
+                (m.async = 1),
+                (m.src = i),
+                p.parentNode.insertBefore(m, p)
+        })(
+            document,
+            'script',
+            'https://chimpstatic.com/mcjs-connected/js/users/afc4400006811f859eb157cec/5296a7cd9ad9662189d1d48d7.js'
+        )
+    </script>
 </body>
+
 </html>
