@@ -33,7 +33,7 @@ body { font-family: 'Inter', sans-serif; }
   margin-top: -70px;
   margin-bottom: 0;
   padding-top: 120px;
-  height: 80vh;
+  height: 70vh;
   background: -webkit-linear-gradient(
     left top,
     rgba(41, 8, 48, 0.97),
@@ -305,6 +305,7 @@ body { font-family: 'Inter', sans-serif; }
 }
 .get-started p {
   font-size: 18px;
+  font-weight: 300;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -332,12 +333,13 @@ body { font-family: 'Inter', sans-serif; }
 
 .st-foot p {
   color: #999;
+  font-weight: 300;
 }
 
 .st-foot h4 {
   color: #ffffff;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 80px;
   text-transform: uppercase;
 }
