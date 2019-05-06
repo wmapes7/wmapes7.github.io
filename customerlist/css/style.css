@@ -66,6 +66,11 @@ body {
     color: #fff;
 }
 
+.bright-green {
+  background-color: #04dd04;
+  color: #fff;
+}
+
 /*Customer List Table */
 
 .customer-list {
