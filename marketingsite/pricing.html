@@ -12,7 +12,9 @@
     <link href="css/app.css" rel="stylesheet" type="text/css" />
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <title>Dealership Team Chat | Singlethread</title>
+    <title>Pricing | Singlethread</title>
+    <!--Font Awesome for Pricing Tables-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!--Intercom-->
     <script>
         window.intercomSettings = {
@@ -293,225 +295,295 @@
             <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Login</a>
         </div>
     </nav>
+    <!--Main Content-->
     <div id="main">
         <!--Jumbotron-->
         <div class="container-fluid st-intro">
             <div class="container text-center">
-                <h1 class="display-4 title">Team Chat</h1>
-                <p class="sub-title">Service team communication, simplified.</p>
+                <h1 class="display-4 title">Pricing</h1>
+                <p class="sub-title">Month to Month with no additional fees.</p>
             </div>
         </div>
-        <!--main content-->
-        <div class="container-fluid main" style="background-color: white">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <h2 class="mobile-pad sub-head">Improve Team Communication</h2>
-                        <p class="" style="opacity: .75">Poor communication can be a major bottleneck to the number of vehicles you service, negatively impact the customer experience, and ultimately cost you money. With Singlethread, you have the power to quickly communicate with employees and customers, all in one seamless view.</p>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <img src="img/mbpro-right-chat.png" height="auto" width="100%">
-                    </div>
-                </div>
+        <!--OEM Preferred Pricing-->
+        <div class="container-fluid d-flex" id="preferred" style="height:40vh">
+            <div class="container d-flex align-items-center">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Internal Notes
+                    <div class="col-xs-12 col-sm-6">
+                        <h1 class="title-dark">Preferred Pricing & Co-Op Incentives</h1>
+                        <span>Singlethread works with most OEM co-op programs and has established preferred pricing for qualifying dealers. Please contact sales to discuss the latest co-op incentive programs.</span>
+                        <br>
+                        <button class="btn btn-outline-dark" style="margin-top: 30px">Talk to Sales</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="container text-center" style="">
+                            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner" id="oems">
+                                    <div class="carousel-item">
+                                        <img class="" src="img/fmc.svg" alt="Ford Text Messaging">
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="" style="opacity: .75">With automatic Repair Order flagging, your team is immediately notified of urgent requests which shortens the repair cycle.</p>
+                                    <div class="carousel-item">
+                                        <img class="" src="img/audi-logo.svg" alt="Audi Text Messaging">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img class="" src="img/vw-logo.png" alt="VW Text Messaging">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="" src="img/chrysler-logo.png" style="width: 500px" alt="Chrysler Text Messaging">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="" src="img/lexus-logo.png" alt="Lexus Text Messaging">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="" src="img/chevrolet-logo.webp" alt="Chevrolet Text Messaging">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Group Chat
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="" style="opacity: .75"> Hold a team meeting, send a request to all porters, ask for an available tech - the possibilities are endless.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Private Chat
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="" style="opacity: .75">Discuss an RO, a challenging customer, or just about anything privately between two parties.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center" style="padding-top: 15px">
-                    <div class="col-md-5 col-lg-5 text-center align-items-center" style="padding-bottom: 30px">
-                        <img src="img/mbpro-left-notes.png" height="auto" width="100%">
-                    </div>
-                    <div class="col-sm-12 col-md-7 col-lg-7" style="padding-bottom: 60px">
-                        <h2 class="sub-head">Real-time RO Collaboration</h2>
-                        <p class="" style="opacity: .75">Singlethread provides your team with a unified workspace on every RO. Techs can notify Advisors, Advisors can consult with parts, and everyone is all on the same page.</p>
-                    </div>
-                </div>
-                <div class="row" style="padding-bottom: 60px">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Real-time Notifications
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="" style="opacity: .75">Desktop and push notifications ensure that urgent requests are filled right away to keep your team on task.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        More Effective Than Email
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="" style="opacity: .75">Chat with your team without leaving Singlethread. Keep tabs on customers and your team all in one view.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Free with Product Packages
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="" style="opacity: .75">Singlethread offers free Team Collaboration tools with certain product pacakages. <a href="">Contact us</a> for details.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!--Seamless with Singlethread-->
-        <div class="container-fluid seamless">
+        <!--Pricing Tables-->
+        <div class="container-fluid" style="background-color:#eee; padding-bottom:30px">
+            <!--Full width pricing table-->
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6 col-lg-6 text-center"><img height="auto" src="img/apple-collection-2019.png" width="100%"></div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <h2 class="sub-head">It's Seamless with Singlethread</h2>
-                        <p class="lighter">Singlethread's modules integrate in a seamless design. Start working on your desktop and continue on your mobile. Quickly update a customer with a Text, send an video in an instant, and capture payments with Mobile Payments. Get in, get out, get on with your day.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md">
-                        <div class="row">
-                            <div class="col-1"><img src="img/inspect-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Digital Vehicle Inspections
+                <h1 class="title-dark" style="padding-bottom: 15px; padding-top:15px">Compare Editions & Features</h1>
+                <p>Singlethread is the only provider to offer all inclusive pricing with no additional add-ons or up charges. Singlethread can help you consolidate vendors and reduce your monthly spend while increasing productivity and CSI.</p>
+                <p>Key Pricing Details:</p>
+                <ul>
+                    <li>Month to Month Agreement</li>
+                    <li>No Hidden Fees</li>
+                    <li>No Additional DMS Fees</li>
+                    <li>No Additional Merchant Fees</li>
+                    <li>No Per User Fee</li>
+                    <li>No Printing of Forms Fees</li>
+                    <li>Free Mobile Apps</li>
+                </ul>
+
+                <table class="table pricing-table" style="background-color:#fff">
+                    <thead>
+                        <tr>
+                            <td class="align-bottom"><span class="lead">Feature</span></td>
+                            <td class="text-center">
+                                <div class="popular-badge popular-green text-center">
+                                    <span>
+                                        LOWEST PRICE
+                                    </span>
+                                </div><span class="lead">Essentials</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="popular-badge popular-blue text-center">
+                                    <span>
+                                        MOST POPULAR
+                                    </span>
+                                </div>
+                                <span class="lead">Pro</span>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>
+                                    <span>Two Way Text Messaging</span>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Details
+                                    </button>
+                                </span>
+                                <div class="accordion" id="featureAccordion">
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#featureAccordion">
+                                        <table class="table feature-check">
+                                            <tr>
+                                                <td>Manual Messages</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Template Messages</td>
+                                            </tr>
+                                            <tr>
+                                            <tr>
+                                                <td>A.I. Driven Automated Messages</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Automatic Customer Follow-up</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Customer Satisfaction Measurement</td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="lighter">Revenue generating picture & video. Fast for techs, easy for advisors, and mobile for customers. <a href="inspect.html">Explore</a></p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <i class="fas fa-circle"></i>
+                                <div class="accordion" id="featureAccordion">
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#featureAccordion">
+                                        <table class="table feature-check">
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md">
-                        <div class="row">
-                            <div class="col-1"><img src="img/text-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Text Messaging
+                            </td>
+                            <td class="align-middle text-center">
+                                <i class="fas fa-circle"></i>
+                                <div class="accordion" id="featureAccordion">
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#featureAccordion">
+                                        <table class="table feature-check">
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="lighter">The industry leader. Solve communication problems, improve satisfaction, and reduce stress. <a class="" href="text.html" style="margin-bottom: 20px;">Explore</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md">
-                        <div class="row">
-                            <div class="col-1"><img src="img/chat-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Mobile Payments
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="lighter">Securely capture payments from customer's mobile device directly to your merchant account, with no additional fees. <a href="mobilepay.html">Explore</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md">
-                        <div class="row">
-                            <div class="col-1"><img src="img/feedback-blue.svg"></div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col feature-title">
-                                        Customer Follow-Up
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-11">
-                                        <p class="lighter">Automate your customer follow-up and monitor it with real-time notifications. <a href="feedback.html">Explore</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Picture & Video Messaging</td>
+                            <td class="align-middle text-center">
+                                <i class="fas fa-circle"></i>
+                            </td>
+                            <td class="align-middle text-center">
+                                <i class="fas fa-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Apps (Apple & Android)</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Certified DMS Integration</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Payments</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Automatic Usage Reporting</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Real-time Notifications</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Team Communication - Group Chats</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Team Communication - Private Chats</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Team Communication - Internal Notes</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>OEM Compliant Inspection Forms</td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Video Vehicle Inspections</td>
+                            <td class="align-middle text-center"><i class="far fa-circle"></i></td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Vehicle Inspections</td>
+                            <td class="align-middle text-center"><i class="far fa-circle"></i></td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Technician Dispatching</td>
+                            <td class="align-middle text-center"><i class="far fa-circle"></i></td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Detailed Repair Order Listing</td>
+                            <td class="align-middle text-center"><i class="far fa-circle"></i></td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Customizable Color Coding</td>
+                            <td class="align-middle text-center"><i class="far fa-circle"></i></td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Usage Reporting</td>
+                            <td class="align-middle text-center"><i class="far fa-circle"></i></td>
+                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class=text-center>
+                                <button class="btn btn-outline-dark">Talk to Sales</button>
+                            </td>
+                            <td class=text-center>
+                                <button class="btn btn-outline-dark">Talk to Sales</button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
             </div>
         </div>
+
         <!--Get Started-->
         <div class="container-fluid get-started">
             <div class="container">
@@ -594,7 +666,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -603,9 +674,8 @@
     <!--Menu Animation-->
     <script type="text/javascript">
         function backgroundChange(x) {
-            $('#main').toggleClass('hidden')
-            $('body').toggleClass('black lg-back')
-            //$("#animenu").toggleClass("change");
+            $('#main').toggleClass('hidden');
+            $('body').toggleClass('black lg-back');
         }
     </script>
     <!--Google Analytics-->

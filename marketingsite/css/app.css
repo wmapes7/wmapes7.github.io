@@ -61,15 +61,20 @@ body { font-family: 'Inter', sans-serif; }
   color: #ffffff;
   opacity: 0.5;
 }
-.black-font {
-  color: #000000;
-}
+
 .move {
   visibility: hidden;
 }
 
 .title {
   color: #ffffff;
+  font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.title-dark {
+  color: #000;
   font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.2;
@@ -96,6 +101,15 @@ body { font-family: 'Inter', sans-serif; }
 .btn-outline-primary {
   border-color: #ffffff;
   color: #ffffff;
+}
+
+.btn-outline-st {
+  border-color: #000;
+  color: #000;
+}
+.btn-outline-st :hover{
+  background-color: #000;
+  color: #fff;
 }
 
 /*Navbar Styling*/
@@ -156,6 +170,10 @@ body { font-family: 'Inter', sans-serif; }
 
   .resources {
     width: 450px;
+  }
+
+  .pricing {
+    width:250px
   }
 
   .contact {
@@ -278,6 +296,54 @@ body { font-family: 'Inter', sans-serif; }
   font-weight: 500;
 }
 
+/*PRICING STYLES*/
+
+.pricing-table {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pricing-table > thead > tr > td {
+  border-top: 0px;
+}
+
+.oem-logos > div >img {
+  height: 40px;
+}
+
+.feature-check tr td {
+  padding-left: 0 !important;
+  border: 0;
+}
+
+i {
+  color:#388e3c;
+}
+
+.dot-adjust {
+  margin-left: 12px !important;
+}
+
+.popular-badge {
+  height: 30px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.popular-badge > span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.popular-blue {
+  background-color:#2196f3;
+}
+
+.popular-green {
+  background-color: #4caf50;
+}
 
 /*GET STARTED STYLING*/
 .get-started {
