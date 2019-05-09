@@ -317,7 +317,7 @@
                         <a href="contact.html"><button class="btn btn-outline-dark" style="margin-top: 30px">Talk to Sales</button></a>
 
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-6 mobile-pad" style="height:220px">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -326,13 +326,14 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                             </ol>
                             <div class="carousel-inner text-center">
                                 <div class="carousel-item active">
-                                    <img class="img-fluid" src="img/fmc.svg" alt="First slide" style="height:200px">
+                                    <img class="img-fluid" src="img/fmc.svg" style="height:200px" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid" src="img/audi-logo.svg" style="height:150px" alt="Second slide">
+                                    <img class="img-fluid" src="img/audi.svg" style="height:150px" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
                                     <img class="img-fluid" src="img/vw-logo-sm.png" style="height:150px" alt="Third slide">
@@ -356,55 +357,6 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                        <!--<div class="container text-center hide-sm">
-                            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-                                <div class="carousel-inner" id="oems">
-                                    <div class="carousel-item">
-                                        <img class="" src="img/fmc.svg" alt="Ford Text Messaging">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/audi-logo.svg" alt="Audi Text Messaging">
-                                    </div>
-                                    <div class="carousel-item active">
-                                        <img class="" src="img/vw-logo.png" alt="VW Text Messaging">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/chrysler-logo.png" style="width: 500px" alt="Chrysler Text Messaging">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/lexus-logo.png" alt="Lexus Text Messaging">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/chevrolet-logo.webp" alt="Chevrolet Text Messaging">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container hide-lg text-center">
-                            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item">
-                                        <img class="" src="img/fmc.svg" style="height: 100px" alt="Reynolds text messsage" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/audi-logo.svg" style="height: 110px;" alt="CDK text message" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/vw-logo.png" style="height: 100px;" alt="DealerTrack text message" />
-                                    </div>
-                                    <div class="carousel-item active">
-                                        <img class="" src="img/chrysler-logo.png" style="height: 80px" alt="Automate text message" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/lexus-logo.png" style="height: 65px; margin-top: 20px" alt="PBS text message" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="img/chevrolet-logo.webp" style="height: 65px; margin-top: 20px" alt="Dominion text message" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-
                     </div>
                 </div>
             </div>
@@ -414,8 +366,8 @@
             <!--Full width pricing table-->
             <div class="container" id="pricing-table">
                 <h1 class="title-dark" style="padding-bottom: 15px; padding-top:15px">Compare Singlethread Editions</h1>
-                <p>Singlethread is the only provider to offer all inclusive pricing with no additional add-ons or up charges. Singlethread can help you consolidate vendors and reduce your monthly spend while increasing productivity and CSI.</p>
-                <p>Key Pricing Details:</p>
+                <p>Singlethread is the only provider to offer all-inclusive pricing with no additional add-ons or up-charges. Singlethread can help you consolidate vendors and reduce your monthly spend while increasing productivity and CSI.</p>
+                <p class="lead">Key Pricing Details:</p>
                 <ul>
                     <li>Month to Month Agreement</li>
                     <li>No Hidden Fees</li>
@@ -601,6 +553,9 @@
                                                 <td>Internal Notes - Pictures</td>
                                             </tr>
                                             <tr>
+                                                <td>Internal Notes - File Attachments</td>
+                                            </tr>
+                                            <tr>
                                             <tr>
                                                 <td>Internal Notes - Videos</td>
                                             </tr>
@@ -616,8 +571,8 @@
                             </td>
                             <td class="align-middle text-center">
                                 <i class="fas fa-circle"></i>
-                                <div class="accordion" id="featureAccordion">
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#featureAccordion">
+                                <div class="accordion" id="accordionOne">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
                                         <table class="table feature-check">
                                             <tr>
                                                 <td>
@@ -632,6 +587,11 @@
                                             <tr>
                                                 <td>
                                                     <i class="fas fa-circle dot-adjust"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                        <i class="fas fa-circle dot-adjust"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -650,8 +610,8 @@
                             </td>
                             <td class="align-middle text-center">
                                 <i class="fas fa-circle"></i>
-                                <div class="accordion" id="featureAccordion">
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#featureAccordion">
+                                <div class="accordion" id="accordionTwo">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTwo">
                                         <table class="table feature-check">
                                             <tr>
                                                 <td>
@@ -663,6 +623,11 @@
                                                     <i class="fas fa-circle dot-adjust"></i>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                    <td>
+                                                        <i class="fas fa-circle dot-adjust"></i>
+                                                    </td>
+                                                </tr>
                                             <tr>
                                                 <td>
                                                     <i class="fas fa-circle dot-adjust"></i>
@@ -684,18 +649,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Team Communication - Private Chats</td>
-                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
-                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
-                        </tr>
-                        <tr>
-                            <td>Team Communication - Internal Notes</td>
-                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
-                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
-                        </tr>
-                        <tr>
-                            <td>OEM Compliant Inspection Forms</td>
-                            <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
+                            <td>Digital OEM Inspection Forms</td>
+                            <td class="align-middle text-center"> <i class="far fa-circle"></i> </td>
                             <td class="align-middle text-center"> <i class="fas fa-circle"></i> </td>
                         </tr>
                         <tr>
