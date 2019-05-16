@@ -332,11 +332,6 @@ body { font-family: 'Inter', sans-serif; }
   font-size: 18px;
 }
 
-.login-btn :hover{
-	text-decoration: underline;
-	color: #fff;
-}
-
 .forgot-password {
 	color: #000;
 	font-weight: 300;
