@@ -280,6 +280,74 @@ body { font-family: 'Inter', sans-serif; }
   }
 }
 
+/* LOGIN PAGE STYLING */
+.login-header {
+	font-size: 36px;
+	font-weight: 300;
+	color: #000;
+}
+
+#login-page form {
+	line-height: 2.5;
+}
+
+#login-page input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #999;
+	font-size: 24px;
+	font-weight: 300;
+	color: #000;
+	width: 100%;
+}
+
+#login-page input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+	opacity: 0.4;
+}
+#login-page input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+	opacity: 0.4;
+}
+#login-page input:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+	opacity: 0.4;
+}
+#login-page input:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+	opacity: 0.4;
+}
+
+.login-btn {
+	background-color: #2196f3;
+	color: #fff;
+  margin-top: 40px;
+  height: 60px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.login-btn :hover{
+	text-decoration: underline;
+	color: #fff;
+}
+
+.forgot-password {
+	color: #000;
+	font-weight: 300;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.forgot-password :hover{
+	text-decoration: underline;
+}
+
 /*INDEX PRODUCT STYLING*/
 .product-listing {
   background-color: #ffffff;
