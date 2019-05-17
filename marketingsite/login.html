@@ -44,14 +44,14 @@
                 </div>
                 <div class="col-md-12" style="padding-top: 15px; padding-bottom: 15px">
                     <div style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <form class="form-group" action="index.html" method="post">
+                        <form class="form-group" action="" method="">
                             <input class="st-input" type="text" name="email" value="" placeholder="Email">
                             <input class="st-input" type="password" name="password" value="" placeholder="Password" id="password">
                             <span style="float:left;padding-top:5px; ">
-                                <input type="checkbox" value="" id="showPassword" style="transform: scale(1.5)">
+                                <input type="checkbox" value="" onclick="showPassword()" style="transform: scale(1.5)">
                                 <span style="padding-left:5px; font-size:16px">Show Password</span>
                             </span>
-                            
+
                             <button href="#" class="btn login-btn"><span>Login</span></button><br>
                             <a href="passwordreset.html" class="forgot-password"><span>Forgot Your Password?</span></a>
                         </form>
@@ -72,6 +72,18 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--show password-->
+    <script>
+        function showPassword() {
+            var pw = document.getElementById("password");
+            if (pw.type === "password") {
+                pw.type = "text";
+            }
+            else {
+                pw.type = "password";
+            }
+        }
+    </script>
 
 </body>
 
